@@ -1,0 +1,3082 @@
+[
+    {
+        "id": "perf_001",
+        "name": "Arjun Reddy",
+        "status": "Active",
+        "bio": "Intense method actor with strong emotional range.",
+        "personal_info": {
+            "gender": "Male",
+            "age": 27,
+            "languages": [
+                "Telugu",
+                "Hindi",
+                "English"
+            ],
+            "regional_background": "Telangana"
+        },
+        "location": {
+            "current_city": "Hyderabad",
+            "state": "Telangana",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Actor",
+            "secondary_crafts": [
+                "Model"
+            ],
+            "experience_years": 5,
+            "experience_level": "Professional",
+            "availability": "Freelance",
+            "looking_for": [
+                "films",
+                "web_series"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 178,
+                "weight_kg": 75,
+                "build": "Athletic",
+                "complexion": "Wheatish",
+                "eye_color": "Brown",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "intense",
+                "urban",
+                "rugged"
+            ],
+            "performance_specializations": [
+                "method_acting",
+                "emotional_drama",
+                "action"
+            ],
+            "playable_age_range": {
+                "min": 22,
+                "max": 32
+            },
+            "accents_dialects": [
+                "Telangana Telugu",
+                "Neutral Hindi"
+            ]
+        },
+        "skills": [
+            "screen acting",
+            "dialogue delivery"
+        ],
+        "projects": [
+            {
+                "title": "Street Shadows",
+                "role": "Lead Actor",
+                "year": 2023,
+                "type": "Film"
+            }
+        ],
+        "education_training": [
+            "Acting workshop"
+        ],
+        "work_samples": [
+            "yt.com/a1"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "lead",
+            "action_ready"
+        ]
+    },
+    {
+        "id": "perf_002",
+        "name": "Meera Nair",
+        "status": "Active",
+        "bio": "Classical dancer transitioning into cinema.",
+        "personal_info": {
+            "gender": "Female",
+            "age": 24,
+            "languages": [
+                "Malayalam",
+                "Tamil",
+                "English"
+            ],
+            "regional_background": "Kerala"
+        },
+        "location": {
+            "current_city": "Chennai",
+            "state": "Tamil Nadu",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Dancer",
+            "secondary_crafts": [
+                "Actor"
+            ],
+            "experience_years": 10,
+            "experience_level": "Expert",
+            "availability": "Full-time",
+            "looking_for": [
+                "films",
+                "dance_shows"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 165,
+                "weight_kg": 54,
+                "build": "Slim",
+                "complexion": "Fair",
+                "eye_color": "Black",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "graceful",
+                "traditional"
+            ],
+            "performance_specializations": [
+                "bharatanatyam",
+                "abhinaya"
+            ],
+            "playable_age_range": {
+                "min": 18,
+                "max": 28
+            },
+            "accents_dialects": [
+                "Kerala Malayalam",
+                "Tamil"
+            ]
+        },
+        "skills": [
+            "classical dance"
+        ],
+        "projects": [
+            {
+                "title": "Nritya Kavya",
+                "role": "Performer",
+                "year": 2022,
+                "type": "Stage"
+            }
+        ],
+        "education_training": [
+            "Kalakshetra"
+        ],
+        "work_samples": [
+            "ig.com/m2"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "classical"
+        ]
+    },
+    {
+        "id": "perf_003",
+        "name": "Riya Kapoor",
+        "status": "Active",
+        "bio": "Commercial model and ad performer.",
+        "personal_info": {
+            "gender": "Female",
+            "age": 22,
+            "languages": [
+                "Hindi",
+                "English"
+            ],
+            "regional_background": "Delhi"
+        },
+        "location": {
+            "current_city": "Mumbai",
+            "state": "Maharashtra",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Model",
+            "secondary_crafts": [
+                "Actor"
+            ],
+            "experience_years": 3,
+            "experience_level": "Intermediate",
+            "availability": "Freelance",
+            "looking_for": [
+                "ads",
+                "brands"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 173,
+                "weight_kg": 55,
+                "build": "Lean",
+                "complexion": "Fair",
+                "eye_color": "Hazel",
+                "hair_color": "Brown"
+            },
+            "appearance_tags": [
+                "chic",
+                "modern"
+            ],
+            "performance_specializations": [
+                "runway",
+                "commercial"
+            ],
+            "playable_age_range": {
+                "min": 18,
+                "max": 26
+            },
+            "accents_dialects": [
+                "Delhi Hindi",
+                "Neutral English"
+            ]
+        },
+        "skills": [
+            "posing"
+        ],
+        "projects": [
+            {
+                "title": "Nykaa Campaign",
+                "role": "Model",
+                "year": 2024,
+                "type": "Ad"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "ig.com/r3"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "fashion"
+        ]
+    },
+    {
+        "id": "perf_004",
+        "name": "Kabir Khan",
+        "status": "Active",
+        "bio": "Observational stand-up comedian.",
+        "personal_info": {
+            "gender": "Male",
+            "age": 30,
+            "languages": [
+                "Hindi",
+                "English"
+            ],
+            "regional_background": "UP"
+        },
+        "location": {
+            "current_city": "Bangalore",
+            "state": "Karnataka",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Stand-up Comedian",
+            "secondary_crafts": [
+                "Writer"
+            ],
+            "experience_years": 7,
+            "experience_level": "Professional",
+            "availability": "Full-time",
+            "looking_for": [
+                "live_shows",
+                "ott"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 172,
+                "weight_kg": 78,
+                "build": "Average",
+                "complexion": "Wheatish",
+                "eye_color": "Brown",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "relatable"
+            ],
+            "performance_specializations": [
+                "observational",
+                "crowd_work"
+            ],
+            "playable_age_range": {
+                "min": 25,
+                "max": 40
+            },
+            "accents_dialects": [
+                "UP Hindi"
+            ]
+        },
+        "skills": [
+            "improv"
+        ],
+        "projects": [
+            {
+                "title": "Laugh Riot",
+                "role": "Performer",
+                "year": 2023,
+                "type": "Live"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "yt.com/k4"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "funny"
+        ]
+    },
+    {
+        "id": "perf_005",
+        "name": "Ananya Das",
+        "status": "Active",
+        "bio": "Playback and indie singer.",
+        "personal_info": {
+            "gender": "Female",
+            "age": 26,
+            "languages": [
+                "Bengali",
+                "Hindi",
+                "English"
+            ],
+            "regional_background": "West Bengal"
+        },
+        "location": {
+            "current_city": "Kolkata",
+            "state": "West Bengal",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Singer",
+            "secondary_crafts": [
+                "Voice Artist"
+            ],
+            "experience_years": 8,
+            "experience_level": "Professional",
+            "availability": "Freelance",
+            "looking_for": [
+                "playback",
+                "concerts"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 160,
+                "weight_kg": 52,
+                "build": "Slim",
+                "complexion": "Fair",
+                "eye_color": "Black",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "soft"
+            ],
+            "performance_specializations": [
+                "playback",
+                "indie"
+            ],
+            "playable_age_range": {
+                "min": 20,
+                "max": 30
+            },
+            "accents_dialects": [
+                "Bengali",
+                "Hindi"
+            ]
+        },
+        "skills": [
+            "vocal"
+        ],
+        "projects": [
+            {
+                "title": "Monsoon Melody",
+                "role": "Singer",
+                "year": 2024,
+                "type": "Music"
+            }
+        ],
+        "education_training": [
+            "Classical"
+        ],
+        "work_samples": [
+            "sp.com/a5"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "playback"
+        ]
+    },
+    {
+        "id": "perf_006",
+        "name": "Rahul Verma",
+        "status": "Active",
+        "bio": "Street-style dancer with freestyle expertise.",
+        "personal_info": {
+            "gender": "Male",
+            "age": 23,
+            "languages": [
+                "Hindi",
+                "Punjabi"
+            ],
+            "regional_background": "Punjab"
+        },
+        "location": {
+            "current_city": "Delhi",
+            "state": "Delhi",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Dancer",
+            "secondary_crafts": [],
+            "experience_years": 6,
+            "experience_level": "Professional",
+            "availability": "Full-time",
+            "looking_for": [
+                "shows",
+                "music_videos"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 170,
+                "weight_kg": 65,
+                "build": "Athletic",
+                "complexion": "Wheatish",
+                "eye_color": "Brown",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "energetic"
+            ],
+            "performance_specializations": [
+                "hiphop",
+                "freestyle"
+            ],
+            "playable_age_range": {
+                "min": 18,
+                "max": 28
+            },
+            "accents_dialects": [
+                "Punjabi"
+            ]
+        },
+        "skills": [
+            "freestyle"
+        ],
+        "projects": [
+            {
+                "title": "Dance India Crew",
+                "role": "Performer",
+                "year": 2022,
+                "type": "TV"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "yt.com/r6"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "street"
+        ]
+    },
+    {
+        "id": "perf_007",
+        "name": "Sneha Iyer",
+        "status": "Active",
+        "bio": "Theatre actor with strong voice projection.",
+        "personal_info": {
+            "gender": "Female",
+            "age": 29,
+            "languages": [
+                "Tamil",
+                "English"
+            ],
+            "regional_background": "Tamil Nadu"
+        },
+        "location": {
+            "current_city": "Chennai",
+            "state": "Tamil Nadu",
+            "country": "India",
+            "willing_to_travel": false
+        },
+        "professional_info": {
+            "primary_craft": "Theatre Actor",
+            "secondary_crafts": [
+                "Voice Artist"
+            ],
+            "experience_years": 9,
+            "experience_level": "Expert",
+            "availability": "Part-time",
+            "looking_for": [
+                "plays",
+                "voice"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 162,
+                "weight_kg": 58,
+                "build": "Average",
+                "complexion": "Dusky",
+                "eye_color": "Black",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "expressive"
+            ],
+            "performance_specializations": [
+                "stage_drama",
+                "voice_projection"
+            ],
+            "playable_age_range": {
+                "min": 24,
+                "max": 38
+            },
+            "accents_dialects": [
+                "Tamil"
+            ]
+        },
+        "skills": [
+            "stage acting"
+        ],
+        "projects": [
+            {
+                "title": "Hamlet Tamil",
+                "role": "Lead",
+                "year": 2021,
+                "type": "Theatre"
+            }
+        ],
+        "education_training": [
+            "Drama school"
+        ],
+        "work_samples": [
+            "yt.com/s7"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "stage"
+        ]
+    },
+    {
+        "id": "perf_008",
+        "name": "Aman Sheikh",
+        "status": "Active",
+        "bio": "Commercial actor with boy-next-door appeal.",
+        "personal_info": {
+            "gender": "Male",
+            "age": 25,
+            "languages": [
+                "Hindi",
+                "Urdu",
+                "English"
+            ],
+            "regional_background": "Mumbai"
+        },
+        "location": {
+            "current_city": "Mumbai",
+            "state": "Maharashtra",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Actor",
+            "secondary_crafts": [],
+            "experience_years": 4,
+            "experience_level": "Intermediate",
+            "availability": "Freelance",
+            "looking_for": [
+                "ads",
+                "web_series"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 176,
+                "weight_kg": 70,
+                "build": "Lean",
+                "complexion": "Fair",
+                "eye_color": "Brown",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "boy_next_door"
+            ],
+            "performance_specializations": [
+                "romance",
+                "ads"
+            ],
+            "playable_age_range": {
+                "min": 20,
+                "max": 30
+            },
+            "accents_dialects": [
+                "Mumbai Hindi"
+            ]
+        },
+        "skills": [
+            "acting"
+        ],
+        "projects": [
+            {
+                "title": "PhonePe Ad",
+                "role": "Lead",
+                "year": 2023,
+                "type": "Ad"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "yt.com/a8"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "commercial"
+        ]
+    },
+    {
+        "id": "perf_009",
+        "name": "Pooja Sharma",
+        "status": "Active",
+        "bio": "TV serial actress.",
+        "personal_info": {
+            "gender": "Female",
+            "age": 32,
+            "languages": [
+                "Hindi"
+            ],
+            "regional_background": "Rajasthan"
+        },
+        "location": {
+            "current_city": "Mumbai",
+            "state": "Maharashtra",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Actor",
+            "secondary_crafts": [],
+            "experience_years": 10,
+            "experience_level": "Expert",
+            "availability": "Full-time",
+            "looking_for": [
+                "tv",
+                "films"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 168,
+                "weight_kg": 60,
+                "build": "Average",
+                "complexion": "Fair",
+                "eye_color": "Brown",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "traditional"
+            ],
+            "performance_specializations": [
+                "daily_soap"
+            ],
+            "playable_age_range": {
+                "min": 25,
+                "max": 40
+            },
+            "accents_dialects": [
+                "Rajasthani Hindi"
+            ]
+        },
+        "skills": [
+            "acting"
+        ],
+        "projects": [
+            {
+                "title": "Saath Saheli",
+                "role": "Lead",
+                "year": 2020,
+                "type": "TV"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "yt.com/p9"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "tv"
+        ]
+    },
+    {
+        "id": "perf_010",
+        "name": "Dev Chauhan",
+        "status": "Inactive",
+        "bio": "Aspiring actor.",
+        "personal_info": {
+            "gender": "Male",
+            "age": 21,
+            "languages": [
+                "Hindi",
+                "English"
+            ],
+            "regional_background": "MP"
+        },
+        "location": {
+            "current_city": "Indore",
+            "state": "Madhya Pradesh",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Actor",
+            "secondary_crafts": [],
+            "experience_years": 1,
+            "experience_level": "Beginner",
+            "availability": "Part-time",
+            "looking_for": [
+                "short_films"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 180,
+                "weight_kg": 72,
+                "build": "Athletic",
+                "complexion": "Wheatish",
+                "eye_color": "Black",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "fresh"
+            ],
+            "performance_specializations": [
+                "basic_acting"
+            ],
+            "playable_age_range": {
+                "min": 18,
+                "max": 25
+            },
+            "accents_dialects": [
+                "Hindi"
+            ]
+        },
+        "skills": [
+            "learning"
+        ],
+        "projects": [],
+        "education_training": [],
+        "work_samples": [],
+        "endorsements": [],
+        "tags_self": [
+            "new"
+        ]
+    },
+    {
+        "id": "perf_011",
+        "name": "Ishita Roy",
+        "status": "Active",
+        "bio": "Indie theatre and film actor with strong emotional depth.",
+        "personal_info": {
+            "gender": "Female",
+            "age": 28,
+            "languages": [
+                "Bengali",
+                "Hindi",
+                "English"
+            ],
+            "regional_background": "West Bengal"
+        },
+        "location": {
+            "current_city": "Mumbai",
+            "state": "Maharashtra",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Actor",
+            "secondary_crafts": [
+                "Theatre Actor"
+            ],
+            "experience_years": 7,
+            "experience_level": "Professional",
+            "availability": "Freelance",
+            "looking_for": [
+                "films",
+                "ott"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 164,
+                "weight_kg": 56,
+                "build": "Slim",
+                "complexion": "Dusky",
+                "eye_color": "Black",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "intense",
+                "artistic"
+            ],
+            "performance_specializations": [
+                "indie_films",
+                "method_acting"
+            ],
+            "playable_age_range": {
+                "min": 22,
+                "max": 35
+            },
+            "accents_dialects": [
+                "Bengali",
+                "Neutral Hindi"
+            ]
+        },
+        "skills": [
+            "method acting"
+        ],
+        "projects": [
+            {
+                "title": "Silent River",
+                "role": "Lead",
+                "year": 2022,
+                "type": "Film"
+            }
+        ],
+        "education_training": [
+            "NSD workshop"
+        ],
+        "work_samples": [
+            "yt.com/i11"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "indie"
+        ]
+    },
+    {
+        "id": "perf_012",
+        "name": "Karan Malhotra",
+        "status": "Active",
+        "bio": "Commercial dancer and choreo assistant.",
+        "personal_info": {
+            "gender": "Male",
+            "age": 26,
+            "languages": [
+                "Hindi",
+                "Punjabi"
+            ],
+            "regional_background": "Punjab"
+        },
+        "location": {
+            "current_city": "Mumbai",
+            "state": "Maharashtra",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Dancer",
+            "secondary_crafts": [],
+            "experience_years": 8,
+            "experience_level": "Professional",
+            "availability": "Full-time",
+            "looking_for": [
+                "music_videos",
+                "stage"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 175,
+                "weight_kg": 68,
+                "build": "Athletic",
+                "complexion": "Wheatish",
+                "eye_color": "Brown",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "energetic",
+                "stylish"
+            ],
+            "performance_specializations": [
+                "bollywood",
+                "hiphop"
+            ],
+            "playable_age_range": {
+                "min": 20,
+                "max": 32
+            },
+            "accents_dialects": [
+                "Punjabi"
+            ]
+        },
+        "skills": [
+            "choreography"
+        ],
+        "projects": [
+            {
+                "title": "Dance Blast",
+                "role": "Performer",
+                "year": 2023,
+                "type": "TV"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "yt.com/k12"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "dance"
+        ]
+    },
+    {
+        "id": "perf_013",
+        "name": "Zoya Ali",
+        "status": "Active",
+        "bio": "Fashion and editorial model.",
+        "personal_info": {
+            "gender": "Female",
+            "age": 23,
+            "languages": [
+                "Hindi",
+                "English",
+                "Urdu"
+            ],
+            "regional_background": "Lucknow"
+        },
+        "location": {
+            "current_city": "Delhi",
+            "state": "Delhi",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Model",
+            "secondary_crafts": [],
+            "experience_years": 4,
+            "experience_level": "Intermediate",
+            "availability": "Freelance",
+            "looking_for": [
+                "editorial",
+                "brands"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 174,
+                "weight_kg": 54,
+                "build": "Lean",
+                "complexion": "Fair",
+                "eye_color": "Green",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "luxury",
+                "sharp"
+            ],
+            "performance_specializations": [
+                "editorial",
+                "runway"
+            ],
+            "playable_age_range": {
+                "min": 18,
+                "max": 27
+            },
+            "accents_dialects": [
+                "Lucknow Urdu"
+            ]
+        },
+        "skills": [
+            "posing"
+        ],
+        "projects": [
+            {
+                "title": "Vogue Shoot",
+                "role": "Model",
+                "year": 2024,
+                "type": "Photoshoot"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "ig.com/z13"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "high_fashion"
+        ]
+    },
+    {
+        "id": "perf_014",
+        "name": "Rohit Patil",
+        "status": "Active",
+        "bio": "Marathi theatre performer.",
+        "personal_info": {
+            "gender": "Male",
+            "age": 34,
+            "languages": [
+                "Marathi",
+                "Hindi"
+            ],
+            "regional_background": "Maharashtra"
+        },
+        "location": {
+            "current_city": "Pune",
+            "state": "Maharashtra",
+            "country": "India",
+            "willing_to_travel": false
+        },
+        "professional_info": {
+            "primary_craft": "Theatre Actor",
+            "secondary_crafts": [],
+            "experience_years": 12,
+            "experience_level": "Expert",
+            "availability": "Part-time",
+            "looking_for": [
+                "plays"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 169,
+                "weight_kg": 74,
+                "build": "Average",
+                "complexion": "Dusky",
+                "eye_color": "Brown",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "grounded"
+            ],
+            "performance_specializations": [
+                "stage_drama"
+            ],
+            "playable_age_range": {
+                "min": 30,
+                "max": 45
+            },
+            "accents_dialects": [
+                "Marathi"
+            ]
+        },
+        "skills": [
+            "stage acting"
+        ],
+        "projects": [
+            {
+                "title": "Natak Sabha",
+                "role": "Lead",
+                "year": 2021,
+                "type": "Theatre"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "yt.com/r14"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "theatre"
+        ]
+    },
+    {
+        "id": "perf_015",
+        "name": "Aditi Jain",
+        "status": "Active",
+        "bio": "Playback singer with soft tonal quality.",
+        "personal_info": {
+            "gender": "Female",
+            "age": 27,
+            "languages": [
+                "Hindi",
+                "English"
+            ],
+            "regional_background": "Jaipur"
+        },
+        "location": {
+            "current_city": "Mumbai",
+            "state": "Maharashtra",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Singer",
+            "secondary_crafts": [],
+            "experience_years": 9,
+            "experience_level": "Professional",
+            "availability": "Freelance",
+            "looking_for": [
+                "playback",
+                "albums"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 158,
+                "weight_kg": 50,
+                "build": "Slim",
+                "complexion": "Fair",
+                "eye_color": "Brown",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "soft"
+            ],
+            "performance_specializations": [
+                "playback"
+            ],
+            "playable_age_range": {
+                "min": 20,
+                "max": 32
+            },
+            "accents_dialects": [
+                "Hindi"
+            ]
+        },
+        "skills": [
+            "vocals"
+        ],
+        "projects": [
+            {
+                "title": "Love Tune",
+                "role": "Singer",
+                "year": 2023,
+                "type": "Music"
+            }
+        ],
+        "education_training": [
+            "Classical"
+        ],
+        "work_samples": [
+            "sp.com/a15"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "melodic"
+        ]
+    },
+    {
+        "id": "perf_016",
+        "name": "Nikhil Das",
+        "status": "Active",
+        "bio": "Character actor with strong versatility.",
+        "personal_info": {
+            "gender": "Male",
+            "age": 36,
+            "languages": [
+                "Hindi",
+                "English",
+                "Bengali"
+            ],
+            "regional_background": "Kolkata"
+        },
+        "location": {
+            "current_city": "Mumbai",
+            "state": "Maharashtra",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Actor",
+            "secondary_crafts": [],
+            "experience_years": 14,
+            "experience_level": "Expert",
+            "availability": "Full-time",
+            "looking_for": [
+                "films",
+                "ott"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 177,
+                "weight_kg": 80,
+                "build": "Heavy",
+                "complexion": "Wheatish",
+                "eye_color": "Brown",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "villain",
+                "mature"
+            ],
+            "performance_specializations": [
+                "character_roles"
+            ],
+            "playable_age_range": {
+                "min": 30,
+                "max": 50
+            },
+            "accents_dialects": [
+                "Bengali",
+                "Hindi"
+            ]
+        },
+        "skills": [
+            "acting"
+        ],
+        "projects": [
+            {
+                "title": "Dark Alley",
+                "role": "Villain",
+                "year": 2022,
+                "type": "Film"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "yt.com/n16"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "character"
+        ]
+    },
+    {
+        "id": "perf_017",
+        "name": "Tanya Singh",
+        "status": "Active",
+        "bio": "Social media dancer and influencer.",
+        "personal_info": {
+            "gender": "Female",
+            "age": 21,
+            "languages": [
+                "Hindi",
+                "English"
+            ],
+            "regional_background": "Delhi"
+        },
+        "location": {
+            "current_city": "Delhi",
+            "state": "Delhi",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Dancer",
+            "secondary_crafts": [
+                "Content Creator"
+            ],
+            "experience_years": 3,
+            "experience_level": "Intermediate",
+            "availability": "Freelance",
+            "looking_for": [
+                "reels",
+                "brands"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 167,
+                "weight_kg": 53,
+                "build": "Slim",
+                "complexion": "Fair",
+                "eye_color": "Brown",
+                "hair_color": "Brown"
+            },
+            "appearance_tags": [
+                "cute"
+            ],
+            "performance_specializations": [
+                "reels",
+                "trending"
+            ],
+            "playable_age_range": {
+                "min": 18,
+                "max": 25
+            },
+            "accents_dialects": [
+                "Delhi Hindi"
+            ]
+        },
+        "skills": [
+            "reels"
+        ],
+        "projects": [
+            {
+                "title": "Insta Reels",
+                "role": "Creator",
+                "year": 2024,
+                "type": "Digital"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "ig.com/t17"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "viral"
+        ]
+    },
+    {
+        "id": "perf_018",
+        "name": "Faiz Ahmed",
+        "status": "Active",
+        "bio": "Voice artist for ads and dubbing.",
+        "personal_info": {
+            "gender": "Male",
+            "age": 31,
+            "languages": [
+                "Hindi",
+                "Urdu",
+                "English"
+            ],
+            "regional_background": "Hyderabad"
+        },
+        "location": {
+            "current_city": "Hyderabad",
+            "state": "Telangana",
+            "country": "India",
+            "willing_to_travel": false
+        },
+        "professional_info": {
+            "primary_craft": "Voice Artist",
+            "secondary_crafts": [],
+            "experience_years": 10,
+            "experience_level": "Professional",
+            "availability": "Freelance",
+            "looking_for": [
+                "dubbing",
+                "ads"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 170,
+                "weight_kg": 72,
+                "build": "Average",
+                "complexion": "Wheatish",
+                "eye_color": "Brown",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "neutral"
+            ],
+            "performance_specializations": [
+                "dubbing",
+                "ads"
+            ],
+            "playable_age_range": {
+                "min": 25,
+                "max": 45
+            },
+            "accents_dialects": [
+                "Hyderabadi Hindi",
+                "Urdu"
+            ]
+        },
+        "skills": [
+            "voice modulation"
+        ],
+        "projects": [
+            {
+                "title": "Ad Voice",
+                "role": "Voice",
+                "year": 2023,
+                "type": "Ad"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "yt.com/f18"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "voice"
+        ]
+    },
+    {
+        "id": "perf_019",
+        "name": "Priya Menon",
+        "status": "Active",
+        "bio": "Classical and contemporary dancer.",
+        "personal_info": {
+            "gender": "Female",
+            "age": 29,
+            "languages": [
+                "Malayalam",
+                "English"
+            ],
+            "regional_background": "Kerala"
+        },
+        "location": {
+            "current_city": "Kochi",
+            "state": "Kerala",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Dancer",
+            "secondary_crafts": [],
+            "experience_years": 12,
+            "experience_level": "Expert",
+            "availability": "Full-time",
+            "looking_for": [
+                "stage",
+                "films"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 163,
+                "weight_kg": 55,
+                "build": "Slim",
+                "complexion": "Dusky",
+                "eye_color": "Black",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "graceful"
+            ],
+            "performance_specializations": [
+                "mohiniyattam",
+                "contemporary"
+            ],
+            "playable_age_range": {
+                "min": 22,
+                "max": 35
+            },
+            "accents_dialects": [
+                "Malayalam"
+            ]
+        },
+        "skills": [
+            "classical"
+        ],
+        "projects": [
+            {
+                "title": "Kerala Fest",
+                "role": "Performer",
+                "year": 2022,
+                "type": "Stage"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "yt.com/p19"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "dance"
+        ]
+    },
+    {
+        "id": "perf_020",
+        "name": "Varun Saxena",
+        "status": "Active",
+        "bio": "OTT actor with urban roles.",
+        "personal_info": {
+            "gender": "Male",
+            "age": 28,
+            "languages": [
+                "Hindi",
+                "English"
+            ],
+            "regional_background": "Noida"
+        },
+        "location": {
+            "current_city": "Mumbai",
+            "state": "Maharashtra",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Actor",
+            "secondary_crafts": [],
+            "experience_years": 6,
+            "experience_level": "Professional",
+            "availability": "Freelance",
+            "looking_for": [
+                "ott",
+                "films"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 182,
+                "weight_kg": 76,
+                "build": "Athletic",
+                "complexion": "Fair",
+                "eye_color": "Brown",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "urban"
+            ],
+            "performance_specializations": [
+                "web_series"
+            ],
+            "playable_age_range": {
+                "min": 22,
+                "max": 34
+            },
+            "accents_dialects": [
+                "Delhi Hindi"
+            ]
+        },
+        "skills": [
+            "acting"
+        ],
+        "projects": [
+            {
+                "title": "City Nights",
+                "role": "Lead",
+                "year": 2023,
+                "type": "Web"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "yt.com/v20"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "ott"
+        ]
+    },
+    {
+        "id": "perf_021",
+        "name": "Neha Kulkarni",
+        "status": "Active",
+        "bio": "Marathi film and theatre actor with expressive range.",
+        "personal_info": {
+            "gender": "Female",
+            "age": 31,
+            "languages": [
+                "Marathi",
+                "Hindi",
+                "English"
+            ],
+            "regional_background": "Maharashtra"
+        },
+        "location": {
+            "current_city": "Pune",
+            "state": "Maharashtra",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Actor",
+            "secondary_crafts": [
+                "Theatre Actor"
+            ],
+            "experience_years": 11,
+            "experience_level": "Expert",
+            "availability": "Full-time",
+            "looking_for": [
+                "films",
+                "theatre"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 166,
+                "weight_kg": 59,
+                "build": "Average",
+                "complexion": "Wheatish",
+                "eye_color": "Brown",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "mature",
+                "expressive"
+            ],
+            "performance_specializations": [
+                "family_drama",
+                "stage"
+            ],
+            "playable_age_range": {
+                "min": 26,
+                "max": 40
+            },
+            "accents_dialects": [
+                "Marathi",
+                "Hindi"
+            ]
+        },
+        "skills": [
+            "acting",
+            "stage"
+        ],
+        "projects": [
+            {
+                "title": "Ghar Sansar",
+                "role": "Lead",
+                "year": 2021,
+                "type": "Film"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "yt.com/n21"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "versatile"
+        ]
+    },
+    {
+        "id": "perf_022",
+        "name": "Rakesh Yadav",
+        "status": "Active",
+        "bio": "Rural character actor with strong dialect control.",
+        "personal_info": {
+            "gender": "Male",
+            "age": 38,
+            "languages": [
+                "Hindi",
+                "Bhojpuri"
+            ],
+            "regional_background": "Bihar"
+        },
+        "location": {
+            "current_city": "Patna",
+            "state": "Bihar",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Actor",
+            "secondary_crafts": [],
+            "experience_years": 15,
+            "experience_level": "Expert",
+            "availability": "Freelance",
+            "looking_for": [
+                "films",
+                "regional"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 171,
+                "weight_kg": 82,
+                "build": "Heavy",
+                "complexion": "Dusky",
+                "eye_color": "Black",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "rural",
+                "authentic"
+            ],
+            "performance_specializations": [
+                "village_roles",
+                "villain"
+            ],
+            "playable_age_range": {
+                "min": 30,
+                "max": 50
+            },
+            "accents_dialects": [
+                "Bhojpuri",
+                "Hindi"
+            ]
+        },
+        "skills": [
+            "dialects"
+        ],
+        "projects": [
+            {
+                "title": "Gaon Ki Kahani",
+                "role": "Supporting",
+                "year": 2020,
+                "type": "Film"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "yt.com/r22"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "regional"
+        ]
+    },
+    {
+        "id": "perf_023",
+        "name": "Simran Kaur",
+        "status": "Active",
+        "bio": "Punjabi singer with energetic stage presence.",
+        "personal_info": {
+            "gender": "Female",
+            "age": 25,
+            "languages": [
+                "Punjabi",
+                "Hindi"
+            ],
+            "regional_background": "Punjab"
+        },
+        "location": {
+            "current_city": "Chandigarh",
+            "state": "Punjab",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Singer",
+            "secondary_crafts": [],
+            "experience_years": 6,
+            "experience_level": "Professional",
+            "availability": "Full-time",
+            "looking_for": [
+                "concerts",
+                "albums"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 168,
+                "weight_kg": 57,
+                "build": "Slim",
+                "complexion": "Fair",
+                "eye_color": "Brown",
+                "hair_color": "Brown"
+            },
+            "appearance_tags": [
+                "energetic",
+                "stage"
+            ],
+            "performance_specializations": [
+                "punjabi_pop",
+                "live"
+            ],
+            "playable_age_range": {
+                "min": 20,
+                "max": 30
+            },
+            "accents_dialects": [
+                "Punjabi"
+            ]
+        },
+        "skills": [
+            "live singing"
+        ],
+        "projects": [
+            {
+                "title": "Punjab Beats",
+                "role": "Singer",
+                "year": 2023,
+                "type": "Music"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "sp.com/s23"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "live"
+        ]
+    },
+    {
+        "id": "perf_024",
+        "name": "Aditya Rao",
+        "status": "Active",
+        "bio": "Ad film actor with corporate look.",
+        "personal_info": {
+            "gender": "Male",
+            "age": 29,
+            "languages": [
+                "English",
+                "Hindi",
+                "Kannada"
+            ],
+            "regional_background": "Karnataka"
+        },
+        "location": {
+            "current_city": "Bangalore",
+            "state": "Karnataka",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Actor",
+            "secondary_crafts": [
+                "Model"
+            ],
+            "experience_years": 6,
+            "experience_level": "Professional",
+            "availability": "Freelance",
+            "looking_for": [
+                "ads",
+                "corporate"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 180,
+                "weight_kg": 74,
+                "build": "Lean",
+                "complexion": "Fair",
+                "eye_color": "Brown",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "corporate",
+                "clean"
+            ],
+            "performance_specializations": [
+                "ads",
+                "corporate_roles"
+            ],
+            "playable_age_range": {
+                "min": 24,
+                "max": 35
+            },
+            "accents_dialects": [
+                "Neutral English",
+                "Kannada"
+            ]
+        },
+        "skills": [
+            "camera acting"
+        ],
+        "projects": [
+            {
+                "title": "Tech Ad",
+                "role": "Lead",
+                "year": 2024,
+                "type": "Ad"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "yt.com/a24"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "ads"
+        ]
+    },
+    {
+        "id": "perf_025",
+        "name": "Lavanya Reddy",
+        "status": "Active",
+        "bio": "Telugu film dancer with strong screen presence.",
+        "personal_info": {
+            "gender": "Female",
+            "age": 23,
+            "languages": [
+                "Telugu",
+                "English"
+            ],
+            "regional_background": "Andhra Pradesh"
+        },
+        "location": {
+            "current_city": "Hyderabad",
+            "state": "Telangana",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Dancer",
+            "secondary_crafts": [
+                "Actor"
+            ],
+            "experience_years": 5,
+            "experience_level": "Professional",
+            "availability": "Full-time",
+            "looking_for": [
+                "films",
+                "songs"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 164,
+                "weight_kg": 52,
+                "build": "Slim",
+                "complexion": "Wheatish",
+                "eye_color": "Black",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "glam",
+                "energetic"
+            ],
+            "performance_specializations": [
+                "tollywood",
+                "item_songs"
+            ],
+            "playable_age_range": {
+                "min": 18,
+                "max": 26
+            },
+            "accents_dialects": [
+                "Telugu"
+            ]
+        },
+        "skills": [
+            "film dance"
+        ],
+        "projects": [
+            {
+                "title": "Mass Song",
+                "role": "Dancer",
+                "year": 2023,
+                "type": "Film"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "yt.com/l25"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "film_dance"
+        ]
+    },
+    {
+        "id": "perf_026",
+        "name": "Sahil Arora",
+        "status": "Active",
+        "bio": "Fitness model and influencer.",
+        "personal_info": {
+            "gender": "Male",
+            "age": 27,
+            "languages": [
+                "Hindi",
+                "English"
+            ],
+            "regional_background": "Delhi"
+        },
+        "location": {
+            "current_city": "Delhi",
+            "state": "Delhi",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Model",
+            "secondary_crafts": [
+                "Content Creator"
+            ],
+            "experience_years": 4,
+            "experience_level": "Intermediate",
+            "availability": "Freelance",
+            "looking_for": [
+                "brands",
+                "fitness"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 183,
+                "weight_kg": 85,
+                "build": "Muscular",
+                "complexion": "Fair",
+                "eye_color": "Brown",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "fitness",
+                "strong"
+            ],
+            "performance_specializations": [
+                "fitness_modeling"
+            ],
+            "playable_age_range": {
+                "min": 22,
+                "max": 32
+            },
+            "accents_dialects": [
+                "Hindi"
+            ]
+        },
+        "skills": [
+            "fitness posing"
+        ],
+        "projects": [
+            {
+                "title": "Gym Brand",
+                "role": "Model",
+                "year": 2024,
+                "type": "Ad"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "ig.com/s26"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "fitness"
+        ]
+    },
+    {
+        "id": "perf_027",
+        "name": "Farah Siddiqui",
+        "status": "Active",
+        "bio": "Urdu theatre artist and poet performer.",
+        "personal_info": {
+            "gender": "Female",
+            "age": 35,
+            "languages": [
+                "Urdu",
+                "Hindi"
+            ],
+            "regional_background": "Lucknow"
+        },
+        "location": {
+            "current_city": "Lucknow",
+            "state": "Uttar Pradesh",
+            "country": "India",
+            "willing_to_travel": false
+        },
+        "professional_info": {
+            "primary_craft": "Theatre Actor",
+            "secondary_crafts": [
+                "Poet"
+            ],
+            "experience_years": 14,
+            "experience_level": "Expert",
+            "availability": "Part-time",
+            "looking_for": [
+                "theatre",
+                "events"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 159,
+                "weight_kg": 62,
+                "build": "Average",
+                "complexion": "Wheatish",
+                "eye_color": "Black",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "cultural"
+            ],
+            "performance_specializations": [
+                "urdu_theatre"
+            ],
+            "playable_age_range": {
+                "min": 30,
+                "max": 45
+            },
+            "accents_dialects": [
+                "Urdu"
+            ]
+        },
+        "skills": [
+            "poetry"
+        ],
+        "projects": [
+            {
+                "title": "Mehfil Nights",
+                "role": "Performer",
+                "year": 2022,
+                "type": "Stage"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "yt.com/f27"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "cultural"
+        ]
+    },
+    {
+        "id": "perf_028",
+        "name": "Gautam Sen",
+        "status": "Active",
+        "bio": "Voice artist for documentaries.",
+        "personal_info": {
+            "gender": "Male",
+            "age": 33,
+            "languages": [
+                "English",
+                "Hindi",
+                "Bengali"
+            ],
+            "regional_background": "West Bengal"
+        },
+        "location": {
+            "current_city": "Kolkata",
+            "state": "West Bengal",
+            "country": "India",
+            "willing_to_travel": false
+        },
+        "professional_info": {
+            "primary_craft": "Voice Artist",
+            "secondary_crafts": [],
+            "experience_years": 9,
+            "experience_level": "Professional",
+            "availability": "Freelance",
+            "looking_for": [
+                "documentary",
+                "voice"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 174,
+                "weight_kg": 70,
+                "build": "Average",
+                "complexion": "Dusky",
+                "eye_color": "Brown",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "calm"
+            ],
+            "performance_specializations": [
+                "narration"
+            ],
+            "playable_age_range": {
+                "min": 28,
+                "max": 45
+            },
+            "accents_dialects": [
+                "Bengali",
+                "Neutral English"
+            ]
+        },
+        "skills": [
+            "voice over"
+        ],
+        "projects": [
+            {
+                "title": "Nature Doc",
+                "role": "Narrator",
+                "year": 2023,
+                "type": "Documentary"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "yt.com/g28"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "voice"
+        ]
+    },
+    {
+        "id": "perf_029",
+        "name": "Kavya Shetty",
+        "status": "Active",
+        "bio": "South Indian film actor with modern roles.",
+        "personal_info": {
+            "gender": "Female",
+            "age": 26,
+            "languages": [
+                "Kannada",
+                "Telugu",
+                "English"
+            ],
+            "regional_background": "Karnataka"
+        },
+        "location": {
+            "current_city": "Bangalore",
+            "state": "Karnataka",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Actor",
+            "secondary_crafts": [
+                "Model"
+            ],
+            "experience_years": 6,
+            "experience_level": "Professional",
+            "availability": "Full-time",
+            "looking_for": [
+                "films",
+                "ads"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 169,
+                "weight_kg": 56,
+                "build": "Slim",
+                "complexion": "Fair",
+                "eye_color": "Brown",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "modern",
+                "glam"
+            ],
+            "performance_specializations": [
+                "romance",
+                "commercial"
+            ],
+            "playable_age_range": {
+                "min": 20,
+                "max": 32
+            },
+            "accents_dialects": [
+                "Kannada",
+                "Telugu"
+            ]
+        },
+        "skills": [
+            "acting"
+        ],
+        "projects": [
+            {
+                "title": "City Love",
+                "role": "Lead",
+                "year": 2023,
+                "type": "Film"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "yt.com/k29"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "lead"
+        ]
+    },
+    {
+        "id": "perf_030",
+        "name": "Akhil Gupta",
+        "status": "Active",
+        "bio": "Aspiring theatre and short film actor.",
+        "personal_info": {
+            "gender": "Male",
+            "age": 20,
+            "languages": [
+                "Hindi",
+                "English"
+            ],
+            "regional_background": "Delhi"
+        },
+        "location": {
+            "current_city": "Delhi",
+            "state": "Delhi",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Actor",
+            "secondary_crafts": [],
+            "experience_years": 2,
+            "experience_level": "Beginner",
+            "availability": "Part-time",
+            "looking_for": [
+                "short_films",
+                "theatre"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 175,
+                "weight_kg": 68,
+                "build": "Lean",
+                "complexion": "Wheatish",
+                "eye_color": "Brown",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "young"
+            ],
+            "performance_specializations": [
+                "basic"
+            ],
+            "playable_age_range": {
+                "min": 18,
+                "max": 24
+            },
+            "accents_dialects": [
+                "Hindi"
+            ]
+        },
+        "skills": [
+            "learning"
+        ],
+        "projects": [],
+        "education_training": [],
+        "work_samples": [],
+        "endorsements": [],
+        "tags_self": [
+            "new"
+        ]
+    },
+    {
+        "id": "perf_031",
+        "name": "Ritu Saxena",
+        "status": "Active",
+        "bio": "Television and OTT supporting actor with strong emotional range.",
+        "personal_info": {
+            "gender": "Female",
+            "age": 34,
+            "languages": [
+                "Hindi",
+                "English"
+            ],
+            "regional_background": "Uttar Pradesh"
+        },
+        "location": {
+            "current_city": "Mumbai",
+            "state": "Maharashtra",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Actor",
+            "secondary_crafts": [],
+            "experience_years": 12,
+            "experience_level": "Expert",
+            "availability": "Full-time",
+            "looking_for": [
+                "tv",
+                "ott"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 167,
+                "weight_kg": 61,
+                "build": "Average",
+                "complexion": "Wheatish",
+                "eye_color": "Brown",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "mature",
+                "emotional"
+            ],
+            "performance_specializations": [
+                "family_drama",
+                "supporting_roles"
+            ],
+            "playable_age_range": {
+                "min": 28,
+                "max": 45
+            },
+            "accents_dialects": [
+                "Hindi"
+            ]
+        },
+        "skills": [
+            "acting",
+            "emotional scenes"
+        ],
+        "projects": [
+            {
+                "title": "Parivaar Saga",
+                "role": "Supporting",
+                "year": 2022,
+                "type": "TV"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "yt.com/r31"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "tv_actor"
+        ]
+    },
+    {
+        "id": "perf_032",
+        "name": "Yash Thakur",
+        "status": "Active",
+        "bio": "Action-oriented actor with stunt capability.",
+        "personal_info": {
+            "gender": "Male",
+            "age": 28,
+            "languages": [
+                "Hindi",
+                "English"
+            ],
+            "regional_background": "Himachal Pradesh"
+        },
+        "location": {
+            "current_city": "Mumbai",
+            "state": "Maharashtra",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Actor",
+            "secondary_crafts": [
+                "Model"
+            ],
+            "experience_years": 6,
+            "experience_level": "Professional",
+            "availability": "Freelance",
+            "looking_for": [
+                "films",
+                "action_roles"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 183,
+                "weight_kg": 82,
+                "build": "Muscular",
+                "complexion": "Fair",
+                "eye_color": "Brown",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "action",
+                "heroic"
+            ],
+            "performance_specializations": [
+                "action",
+                "stunts"
+            ],
+            "playable_age_range": {
+                "min": 22,
+                "max": 35
+            },
+            "accents_dialects": [
+                "Neutral Hindi"
+            ]
+        },
+        "skills": [
+            "stunts",
+            "fitness"
+        ],
+        "projects": [
+            {
+                "title": "Action Force",
+                "role": "Lead",
+                "year": 2023,
+                "type": "Film"
+            }
+        ],
+        "education_training": [
+            "Stunt training"
+        ],
+        "work_samples": [
+            "yt.com/y32"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "action_hero"
+        ]
+    },
+    {
+        "id": "perf_033",
+        "name": "Harini Subramaniam",
+        "status": "Active",
+        "bio": "Carnatic singer and stage performer.",
+        "personal_info": {
+            "gender": "Female",
+            "age": 30,
+            "languages": [
+                "Tamil",
+                "English"
+            ],
+            "regional_background": "Tamil Nadu"
+        },
+        "location": {
+            "current_city": "Chennai",
+            "state": "Tamil Nadu",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Singer",
+            "secondary_crafts": [],
+            "experience_years": 15,
+            "experience_level": "Expert",
+            "availability": "Full-time",
+            "looking_for": [
+                "concerts",
+                "classical_events"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 160,
+                "weight_kg": 55,
+                "build": "Average",
+                "complexion": "Dusky",
+                "eye_color": "Black",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "traditional",
+                "graceful"
+            ],
+            "performance_specializations": [
+                "carnatic",
+                "classical"
+            ],
+            "playable_age_range": {
+                "min": 25,
+                "max": 40
+            },
+            "accents_dialects": [
+                "Tamil"
+            ]
+        },
+        "skills": [
+            "classical vocals"
+        ],
+        "projects": [
+            {
+                "title": "Margazhi Fest",
+                "role": "Singer",
+                "year": 2023,
+                "type": "Stage"
+            }
+        ],
+        "education_training": [
+            "Carnatic training"
+        ],
+        "work_samples": [
+            "yt.com/h33"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "classical"
+        ]
+    },
+    {
+        "id": "perf_034",
+        "name": "Imran Qureshi",
+        "status": "Active",
+        "bio": "Voice-over artist with deep baritone tone.",
+        "personal_info": {
+            "gender": "Male",
+            "age": 37,
+            "languages": [
+                "Hindi",
+                "Urdu",
+                "English"
+            ],
+            "regional_background": "Hyderabad"
+        },
+        "location": {
+            "current_city": "Hyderabad",
+            "state": "Telangana",
+            "country": "India",
+            "willing_to_travel": false
+        },
+        "professional_info": {
+            "primary_craft": "Voice Artist",
+            "secondary_crafts": [],
+            "experience_years": 14,
+            "experience_level": "Expert",
+            "availability": "Freelance",
+            "looking_for": [
+                "ads",
+                "dubbing",
+                "narration"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 178,
+                "weight_kg": 79,
+                "build": "Average",
+                "complexion": "Wheatish",
+                "eye_color": "Brown",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "serious",
+                "calm"
+            ],
+            "performance_specializations": [
+                "baritone",
+                "narration"
+            ],
+            "playable_age_range": {
+                "min": 30,
+                "max": 50
+            },
+            "accents_dialects": [
+                "Hyderabadi Hindi",
+                "Urdu"
+            ]
+        },
+        "skills": [
+            "voice modulation"
+        ],
+        "projects": [
+            {
+                "title": "Discovery Voice",
+                "role": "Narrator",
+                "year": 2022,
+                "type": "Documentary"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "yt.com/i34"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "voice_pro"
+        ]
+    },
+    {
+        "id": "perf_035",
+        "name": "Mansi Deshpande",
+        "status": "Active",
+        "bio": "Contemporary dancer and stage performer.",
+        "personal_info": {
+            "gender": "Female",
+            "age": 24,
+            "languages": [
+                "Marathi",
+                "Hindi",
+                "English"
+            ],
+            "regional_background": "Maharashtra"
+        },
+        "location": {
+            "current_city": "Pune",
+            "state": "Maharashtra",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Dancer",
+            "secondary_crafts": [],
+            "experience_years": 7,
+            "experience_level": "Professional",
+            "availability": "Full-time",
+            "looking_for": [
+                "stage",
+                "music_videos"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 165,
+                "weight_kg": 53,
+                "build": "Slim",
+                "complexion": "Fair",
+                "eye_color": "Brown",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "fluid",
+                "modern"
+            ],
+            "performance_specializations": [
+                "contemporary",
+                "fusion"
+            ],
+            "playable_age_range": {
+                "min": 18,
+                "max": 28
+            },
+            "accents_dialects": [
+                "Marathi",
+                "Hindi"
+            ]
+        },
+        "skills": [
+            "contemporary dance"
+        ],
+        "projects": [
+            {
+                "title": "Fusion Fest",
+                "role": "Performer",
+                "year": 2023,
+                "type": "Stage"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "yt.com/m35"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "fusion"
+        ]
+    },
+    {
+        "id": "perf_036",
+        "name": "Arbaz Khan",
+        "status": "Active",
+        "bio": "Commercial model with strong physique.",
+        "personal_info": {
+            "gender": "Male",
+            "age": 26,
+            "languages": [
+                "Hindi",
+                "English"
+            ],
+            "regional_background": "Bhopal"
+        },
+        "location": {
+            "current_city": "Mumbai",
+            "state": "Maharashtra",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Model",
+            "secondary_crafts": [],
+            "experience_years": 5,
+            "experience_level": "Professional",
+            "availability": "Freelance",
+            "looking_for": [
+                "brands",
+                "fitness"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 185,
+                "weight_kg": 88,
+                "build": "Muscular",
+                "complexion": "Wheatish",
+                "eye_color": "Brown",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "fitness",
+                "bold"
+            ],
+            "performance_specializations": [
+                "fitness_modeling"
+            ],
+            "playable_age_range": {
+                "min": 22,
+                "max": 32
+            },
+            "accents_dialects": [
+                "Hindi"
+            ]
+        },
+        "skills": [
+            "posing"
+        ],
+        "projects": [
+            {
+                "title": "GymX Campaign",
+                "role": "Model",
+                "year": 2024,
+                "type": "Ad"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "ig.com/a36"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "fitness_model"
+        ]
+    },
+    {
+        "id": "perf_037",
+        "name": "Shreya Bose",
+        "status": "Active",
+        "bio": "Indie singer-songwriter.",
+        "personal_info": {
+            "gender": "Female",
+            "age": 22,
+            "languages": [
+                "Bengali",
+                "English",
+                "Hindi"
+            ],
+            "regional_background": "West Bengal"
+        },
+        "location": {
+            "current_city": "Kolkata",
+            "state": "West Bengal",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Singer",
+            "secondary_crafts": [
+                "Writer"
+            ],
+            "experience_years": 4,
+            "experience_level": "Intermediate",
+            "availability": "Freelance",
+            "looking_for": [
+                "albums",
+                "indie"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 162,
+                "weight_kg": 51,
+                "build": "Slim",
+                "complexion": "Fair",
+                "eye_color": "Brown",
+                "hair_color": "Brown"
+            },
+            "appearance_tags": [
+                "soft",
+                "indie"
+            ],
+            "performance_specializations": [
+                "indie_music",
+                "songwriting"
+            ],
+            "playable_age_range": {
+                "min": 18,
+                "max": 26
+            },
+            "accents_dialects": [
+                "Bengali",
+                "English"
+            ]
+        },
+        "skills": [
+            "songwriting"
+        ],
+        "projects": [
+            {
+                "title": "Rain Songs",
+                "role": "Singer",
+                "year": 2024,
+                "type": "Music"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "sp.com/s37"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "indie_artist"
+        ]
+    },
+    {
+        "id": "perf_038",
+        "name": "Deepak Rawat",
+        "status": "Active",
+        "bio": "Stage comedian with regional humor.",
+        "personal_info": {
+            "gender": "Male",
+            "age": 35,
+            "languages": [
+                "Hindi",
+                "Garhwali"
+            ],
+            "regional_background": "Uttarakhand"
+        },
+        "location": {
+            "current_city": "Dehradun",
+            "state": "Uttarakhand",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Stand-up Comedian",
+            "secondary_crafts": [],
+            "experience_years": 9,
+            "experience_level": "Professional",
+            "availability": "Full-time",
+            "looking_for": [
+                "shows",
+                "events"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 170,
+                "weight_kg": 76,
+                "build": "Average",
+                "complexion": "Wheatish",
+                "eye_color": "Brown",
+                "hair_color": "Black"
+            },
+            "appearance_tags": [
+                "relatable",
+                "desi"
+            ],
+            "performance_specializations": [
+                "regional_comedy"
+            ],
+            "playable_age_range": {
+                "min": 28,
+                "max": 45
+            },
+            "accents_dialects": [
+                "Garhwali",
+                "Hindi"
+            ]
+        },
+        "skills": [
+            "comedy"
+        ],
+        "projects": [
+            {
+                "title": "Pahadi Nights",
+                "role": "Performer",
+                "year": 2023,
+                "type": "Live"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "yt.com/d38"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "regional_comedy"
+        ]
+    },
+    {
+        "id": "perf_039",
+        "name": "Nisha Arora",
+        "status": "Active",
+        "bio": "Ad film and catalog model.",
+        "personal_info": {
+            "gender": "Female",
+            "age": 23,
+            "languages": [
+                "Hindi",
+                "English"
+            ],
+            "regional_background": "Punjab"
+        },
+        "location": {
+            "current_city": "Delhi",
+            "state": "Delhi",
+            "country": "India",
+            "willing_to_travel": true
+        },
+        "professional_info": {
+            "primary_craft": "Model",
+            "secondary_crafts": [],
+            "experience_years": 3,
+            "experience_level": "Intermediate",
+            "availability": "Freelance",
+            "looking_for": [
+                "catalog",
+                "ads"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 171,
+                "weight_kg": 54,
+                "build": "Lean",
+                "complexion": "Fair",
+                "eye_color": "Hazel",
+                "hair_color": "Brown"
+            },
+            "appearance_tags": [
+                "fresh",
+                "commercial"
+            ],
+            "performance_specializations": [
+                "catalog",
+                "ads"
+            ],
+            "playable_age_range": {
+                "min": 18,
+                "max": 26
+            },
+            "accents_dialects": [
+                "Hindi"
+            ]
+        },
+        "skills": [
+            "posing"
+        ],
+        "projects": [
+            {
+                "title": "Flipkart Shoot",
+                "role": "Model",
+                "year": 2023,
+                "type": "Ad"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "ig.com/n39"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "catalog"
+        ]
+    },
+    {
+        "id": "perf_040",
+        "name": "Suresh Pillai",
+        "status": "Inactive",
+        "bio": "Veteran theatre actor and mentor.",
+        "personal_info": {
+            "gender": "Male",
+            "age": 45,
+            "languages": [
+                "Malayalam",
+                "English"
+            ],
+            "regional_background": "Kerala"
+        },
+        "location": {
+            "current_city": "Kochi",
+            "state": "Kerala",
+            "country": "India",
+            "willing_to_travel": false
+        },
+        "professional_info": {
+            "primary_craft": "Theatre Actor",
+            "secondary_crafts": [
+                "Teacher"
+            ],
+            "experience_years": 25,
+            "experience_level": "Expert",
+            "availability": "Part-time",
+            "looking_for": [
+                "theatre",
+                "teaching"
+            ]
+        },
+        "craft_specific_attributes": {
+            "physical_attributes": {
+                "height_cm": 168,
+                "weight_kg": 73,
+                "build": "Average",
+                "complexion": "Dusky",
+                "eye_color": "Black",
+                "hair_color": "Grey"
+            },
+            "appearance_tags": [
+                "elder",
+                "wise"
+            ],
+            "performance_specializations": [
+                "classical_theatre"
+            ],
+            "playable_age_range": {
+                "min": 40,
+                "max": 65
+            },
+            "accents_dialects": [
+                "Malayalam"
+            ]
+        },
+        "skills": [
+            "acting",
+            "mentoring"
+        ],
+        "projects": [
+            {
+                "title": "Classical Drama",
+                "role": "Lead",
+                "year": 2018,
+                "type": "Theatre"
+            }
+        ],
+        "education_training": [],
+        "work_samples": [
+            "yt.com/s40"
+        ],
+        "endorsements": [],
+        "tags_self": [
+            "mentor"
+        ]
+    }
+]

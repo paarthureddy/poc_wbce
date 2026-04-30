@@ -1,0 +1,3226 @@
+[
+  {
+    "id": "user_g_001",
+    "name": "Arjun Reddy Nallabothula",
+    "status": "active",
+    "created_at": "2026-01-10T09:00:00Z",
+    "updated_at": "2026-03-15T11:30:00Z",
+    "onboarding_source": "founder_invite",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 6,
+      "peer_endorsements_count": 4
+    },
+    "profile_completeness": 0.88,
+    "personal_info": {
+      "gender": "Male",
+      "age": 38,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Chennai", "Mumbai", "Vizag"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Director",
+        "subcraft": "Feature Film Director"
+      },
+      "secondary_crafts": [
+        { "craft": "Writer", "subcraft": "Screenplay Writer" }
+      ],
+      "experience_years": 12,
+      "experience_level": "senior",
+      "availability": {
+        "type": "project_based",
+        "currently_available": false,
+        "next_available_from": "2026-08-01"
+      },
+      "looking_for": ["feature_film_projects", "ott_projects", "co_writer"]
+    },
+    "bio": "Telugu feature film director with 12 years of experience across commercial entertainers and character-driven dramas. Known for strong emotional narrative and large-scale action sequences. Directed 3 theatrical releases and 2 OTT originals. Trained under director Sukumar as assistant for 4 years before debut.",
+    "tags_self": ["telugu_cinema", "mass_entertainer", "action", "emotional_drama"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["action", "emotional_drama", "mass_entertainer"],
+      "narrative_specializations": ["character_driven", "high_concept", "ensemble"],
+      "production_scale_handled": ["15_to_40cr", "40plus_cr"],
+      "directing_style_tags": ["actor_centric", "visual_first", "high_energy"],
+      "previous_banners_worked_with": ["Mythri Movie Makers", "Sithara Entertainments"],
+      "assistant_director_years": 4,
+      "trained_under": "Sukumar (Director)"
+    },
+    "projects": [
+      {
+        "id": "proj_g001_001",
+        "name": "Veera Simha Reddy (2nd Unit)",
+        "type": "feature_film",
+        "year": 2022,
+        "role": "Associate Director",
+        "role_weight": 0.7,
+        "banner": "Mythri Movie Makers",
+        "production_house": "Mythri Movie Makers",
+        "verified": true,
+        "proof_link": null,
+        "collaborators_on_platform": ["user_g_012", "user_g_019"]
+      },
+      {
+        "id": "proj_g001_002",
+        "name": "Karthavyam",
+        "type": "feature_film",
+        "year": 2023,
+        "role": "Director",
+        "role_weight": 1.0,
+        "banner": "Independent",
+        "production_house": "AK Entertainments",
+        "verified": true,
+        "proof_link": "https://imdb.com/title/tt_karthavyam",
+        "collaborators_on_platform": []
+      },
+      {
+        "id": "proj_g001_003",
+        "name": "Naa Peru Surya (Web Series)",
+        "type": "web_series",
+        "year": 2025,
+        "role": "Director",
+        "role_weight": 1.0,
+        "banner": "Sithara Entertainments",
+        "production_house": "Sithara Entertainments",
+        "verified": true,
+        "proof_link": null,
+        "collaborators_on_platform": ["user_g_007"]
+      }
+    ],
+    "education_training": [
+      {
+        "type": "apprenticeship",
+        "name": "Assistant Director under Sukumar",
+        "year": 2010,
+        "duration": "4 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [
+      {
+        "type": "youtube_link",
+        "url": "https://youtube.com/watch?v=karthavyam_trailer",
+        "title": "Karthavyam Official Trailer",
+        "year": 2023,
+        "role_credit": "Director"
+      }
+    ],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_001",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_002",
+    "name": "Priya Lakshmi Vandanapu",
+    "status": "active",
+    "created_at": "2026-01-15T10:00:00Z",
+    "updated_at": "2026-04-02T09:00:00Z",
+    "onboarding_source": "founder_invite",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 9,
+      "peer_endorsements_count": 6
+    },
+    "profile_completeness": 0.92,
+    "personal_info": {
+      "gender": "Female",
+      "age": 34,
+      "languages": ["Telugu", "English", "Tamil"],
+      "regional_background": "Coastal Andhra"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Chennai", "Bengaluru"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Casting Director",
+        "subcraft": "Feature Film Casting"
+      },
+      "secondary_crafts": [],
+      "experience_years": 10,
+      "experience_level": "senior",
+      "availability": {
+        "type": "project_based",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["casting_projects", "ott_casting", "theatre_casting"]
+    },
+    "bio": "Telugu and Tamil film casting director with a decade of experience. Have cast over 40 theatrical films and 12 OTT originals. Specialize in discovering fresh faces from theatre and regional talent circuits. Worked extensively with major Tollywood banners and two Netflix India originals.",
+    "tags_self": ["casting", "talent_discovery", "tollywood", "fresh_faces"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["action", "romance", "thriller", "family_drama"],
+      "narrative_specializations": ["ensemble", "character_driven"],
+      "production_scale_handled": ["5_to_15cr", "15_to_40cr", "40plus_cr"],
+      "directing_style_tags": [],
+      "casting_specializations": ["lead_casting", "character_casting", "child_casting", "crowd_casting"],
+      "talent_circuits_covered": ["theatre_hyderabad", "theatre_vijayawada", "film_institute_alumni", "regional_tv"],
+      "films_cast": 40,
+      "ott_projects_cast": 12
+    },
+    "projects": [
+      {
+        "id": "proj_g002_001",
+        "name": "Pushpa: The Rise (Casting)",
+        "type": "feature_film",
+        "year": 2021,
+        "role": "Associate Casting Director",
+        "role_weight": 0.7,
+        "banner": "Mythri Movie Makers",
+        "production_house": "Mythri Movie Makers",
+        "verified": true,
+        "proof_link": null,
+        "collaborators_on_platform": []
+      },
+      {
+        "id": "proj_g002_002",
+        "name": "Yevaru (Netflix)",
+        "type": "web_series",
+        "year": 2024,
+        "role": "Casting Director",
+        "role_weight": 1.0,
+        "banner": "Netflix India",
+        "production_house": "Netflix India",
+        "verified": true,
+        "proof_link": null,
+        "collaborators_on_platform": ["user_g_001"]
+      }
+    ],
+    "education_training": [
+      {
+        "type": "workshop",
+        "name": "Casting Director Masterclass — Mumbai Film Academy",
+        "year": 2015,
+        "duration": "6 months"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_002",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_003",
+    "name": "Srinivasa Rao Kommareddy",
+    "status": "active",
+    "created_at": "2026-01-20T08:00:00Z",
+    "updated_at": "2026-03-28T14:00:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 14,
+      "peer_endorsements_count": 8
+    },
+    "profile_completeness": 0.91,
+    "personal_info": {
+      "gender": "Male",
+      "age": 47,
+      "languages": ["Telugu", "Hindi"],
+      "regional_background": "Rayalaseema"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Chennai"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Line Producer",
+        "subcraft": "Feature Film Line Producer"
+      },
+      "secondary_crafts": [
+        { "craft": "Production Controller", "subcraft": "Budget Management" }
+      ],
+      "experience_years": 22,
+      "experience_level": "veteran",
+      "availability": {
+        "type": "project_based",
+        "currently_available": false,
+        "next_available_from": "2026-09-01"
+      },
+      "looking_for": ["line_producer_work", "production_controller_roles"]
+    },
+    "bio": "Veteran line producer with 22 years managing productions across Tollywood and Bollywood. Managed budgets from ₹3 crore to ₹180 crore. Known for tight budget discipline without compromising creative quality. Have completed 14 theatrical features and 6 web series as line producer.",
+    "tags_self": ["budget_management", "production_planning", "logistics", "large_scale"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["action", "period_drama", "thriller"],
+      "narrative_specializations": ["high_concept"],
+      "production_scale_handled": ["5_to_15cr", "15_to_40cr", "40plus_cr"],
+      "directing_style_tags": [],
+      "budget_range_managed": { "min_cr": 3, "max_cr": 180 },
+      "specializations": ["outdoor_location_shoots", "period_production", "large_crowd_management", "international_locations"],
+      "previous_banners_worked_with": ["Haarika and Hassine Creations", "DVV Entertainment", "Geetha Arts"]
+    },
+    "projects": [
+      {
+        "id": "proj_g003_001",
+        "name": "Magadheera",
+        "type": "feature_film",
+        "year": 2009,
+        "role": "Associate Line Producer",
+        "role_weight": 0.7,
+        "banner": "Geetha Arts",
+        "production_house": "Geetha Arts",
+        "verified": true,
+        "proof_link": null,
+        "collaborators_on_platform": []
+      },
+      {
+        "id": "proj_g003_002",
+        "name": "RRR",
+        "type": "feature_film",
+        "year": 2022,
+        "role": "Production Controller",
+        "role_weight": 0.9,
+        "banner": "DVV Entertainment",
+        "production_house": "DVV Entertainment",
+        "verified": true,
+        "proof_link": null,
+        "collaborators_on_platform": ["user_g_001", "user_g_011"]
+      }
+    ],
+    "education_training": [
+      {
+        "type": "on_the_job",
+        "name": "Production Training under Dil Raju's team",
+        "year": 2002,
+        "duration": "3 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_003",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_004",
+    "name": "Meghana Tirumala",
+    "status": "active",
+    "created_at": "2026-02-01T09:30:00Z",
+    "updated_at": "2026-04-10T10:00:00Z",
+    "onboarding_source": "self_signup",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 1
+    },
+    "profile_completeness": 0.62,
+    "personal_info": {
+      "gender": "Female",
+      "age": 26,
+      "languages": ["Telugu", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Bengaluru"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Writer",
+        "subcraft": "Screenplay and Dialogue Writer"
+      },
+      "secondary_crafts": [
+        { "craft": "Director", "subcraft": "Short Film Director" }
+      ],
+      "experience_years": 3,
+      "experience_level": "emerging",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["writing_assignments", "script_development", "short_film_direction"]
+    },
+    "bio": "Emerging Telugu screenplay writer with a background in literature and theatre. Written 2 short films that have screened at Hyderabad International Film Festival. Currently working on a feature-length original script in the thriller genre. Looking for opportunities to write for OTT platforms.",
+    "tags_self": ["writer", "thriller", "telugu_stories", "hiff", "emerging"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["thriller", "drama", "dark_comedy"],
+      "narrative_specializations": ["character_driven", "non_linear"],
+      "production_scale_handled": ["under_5cr"],
+      "directing_style_tags": ["minimalist", "dialogue_driven"],
+      "writing_formats": ["feature_screenplay", "short_film_script", "web_series_bible"],
+      "software_used": ["Final Draft", "Celtx", "Fade In"],
+      "scripts_written": 4,
+      "awards_nominations": ["HIFF Best Short Script Nomination 2024"]
+    },
+    "projects": [
+      {
+        "id": "proj_g004_001",
+        "name": "Oka Maata",
+        "type": "short_film",
+        "year": 2023,
+        "role": "Writer and Director",
+        "role_weight": 1.0,
+        "banner": null,
+        "production_house": "Independent",
+        "verified": false,
+        "proof_link": "https://youtube.com/watch?v=okamaata",
+        "collaborators_on_platform": []
+      },
+      {
+        "id": "proj_g004_002",
+        "name": "Cheekatlo",
+        "type": "short_film",
+        "year": 2024,
+        "role": "Screenplay Writer",
+        "role_weight": 1.0,
+        "banner": null,
+        "production_house": "Independent",
+        "verified": false,
+        "proof_link": "https://youtube.com/watch?v=cheekatlo",
+        "collaborators_on_platform": []
+      }
+    ],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "BA English Literature — Osmania University",
+        "year": 2022,
+        "duration": "3 years"
+      },
+      {
+        "type": "workshop",
+        "name": "Screenplay Writing Workshop — Annapurna College of Film",
+        "year": 2023,
+        "duration": "2 months"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [
+      {
+        "type": "youtube_link",
+        "url": "https://youtube.com/watch?v=okamaata",
+        "title": "Oka Maata — Short Film",
+        "year": 2023,
+        "role_credit": "Writer and Director"
+      }
+    ],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_004",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_005",
+    "name": "Ravi Shankar Penugonda",
+    "status": "active",
+    "created_at": "2026-01-25T11:00:00Z",
+    "updated_at": "2026-04-05T09:00:00Z",
+    "onboarding_source": "founder_invite",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 18,
+      "peer_endorsements_count": 10
+    },
+    "profile_completeness": 0.95,
+    "personal_info": {
+      "gender": "Male",
+      "age": 52,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Coastal Andhra"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Chennai", "Goa", "International"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Producer",
+        "subcraft": "Executive Producer"
+      },
+      "secondary_crafts": [],
+      "experience_years": 25,
+      "experience_level": "veteran",
+      "availability": {
+        "type": "project_based",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["co_production", "distribution_partnerships", "ott_deals"]
+    },
+    "bio": "Executive producer with 25 years across Tollywood and Tamil productions. Founded Vennela Productions in 2005. Produced 18 theatrical releases with combined box office of over ₹1,200 crore. Currently focused on mid-budget Telugu originals for OTT platforms and international co-productions.",
+    "tags_self": ["producer", "vennela_productions", "ott", "co_production"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["action", "family_drama", "thriller", "comedy"],
+      "narrative_specializations": ["high_concept", "commercial", "ensemble"],
+      "production_scale_handled": ["15_to_40cr", "40plus_cr"],
+      "directing_style_tags": [],
+      "production_house_name": "Vennela Productions",
+      "total_films_produced": 18,
+      "combined_box_office_cr": 1200,
+      "distribution_territories": ["Andhra Pradesh", "Telangana", "Tamil Nadu", "Overseas"],
+      "ott_partnerships": ["Netflix India", "Amazon Prime Video India", "AHA"]
+    },
+    "projects": [
+      {
+        "id": "proj_g005_001",
+        "name": "Bommali",
+        "type": "feature_film",
+        "year": 2019,
+        "role": "Producer",
+        "role_weight": 1.0,
+        "banner": "Vennela Productions",
+        "production_house": "Vennela Productions",
+        "verified": true,
+        "proof_link": null,
+        "collaborators_on_platform": ["user_g_001"]
+      }
+    ],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "MBA — XLRI Jamshedpur",
+        "year": 1998,
+        "duration": "2 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_005",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_006",
+    "name": "Kavitha Subramaniam",
+    "status": "active",
+    "created_at": "2026-02-05T08:00:00Z",
+    "updated_at": "2026-04-12T11:00:00Z",
+    "onboarding_source": "self_signup",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 2
+    },
+    "profile_completeness": 0.58,
+    "personal_info": {
+      "gender": "Female",
+      "age": 29,
+      "languages": ["Tamil", "Telugu", "English"],
+      "regional_background": "Tamil Nadu"
+    },
+    "location": {
+      "current_city": "Chennai",
+      "state": "Tamil Nadu",
+      "country": "India",
+      "willing_to_travel": ["Chennai", "Hyderabad", "Bengaluru"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "First AD",
+        "subcraft": "Feature Film First AD"
+      },
+      "secondary_crafts": [
+        { "craft": "Director", "subcraft": "Short Film Director" }
+      ],
+      "experience_years": 5,
+      "experience_level": "mid_level",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["first_ad_work", "short_film_direction", "ad_film_direction"]
+    },
+    "bio": "Tamil and Telugu bilingual first AD with 5 years of floor experience. Coordinated shoots of up to 400 crew members across outdoor, studio, and foreign locations. Currently aspiring to direct. Have directed 2 Tamil short films.",
+    "tags_self": ["first_ad", "multilingual", "floor_management", "aspiring_director"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["drama", "thriller", "comedy"],
+      "narrative_specializations": ["character_driven"],
+      "production_scale_handled": ["5_to_15cr", "15_to_40cr"],
+      "directing_style_tags": ["realistic", "actor_centric"],
+      "first_ad_specializations": ["large_crew_management", "schedule_optimization", "foreign_location_shoots"],
+      "max_crew_coordinated": 400,
+      "shooting_days_managed": 220
+    },
+    "projects": [
+      {
+        "id": "proj_g006_001",
+        "name": "Iraivi (2nd AD)",
+        "type": "feature_film",
+        "year": 2022,
+        "role": "Second AD",
+        "role_weight": 0.5,
+        "banner": "Independent",
+        "production_house": "Karthik Subbaraj Productions",
+        "verified": false,
+        "proof_link": null,
+        "collaborators_on_platform": []
+      },
+      {
+        "id": "proj_g006_002",
+        "name": "Nilave Malare",
+        "type": "short_film",
+        "year": 2024,
+        "role": "Director",
+        "role_weight": 1.0,
+        "banner": null,
+        "production_house": "Independent",
+        "verified": false,
+        "proof_link": "https://youtube.com/watch?v=nilave_malare",
+        "collaborators_on_platform": []
+      }
+    ],
+    "education_training": [
+      {
+        "type": "film_school",
+        "name": "BOFTA — Bio Oscar Film and Television Academy",
+        "year": 2020,
+        "duration": "1 year"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [
+      {
+        "type": "youtube_link",
+        "url": "https://youtube.com/watch?v=nilave_malare",
+        "title": "Nilave Malare — Short Film",
+        "year": 2024,
+        "role_credit": "Director"
+      }
+    ],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_006",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_007",
+    "name": "Nagarjuna Babu Yellampalli",
+    "status": "active",
+    "created_at": "2026-01-18T10:00:00Z",
+    "updated_at": "2026-03-30T13:00:00Z",
+    "onboarding_source": "founder_invite",
+    "verification": {
+      "level": "platform_verified",
+      "verified_credits_count": 22,
+      "peer_endorsements_count": 14
+    },
+    "profile_completeness": 0.97,
+    "personal_info": {
+      "gender": "Male",
+      "age": 44,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Chennai", "International"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Director",
+        "subcraft": "Commercial Action Director"
+      },
+      "secondary_crafts": [],
+      "experience_years": 20,
+      "experience_level": "veteran",
+      "availability": {
+        "type": "project_based",
+        "currently_available": false,
+        "next_available_from": "2027-01-01"
+      },
+      "looking_for": ["feature_film_projects", "pan_india_projects"]
+    },
+    "bio": "Senior Telugu commercial film director with 20 years and 8 theatrical releases to his name. Three blockbusters in the ₹100cr+ club. Specializes in mass entertainers with strong family emotion and high-octane action. Currently finishing a pan-India multilingual action film for Sithara Entertainments.",
+    "tags_self": ["mass_entertainer", "blockbuster_director", "pan_india", "action"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["action", "mass_entertainer", "family_drama"],
+      "narrative_specializations": ["high_concept", "commercial"],
+      "production_scale_handled": ["40plus_cr"],
+      "directing_style_tags": ["high_energy", "visual_first", "mass_appeal"],
+      "previous_banners_worked_with": ["Sithara Entertainments", "Mythri Movie Makers", "Haarika and Hassine Creations"],
+      "box_office_hits": 3,
+      "trained_under": "S.S. Rajamouli (Associate)"
+    },
+    "projects": [
+      {
+        "id": "proj_g007_001",
+        "name": "Naa Rokam",
+        "type": "feature_film",
+        "year": 2020,
+        "role": "Director",
+        "role_weight": 1.0,
+        "banner": "Mythri Movie Makers",
+        "production_house": "Mythri Movie Makers",
+        "verified": true,
+        "proof_link": null,
+        "collaborators_on_platform": ["user_g_005"]
+      }
+    ],
+    "education_training": [
+      {
+        "type": "apprenticeship",
+        "name": "Associate Director under S.S. Rajamouli",
+        "year": 2003,
+        "duration": "5 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_007",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_008",
+    "name": "Divya Sree Namburi",
+    "status": "active",
+    "created_at": "2026-02-10T09:00:00Z",
+    "updated_at": "2026-04-15T10:00:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 1
+    },
+    "profile_completeness": 0.55,
+    "personal_info": {
+      "gender": "Female",
+      "age": 24,
+      "languages": ["Telugu", "English"],
+      "regional_background": "Coastal Andhra"
+    },
+    "location": {
+      "current_city": "Vijayawada",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Vijayawada", "Vizag"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Writer",
+        "subcraft": "Dialogue Writer"
+      },
+      "secondary_crafts": [],
+      "experience_years": 2,
+      "experience_level": "emerging",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["writing_assignments", "dialogue_writing", "story_development"]
+    },
+    "bio": "Dialogue writer from Vijayawada with a sharp ear for Andhra coastal dialect and natural Telugu speech patterns. Written dialogue for 1 Telugu web series and 3 short films. Background in journalism gives me strong research skills for period and biographical scripts.",
+    "tags_self": ["dialogue_writer", "andhra_dialect", "journalism_background", "emerging"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["drama", "biographical", "social_issues"],
+      "narrative_specializations": ["character_driven", "realistic"],
+      "production_scale_handled": ["under_5cr", "5_to_15cr"],
+      "directing_style_tags": [],
+      "writing_formats": ["dialogue", "short_film_script", "web_series_episode"],
+      "dialect_specializations": ["coastal_andhra_telugu", "standard_telugu"],
+      "software_used": ["Celtx", "Google Docs"],
+      "scripts_written": 4
+    },
+    "projects": [
+      {
+        "id": "proj_g008_001",
+        "name": "Oori Monagadu",
+        "type": "web_series",
+        "year": 2025,
+        "role": "Dialogue Writer",
+        "role_weight": 1.0,
+        "banner": null,
+        "production_house": "Vizag Digital Studios",
+        "verified": false,
+        "proof_link": null,
+        "collaborators_on_platform": []
+      }
+    ],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "BA Journalism — Andhra University",
+        "year": 2023,
+        "duration": "3 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_008",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_009",
+    "name": "Prasad Varma Datla",
+    "status": "active",
+    "created_at": "2026-01-22T09:00:00Z",
+    "updated_at": "2026-03-20T11:00:00Z",
+    "onboarding_source": "founder_invite",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 7,
+      "peer_endorsements_count": 5
+    },
+    "profile_completeness": 0.82,
+    "personal_info": {
+      "gender": "Male",
+      "age": 35,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Goa", "Chennai"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Director",
+        "subcraft": "OTT and Web Series Director"
+      },
+      "secondary_crafts": [
+        { "craft": "Writer", "subcraft": "Series Bible and Screenplay" }
+      ],
+      "experience_years": 9,
+      "experience_level": "senior",
+      "availability": {
+        "type": "project_based",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["web_series_direction", "ott_originals", "feature_film_debut"]
+    },
+    "bio": "Telugu OTT director known for crime thrillers and political dramas. Directed 3 original series for AHA and SonyLIV. Strong background in investigative journalism adds authenticity to crime narratives. Currently developing a 6-episode limited series about the 1984 Telugu NTR political uprising.",
+    "tags_self": ["ott_director", "crime_thriller", "political_drama", "aha", "sonyliv"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["crime_thriller", "political_drama", "dark_comedy"],
+      "narrative_specializations": ["non_linear", "ensemble", "character_driven"],
+      "production_scale_handled": ["5_to_15cr", "15_to_40cr"],
+      "directing_style_tags": ["realistic", "dialogue_driven", "dark_tone"],
+      "ott_platforms_worked_with": ["AHA", "SonyLIV"],
+      "series_directed": 3,
+      "episodes_directed": 24
+    },
+    "projects": [
+      {
+        "id": "proj_g009_001",
+        "name": "Raadha (AHA Original)",
+        "type": "web_series",
+        "year": 2023,
+        "role": "Director",
+        "role_weight": 1.0,
+        "banner": "AHA",
+        "production_house": "AHA Originals",
+        "verified": true,
+        "proof_link": null,
+        "collaborators_on_platform": ["user_g_002"]
+      }
+    ],
+    "education_training": [
+      {
+        "type": "film_school",
+        "name": "Film and Television Institute of India (FTII) — Direction",
+        "year": 2014,
+        "duration": "3 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_009",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_010",
+    "name": "Anitha Krishnaswamy",
+    "status": "active",
+    "created_at": "2026-02-08T10:00:00Z",
+    "updated_at": "2026-04-18T09:30:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 11,
+      "peer_endorsements_count": 7
+    },
+    "profile_completeness": 0.87,
+    "personal_info": {
+      "gender": "Female",
+      "age": 39,
+      "languages": ["Tamil", "Telugu", "English", "Kannada"],
+      "regional_background": "Tamil Nadu"
+    },
+    "location": {
+      "current_city": "Chennai",
+      "state": "Tamil Nadu",
+      "country": "India",
+      "willing_to_travel": ["Chennai", "Hyderabad", "Mumbai", "Bengaluru"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Casting Director",
+        "subcraft": "South Indian Multi-Language Casting"
+      },
+      "secondary_crafts": [],
+      "experience_years": 14,
+      "experience_level": "senior",
+      "availability": {
+        "type": "project_based",
+        "currently_available": false,
+        "next_available_from": "2026-07-01"
+      },
+      "looking_for": ["casting_projects", "pan_south_casting", "ott_casting"]
+    },
+    "bio": "Pan-South India casting director fluent in Tamil, Telugu, Kannada, and English. Specializes in multi-language projects and has built an extensive database of theatre talent across Chennai, Hyderabad, and Bengaluru. Known for spotting natural talent outside the conventional film circuit.",
+    "tags_self": ["casting", "pan_south", "theatre_talent", "multi_language"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["drama", "thriller", "comedy", "biography"],
+      "narrative_specializations": ["ensemble", "character_driven"],
+      "production_scale_handled": ["5_to_15cr", "15_to_40cr", "40plus_cr"],
+      "directing_style_tags": [],
+      "casting_specializations": ["lead_casting", "character_casting", "child_casting"],
+      "talent_circuits_covered": ["theatre_chennai", "theatre_hyderabad", "theatre_bengaluru", "tv_south_india"],
+      "films_cast": 28
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "workshop",
+        "name": "Casting and Talent Management — National School of Drama",
+        "year": 2012,
+        "duration": "3 months"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_010",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_011",
+    "name": "Venkat Ramana Sarma Guntupalli",
+    "status": "active",
+    "created_at": "2026-01-28T08:30:00Z",
+    "updated_at": "2026-04-01T12:00:00Z",
+    "onboarding_source": "founder_invite",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 16,
+      "peer_endorsements_count": 9
+    },
+    "profile_completeness": 0.93,
+    "personal_info": {
+      "gender": "Male",
+      "age": 49,
+      "languages": ["Telugu", "Hindi"],
+      "regional_background": "Coastal Andhra"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Vizag", "International"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Line Producer",
+        "subcraft": "Large Scale Outdoor Shoot Specialist"
+      },
+      "secondary_crafts": [],
+      "experience_years": 24,
+      "experience_level": "veteran",
+      "availability": {
+        "type": "project_based",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["line_producer_work", "international_location_shoots", "period_film_production"]
+    },
+    "bio": "Line producer specializing in complex outdoor and international location shoots. Managed productions in Europe, Japan, New Zealand, and across India. Known for solving impossible logistical challenges and maintaining crew morale under extreme conditions. 24 years, 16 films.",
+    "tags_self": ["line_producer", "outdoor_specialist", "international_shoots", "logistics"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["action", "period_drama", "adventure"],
+      "narrative_specializations": ["high_concept"],
+      "production_scale_handled": ["15_to_40cr", "40plus_cr"],
+      "directing_style_tags": [],
+      "budget_range_managed": { "min_cr": 15, "max_cr": 250 },
+      "specializations": ["international_location_shoots", "period_production", "visa_and_clearance_expert", "extreme_weather_shoots"],
+      "countries_shot_in": ["India", "New Zealand", "Czech Republic", "Japan", "Switzerland"]
+    },
+    "projects": [
+      {
+        "id": "proj_g011_001",
+        "name": "RRR (Europe Sequences)",
+        "type": "feature_film",
+        "year": 2022,
+        "role": "Location Line Producer",
+        "role_weight": 0.8,
+        "banner": "DVV Entertainment",
+        "production_house": "DVV Entertainment",
+        "verified": true,
+        "proof_link": null,
+        "collaborators_on_platform": ["user_g_003"]
+      }
+    ],
+    "education_training": [],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_011",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_012",
+    "name": "Sahithi Prabha Veluri",
+    "status": "active",
+    "created_at": "2026-02-12T10:00:00Z",
+    "updated_at": "2026-04-20T09:00:00Z",
+    "onboarding_source": "self_signup",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 0
+    },
+    "profile_completeness": 0.48,
+    "personal_info": {
+      "gender": "Female",
+      "age": 23,
+      "languages": ["Telugu", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "First AD",
+        "subcraft": "Assistant Director Trainee"
+      },
+      "secondary_crafts": [],
+      "experience_years": 1,
+      "experience_level": "newcomer",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["ad_trainee_positions", "short_film_work", "floor_experience"]
+    },
+    "bio": "Fresh graduate from Annapurna College of Film and Media, Hyderabad. Completed a diploma in film direction. Looking for trainee AD positions on Telugu features or web series. Very eager to learn floor management and production coordination from experienced first ADs.",
+    "tags_self": ["trainee_ad", "annapurna_college", "fresh_graduate", "eager_to_learn"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["drama", "comedy"],
+      "narrative_specializations": ["character_driven"],
+      "production_scale_handled": ["under_5cr"],
+      "directing_style_tags": [],
+      "first_ad_specializations": ["schedule_preparation", "script_breakdown"],
+      "shooting_days_managed": 15
+    },
+    "projects": [
+      {
+        "id": "proj_g012_001",
+        "name": "Degree Days",
+        "type": "short_film",
+        "year": 2025,
+        "role": "Third AD",
+        "role_weight": 0.2,
+        "banner": null,
+        "production_house": "Annapurna College Student Production",
+        "verified": false,
+        "proof_link": "https://youtube.com/watch?v=degreedays",
+        "collaborators_on_platform": []
+      }
+    ],
+    "education_training": [
+      {
+        "type": "film_school",
+        "name": "Diploma in Film Direction — Annapurna College of Film and Media",
+        "year": 2025,
+        "duration": "2 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [
+      {
+        "type": "youtube_link",
+        "url": "https://youtube.com/watch?v=degreedays",
+        "title": "Degree Days — Student Short Film",
+        "year": 2025,
+        "role_credit": "Third AD and Producer"
+      }
+    ],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_012",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_013",
+    "name": "Mohammed Salim Shaikh",
+    "status": "active",
+    "created_at": "2026-02-15T09:30:00Z",
+    "updated_at": "2026-04-10T11:00:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 8,
+      "peer_endorsements_count": 5
+    },
+    "profile_completeness": 0.79,
+    "personal_info": {
+      "gender": "Male",
+      "age": 33,
+      "languages": ["Hindi", "Urdu", "Telugu", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Delhi"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Director",
+        "subcraft": "Bilingual Hindi-Telugu Director"
+      },
+      "secondary_crafts": [
+        { "craft": "Writer", "subcraft": "Screenplay Writer" }
+      ],
+      "experience_years": 8,
+      "experience_level": "mid_level",
+      "availability": {
+        "type": "project_based",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["bilingual_film_projects", "ott_direction", "feature_debut"]
+    },
+    "bio": "Hyderabad-based bilingual director comfortable across Hindi and Telugu. Directed 2 AHA web series and 1 short film that won at MAMI. Strong command over Hyderabadi culture, dialect, and setting. Looking for a bilingual feature debut project.",
+    "tags_self": ["bilingual_director", "hyderabadi_stories", "hindi_telugu", "mami"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["slice_of_life", "comedy_drama", "crime"],
+      "narrative_specializations": ["character_driven", "cultural_specific"],
+      "production_scale_handled": ["under_5cr", "5_to_15cr"],
+      "directing_style_tags": ["realistic", "dialogue_driven", "naturalistic"],
+      "languages_directed_in": ["Hindi", "Telugu", "Hyderabadi Urdu"],
+      "ott_platforms_worked_with": ["AHA", "ZEE5"]
+    },
+    "projects": [
+      {
+        "id": "proj_g013_001",
+        "name": "Hyderabadi Blues (AHA)",
+        "type": "web_series",
+        "year": 2024,
+        "role": "Director",
+        "role_weight": 1.0,
+        "banner": "AHA",
+        "production_house": "AHA Originals",
+        "verified": true,
+        "proof_link": null,
+        "collaborators_on_platform": []
+      }
+    ],
+    "education_training": [
+      {
+        "type": "film_school",
+        "name": "Satyajit Ray Film and Television Institute — Direction",
+        "year": 2016,
+        "duration": "3 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_013",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_014",
+    "name": "Lalitha Devi Macharla",
+    "status": "active",
+    "created_at": "2026-02-20T08:00:00Z",
+    "updated_at": "2026-04-08T10:30:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 12,
+      "peer_endorsements_count": 8
+    },
+    "profile_completeness": 0.88,
+    "personal_info": {
+      "gender": "Female",
+      "age": 41,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Coastal Andhra"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Vijayawada", "Mumbai", "Chennai"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Producer",
+        "subcraft": "Independent Film Producer"
+      },
+      "secondary_crafts": [],
+      "experience_years": 15,
+      "experience_level": "senior",
+      "availability": {
+        "type": "project_based",
+        "currently_available": false,
+        "next_available_from": "2026-10-01"
+      },
+      "looking_for": ["co_production", "women_led_narratives", "ott_deals", "film_festival_circuit"]
+    },
+    "bio": "Independent Telugu film producer with a focus on women-led stories and social narratives. 12 productions, 3 of which have won national awards. Strong relationships with NFDC and international co-production funds. Currently developing 2 projects for the international film festival circuit.",
+    "tags_self": ["indie_producer", "women_led", "national_award", "nfdc", "festival_circuit"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["social_drama", "biographical", "women_led", "independent"],
+      "narrative_specializations": ["character_driven", "socially_relevant"],
+      "production_scale_handled": ["under_5cr", "5_to_15cr"],
+      "directing_style_tags": [],
+      "production_house_name": "Lahari Films",
+      "total_films_produced": 12,
+      "awards": ["3 National Award wins", "BAFTA Screening 2023"],
+      "funding_sources": ["NFDC", "Sundance Institute", "Berlinale Co-Production Market"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "MA Film Studies — JNU Delhi",
+        "year": 2008,
+        "duration": "2 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_014",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_015",
+    "name": "Kiran Kumar Boddapu",
+    "status": "active",
+    "created_at": "2026-01-30T09:00:00Z",
+    "updated_at": "2026-03-25T11:00:00Z",
+    "onboarding_source": "founder_invite",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 10,
+      "peer_endorsements_count": 6
+    },
+    "profile_completeness": 0.84,
+    "personal_info": {
+      "gender": "Male",
+      "age": 37,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Goa"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "First AD",
+        "subcraft": "Senior First AD"
+      },
+      "secondary_crafts": [],
+      "experience_years": 13,
+      "experience_level": "senior",
+      "availability": {
+        "type": "project_based",
+        "currently_available": false,
+        "next_available_from": "2026-06-15"
+      },
+      "looking_for": ["first_ad_work", "large_scale_productions", "action_film_work"]
+    },
+    "bio": "Senior First AD with 13 years managing complex Telugu feature film productions. Known for iron-tight schedules and the ability to keep 500+ crew members coordinated across multi-location outdoor shoots. Have worked on 5 films with 100-day plus shooting schedules.",
+    "tags_self": ["senior_first_ad", "large_scale", "schedule_management", "outdoor_shoots"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["action", "mass_entertainer", "period_drama"],
+      "narrative_specializations": ["high_concept"],
+      "production_scale_handled": ["15_to_40cr", "40plus_cr"],
+      "directing_style_tags": [],
+      "first_ad_specializations": ["large_crew_management", "schedule_optimization", "multi_location_coordination", "night_shoots"],
+      "max_crew_coordinated": 600,
+      "shooting_days_managed": 980
+    },
+    "projects": [
+      {
+        "id": "proj_g015_001",
+        "name": "Acharya",
+        "type": "feature_film",
+        "year": 2022,
+        "role": "First AD",
+        "role_weight": 1.0,
+        "banner": "Konidela Production Company",
+        "production_house": "Konidela Production Company",
+        "verified": true,
+        "proof_link": null,
+        "collaborators_on_platform": ["user_g_003"]
+      }
+    ],
+    "education_training": [],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_015",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_016",
+    "name": "Suresh Babu Thota",
+    "status": "active",
+    "created_at": "2026-02-18T09:00:00Z",
+    "updated_at": "2026-04-14T10:00:00Z",
+    "onboarding_source": "self_signup",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 1
+    },
+    "profile_completeness": 0.52,
+    "personal_info": {
+      "gender": "Male",
+      "age": 31,
+      "languages": ["Telugu", "English"],
+      "regional_background": "Rayalaseema"
+    },
+    "location": {
+      "current_city": "Kurnool",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Kurnool", "Bengaluru"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Director",
+        "subcraft": "Regional Telugu Short Film Director"
+      },
+      "secondary_crafts": [
+        { "craft": "Writer", "subcraft": "Story and Screenplay" }
+      ],
+      "experience_years": 4,
+      "experience_level": "emerging",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["short_film_direction", "digital_film_projects", "ad_film_direction"]
+    },
+    "bio": "Rayalaseema-based short film director with stories rooted in rural Andhra. 3 short films with strong regional identity, one of which crossed 2 million views on YouTube. Work reflects raw, unpolished realism and underrepresented rural narratives.",
+    "tags_self": ["rayalaseema_stories", "rural_cinema", "regional_identity", "youtube_success"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["rural_drama", "social_issues", "slice_of_life"],
+      "narrative_specializations": ["character_driven", "realistic", "regional"],
+      "production_scale_handled": ["under_5cr"],
+      "directing_style_tags": ["minimalist", "naturalistic", "raw"],
+      "writing_formats": ["short_film_script", "story_outline"],
+      "scripts_written": 3
+    },
+    "projects": [
+      {
+        "id": "proj_g016_001",
+        "name": "Bhoomi",
+        "type": "short_film",
+        "year": 2024,
+        "role": "Director",
+        "role_weight": 1.0,
+        "banner": null,
+        "production_house": "Independent",
+        "verified": false,
+        "proof_link": "https://youtube.com/watch?v=bhoomi_short",
+        "collaborators_on_platform": []
+      }
+    ],
+    "education_training": [
+      {
+        "type": "online_course",
+        "name": "Filmmaking Fundamentals — MasterClass",
+        "year": 2021,
+        "duration": "Self-paced"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [
+      {
+        "type": "youtube_link",
+        "url": "https://youtube.com/watch?v=bhoomi_short",
+        "title": "Bhoomi — Short Film",
+        "year": 2024,
+        "role_credit": "Director and Writer"
+      }
+    ],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_016",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_017",
+    "name": "Padma Sudha Rao Chintapalli",
+    "status": "active",
+    "created_at": "2026-02-22T09:30:00Z",
+    "updated_at": "2026-04-16T10:00:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 6,
+      "peer_endorsements_count": 4
+    },
+    "profile_completeness": 0.76,
+    "personal_info": {
+      "gender": "Female",
+      "age": 36,
+      "languages": ["Telugu", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Chennai"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Line Producer",
+        "subcraft": "Ad Film and Commercial Line Producer"
+      },
+      "secondary_crafts": [],
+      "experience_years": 10,
+      "experience_level": "senior",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["ad_film_production", "music_video_production", "web_series_line_production"]
+    },
+    "bio": "Hyderabad-based line producer specializing in high-end TV commercials, ad films, and music videos. Managed over 200 production days for brands including Hindustan Unilever, Samsung, and Lakme. Transitioning into web series production having completed 2 OTT productions in 2024-25.",
+    "tags_self": ["ad_films", "tvc", "brand_production", "music_videos"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["commercial", "music_video", "drama"],
+      "narrative_specializations": [],
+      "production_scale_handled": ["under_5cr", "5_to_15cr"],
+      "directing_style_tags": [],
+      "budget_range_managed": { "min_cr": 0.2, "max_cr": 8 },
+      "specializations": ["brand_film_production", "tvc_production", "music_video_production"],
+      "brands_worked_with": ["Hindustan Unilever", "Samsung India", "Lakme", "Myntra"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "Mass Communication — Osmania University",
+        "year": 2014,
+        "duration": "2 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_017",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_018",
+    "name": "Aditya Vikram Nair",
+    "status": "active",
+    "created_at": "2026-03-01T10:00:00Z",
+    "updated_at": "2026-04-20T09:00:00Z",
+    "onboarding_source": "self_signup",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 0
+    },
+    "profile_completeness": 0.44,
+    "personal_info": {
+      "gender": "Male",
+      "age": 22,
+      "languages": ["Malayalam", "Telugu", "English", "Hindi"],
+      "regional_background": "Kerala"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Kochi", "Chennai"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Writer",
+        "subcraft": "Concept and Story Writer"
+      },
+      "secondary_crafts": [],
+      "experience_years": 1,
+      "experience_level": "newcomer",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["writing_internships", "script_reader_positions", "writing_collaborations"]
+    },
+    "bio": "Final year film student at Hyderabad's Image College. Written 3 short scripts and placed in the top 10 of the 2024 South Indian Screenwriting Lab. Looking for internships or entry-level writing positions to break into the industry. Influenced by Mollywood's narrative efficiency.",
+    "tags_self": ["film_student", "screenwriting_lab", "mollywood_influenced", "newcomer"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["drama", "thriller", "dark_comedy"],
+      "narrative_specializations": ["minimalist", "character_driven"],
+      "production_scale_handled": ["under_5cr"],
+      "directing_style_tags": [],
+      "writing_formats": ["short_film_script", "story_concept", "treatment"],
+      "software_used": ["Fade In", "Google Docs"],
+      "scripts_written": 3
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "film_school",
+        "name": "BFA Filmmaking — Image College of Arts, Hyderabad",
+        "year": 2025,
+        "duration": "3 years (ongoing)"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_018",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_019",
+    "name": "Ramakrishna Prasad Maddali",
+    "status": "active",
+    "created_at": "2026-01-12T09:00:00Z",
+    "updated_at": "2026-03-18T12:00:00Z",
+    "onboarding_source": "founder_invite",
+    "verification": {
+      "level": "platform_verified",
+      "verified_credits_count": 28,
+      "peer_endorsements_count": 16
+    },
+    "profile_completeness": 0.98,
+    "personal_info": {
+      "gender": "Male",
+      "age": 56,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Coastal Andhra"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Chennai", "International"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Producer",
+        "subcraft": "Banner Head and Creative Producer"
+      },
+      "secondary_crafts": [],
+      "experience_years": 30,
+      "experience_level": "legend",
+      "availability": {
+        "type": "selective",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["co_production_with_top_talent", "ott_originals", "international_projects"]
+    },
+    "bio": "30-year career Tollywood producer. Founder of Ramavidya Productions. Produced over 28 Telugu films including 6 blockbusters and 2 national award-winning productions. Mentored several now-prominent directors and actors. Currently focused on premium OTT content and international co-productions.",
+    "tags_self": ["veteran_producer", "ramavidya_productions", "national_award", "mentor", "legend"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["mass_entertainer", "social_drama", "mythology", "biography"],
+      "narrative_specializations": ["high_concept", "commercial", "socially_relevant"],
+      "production_scale_handled": ["15_to_40cr", "40plus_cr"],
+      "directing_style_tags": [],
+      "production_house_name": "Ramavidya Productions",
+      "total_films_produced": 28,
+      "awards": ["2 National Film Awards", "6 Filmfare South Awards"],
+      "directors_launched": ["3 prominent Telugu directors"],
+      "ott_partnerships": ["Netflix India", "Amazon Prime Video", "AHA"]
+    },
+    "projects": [],
+    "education_training": [],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_019",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_020",
+    "name": "Swetha Laxmi Korada",
+    "status": "active",
+    "created_at": "2026-02-25T10:00:00Z",
+    "updated_at": "2026-04-19T09:30:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 2
+    },
+    "profile_completeness": 0.61,
+    "personal_info": {
+      "gender": "Female",
+      "age": 28,
+      "languages": ["Telugu", "English", "Hindi"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Writer",
+        "subcraft": "Web Series Writer"
+      },
+      "secondary_crafts": [],
+      "experience_years": 4,
+      "experience_level": "emerging",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["writing_room_positions", "web_series_writing", "story_editor_roles"]
+    },
+    "bio": "Telugu web series writer with background in engineering and tech startups. Writes contemporary urban stories about young working-class Telugu professionals. Strong grasp of current social media culture, startup world, and millennial Telugu identity. 3 series bibles written, 1 commissioned by ZEE5.",
+    "tags_self": ["web_series_writer", "urban_telugu", "millennial_stories", "zee5"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["contemporary_drama", "romantic_comedy", "slice_of_life"],
+      "narrative_specializations": ["character_driven", "episodic", "serialized"],
+      "production_scale_handled": ["under_5cr", "5_to_15cr"],
+      "directing_style_tags": [],
+      "writing_formats": ["series_bible", "pilot_episode", "episode_scripts"],
+      "software_used": ["Final Draft", "Notion", "Google Docs"],
+      "series_bibles_written": 3,
+      "episodes_written": 8
+    },
+    "projects": [
+      {
+        "id": "proj_g020_001",
+        "name": "Unboxed (ZEE5)",
+        "type": "web_series",
+        "year": 2025,
+        "role": "Co-Writer",
+        "role_weight": 0.7,
+        "banner": "ZEE5 India",
+        "production_house": "ZEE5 India",
+        "verified": false,
+        "proof_link": null,
+        "collaborators_on_platform": []
+      }
+    ],
+    "education_training": [
+      {
+        "type": "workshop",
+        "name": "Screenwriting for OTT — Mumbai Talkies Workshop",
+        "year": 2022,
+        "duration": "3 months"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_020",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_021",
+    "name": "Ganesh Chandra Addanki",
+    "status": "active",
+    "created_at": "2026-01-14T09:00:00Z",
+    "updated_at": "2026-03-22T10:00:00Z",
+    "onboarding_source": "founder_invite",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 9,
+      "peer_endorsements_count": 6
+    },
+    "profile_completeness": 0.83,
+    "personal_info": {
+      "gender": "Male",
+      "age": 40,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Chennai"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Director",
+        "subcraft": "Commercial and Mass Entertainer Director"
+      },
+      "secondary_crafts": [],
+      "experience_years": 16,
+      "experience_level": "senior",
+      "availability": {
+        "type": "project_based",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["feature_film_projects", "sequel_projects", "pan_india_debut"]
+    },
+    "bio": "Telugu commercial director with a string of profitable mid-budget entertainers. Known for family-friendly action entertainers with strong second half emotion. All 4 directed films have been profitable. Camp: UV Creations and Sithara Entertainments primary collaborators.",
+    "tags_self": ["family_action", "profitable_films", "uv_creations", "sithara"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["family_action", "mass_entertainer", "romantic_comedy"],
+      "narrative_specializations": ["commercial", "high_concept"],
+      "production_scale_handled": ["15_to_40cr"],
+      "directing_style_tags": ["high_energy", "mass_appeal", "family_friendly"],
+      "previous_banners_worked_with": ["UV Creations", "Sithara Entertainments"],
+      "box_office_hits": 4
+    },
+    "projects": [
+      {
+        "id": "proj_g021_001",
+        "name": "Hello Meeru Ela Unnaru",
+        "type": "feature_film",
+        "year": 2021,
+        "role": "Director",
+        "role_weight": 1.0,
+        "banner": "UV Creations",
+        "production_house": "UV Creations",
+        "verified": true,
+        "proof_link": null,
+        "collaborators_on_platform": ["user_g_015"]
+      }
+    ],
+    "education_training": [
+      {
+        "type": "apprenticeship",
+        "name": "AD under director Trivikram Srinivas",
+        "year": 2006,
+        "duration": "3 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_021",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_022",
+    "name": "Bhavana Reddy Machiraju",
+    "status": "active",
+    "created_at": "2026-02-28T09:30:00Z",
+    "updated_at": "2026-04-17T10:00:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 5,
+      "peer_endorsements_count": 3
+    },
+    "profile_completeness": 0.72,
+    "personal_info": {
+      "gender": "Female",
+      "age": 32,
+      "languages": ["Telugu", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Casting Director",
+        "subcraft": "Child and Teen Casting Specialist"
+      },
+      "secondary_crafts": [
+        { "craft": "Writer", "subcraft": "Children's Content Writer" }
+      ],
+      "experience_years": 7,
+      "experience_level": "mid_level",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["casting_projects", "children_content_projects", "school_drama_productions"]
+    },
+    "bio": "Specialist in child and teenage actor casting with a background in child development and theatre education. Maintains strong relationships with theatre schools, Bal Bharati productions, and school drama networks across Hyderabad and Andhra Pradesh. Also writes children's content for Telugu channels.",
+    "tags_self": ["child_casting", "teen_casting", "theatre_schools", "child_development"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["family_drama", "children_content", "social_issues"],
+      "narrative_specializations": ["age_appropriate", "educational"],
+      "production_scale_handled": ["under_5cr", "5_to_15cr"],
+      "directing_style_tags": [],
+      "casting_specializations": ["child_casting", "teen_casting", "first_time_casting"],
+      "talent_circuits_covered": ["theatre_schools_hyderabad", "school_drama_ap", "balabharathi_productions"],
+      "films_cast": 18,
+      "child_actors_launched": 6
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "B.Ed Theatre Studies — Hyderabad Central University",
+        "year": 2016,
+        "duration": "2 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_022",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_023",
+    "name": "Shiva Prasad Konduri",
+    "status": "active",
+    "created_at": "2026-03-05T09:00:00Z",
+    "updated_at": "2026-04-22T10:30:00Z",
+    "onboarding_source": "self_signup",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 0
+    },
+    "profile_completeness": 0.41,
+    "personal_info": {
+      "gender": "Male",
+      "age": 27,
+      "languages": ["Telugu", "Hindi"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Nizamabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Nizamabad"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Director",
+        "subcraft": "Digital Short Film Director"
+      },
+      "secondary_crafts": [],
+      "experience_years": 2,
+      "experience_level": "newcomer",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["short_film_production_support", "ad_film_work", "assistant_director_position"]
+    },
+    "bio": "Self-taught filmmaker from Nizamabad. Made 4 short films on a phone camera that together have over 500K YouTube views. Stories come from Telangana district life, agrarian struggles, and migrant worker stories. No formal training but strong visual instinct and authentic voice.",
+    "tags_self": ["self_taught", "nizamabad", "rural_stories", "youtube_filmmaker", "phone_filmmaker"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["rural_drama", "social_commentary", "documentary_style"],
+      "narrative_specializations": ["realistic", "regional", "documentary_influenced"],
+      "production_scale_handled": ["under_5cr"],
+      "directing_style_tags": ["raw", "naturalistic", "documentary_style"],
+      "youtube_total_views": 500000
+    },
+    "projects": [
+      {
+        "id": "proj_g023_001",
+        "name": "Gunta Neeludu",
+        "type": "short_film",
+        "year": 2024,
+        "role": "Director",
+        "role_weight": 1.0,
+        "banner": null,
+        "production_house": "Independent",
+        "verified": false,
+        "proof_link": "https://youtube.com/watch?v=gunta_neeludu",
+        "collaborators_on_platform": []
+      }
+    ],
+    "education_training": [
+      {
+        "type": "self_taught",
+        "name": "YouTube tutorials and online resources",
+        "year": 2022,
+        "duration": "ongoing"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [
+      {
+        "type": "youtube_link",
+        "url": "https://youtube.com/watch?v=gunta_neeludu",
+        "title": "Gunta Neeludu — Short Film",
+        "year": 2024,
+        "role_credit": "Director, Writer, and Cameraman"
+      }
+    ],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_023",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_024",
+    "name": "Madhuri Donthi",
+    "status": "active",
+    "created_at": "2026-03-08T10:00:00Z",
+    "updated_at": "2026-04-25T09:00:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 4,
+      "peer_endorsements_count": 3
+    },
+    "profile_completeness": 0.69,
+    "personal_info": {
+      "gender": "Female",
+      "age": 30,
+      "languages": ["Telugu", "English"],
+      "regional_background": "Coastal Andhra"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Bengaluru"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Writer",
+        "subcraft": "Original Story and Concept Developer"
+      },
+      "secondary_crafts": [
+        { "craft": "Director", "subcraft": "Documentary Director" }
+      ],
+      "experience_years": 5,
+      "experience_level": "mid_level",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["story_development_roles", "documentary_direction", "ott_writing"]
+    },
+    "bio": "Telugu writer and documentary director with a focus on human interest stories and investigative docuseries. Directed 2 short documentaries shown at international festivals. Currently developing an original 8-episode crime-documentary series based on a real Andhra Pradesh case.",
+    "tags_self": ["documentary_writer", "crime_docuseries", "investigative", "human_interest"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["documentary", "crime_docuseries", "social_drama"],
+      "narrative_specializations": ["non_fiction", "investigative", "character_driven"],
+      "production_scale_handled": ["under_5cr", "5_to_15cr"],
+      "directing_style_tags": ["observational", "investigative", "immersive"],
+      "writing_formats": ["documentary_treatment", "series_bible", "episode_scripts"],
+      "festivals": ["IDFA Selection 2024", "Mumbai Documentary Festival 2023"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "MA Documentary Filmmaking — University of Hyderabad",
+        "year": 2021,
+        "duration": "2 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_024",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_025",
+    "name": "Raju Venkateswara Rao Paluri",
+    "status": "active",
+    "created_at": "2026-01-16T09:30:00Z",
+    "updated_at": "2026-03-28T10:00:00Z",
+    "onboarding_source": "founder_invite",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 20,
+      "peer_endorsements_count": 11
+    },
+    "profile_completeness": 0.94,
+    "personal_info": {
+      "gender": "Male",
+      "age": 50,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Coastal Andhra"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Chennai", "International"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "First AD",
+        "subcraft": "Chief AD and Production Management"
+      },
+      "secondary_crafts": [
+        { "craft": "Line Producer", "subcraft": "Mid-size Feature Film" }
+      ],
+      "experience_years": 26,
+      "experience_level": "veteran",
+      "availability": {
+        "type": "project_based",
+        "currently_available": false,
+        "next_available_from": "2026-12-01"
+      },
+      "looking_for": ["senior_first_ad_work", "production_design_consulting"]
+    },
+    "bio": "One of Tollywood's most experienced First ADs with 26 years and 20 films. Worked across all major Tollywood banners. Known as the go-to First AD for directors who want flawless floor discipline and complex multi-location schedule management. A production guarantee.",
+    "tags_self": ["veteran_first_ad", "tollywood_institution", "schedule_master", "all_banners"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["action", "period_drama", "mass_entertainer"],
+      "narrative_specializations": ["all_types"],
+      "production_scale_handled": ["5_to_15cr", "15_to_40cr", "40plus_cr"],
+      "directing_style_tags": [],
+      "first_ad_specializations": ["schedule_optimization", "multi_location", "large_crew", "night_shoots", "underwater_unit", "aerial_unit"],
+      "previous_banners_worked_with": ["Mythri Movie Makers", "Geetha Arts", "DVV Entertainment", "UV Creations", "Sithara Entertainments"],
+      "max_crew_coordinated": 800,
+      "shooting_days_managed": 2600
+    },
+    "projects": [],
+    "education_training": [],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_025",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_026",
+    "name": "Chandana Priya Gollapalli",
+    "status": "active",
+    "created_at": "2026-03-10T09:00:00Z",
+    "updated_at": "2026-04-28T10:00:00Z",
+    "onboarding_source": "self_signup",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 1
+    },
+    "profile_completeness": 0.53,
+    "personal_info": {
+      "gender": "Female",
+      "age": 25,
+      "languages": ["Telugu", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Casting Director",
+        "subcraft": "Casting Assistant"
+      },
+      "secondary_crafts": [],
+      "experience_years": 2,
+      "experience_level": "newcomer",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["casting_assistant_positions", "talent_scouting_work"]
+    },
+    "bio": "Casting assistant with 2 years of experience supporting senior casting directors in Hyderabad. Manage talent databases, coordinate auditions, and handle talent communications. Looking for a casting associate role where I can take on more responsibility.",
+    "tags_self": ["casting_assistant", "talent_database", "audition_coordination"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["general"],
+      "narrative_specializations": [],
+      "production_scale_handled": ["under_5cr", "5_to_15cr"],
+      "directing_style_tags": [],
+      "casting_specializations": ["talent_database_management", "audition_coordination"],
+      "talent_circuits_covered": ["theatre_hyderabad", "social_media_scouting"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "BA Mass Communication — Osmania University",
+        "year": 2024,
+        "duration": "3 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_026",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_027",
+    "name": "Narayana Murthy Srikakulam",
+    "status": "active",
+    "created_at": "2026-02-03T09:00:00Z",
+    "updated_at": "2026-04-04T11:00:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 13,
+      "peer_endorsements_count": 8
+    },
+    "profile_completeness": 0.86,
+    "personal_info": {
+      "gender": "Male",
+      "age": 43,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Coastal Andhra"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Chennai"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Director",
+        "subcraft": "Telugu Comedy and Family Film Director"
+      },
+      "secondary_crafts": [],
+      "experience_years": 18,
+      "experience_level": "senior",
+      "availability": {
+        "type": "project_based",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["family_comedy_projects", "ott_comedy_series", "sequel_projects"]
+    },
+    "bio": "Telugu comedy film director with 18 years and a consistent track record of family-safe entertainers. All 6 directed features have been profitable. Specializes in situational comedy with emotional underpinning — a rare combination in Telugu commercial cinema. Camp: Geetha Arts and Sri Venkateswara Creations.",
+    "tags_self": ["comedy_director", "family_films", "geetha_arts", "profitable_track_record"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["comedy", "family_drama", "romantic_comedy"],
+      "narrative_specializations": ["situational_comedy", "character_driven"],
+      "production_scale_handled": ["15_to_40cr"],
+      "directing_style_tags": ["high_energy", "actor_centric", "comedy_timing"],
+      "previous_banners_worked_with": ["Geetha Arts", "Sri Venkateswara Creations"],
+      "box_office_hits": 6
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "apprenticeship",
+        "name": "AD under director Trivikram Srinivas",
+        "year": 2004,
+        "duration": "3 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_027",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_028",
+    "name": "Aarushi Singh Pawar",
+    "status": "active",
+    "created_at": "2026-03-15T10:00:00Z",
+    "updated_at": "2026-04-26T09:00:00Z",
+    "onboarding_source": "self_signup",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 1
+    },
+    "profile_completeness": 0.57,
+    "personal_info": {
+      "gender": "Female",
+      "age": 27,
+      "languages": ["Hindi", "English", "Telugu"],
+      "regional_background": "Mumbai"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Delhi"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Writer",
+        "subcraft": "Hindi-Telugu Bilingual Screenplay Writer"
+      },
+      "secondary_crafts": [],
+      "experience_years": 3,
+      "experience_level": "emerging",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["bilingual_writing_projects", "pan_india_content", "ott_writing"]
+    },
+    "bio": "Mumbai-origin writer based in Hyderabad with a sharp understanding of both Bollywood and Tollywood narrative styles. Writes bilingual scripts that travel easily between Hindi and Telugu markets. Placed in the 2024 Amazon Prime Storyteller program. 2 years writing for the ZEE Telugu digital channel.",
+    "tags_self": ["bilingual_writer", "pan_india", "amazon_storyteller", "hindi_telugu"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["romantic_comedy", "thriller", "slice_of_life"],
+      "narrative_specializations": ["episodic", "serialized", "character_driven"],
+      "production_scale_handled": ["under_5cr", "5_to_15cr"],
+      "directing_style_tags": [],
+      "writing_formats": ["feature_screenplay", "episode_scripts", "story_concept"],
+      "languages_written_in": ["Hindi", "Telugu", "English"],
+      "software_used": ["Final Draft", "WriterDuet"],
+      "scripts_written": 5
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "workshop",
+        "name": "Amazon Prime Video Storyteller Program 2024",
+        "year": 2024,
+        "duration": "6 months"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_028",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_029",
+    "name": "Harish Babu Varanasi",
+    "status": "active",
+    "created_at": "2026-01-26T09:00:00Z",
+    "updated_at": "2026-03-15T10:00:00Z",
+    "onboarding_source": "founder_invite",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 7,
+      "peer_endorsements_count": 5
+    },
+    "profile_completeness": 0.80,
+    "personal_info": {
+      "gender": "Male",
+      "age": 36,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Bengaluru"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Line Producer",
+        "subcraft": "Low to Mid Budget Telugu Feature Film"
+      },
+      "secondary_crafts": [],
+      "experience_years": 11,
+      "experience_level": "senior",
+      "availability": {
+        "type": "project_based",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["line_producer_work", "ott_original_production", "mid_budget_films"]
+    },
+    "bio": "Line producer focused on the indie-to-mid budget Telugu film space. Known for making budgets stretch without cutting on quality. 7 completed films across the ₹3-25 crore range. Strong relationships with Hyderabad crew unions and location contractors. Excellent at outdoor location clearances in Andhra Pradesh.",
+    "tags_self": ["indie_line_producer", "budget_efficiency", "ap_locations", "hyderabad_crew"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["drama", "thriller", "comedy"],
+      "narrative_specializations": ["character_driven"],
+      "production_scale_handled": ["under_5cr", "5_to_15cr"],
+      "directing_style_tags": [],
+      "budget_range_managed": { "min_cr": 3, "max_cr": 25 },
+      "specializations": ["ap_location_clearances", "crew_union_management", "low_cost_innovation"],
+      "local_vendor_networks": ["Hyderabad", "Vijayawada", "Vizag", "Tirupati"]
+    },
+    "projects": [],
+    "education_training": [],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_029",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_030",
+    "name": "Parvathi Iyer Natarajan",
+    "status": "active",
+    "created_at": "2026-02-07T10:00:00Z",
+    "updated_at": "2026-04-12T09:30:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 8,
+      "peer_endorsements_count": 5
+    },
+    "profile_completeness": 0.78,
+    "personal_info": {
+      "gender": "Female",
+      "age": 35,
+      "languages": ["Tamil", "Telugu", "English", "Hindi"],
+      "regional_background": "Tamil Nadu"
+    },
+    "location": {
+      "current_city": "Chennai",
+      "state": "Tamil Nadu",
+      "country": "India",
+      "willing_to_travel": ["Chennai", "Hyderabad", "Mumbai", "Bengaluru"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Director",
+        "subcraft": "Tamil Drama and Thriller Director"
+      },
+      "secondary_crafts": [
+        { "craft": "Writer", "subcraft": "Tamil Screenplay" }
+      ],
+      "experience_years": 10,
+      "experience_level": "senior",
+      "availability": {
+        "type": "project_based",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["tamil_film_projects", "ott_originals_south", "bilingual_telugu_tamil_projects"]
+    },
+    "bio": "Chennai-based Tamil director with a track record in grounded urban dramas and psychological thrillers. Directed 2 feature films and 3 OTT series. Known for working with naturalistic actors and drawing on real south Indian middle-class life. Currently developing a Tamil-Telugu bilingual thriller.",
+    "tags_self": ["tamil_director", "urban_drama", "psychological_thriller", "naturalistic"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["drama", "psychological_thriller", "urban_slice_of_life"],
+      "narrative_specializations": ["character_driven", "slow_burn", "ensemble"],
+      "production_scale_handled": ["5_to_15cr", "15_to_40cr"],
+      "directing_style_tags": ["naturalistic", "actor_centric", "realistic"],
+      "ott_platforms_worked_with": ["SonyLIV", "Disney Plus Hotstar"],
+      "series_directed": 3
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "film_school",
+        "name": "Certificate in Direction — LV Prasad Film and TV Academy",
+        "year": 2014,
+        "duration": "1 year"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_030",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_031",
+    "name": "Venkatesha Rao Bezawada",
+    "status": "active",
+    "created_at": "2026-02-14T09:00:00Z",
+    "updated_at": "2026-04-06T10:00:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 11,
+      "peer_endorsements_count": 7
+    },
+    "profile_completeness": 0.85,
+    "personal_info": {
+      "gender": "Male",
+      "age": 45,
+      "languages": ["Telugu", "Hindi"],
+      "regional_background": "Coastal Andhra"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Vijayawada"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Line Producer",
+        "subcraft": "Studio and Indoor Shoot Specialist"
+      },
+      "secondary_crafts": [],
+      "experience_years": 20,
+      "experience_level": "veteran",
+      "availability": {
+        "type": "project_based",
+        "currently_available": false,
+        "next_available_from": "2026-07-15"
+      },
+      "looking_for": ["studio_shoot_productions", "song_sequence_productions", "indoor_drama_shoots"]
+    },
+    "bio": "Veteran line producer who specializes in studio and song-sequence productions at Ramoji Film City and Annapurna Studios. Deep expertise in set construction timelines, shoot permits at major Hyderabad studios, and cost optimization on indoor shoots. 20 years, 11 features.",
+    "tags_self": ["studio_specialist", "ramoji_film_city", "song_sequence", "set_construction"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["mass_entertainer", "romance", "drama"],
+      "narrative_specializations": ["commercial"],
+      "production_scale_handled": ["15_to_40cr", "40plus_cr"],
+      "directing_style_tags": [],
+      "budget_range_managed": { "min_cr": 12, "max_cr": 120 },
+      "specializations": ["studio_floor_management", "song_sequence_production", "set_construction_oversight"],
+      "studio_relationships": ["Ramoji Film City", "Annapurna Studios", "AMB Cinemas Studios"]
+    },
+    "projects": [],
+    "education_training": [],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_031",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_032",
+    "name": "Srividya Kumari Tammana",
+    "status": "active",
+    "created_at": "2026-03-12T09:30:00Z",
+    "updated_at": "2026-04-27T10:00:00Z",
+    "onboarding_source": "self_signup",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 0
+    },
+    "profile_completeness": 0.46,
+    "personal_info": {
+      "gender": "Female",
+      "age": 24,
+      "languages": ["Telugu", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Writer",
+        "subcraft": "Children's Content and Animation Script Writer"
+      },
+      "secondary_crafts": [],
+      "experience_years": 1,
+      "experience_level": "newcomer",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["animation_writing", "children_content_writing", "script_reader_positions"]
+    },
+    "bio": "Recent animation graduate passionate about Telugu children's content. Have written 5 sample animation episode scripts for a 2D series concept. Looking for writing internships or junior positions with Telugu animation studios or children's content producers.",
+    "tags_self": ["animation_writer", "children_content", "telugu_animation", "newcomer"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["animation", "children_content", "educational_content"],
+      "narrative_specializations": ["episodic", "age_appropriate"],
+      "production_scale_handled": ["under_5cr"],
+      "directing_style_tags": [],
+      "writing_formats": ["animation_episode_script", "series_bible"],
+      "software_used": ["Celtx", "Google Docs"],
+      "scripts_written": 5
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "BFA Animation — Arena Animation Hyderabad",
+        "year": 2025,
+        "duration": "3 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_032",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_033",
+    "name": "Mahesh Subramanyam Pisipati",
+    "status": "active",
+    "created_at": "2026-01-24T09:00:00Z",
+    "updated_at": "2026-03-20T11:00:00Z",
+    "onboarding_source": "founder_invite",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 15,
+      "peer_endorsements_count": 9
+    },
+    "profile_completeness": 0.90,
+    "personal_info": {
+      "gender": "Male",
+      "age": 46,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Chennai", "International"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Director",
+        "subcraft": "Mythological and Period Film Director"
+      },
+      "secondary_crafts": [],
+      "experience_years": 20,
+      "experience_level": "veteran",
+      "availability": {
+        "type": "project_based",
+        "currently_available": false,
+        "next_available_from": "2026-11-01"
+      },
+      "looking_for": ["mythological_projects", "period_films", "historical_epics"]
+    },
+    "bio": "Telugu specialist in mythological and period films. Directed 4 successful mythological features and 2 historical dramas. Deep research background in Telugu and Sanskrit texts, traditional art forms, and period-accurate costume and set design. Currently in pre-production for a 3-part mythological epic.",
+    "tags_self": ["mythological_director", "period_films", "historical_epics", "deep_research"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["mythology", "period_drama", "historical_epic"],
+      "narrative_specializations": ["epic", "high_concept", "culturally_rooted"],
+      "production_scale_handled": ["15_to_40cr", "40plus_cr"],
+      "directing_style_tags": ["visual_first", "grand_scale", "culturally_authentic"],
+      "previous_banners_worked_with": ["Vyjayanthi Movies", "Haarika and Hassine Creations"],
+      "research_specializations": ["Telugu_mythology", "Ramayana_Mahabharata", "Telugu_history", "traditional_art"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "MA Classical Telugu Literature — Osmania University",
+        "year": 2002,
+        "duration": "2 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_033",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_034",
+    "name": "Nagalakshmi Devi Pulaparthi",
+    "status": "active",
+    "created_at": "2026-02-16T10:00:00Z",
+    "updated_at": "2026-04-10T11:00:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 7,
+      "peer_endorsements_count": 4
+    },
+    "profile_completeness": 0.75,
+    "personal_info": {
+      "gender": "Female",
+      "age": 38,
+      "languages": ["Telugu", "Tamil", "English"],
+      "regional_background": "Coastal Andhra"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Chennai", "Bengaluru"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Casting Director",
+        "subcraft": "Telugu and Tamil OTT Casting"
+      },
+      "secondary_crafts": [],
+      "experience_years": 12,
+      "experience_level": "senior",
+      "availability": {
+        "type": "project_based",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["ott_casting", "pan_south_casting", "ensemble_drama_casting"]
+    },
+    "bio": "OTT-focused casting director with 12 years of experience across Telugu and Tamil digital originals. Have cast 3 Netflix originals and 2 Amazon Prime originals in South India. Known for finding actors from theatre, TV, and digital who bring authenticity to screen roles that commercial film actors cannot.",
+    "tags_self": ["ott_casting", "netflix_india", "amazon_prime", "theatre_to_screen"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["drama", "thriller", "crime", "social_commentary"],
+      "narrative_specializations": ["ensemble", "character_driven"],
+      "production_scale_handled": ["5_to_15cr", "15_to_40cr"],
+      "directing_style_tags": [],
+      "casting_specializations": ["ott_lead_casting", "ensemble_casting", "theatre_talent_discovery"],
+      "talent_circuits_covered": ["theatre_hyderabad", "theatre_chennai", "telugu_tv", "digital_creators"],
+      "ott_platforms_worked_with": ["Netflix India", "Amazon Prime Video India"],
+      "films_cast": 22
+    },
+    "projects": [],
+    "education_training": [],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_034",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_035",
+    "name": "Ravindra Nath Rao Chigurala",
+    "status": "active",
+    "created_at": "2026-01-19T09:30:00Z",
+    "updated_at": "2026-03-26T10:00:00Z",
+    "onboarding_source": "founder_invite",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 10,
+      "peer_endorsements_count": 6
+    },
+    "profile_completeness": 0.82,
+    "personal_info": {
+      "gender": "Male",
+      "age": 42,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Director",
+        "subcraft": "Romantic Drama Director"
+      },
+      "secondary_crafts": [
+        { "craft": "Writer", "subcraft": "Romance and Emotion Heavy Scripts" }
+      ],
+      "experience_years": 17,
+      "experience_level": "senior",
+      "availability": {
+        "type": "project_based",
+        "currently_available": false,
+        "next_available_from": "2026-09-15"
+      },
+      "looking_for": ["romantic_drama_projects", "ott_love_stories", "feature_films"]
+    },
+    "bio": "Telugu romantic drama director with a loyal fanbase among 18-35 year olds. Known for beautifully shot romance with strong emotional arcs. All 5 directed features made profit. Strong understanding of youth Telugu audiences and urban-rural love story formats.",
+    "tags_self": ["romantic_drama_director", "youth_audiences", "urban_rural_love_stories", "profitable"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["romantic_drama", "love_story", "youth_drama"],
+      "narrative_specializations": ["character_driven", "emotional_arc", "coming_of_age"],
+      "production_scale_handled": ["15_to_40cr"],
+      "directing_style_tags": ["visually_beautiful", "actor_centric", "emotional_depth"],
+      "previous_banners_worked_with": ["Sithara Entertainments", "Sri Venkateswara Creations"],
+      "box_office_hits": 5
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "apprenticeship",
+        "name": "AD under director Sekhar Kammula",
+        "year": 2005,
+        "duration": "4 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_035",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_036",
+    "name": "Jyothi Reddy Gudimella",
+    "status": "active",
+    "created_at": "2026-03-03T09:00:00Z",
+    "updated_at": "2026-04-24T10:30:00Z",
+    "onboarding_source": "self_signup",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 2
+    },
+    "profile_completeness": 0.60,
+    "personal_info": {
+      "gender": "Female",
+      "age": 31,
+      "languages": ["Telugu", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Line Producer",
+        "subcraft": "Women-Led Independent Film Producer"
+      },
+      "secondary_crafts": [],
+      "experience_years": 5,
+      "experience_level": "mid_level",
+      "availability": {
+        "type": "project_based",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["indie_film_production", "women_led_narratives", "documentary_production"]
+    },
+    "bio": "Line producer focused on independent Telugu films by and about women. Have produced 2 short films and 1 feature that premiered at the Indian Film Festival of Los Angeles. Currently developing a film about the Telangana women's empowerment movement of the 1980s.",
+    "tags_self": ["women_led", "indie_production", "iifla", "telangana_stories", "empowerment"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["women_led_drama", "social_issues", "documentary"],
+      "narrative_specializations": ["character_driven", "socially_relevant"],
+      "production_scale_handled": ["under_5cr"],
+      "directing_style_tags": [],
+      "budget_range_managed": { "min_cr": 0.5, "max_cr": 5 },
+      "awards": ["IIFLA Premiere 2024"],
+      "funding_sources": ["NFDC", "Women in Film India Grant"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "workshop",
+        "name": "NFDC Film Bazaar Producing Lab",
+        "year": 2023,
+        "duration": "1 week"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_036",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_037",
+    "name": "Anil Kumar Kotta",
+    "status": "active",
+    "created_at": "2026-02-24T09:00:00Z",
+    "updated_at": "2026-04-15T11:00:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 6,
+      "peer_endorsements_count": 4
+    },
+    "profile_completeness": 0.77,
+    "personal_info": {
+      "gender": "Male",
+      "age": 34,
+      "languages": ["Telugu", "English", "Kannada"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Bengaluru", "Mumbai"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "First AD",
+        "subcraft": "Mid-Level First AD"
+      },
+      "secondary_crafts": [],
+      "experience_years": 9,
+      "experience_level": "mid_level",
+      "availability": {
+        "type": "project_based",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["feature_film_first_ad", "web_series_first_ad"]
+    },
+    "bio": "Mid-level First AD with 9 years managing Telugu and Kannada productions. Methodical and calm under pressure. Good at managing difficult talent situations on floor. Can handle schedules from 30 to 200 day productions. Comfortable across studio and outdoor locations.",
+    "tags_self": ["first_ad", "methodical", "bilingual_floor", "telugu_kannada"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["drama", "action", "comedy"],
+      "narrative_specializations": ["character_driven"],
+      "production_scale_handled": ["5_to_15cr", "15_to_40cr"],
+      "directing_style_tags": [],
+      "first_ad_specializations": ["schedule_management", "talent_coordination", "studio_and_outdoor"],
+      "max_crew_coordinated": 250,
+      "shooting_days_managed": 480
+    },
+    "projects": [],
+    "education_training": [],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_037",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_038",
+    "name": "Sameera Begum Shaik",
+    "status": "active",
+    "created_at": "2026-03-18T10:00:00Z",
+    "updated_at": "2026-04-28T09:30:00Z",
+    "onboarding_source": "self_signup",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 0
+    },
+    "profile_completeness": 0.50,
+    "personal_info": {
+      "gender": "Female",
+      "age": 26,
+      "languages": ["Telugu", "Urdu", "Hindi", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Director",
+        "subcraft": "Music Video and Ad Film Director"
+      },
+      "secondary_crafts": [],
+      "experience_years": 3,
+      "experience_level": "emerging",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["music_video_direction", "ad_film_direction", "short_film_projects"]
+    },
+    "bio": "Young Hyderabad director with a strong visual sense developed through music video and ad film work. Directed 6 music videos for independent Telugu artists and 4 TVC campaigns. Strong understanding of visual storytelling within short formats. Now looking to extend into short film and web series work.",
+    "tags_self": ["music_video_director", "ad_films", "visual_storytelling", "independent_artists"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["music_video", "commercial", "visual_art"],
+      "narrative_specializations": ["visual_first", "mood_driven"],
+      "production_scale_handled": ["under_5cr"],
+      "directing_style_tags": ["visual_first", "stylized", "color_driven"],
+      "music_videos_directed": 6,
+      "tvcs_directed": 4
+    },
+    "projects": [
+      {
+        "id": "proj_g038_001",
+        "name": "Vennela Vaana — Music Video",
+        "type": "music_video",
+        "year": 2024,
+        "role": "Director",
+        "role_weight": 1.0,
+        "banner": null,
+        "production_house": "Independent",
+        "verified": false,
+        "proof_link": "https://youtube.com/watch?v=vennela_vaana",
+        "collaborators_on_platform": []
+      }
+    ],
+    "education_training": [
+      {
+        "type": "film_school",
+        "name": "Certificate in Visual Storytelling — WWI Mumbai (Online)",
+        "year": 2022,
+        "duration": "6 months"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [
+      {
+        "type": "youtube_link",
+        "url": "https://youtube.com/watch?v=vennela_vaana",
+        "title": "Vennela Vaana — Music Video",
+        "year": 2024,
+        "role_credit": "Director"
+      }
+    ],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_038",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_039",
+    "name": "Subrahmanyam Redy Kakarla",
+    "status": "active",
+    "created_at": "2026-01-23T09:00:00Z",
+    "updated_at": "2026-03-30T11:00:00Z",
+    "onboarding_source": "founder_invite",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 19,
+      "peer_endorsements_count": 12
+    },
+    "profile_completeness": 0.96,
+    "personal_info": {
+      "gender": "Male",
+      "age": 53,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Chennai", "International"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Producer",
+        "subcraft": "Commercial Banner Producer"
+      },
+      "secondary_crafts": [],
+      "experience_years": 28,
+      "experience_level": "veteran",
+      "availability": {
+        "type": "selective",
+        "currently_available": false,
+        "next_available_from": "2027-03-01"
+      },
+      "looking_for": ["a_list_director_projects", "pan_india_films", "international_co_production"]
+    },
+    "bio": "One of Tollywood's senior commercial producers. Founder of Kakarla Films. 28 years, 19 features. 4 films in the ₹100cr+ club. Well-connected with all major Tollywood talent including top heroes, music directors, and directors. Currently finalizing a pan-India film with a Rs. 200 crore budget.",
+    "tags_self": ["senior_producer", "kakarla_films", "pan_india", "a_list_connections"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["mass_entertainer", "action", "commercial"],
+      "narrative_specializations": ["high_concept", "commercial"],
+      "production_scale_handled": ["40plus_cr"],
+      "directing_style_tags": [],
+      "production_house_name": "Kakarla Films",
+      "total_films_produced": 19,
+      "combined_box_office_cr": 2100,
+      "ott_partnerships": ["Netflix India", "Amazon Prime Video", "Disney Plus Hotstar"]
+    },
+    "projects": [],
+    "education_training": [],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_039",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_g_040",
+    "name": "Deepika Rani Vangala",
+    "status": "active",
+    "created_at": "2026-03-20T09:30:00Z",
+    "updated_at": "2026-04-29T10:00:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 1
+    },
+    "profile_completeness": 0.64,
+    "personal_info": {
+      "gender": "Female",
+      "age": 29,
+      "languages": ["Telugu", "English", "Hindi"],
+      "regional_background": "Coastal Andhra"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Vizag"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Writer",
+        "subcraft": "Crime and Thriller Screenplay Writer"
+      },
+      "secondary_crafts": [
+        { "craft": "Director", "subcraft": "Crime Short Film Director" }
+      ],
+      "experience_years": 4,
+      "experience_level": "emerging",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["crime_thriller_writing", "ott_crime_content", "co_writing_opportunities"]
+    },
+    "bio": "Telugu crime and thriller writer with a background in criminal psychology. Obsessive researcher who writes detail-rich procedural scripts. Wrote the feature screenplay that won Best Script at the 2024 South India Screenwriting Competition. Currently developing a true-crime docuseries about unsolved Andhra Pradesh cases.",
+    "tags_self": ["crime_writer", "thriller", "criminal_psychology", "procedural", "best_script_award"],
+    "craft_specific_attributes": {
+      "genre_specializations": ["crime_thriller", "procedural_crime", "true_crime", "psychological_thriller"],
+      "narrative_specializations": ["non_linear", "investigative", "character_driven"],
+      "production_scale_handled": ["under_5cr", "5_to_15cr"],
+      "directing_style_tags": ["dark_tone", "investigative"],
+      "writing_formats": ["feature_screenplay", "series_bible", "true_crime_treatment"],
+      "software_used": ["Final Draft", "Fade In"],
+      "awards": ["Best Script — South India Screenwriting Competition 2024"],
+      "scripts_written": 6
+    },
+    "projects": [
+      {
+        "id": "proj_g040_001",
+        "name": "Paapa",
+        "type": "short_film",
+        "year": 2024,
+        "role": "Writer and Director",
+        "role_weight": 1.0,
+        "banner": null,
+        "production_house": "Independent",
+        "verified": false,
+        "proof_link": "https://youtube.com/watch?v=paapa_short",
+        "collaborators_on_platform": []
+      }
+    ],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "MSc Criminal Psychology — Hyderabad Central University",
+        "year": 2022,
+        "duration": "2 years"
+      },
+      {
+        "type": "workshop",
+        "name": "Crime Writing for Film and TV — Screenwriting Research Network",
+        "year": 2023,
+        "duration": "2 months"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [
+      {
+        "type": "youtube_link",
+        "url": "https://youtube.com/watch?v=paapa_short",
+        "title": "Paapa — Crime Short Film",
+        "year": 2024,
+        "role_credit": "Director and Writer"
+      }
+    ],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_g_040",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  }
+]

@@ -1,0 +1,2110 @@
+{
+  "craft_family": "C",
+  "family_name": "Sound and Music",
+  "crafts_included": ["Sound Designer", "Music Director", "Music Producer", "Singer", "Voice Artist", "Boom Operator", "Foley Artist", "Composer"],
+  "profiles": [
+    {
+      "id": "UC001",
+      "name": "Arjun Venkataraman",
+      "status": "active",
+      "created_at": "2023-02-14",
+      "updated_at": "2024-11-20",
+      "onboarding_source": "referral",
+      "profile_completeness": 97,
+      "verification": { "verified": true, "verified_at": "2023-03-01", "method": "id_check" },
+      "bio": "Film sound designer with 18 years crafting sonic worlds for Tamil and Telugu cinema. Known for immersive environmental soundscapes in period films.",
+      "personal_info": {
+        "gender": "male",
+        "age": 41,
+        "languages": ["Tamil", "Telugu", "English"],
+        "regional_background": "Tamil Nadu"
+      },
+      "location": {
+        "current_city": "Chennai",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Sound Designer",
+        "secondary_crafts": ["Foley Artist", "Composer"],
+        "experience_years": 18,
+        "experience_level": "senior",
+        "availability": "project_basis",
+        "looking_for": ["film_sound_design", "OTT_projects", "period_drama_work"]
+      },
+      "projects": [
+        { "title": "Kalki Kondalam", "year": 2022, "role": "Sound Designer", "format": "feature_film", "language": "Tamil", "platform": "theatrical" },
+        { "title": "Ratha Pookal", "year": 2021, "role": "Lead Sound Designer", "format": "feature_film", "language": "Tamil", "platform": "theatrical" },
+        { "title": "Neram Illai", "year": 2023, "role": "Sound Designer", "format": "OTT_series", "language": "Tamil", "platform": "Disney+Hotstar" }
+      ],
+      "education_training": [
+        { "institution": "Film and Television Institute of India", "course": "Sound Recording and Design", "year_completed": 2006 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Santhosh Narayanan", "craft": "Music Director", "note": "Exceptional spatial audio sensibility." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC001/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC001/cover.jpg"
+      },
+      "tags_self": ["period_drama_specialist", "immersive_sound", "Tamil_cinema"],
+      "work_samples": [
+        { "type": "audio_reel", "url": "https://portfolio.tribli.com/UC001/reel1.mp3", "label": "Environmental soundscape demo" }
+      ],
+      "craft_specific_attributes": {
+        "musical_specializations": ["film_score", "ambient_sound_design", "background_music"],
+        "instruments": [],
+        "software_proficiency": ["Pro_Tools", "Nuendo", "Izotope_RX"],
+        "voice_range": null,
+        "language_singing_proficiency": []
+      }
+    },
+    {
+      "id": "UC002",
+      "name": "Priya Krishnaswamy",
+      "status": "active",
+      "created_at": "2023-05-10",
+      "updated_at": "2024-12-01",
+      "onboarding_source": "organic_search",
+      "profile_completeness": 92,
+      "verification": { "verified": true, "verified_at": "2023-06-01", "method": "portfolio_check" },
+      "bio": "Independent music producer specializing in indie-pop and fusion. Blends Carnatic classical with contemporary electronic to create genre-defying soundscapes.",
+      "personal_info": {
+        "gender": "female",
+        "age": 29,
+        "languages": ["Tamil", "English", "Hindi"],
+        "regional_background": "Tamil Nadu"
+      },
+      "location": {
+        "current_city": "Bengaluru",
+        "state": "Karnataka",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Music Producer",
+        "secondary_crafts": ["Singer", "Composer"],
+        "experience_years": 6,
+        "experience_level": "mid",
+        "availability": "available_now",
+        "looking_for": ["album_production", "film_music", "brand_collaborations"]
+      },
+      "projects": [
+        { "title": "Velvet Veena EP", "year": 2023, "role": "Producer & Composer", "format": "album", "language": "English/Tamil", "platform": "Spotify" },
+        { "title": "Neon Raga", "year": 2022, "role": "Co-Producer", "format": "single", "language": "Tamil", "platform": "YouTube" }
+      ],
+      "education_training": [
+        { "institution": "Berklee Online", "course": "Music Production & Technology", "year_completed": 2019 },
+        { "institution": "Kalakshetra Foundation", "course": "Carnatic Vocal", "year_completed": 2015 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Anoushka Shankar", "craft": "Musician", "note": "Brilliant ear for East-West fusion." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC002/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC002/cover.jpg"
+      },
+      "tags_self": ["indie_fusion", "carnatic_meets_electronic", "female_producer"],
+      "work_samples": [
+        { "type": "audio_reel", "url": "https://portfolio.tribli.com/UC002/reel1.mp3", "label": "Velvet Veena production sampler" }
+      ],
+      "craft_specific_attributes": {
+        "musical_specializations": ["indie_pop", "classical_carnatic", "electronic_fusion"],
+        "instruments": ["veena", "piano", "synthesizer"],
+        "software_proficiency": ["Ableton", "Logic_Pro", "Max_MSP"],
+        "voice_range": "mezzo-soprano",
+        "language_singing_proficiency": ["Tamil", "English"]
+      }
+    },
+    {
+      "id": "UC003",
+      "name": "Khalid Ansari",
+      "status": "active",
+      "created_at": "2022-09-18",
+      "updated_at": "2024-10-15",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 89,
+      "verification": { "verified": true, "verified_at": "2022-10-01", "method": "id_check" },
+      "bio": "Boom operator with 11 years of on-set experience across Bollywood and regional features. Specialist in single-take live recordings and outdoor chase sequences.",
+      "personal_info": {
+        "gender": "male",
+        "age": 35,
+        "languages": ["Hindi", "Urdu", "English"],
+        "regional_background": "Uttar Pradesh"
+      },
+      "location": {
+        "current_city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Boom Operator",
+        "secondary_crafts": ["Sound Designer"],
+        "experience_years": 11,
+        "experience_level": "senior",
+        "availability": "project_basis",
+        "looking_for": ["feature_film_work", "OTT_series", "commercial_shoots"]
+      },
+      "projects": [
+        { "title": "Jazbaat", "year": 2023, "role": "Boom Operator", "format": "feature_film", "language": "Hindi", "platform": "theatrical" },
+        { "title": "Tanhaiyan", "year": 2022, "role": "Boom Operator", "format": "OTT_series", "language": "Hindi", "platform": "Netflix" },
+        { "title": "Roshni Ad Campaign", "year": 2023, "role": "Location Sound", "format": "TVC", "language": "Hindi", "platform": "broadcast" }
+      ],
+      "education_training": [
+        { "institution": "Whistling Woods International", "course": "Sound Production", "year_completed": 2013 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Resul Pookutty", "craft": "Sound Designer", "note": "Disciplined boom technique in chaotic outdoor environments." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC003/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC003/cover.jpg"
+      },
+      "tags_self": ["outdoor_specialist", "live_sound", "reliable_crew"],
+      "craft_specific_attributes": {
+        "musical_specializations": [],
+        "instruments": [],
+        "software_proficiency": ["Pro_Tools", "Sound_Devices_recorder"],
+        "voice_range": null,
+        "language_singing_proficiency": []
+      }
+    },
+    {
+      "id": "UC004",
+      "name": "Meghana Pillai",
+      "status": "active",
+      "created_at": "2023-01-05",
+      "updated_at": "2025-01-10",
+      "onboarding_source": "social_media",
+      "profile_completeness": 96,
+      "verification": { "verified": true, "verified_at": "2023-01-20", "method": "portfolio_check" },
+      "bio": "Versatile singer trained in Hindustani classical and contemporary playback. Has sung for major Bollywood films and national brand campaigns.",
+      "personal_info": {
+        "gender": "female",
+        "age": 33,
+        "languages": ["Hindi", "Marathi", "English", "Sanskrit"],
+        "regional_background": "Maharashtra"
+      },
+      "location": {
+        "current_city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India",
+        "willing_to_travel": false
+      },
+      "professional_info": {
+        "primary_craft": "Singer",
+        "secondary_crafts": ["Voice Artist", "Music Director"],
+        "experience_years": 12,
+        "experience_level": "senior",
+        "availability": "available_now",
+        "looking_for": ["playback_singing", "jingles", "live_concert_tours"]
+      },
+      "projects": [
+        { "title": "Ishq Mein Dooba", "year": 2023, "role": "Playback Singer", "format": "feature_film", "language": "Hindi", "platform": "theatrical" },
+        { "title": "Tata Sky Campaign", "year": 2022, "role": "Jingle Singer", "format": "TVC", "language": "Hindi", "platform": "broadcast" },
+        { "title": "Bandish Bandhan", "year": 2021, "role": "Lead Vocalist", "format": "album", "language": "Hindi", "platform": "Spotify" }
+      ],
+      "education_training": [
+        { "institution": "Gandharva Mahavidyalaya", "course": "Hindustani Classical Vocal", "year_completed": 2012 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Shankar Mahadevan", "craft": "Music Director", "note": "Pure tone, remarkable control in upper registers." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC004/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC004/cover.jpg"
+      },
+      "tags_self": ["classical_trained", "playback_powerhouse", "versatile_vocalist"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["film_score", "classical_hindustani", "background_music", "devotional"],
+        "instruments": ["harmonium", "tanpura"],
+        "software_proficiency": ["Logic_Pro", "Pro_Tools"],
+        "voice_range": "soprano",
+        "language_singing_proficiency": ["Hindi", "Marathi", "Sanskrit", "English"]
+      }
+    },
+    {
+      "id": "UC005",
+      "name": "Devraj Bora",
+      "status": "active",
+      "created_at": "2022-06-22",
+      "updated_at": "2024-09-05",
+      "onboarding_source": "referral",
+      "profile_completeness": 84,
+      "verification": { "verified": false, "verified_at": null, "method": null },
+      "bio": "Foley artist with 8 years specializing in Northeast Indian cinema and indie documentaries. Known for hyper-realistic texture work — rain, fabric, rural ambience.",
+      "personal_info": {
+        "gender": "male",
+        "age": 31,
+        "languages": ["Assamese", "Bengali", "Hindi", "English"],
+        "regional_background": "Assam"
+      },
+      "location": {
+        "current_city": "Guwahati",
+        "state": "Assam",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Foley Artist",
+        "secondary_crafts": ["Sound Designer", "Boom Operator"],
+        "experience_years": 8,
+        "experience_level": "mid",
+        "availability": "available_now",
+        "looking_for": ["indie_film_work", "documentary_projects", "OTT_series"]
+      },
+      "projects": [
+        { "title": "Jol Nil", "year": 2023, "role": "Foley Supervisor", "format": "feature_film", "language": "Assamese", "platform": "theatrical" },
+        { "title": "Voice of the Brahmaputra", "year": 2022, "role": "Foley & Field Recordist", "format": "documentary", "language": "English", "platform": "festival_circuit" }
+      ],
+      "education_training": [
+        { "institution": "Satyajit Ray Film and Television Institute", "course": "Sound Engineering", "year_completed": 2016 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC005/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC005/cover.jpg"
+      },
+      "tags_self": ["foley_texture", "Northeast_cinema", "documentary_sound"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["ambient_sound_design"],
+        "instruments": ["dotara"],
+        "software_proficiency": ["Pro_Tools", "Nuendo"],
+        "voice_range": null,
+        "language_singing_proficiency": []
+      }
+    },
+    {
+      "id": "UC006",
+      "name": "Zara Kapoor",
+      "status": "active",
+      "created_at": "2024-01-11",
+      "updated_at": "2025-01-28",
+      "onboarding_source": "social_media",
+      "profile_completeness": 78,
+      "verification": { "verified": true, "verified_at": "2024-02-01", "method": "social_verify" },
+      "bio": "Voice artist and dubbing specialist fluent in 4 languages. Works across animated series, audiobooks, corporate narration, and game voice acting.",
+      "personal_info": {
+        "gender": "female",
+        "age": 26,
+        "languages": ["Hindi", "English", "Punjabi", "Urdu"],
+        "regional_background": "Delhi"
+      },
+      "location": {
+        "current_city": "Delhi",
+        "state": "Delhi",
+        "country": "India",
+        "willing_to_travel": false
+      },
+      "professional_info": {
+        "primary_craft": "Voice Artist",
+        "secondary_crafts": ["Singer"],
+        "experience_years": 4,
+        "experience_level": "mid",
+        "availability": "available_now",
+        "looking_for": ["dubbing_projects", "animation_voice_work", "audiobook_narration", "game_voice_acting"]
+      },
+      "projects": [
+        { "title": "Chhota Bheem: Dragon Chronicles", "year": 2023, "role": "Lead Voice (English)", "format": "animated_series", "language": "English", "platform": "Netflix" },
+        { "title": "EduLearn Corporate Series", "year": 2024, "role": "Narrator", "format": "e-learning", "language": "Hindi/English", "platform": "corporate" }
+      ],
+      "education_training": [
+        { "institution": "Delhi School of Communication", "course": "Voice Acting and Radio Broadcasting", "year_completed": 2021 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Rajesh Khattar", "craft": "Voice Artist", "note": "Natural character differentiation — rare in young artists." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC006/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC006/cover.jpg"
+      },
+      "tags_self": ["multilingual_voice", "character_voice", "animation_specialist"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["indie_pop", "jingles"],
+        "instruments": [],
+        "software_proficiency": ["Adobe_Audition", "Audacity", "iZotope_RX"],
+        "voice_range": "contralto",
+        "language_singing_proficiency": ["Hindi", "Punjabi", "English"]
+      }
+    },
+    {
+      "id": "UC007",
+      "name": "Ranjit Ghosh",
+      "status": "active",
+      "created_at": "2021-11-30",
+      "updated_at": "2024-08-14",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 95,
+      "verification": { "verified": true, "verified_at": "2021-12-10", "method": "id_check" },
+      "bio": "Veteran music director for Bengali and Hindi cinema with 22 years in the industry. Known for emotionally layered orchestral scores that carry narratives without dialogue.",
+      "personal_info": {
+        "gender": "male",
+        "age": 50,
+        "languages": ["Bengali", "Hindi", "English"],
+        "regional_background": "West Bengal"
+      },
+      "location": {
+        "current_city": "Kolkata",
+        "state": "West Bengal",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Music Director",
+        "secondary_crafts": ["Composer", "Music Producer"],
+        "experience_years": 22,
+        "experience_level": "veteran",
+        "availability": "selective",
+        "looking_for": ["arthouse_film_music", "orchestral_composition", "international_co_productions"]
+      },
+      "projects": [
+        { "title": "Shunyo Nadi", "year": 2022, "role": "Music Director", "format": "feature_film", "language": "Bengali", "platform": "theatrical" },
+        { "title": "Pathar Panchali Redux", "year": 2020, "role": "Score Composer", "format": "documentary", "language": "Bengali", "platform": "MUBI" },
+        { "title": "Andhere Mein Roshni", "year": 2023, "role": "Music Director", "format": "feature_film", "language": "Hindi", "platform": "theatrical" }
+      ],
+      "education_training": [
+        { "institution": "Rabindra Bharati University", "course": "Music (Hindustani Classical)", "year_completed": 2002 },
+        { "institution": "Berklee College of Music", "course": "Film Scoring", "year_completed": 2005 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Rituparno Ghosh Estate", "craft": "Director", "note": "His scores breathe where dialogue cannot." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC007/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC007/cover.jpg"
+      },
+      "tags_self": ["orchestral_storytelling", "arthouse_cinema", "Bengali_music"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["film_score", "orchestral", "background_music", "arthouse"],
+        "instruments": ["sitar", "piano", "violin"],
+        "software_proficiency": ["Logic_Pro", "Sibelius", "Pro_Tools"],
+        "voice_range": null,
+        "language_singing_proficiency": []
+      }
+    },
+    {
+      "id": "UC008",
+      "name": "Sneha Iyer",
+      "status": "active",
+      "created_at": "2023-07-19",
+      "updated_at": "2025-02-05",
+      "onboarding_source": "organic_search",
+      "profile_completeness": 88,
+      "verification": { "verified": true, "verified_at": "2023-08-01", "method": "portfolio_check" },
+      "bio": "Carnatic-trained composer writing for dance-theatre and short films. Uses mridangam rhythms as structural spine for contemporary cinematic pieces.",
+      "personal_info": {
+        "gender": "female",
+        "age": 27,
+        "languages": ["Telugu", "Tamil", "Kannada", "English"],
+        "regional_background": "Karnataka"
+      },
+      "location": {
+        "current_city": "Bengaluru",
+        "state": "Karnataka",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Composer",
+        "secondary_crafts": ["Music Director", "Singer"],
+        "experience_years": 5,
+        "experience_level": "mid",
+        "availability": "available_now",
+        "looking_for": ["short_film_composition", "dance_theatre_scoring", "OTT_originals"]
+      },
+      "projects": [
+        { "title": "Nrityanjali", "year": 2023, "role": "Composer", "format": "dance_theatre", "language": "Telugu", "platform": "stage" },
+        { "title": "Maatimaya", "year": 2022, "role": "Original Score", "format": "short_film", "language": "Kannada", "platform": "film_festival" }
+      ],
+      "education_training": [
+        { "institution": "Naada Brahma Music Academy", "course": "Mridangam & Carnatic Composition", "year_completed": 2020 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Bombay Jayashri", "craft": "Vocalist", "note": "Deep rhythmic intelligence rarely seen this young." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC008/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC008/cover.jpg"
+      },
+      "tags_self": ["carnatic_composer", "rhythm_forward", "dance_theatre"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["classical_carnatic", "film_score", "dance_theatre_music"],
+        "instruments": ["mridangam", "ghatam", "veena"],
+        "software_proficiency": ["Logic_Pro", "Ableton"],
+        "voice_range": "mezzo-soprano",
+        "language_singing_proficiency": ["Telugu", "Kannada", "Tamil"]
+      }
+    },
+    {
+      "id": "UC009",
+      "name": "Harjeet Sandhu",
+      "status": "active",
+      "created_at": "2022-03-08",
+      "updated_at": "2024-11-30",
+      "onboarding_source": "referral",
+      "profile_completeness": 91,
+      "verification": { "verified": true, "verified_at": "2022-04-01", "method": "id_check" },
+      "bio": "Punjabi folk and pop music producer with 10 years building the Bhangra-Electronic crossover sound. Has produced tracks charting on UK Asian charts and collaborated with artists across three continents.",
+      "personal_info": {
+        "gender": "male",
+        "age": 36,
+        "languages": ["Punjabi", "Hindi", "English"],
+        "regional_background": "Punjab"
+      },
+      "location": {
+        "current_city": "Chandigarh",
+        "state": "Punjab",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Music Producer",
+        "secondary_crafts": ["Music Director", "Singer"],
+        "experience_years": 10,
+        "experience_level": "senior",
+        "availability": "project_basis",
+        "looking_for": ["Punjabi_pop_production", "international_collaborations", "film_music"]
+      },
+      "projects": [
+        { "title": "Dhol Drum Bass", "year": 2023, "role": "Lead Producer", "format": "EP", "language": "Punjabi", "platform": "Spotify_UK" },
+        { "title": "Rang De Oye", "year": 2022, "role": "Producer", "format": "single", "language": "Punjabi", "platform": "YouTube" },
+        { "title": "Chaddi Jawani", "year": 2021, "role": "Music Producer", "format": "feature_film", "language": "Punjabi", "platform": "theatrical" }
+      ],
+      "education_training": [
+        { "institution": "Chandigarh Music Institute", "course": "Music Production & Tabla", "year_completed": 2014 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Diljit Dosanjh", "craft": "Singer", "note": "He understands what Punjabi music feels like in the body." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC009/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC009/cover.jpg"
+      },
+      "tags_self": ["bhangra_electronic", "UK_Asian_charts", "Punjabi_pop"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["indie_pop", "folk_fusion", "Bhangra_electronic", "film_score"],
+        "instruments": ["dhol", "tumbi", "tabla"],
+        "software_proficiency": ["FL_Studio", "Ableton", "Logic_Pro"],
+        "voice_range": "tenor",
+        "language_singing_proficiency": ["Punjabi", "Hindi"]
+      }
+    },
+    {
+      "id": "UC010",
+      "name": "Lalitha Subramaniam",
+      "status": "active",
+      "created_at": "2021-08-02",
+      "updated_at": "2024-07-22",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 98,
+      "verification": { "verified": true, "verified_at": "2021-09-01", "method": "id_check" },
+      "bio": "Senior sound designer and re-recording mixer with 20 years. Delivered final mixes for 60+ features in 5 languages. Dolby Atmos certified, with credits on award-winning Tamil and Malayalam films.",
+      "personal_info": {
+        "gender": "female",
+        "age": 47,
+        "languages": ["Tamil", "Malayalam", "English", "Hindi"],
+        "regional_background": "Kerala"
+      },
+      "location": {
+        "current_city": "Chennai",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "willing_to_travel": false
+      },
+      "professional_info": {
+        "primary_craft": "Sound Designer",
+        "secondary_crafts": ["Composer"],
+        "experience_years": 20,
+        "experience_level": "veteran",
+        "availability": "selective",
+        "looking_for": ["prestige_feature_films", "Dolby_Atmos_mixing", "OTT_specials"]
+      },
+      "projects": [
+        { "title": "Malar", "year": 2023, "role": "Re-recording Mixer", "format": "feature_film", "language": "Malayalam", "platform": "theatrical" },
+        { "title": "Vaanam Kottatum", "year": 2020, "role": "Sound Designer", "format": "feature_film", "language": "Tamil", "platform": "theatrical" },
+        { "title": "Uyir", "year": 2021, "role": "Lead Sound Designer", "format": "OTT_series", "language": "Tamil", "platform": "Amazon_Prime" }
+      ],
+      "education_training": [
+        { "institution": "Film and Television Institute of India", "course": "Sound Design and Mixing", "year_completed": 2004 },
+        { "institution": "Dolby Laboratories", "course": "Dolby Atmos Certified Mixing", "year_completed": 2018 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Mani Ratnam", "craft": "Director", "note": "Her mixes make silence speak." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC010/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC010/cover.jpg"
+      },
+      "tags_self": ["Dolby_Atmos", "re-recording_mixer", "South_Indian_cinema"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["film_score", "ambient_sound_design", "spatial_audio"],
+        "instruments": [],
+        "software_proficiency": ["Pro_Tools", "Nuendo", "Dolby_Atmos_Renderer", "Izotope_RX"],
+        "voice_range": null,
+        "language_singing_proficiency": []
+      }
+    },
+    {
+      "id": "UC011",
+      "name": "Anand Mishra",
+      "status": "active",
+      "created_at": "2023-03-14",
+      "updated_at": "2024-12-18",
+      "onboarding_source": "social_media",
+      "profile_completeness": 82,
+      "verification": { "verified": false, "verified_at": null, "method": null },
+      "bio": "Rising Bollywood playback singer with a powerful baritone. Has sung for indie films and music albums. Currently performing live on the college circuit.",
+      "personal_info": {
+        "gender": "male",
+        "age": 24,
+        "languages": ["Hindi", "Bhojpuri", "English"],
+        "regional_background": "Bihar"
+      },
+      "location": {
+        "current_city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Singer",
+        "secondary_crafts": ["Voice Artist"],
+        "experience_years": 3,
+        "experience_level": "entry",
+        "availability": "available_now",
+        "looking_for": ["playback_singing", "live_performances", "music_video_appearances"]
+      },
+      "projects": [
+        { "title": "Mitti Ki Khushboo", "year": 2023, "role": "Playback Singer", "format": "indie_film", "language": "Hindi", "platform": "YouTube" },
+        { "title": "Dil Ka Dariya", "year": 2024, "role": "Lead Vocalist", "format": "single", "language": "Hindi", "platform": "Spotify" }
+      ],
+      "education_training": [
+        { "institution": "Banaras Hindu University", "course": "Hindustani Vocal", "year_completed": 2022 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC011/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC011/cover.jpg"
+      },
+      "tags_self": ["baritone", "Hindustani_trained", "indie_Bollywood"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["film_score", "ghazal", "semi-classical"],
+        "instruments": ["harmonium", "tabla"],
+        "software_proficiency": ["GarageBand", "Audacity"],
+        "voice_range": "baritone",
+        "language_singing_proficiency": ["Hindi", "Bhojpuri", "Urdu"]
+      }
+    },
+    {
+      "id": "UC012",
+      "name": "Fatima Noorani",
+      "status": "active",
+      "created_at": "2022-11-05",
+      "updated_at": "2025-01-03",
+      "onboarding_source": "referral",
+      "profile_completeness": 90,
+      "verification": { "verified": true, "verified_at": "2022-12-01", "method": "portfolio_check" },
+      "bio": "Sound designer for theatre and experimental cinema. Creates reactive sonic environments using generative audio tools. Based in Pune, working with independent theatre groups nationally.",
+      "personal_info": {
+        "gender": "female",
+        "age": 30,
+        "languages": ["Urdu", "Hindi", "English", "Marathi"],
+        "regional_background": "Maharashtra"
+      },
+      "location": {
+        "current_city": "Pune",
+        "state": "Maharashtra",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Sound Designer",
+        "secondary_crafts": ["Composer", "Foley Artist"],
+        "experience_years": 7,
+        "experience_level": "mid",
+        "availability": "project_basis",
+        "looking_for": ["experimental_theatre", "indie_cinema", "installation_art"]
+      },
+      "projects": [
+        { "title": "Khaali Kamra", "year": 2023, "role": "Sound Designer", "format": "theatre_play", "language": "Urdu/Hindi", "platform": "stage" },
+        { "title": "Aakar", "year": 2022, "role": "Sound & Music", "format": "short_film", "language": "Marathi", "platform": "film_festival" }
+      ],
+      "education_training": [
+        { "institution": "National School of Drama", "course": "Theatre Sound Design", "year_completed": 2018 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Sunil Shanbag", "craft": "Theatre Director", "note": "Her soundscapes transform space itself." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC012/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC012/cover.jpg"
+      },
+      "tags_self": ["experimental_sound", "theatre_sound", "generative_audio"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["ambient_sound_design", "experimental", "electroacoustic"],
+        "instruments": ["synthesizer", "found_objects"],
+        "software_proficiency": ["Max_MSP", "SuperCollider", "Ableton", "Pro_Tools"],
+        "voice_range": null,
+        "language_singing_proficiency": []
+      }
+    },
+    {
+      "id": "UC013",
+      "name": "Vikram Nair",
+      "status": "active",
+      "created_at": "2021-04-17",
+      "updated_at": "2024-06-28",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 93,
+      "verification": { "verified": true, "verified_at": "2021-05-01", "method": "id_check" },
+      "bio": "Malayalam film composer with 14 years and 35 features. Fuses Mappilapattu folk traditions with modern cinematic orchestration. Twice Kerala State Film Award winner.",
+      "personal_info": {
+        "gender": "male",
+        "age": 42,
+        "languages": ["Malayalam", "Tamil", "English", "Hindi"],
+        "regional_background": "Kerala"
+      },
+      "location": {
+        "current_city": "Kochi",
+        "state": "Kerala",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Composer",
+        "secondary_crafts": ["Music Director", "Music Producer"],
+        "experience_years": 14,
+        "experience_level": "senior",
+        "availability": "selective",
+        "looking_for": ["Malayalam_films", "international_festival_films", "cross_cultural_projects"]
+      },
+      "projects": [
+        { "title": "Vaayadi Petha Pulla", "year": 2023, "role": "Composer", "format": "feature_film", "language": "Malayalam", "platform": "theatrical" },
+        { "title": "Theevandi Revisited", "year": 2021, "role": "Music Director", "format": "feature_film", "language": "Malayalam", "platform": "theatrical" },
+        { "title": "Mappila Songs: A Documentary", "year": 2022, "role": "Music Curator & Composer", "format": "documentary", "language": "Malayalam", "platform": "OTT" }
+      ],
+      "education_training": [
+        { "institution": "Government Music College Thrissur", "course": "Carnatic & Western Music", "year_completed": 2010 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Lijo Jose Pellissery", "craft": "Director", "note": "Music that is inseparable from the image." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC013/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC013/cover.jpg"
+      },
+      "tags_self": ["Mappilapattu_fusion", "Malayalam_cinema", "folk_orchestration"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["film_score", "folk_fusion", "orchestral", "background_music"],
+        "instruments": ["oud", "violin", "tabla", "chenda"],
+        "software_proficiency": ["Logic_Pro", "Pro_Tools", "Kontakt"],
+        "voice_range": null,
+        "language_singing_proficiency": []
+      }
+    },
+    {
+      "id": "UC014",
+      "name": "Ritika Sharma",
+      "status": "active",
+      "created_at": "2024-02-22",
+      "updated_at": "2025-02-20",
+      "onboarding_source": "social_media",
+      "profile_completeness": 75,
+      "verification": { "verified": false, "verified_at": null, "method": null },
+      "bio": "Emerging voice artist and singer. Trained in Western classical singing. Pursues voice-over work for ads and animation alongside live gig circuits in Delhi-NCR.",
+      "personal_info": {
+        "gender": "female",
+        "age": 22,
+        "languages": ["Hindi", "English", "Punjabi"],
+        "regional_background": "Haryana"
+      },
+      "location": {
+        "current_city": "Gurugram",
+        "state": "Haryana",
+        "country": "India",
+        "willing_to_travel": false
+      },
+      "professional_info": {
+        "primary_craft": "Voice Artist",
+        "secondary_crafts": ["Singer"],
+        "experience_years": 2,
+        "experience_level": "entry",
+        "availability": "available_now",
+        "looking_for": ["voice_over_work", "jingle_singing", "animation_voice_work"]
+      },
+      "projects": [
+        { "title": "BabyBoo Diapers Campaign", "year": 2024, "role": "Voice Over Artist", "format": "TVC", "language": "Hindi", "platform": "broadcast" }
+      ],
+      "education_training": [
+        { "institution": "Trinity College London", "course": "Grade 8 Western Classical Singing", "year_completed": 2022 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC014/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC014/cover.jpg"
+      },
+      "tags_self": ["western_classical", "voice_over", "young_talent"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["western_classical", "pop", "jingles"],
+        "instruments": ["piano"],
+        "software_proficiency": ["GarageBand", "Audacity"],
+        "voice_range": "soprano",
+        "language_singing_proficiency": ["English", "Hindi"]
+      }
+    },
+    {
+      "id": "UC015",
+      "name": "Suresh Tiwari",
+      "status": "active",
+      "created_at": "2020-07-04",
+      "updated_at": "2024-05-19",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 96,
+      "verification": { "verified": true, "verified_at": "2020-08-01", "method": "id_check" },
+      "bio": "Veteran boom operator with 24 years on Bollywood sets. Trained over 40 juniors, known for near-silent footwork and anticipatory mic placement on dialogue-heavy ensemble films.",
+      "personal_info": {
+        "gender": "male",
+        "age": 52,
+        "languages": ["Hindi", "Marathi", "English"],
+        "regional_background": "Madhya Pradesh"
+      },
+      "location": {
+        "current_city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Boom Operator",
+        "secondary_crafts": ["Sound Designer"],
+        "experience_years": 24,
+        "experience_level": "veteran",
+        "availability": "selective",
+        "looking_for": ["prestige_film_sets", "mentoring_junior_crew", "long_schedule_features"]
+      },
+      "projects": [
+        { "title": "Gulmohar", "year": 2023, "role": "Boom Operator", "format": "feature_film", "language": "Hindi", "platform": "Disney+Hotstar" },
+        { "title": "Dilli Se", "year": 2021, "role": "Location Sound Supervisor", "format": "feature_film", "language": "Hindi", "platform": "theatrical" }
+      ],
+      "education_training": [
+        { "institution": "Film and Television Institute of India", "course": "Sound Recording", "year_completed": 2000 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Dibakar Banerjee", "craft": "Director", "note": "24 years and still the most precise boom on set." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC015/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC015/cover.jpg"
+      },
+      "tags_self": ["ensemble_films", "location_sound", "industry_veteran"],
+      "craft_specific_attributes": {
+        "musical_specializations": [],
+        "instruments": [],
+        "software_proficiency": ["Pro_Tools", "Sound_Devices_recorder", "Zaxcom_wireless"],
+        "voice_range": null,
+        "language_singing_proficiency": []
+      }
+    },
+    {
+      "id": "UC016",
+      "name": "Pooja Ramachandran",
+      "status": "active",
+      "created_at": "2023-09-01",
+      "updated_at": "2025-01-22",
+      "onboarding_source": "organic_search",
+      "profile_completeness": 86,
+      "verification": { "verified": true, "verified_at": "2023-09-20", "method": "portfolio_check" },
+      "bio": "Film composer and Bharatanatyam-trained musician who writes music for contemporary dance-films and feminist shorts. Explores the sonic space between silence and rhythm.",
+      "personal_info": {
+        "gender": "female",
+        "age": 34,
+        "languages": ["Tamil", "English", "Telugu"],
+        "regional_background": "Tamil Nadu"
+      },
+      "location": {
+        "current_city": "Chennai",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Composer",
+        "secondary_crafts": ["Singer", "Sound Designer"],
+        "experience_years": 9,
+        "experience_level": "mid",
+        "availability": "project_basis",
+        "looking_for": ["feminist_cinema", "dance_film_scoring", "international_festival_films"]
+      },
+      "projects": [
+        { "title": "Uyarndha Paavam", "year": 2023, "role": "Composer & Vocalist", "format": "short_film", "language": "Tamil", "platform": "film_festival" },
+        { "title": "Nattiya Nadam", "year": 2022, "role": "Music Director", "format": "dance_film", "language": "Tamil", "platform": "YouTube" }
+      ],
+      "education_training": [
+        { "institution": "Kalakshetra Foundation", "course": "Bharatanatyam & Carnatic Music", "year_completed": 2016 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Leela Samson", "craft": "Dancer", "note": "She makes music that dancers can live inside." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC016/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC016/cover.jpg"
+      },
+      "tags_self": ["dance_film_composer", "feminist_cinema", "silence_as_sound"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["classical_carnatic", "film_score", "dance_theatre_music", "ambient_sound_design"],
+        "instruments": ["mridangam", "veena", "flute"],
+        "software_proficiency": ["Logic_Pro", "Ableton", "Pro_Tools"],
+        "voice_range": "mezzo-soprano",
+        "language_singing_proficiency": ["Tamil", "Telugu"]
+      }
+    },
+    {
+      "id": "UC017",
+      "name": "Girish Patel",
+      "status": "active",
+      "created_at": "2022-05-15",
+      "updated_at": "2024-10-30",
+      "onboarding_source": "referral",
+      "profile_completeness": 87,
+      "verification": { "verified": true, "verified_at": "2022-06-01", "method": "id_check" },
+      "bio": "Gujarati and Bollywood music producer specializing in Garba-Electronic fusion. Produced tracks for Navratri events reaching millions of viewers. Bridges festival folk with streaming-era production.",
+      "personal_info": {
+        "gender": "male",
+        "age": 38,
+        "languages": ["Gujarati", "Hindi", "English"],
+        "regional_background": "Gujarat"
+      },
+      "location": {
+        "current_city": "Ahmedabad",
+        "state": "Gujarat",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Music Producer",
+        "secondary_crafts": ["Music Director"],
+        "experience_years": 12,
+        "experience_level": "senior",
+        "availability": "project_basis",
+        "looking_for": ["Gujarati_pop_production", "festival_music", "film_music", "brand_campaigns"]
+      },
+      "projects": [
+        { "title": "Garba Universe Vol. 3", "year": 2023, "role": "Lead Producer", "format": "album", "language": "Gujarati", "platform": "Spotify" },
+        { "title": "Raas Mahotsav Live", "year": 2022, "role": "Music Director", "format": "live_event", "language": "Gujarati", "platform": "live" }
+      ],
+      "education_training": [
+        { "institution": "Sangeet Vihar Academy", "course": "Percussion & Music Production", "year_completed": 2012 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC017/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC017/cover.jpg"
+      },
+      "tags_self": ["Garba_electronic", "festival_folk", "Gujarati_music"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["folk_fusion", "electronic_dance", "film_score"],
+        "instruments": ["dhol", "tabla", "synthesizer"],
+        "software_proficiency": ["FL_Studio", "Logic_Pro", "Ableton"],
+        "voice_range": null,
+        "language_singing_proficiency": []
+      }
+    },
+    {
+      "id": "UC018",
+      "name": "Amara Osei",
+      "status": "active",
+      "created_at": "2023-04-25",
+      "updated_at": "2024-12-10",
+      "onboarding_source": "organic_search",
+      "profile_completeness": 80,
+      "verification": { "verified": true, "verified_at": "2023-05-10", "method": "social_verify" },
+      "bio": "Afro-Indian music producer based in Mumbai. Blends West African percussion traditions with Indian electronic music, creating a pan-global groove. Released two EPs on international labels.",
+      "personal_info": {
+        "gender": "male",
+        "age": 29,
+        "languages": ["English", "Hindi", "Twi"],
+        "regional_background": "International (Ghana-origin, India-based)"
+      },
+      "location": {
+        "current_city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Music Producer",
+        "secondary_crafts": ["Composer"],
+        "experience_years": 5,
+        "experience_level": "mid",
+        "availability": "available_now",
+        "looking_for": ["international_collaborations", "film_music", "brand_campaigns"]
+      },
+      "projects": [
+        { "title": "Kente Rhythms EP", "year": 2023, "role": "Producer & Composer", "format": "EP", "language": "English/Twi", "platform": "Bandcamp" },
+        { "title": "Mumbai After Midnight", "year": 2022, "role": "Co-Producer", "format": "single", "language": "English", "platform": "Spotify" }
+      ],
+      "education_training": [
+        { "institution": "Berklee Online", "course": "Electronic Music Production", "year_completed": 2020 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC018/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC018/cover.jpg"
+      },
+      "tags_self": ["Afro_Indian", "global_beats", "international_producer"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["Afrobeats", "electronic_fusion", "indie_pop"],
+        "instruments": ["djembe", "kora", "synthesizer"],
+        "software_proficiency": ["Ableton", "Logic_Pro", "Native_Instruments"],
+        "voice_range": null,
+        "language_singing_proficiency": []
+      }
+    },
+    {
+      "id": "UC019",
+      "name": "Nalini Devi",
+      "status": "active",
+      "created_at": "2021-06-10",
+      "updated_at": "2024-04-17",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 94,
+      "verification": { "verified": true, "verified_at": "2021-07-01", "method": "id_check" },
+      "bio": "Veteran Carnatic vocalist and playback singer with 25 years. Has sung for 200+ Tamil, Telugu, and Kannada films. A regular voice in classical sabha circuits during the December season.",
+      "personal_info": {
+        "gender": "female",
+        "age": 55,
+        "languages": ["Tamil", "Telugu", "Kannada", "Sanskrit", "Hindi"],
+        "regional_background": "Tamil Nadu"
+      },
+      "location": {
+        "current_city": "Chennai",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Singer",
+        "secondary_crafts": ["Music Director", "Composer"],
+        "experience_years": 25,
+        "experience_level": "veteran",
+        "availability": "selective",
+        "looking_for": ["classical_concerts", "playback_singing_selective", "music_education"]
+      },
+      "projects": [
+        { "title": "Bharathi Kavidhai", "year": 2022, "role": "Lead Vocalist", "format": "devotional_album", "language": "Tamil", "platform": "Raaga" },
+        { "title": "Kalaimagal", "year": 2021, "role": "Playback Singer", "format": "feature_film", "language": "Tamil", "platform": "theatrical" }
+      ],
+      "education_training": [
+        { "institution": "Music Academy Chennai", "course": "Carnatic Vocal (Advanced)", "year_completed": 1999 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "M. S. Subbulakshmi Trust", "craft": "Institution", "note": "One of the finest voices carrying the tradition forward." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC019/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC019/cover.jpg"
+      },
+      "tags_self": ["classical_vocalist", "Carnatic_tradition", "South_Indian_cinema"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["classical_carnatic", "devotional", "film_score", "sabha_concerts"],
+        "instruments": ["violin", "tanpura"],
+        "software_proficiency": ["GarageBand"],
+        "voice_range": "soprano",
+        "language_singing_proficiency": ["Tamil", "Telugu", "Kannada", "Sanskrit"]
+      }
+    },
+    {
+      "id": "UC020",
+      "name": "Rohan Shetty",
+      "status": "active",
+      "created_at": "2023-08-08",
+      "updated_at": "2025-01-15",
+      "onboarding_source": "social_media",
+      "profile_completeness": 79,
+      "verification": { "verified": false, "verified_at": null, "method": null },
+      "bio": "Young foley artist and field recordist based in Bengaluru. Obsessively catalogues unique urban and natural sounds of South India. Contributes to indie game audio projects.",
+      "personal_info": {
+        "gender": "male",
+        "age": 23,
+        "languages": ["Kannada", "Hindi", "English", "Tulu"],
+        "regional_background": "Karnataka"
+      },
+      "location": {
+        "current_city": "Bengaluru",
+        "state": "Karnataka",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Foley Artist",
+        "secondary_crafts": ["Sound Designer"],
+        "experience_years": 2,
+        "experience_level": "entry",
+        "availability": "available_now",
+        "looking_for": ["indie_films", "game_audio", "documentary_projects"]
+      },
+      "projects": [
+        { "title": "Aranya Kannada Short", "year": 2024, "role": "Foley Artist", "format": "short_film", "language": "Kannada", "platform": "film_festival" }
+      ],
+      "education_training": [
+        { "institution": "Whistling Woods International", "course": "Sound Design", "year_completed": 2023 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC020/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC020/cover.jpg"
+      },
+      "tags_self": ["field_recording", "indie_game_audio", "urban_sound"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["ambient_sound_design"],
+        "instruments": [],
+        "software_proficiency": ["Pro_Tools", "Reaper", "Audacity"],
+        "voice_range": null,
+        "language_singing_proficiency": []
+      }
+    },
+    {
+      "id": "UC021",
+      "name": "Kavitha Reddy",
+      "status": "active",
+      "created_at": "2022-01-20",
+      "updated_at": "2024-09-22",
+      "onboarding_source": "referral",
+      "profile_completeness": 91,
+      "verification": { "verified": true, "verified_at": "2022-02-10", "method": "id_check" },
+      "bio": "Telugu music director fusing folk Janapada traditions with contemporary film music. Has scored 18 Tollywood films and mentors upcoming folk artists at her studio in Hyderabad.",
+      "personal_info": {
+        "gender": "female",
+        "age": 44,
+        "languages": ["Telugu", "Hindi", "English"],
+        "regional_background": "Andhra Pradesh"
+      },
+      "location": {
+        "current_city": "Hyderabad",
+        "state": "Telangana",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Music Director",
+        "secondary_crafts": ["Composer", "Singer"],
+        "experience_years": 16,
+        "experience_level": "senior",
+        "availability": "project_basis",
+        "looking_for": ["Tollywood_films", "folk_revival_projects", "music_mentoring"]
+      },
+      "projects": [
+        { "title": "Vana Devatha", "year": 2023, "role": "Music Director", "format": "feature_film", "language": "Telugu", "platform": "theatrical" },
+        { "title": "Janapada Jeevam", "year": 2022, "role": "Composer & Curator", "format": "documentary", "language": "Telugu", "platform": "Zee5" }
+      ],
+      "education_training": [
+        { "institution": "Potti Sriramulu Telugu University", "course": "Music (Carnatic & Folk)", "year_completed": 2008 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "SS Rajamouli", "craft": "Director", "note": "She carries the heartbeat of the Telugu soil in her music." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC021/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC021/cover.jpg"
+      },
+      "tags_self": ["Janapada_folk", "Tollywood", "folk_revivalist"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["folk_fusion", "film_score", "background_music", "classical_carnatic"],
+        "instruments": ["sitar", "flute", "gummeta"],
+        "software_proficiency": ["Logic_Pro", "Pro_Tools", "Kontakt"],
+        "voice_range": "mezzo-soprano",
+        "language_singing_proficiency": ["Telugu", "Hindi"]
+      }
+    },
+    {
+      "id": "UC022",
+      "name": "Dhruv Malhotra",
+      "status": "active",
+      "created_at": "2023-10-11",
+      "updated_at": "2025-02-01",
+      "onboarding_source": "social_media",
+      "profile_completeness": 77,
+      "verification": { "verified": false, "verified_at": null, "method": null },
+      "bio": "Delhi-based indie-pop singer-songwriter with an alternative rock edge. Released debut EP on BandLab; performs 60+ shows annually in the indie circuit. Self-taught multi-instrumentalist.",
+      "personal_info": {
+        "gender": "male",
+        "age": 25,
+        "languages": ["Hindi", "English"],
+        "regional_background": "Delhi"
+      },
+      "location": {
+        "current_city": "Delhi",
+        "state": "Delhi",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Singer",
+        "secondary_crafts": ["Music Producer"],
+        "experience_years": 4,
+        "experience_level": "entry",
+        "availability": "available_now",
+        "looking_for": ["live_performances", "film_playback", "album_production_deals"]
+      },
+      "projects": [
+        { "title": "Static Dreams EP", "year": 2024, "role": "Singer-Songwriter-Producer", "format": "EP", "language": "English/Hindi", "platform": "Spotify" }
+      ],
+      "education_training": [
+        { "institution": "Self-taught", "course": "Guitar & Songwriting", "year_completed": 2021 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC022/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC022/cover.jpg"
+      },
+      "tags_self": ["indie_rock", "singer_songwriter", "alternative"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["indie_pop", "alternative_rock"],
+        "instruments": ["guitar", "bass_guitar", "keyboard"],
+        "software_proficiency": ["GarageBand", "Reaper"],
+        "voice_range": "tenor",
+        "language_singing_proficiency": ["Hindi", "English"]
+      }
+    },
+    {
+      "id": "UC023",
+      "name": "Mamta Barua",
+      "status": "active",
+      "created_at": "2022-07-29",
+      "updated_at": "2024-08-11",
+      "onboarding_source": "organic_search",
+      "profile_completeness": 85,
+      "verification": { "verified": true, "verified_at": "2022-08-15", "method": "portfolio_check" },
+      "bio": "Assamese singer performing Bihu, Borgeet, and modern folk-pop. Has sung for Assamese films and is a recognized voice on Doordarshan Assam. Active in cultural preservation through music.",
+      "personal_info": {
+        "gender": "female",
+        "age": 38,
+        "languages": ["Assamese", "Bengali", "Hindi", "English"],
+        "regional_background": "Assam"
+      },
+      "location": {
+        "current_city": "Guwahati",
+        "state": "Assam",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Singer",
+        "secondary_crafts": ["Music Director"],
+        "experience_years": 14,
+        "experience_level": "senior",
+        "availability": "project_basis",
+        "looking_for": ["Assamese_film_music", "folk_revival_collaborations", "cultural_festivals"]
+      },
+      "projects": [
+        { "title": "Xopun Mur Mou", "year": 2023, "role": "Playback Singer", "format": "feature_film", "language": "Assamese", "platform": "theatrical" },
+        { "title": "Bihu Bor Xaj", "year": 2022, "role": "Lead Vocalist", "format": "album", "language": "Assamese", "platform": "Spotify" }
+      ],
+      "education_training": [
+        { "institution": "Sangit Parishad Guwahati", "course": "Assamese Classical & Folk Vocal", "year_completed": 2010 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Zubeen Garg", "craft": "Singer", "note": "A voice that carries the entire Brahmaputra valley." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC023/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC023/cover.jpg"
+      },
+      "tags_self": ["Bihu_singer", "folk_preservation", "Assamese_cinema"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["folk_fusion", "devotional", "film_score"],
+        "instruments": ["dotara", "gogona"],
+        "software_proficiency": ["GarageBand", "Logic_Pro"],
+        "voice_range": "mezzo-soprano",
+        "language_singing_proficiency": ["Assamese", "Bengali", "Hindi"]
+      }
+    },
+    {
+      "id": "UC024",
+      "name": "Nikhil Varghese",
+      "status": "active",
+      "created_at": "2021-12-01",
+      "updated_at": "2024-07-09",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 93,
+      "verification": { "verified": true, "verified_at": "2022-01-01", "method": "id_check" },
+      "bio": "Senior sound designer for Malayalam, Tamil, and Hindi OTT films. Specialist in psychological thriller sound — layered dissonance, off-sync ambiences, and ear-fatigue design for horror and tension.",
+      "personal_info": {
+        "gender": "male",
+        "age": 40,
+        "languages": ["Malayalam", "Tamil", "English", "Hindi"],
+        "regional_background": "Kerala"
+      },
+      "location": {
+        "current_city": "Kochi",
+        "state": "Kerala",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Sound Designer",
+        "secondary_crafts": ["Foley Artist", "Composer"],
+        "experience_years": 15,
+        "experience_level": "senior",
+        "availability": "project_basis",
+        "looking_for": ["thriller_films", "horror_OTT", "prestige_drama"]
+      },
+      "projects": [
+        { "title": "Naalu Kettu", "year": 2023, "role": "Sound Designer", "format": "feature_film", "language": "Malayalam", "platform": "theatrical" },
+        { "title": "Adharam", "year": 2022, "role": "Lead Sound Designer", "format": "OTT_series", "language": "Malayalam", "platform": "SonyLIV" }
+      ],
+      "education_training": [
+        { "institution": "Film and Television Institute of India", "course": "Sound Design", "year_completed": 2009 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Jeethu Joseph", "craft": "Director", "note": "Nikhil's sound makes the ordinary terrifying." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC024/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC024/cover.jpg"
+      },
+      "tags_self": ["psychological_thriller_sound", "horror_audio", "OTT_specialist"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["ambient_sound_design", "dissonant_scoring", "horror_audio"],
+        "instruments": [],
+        "software_proficiency": ["Pro_Tools", "Nuendo", "Izotope_RX", "Spat_Revolution"],
+        "voice_range": null,
+        "language_singing_proficiency": []
+      }
+    },
+    {
+      "id": "UC025",
+      "name": "Tara Singh",
+      "status": "active",
+      "created_at": "2023-06-18",
+      "updated_at": "2025-01-29",
+      "onboarding_source": "social_media",
+      "profile_completeness": 83,
+      "verification": { "verified": false, "verified_at": null, "method": null },
+      "bio": "Non-binary music producer and sound artist creating ambient and electronic music exploring gender, identity, and urban loneliness. Has released music under the alias 'Iridescent Static'.",
+      "personal_info": {
+        "gender": "non-binary",
+        "age": 27,
+        "languages": ["Hindi", "English", "Punjabi"],
+        "regional_background": "Punjab"
+      },
+      "location": {
+        "current_city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India",
+        "willing_to_travel": false
+      },
+      "professional_info": {
+        "primary_craft": "Music Producer",
+        "secondary_crafts": ["Sound Designer", "Composer"],
+        "experience_years": 5,
+        "experience_level": "mid",
+        "availability": "available_now",
+        "looking_for": ["indie_film_scoring", "experimental_music_projects", "brand_collaborations"]
+      },
+      "projects": [
+        { "title": "Iridescent Static — Vol 1", "year": 2023, "role": "Producer & Composer", "format": "album", "language": "Instrumental", "platform": "Bandcamp" },
+        { "title": "Queer Voices Mumbai Short", "year": 2023, "role": "Score Composer", "format": "short_film", "language": "Hindi/English", "platform": "film_festival" }
+      ],
+      "education_training": [
+        { "institution": "Berklee Online", "course": "Songwriting & Electronic Production", "year_completed": 2021 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC025/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC025/cover.jpg"
+      },
+      "tags_self": ["ambient_electronic", "identity_driven_music", "experimental"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["ambient_electronic", "experimental", "indie_pop"],
+        "instruments": ["synthesizer", "guitar"],
+        "software_proficiency": ["Ableton", "Max_MSP", "Native_Instruments"],
+        "voice_range": null,
+        "language_singing_proficiency": []
+      }
+    },
+    {
+      "id": "UC026",
+      "name": "Bhavani Nambiar",
+      "status": "active",
+      "created_at": "2022-04-03",
+      "updated_at": "2024-11-08",
+      "onboarding_source": "referral",
+      "profile_completeness": 89,
+      "verification": { "verified": true, "verified_at": "2022-04-20", "method": "portfolio_check" },
+      "bio": "Voice artist specializing in dubbing and cultural voice direction for South Asian streaming platforms. Directs voice casts for dubbed versions of international titles into Malayalam and Tamil.",
+      "personal_info": {
+        "gender": "female",
+        "age": 45,
+        "languages": ["Malayalam", "Tamil", "English", "Hindi"],
+        "regional_background": "Kerala"
+      },
+      "location": {
+        "current_city": "Kochi",
+        "state": "Kerala",
+        "country": "India",
+        "willing_to_travel": false
+      },
+      "professional_info": {
+        "primary_craft": "Voice Artist",
+        "secondary_crafts": ["Sound Designer"],
+        "experience_years": 18,
+        "experience_level": "senior",
+        "availability": "project_basis",
+        "looking_for": ["dubbing_direction", "OTT_localization", "audiobook_narration"]
+      },
+      "projects": [
+        { "title": "Squid Game S2 (Malayalam Dub)", "year": 2024, "role": "Voice Director", "format": "OTT_series", "language": "Malayalam", "platform": "Netflix" },
+        { "title": "Avatar: The Way of Water (Tamil Dub)", "year": 2022, "role": "Voice Actress", "format": "feature_film", "language": "Tamil", "platform": "theatrical" }
+      ],
+      "education_training": [
+        { "institution": "All India Radio Kochi", "course": "Radio Announcer Training", "year_completed": 2006 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Netflix India", "craft": "OTT Platform", "note": "Exceptional cultural sensitivity in localization direction." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC026/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC026/cover.jpg"
+      },
+      "tags_self": ["dubbing_director", "OTT_localization", "South_Indian_voice"],
+      "craft_specific_attributes": {
+        "musical_specializations": [],
+        "instruments": [],
+        "software_proficiency": ["Pro_Tools", "Adobe_Audition", "Izotope_RX"],
+        "voice_range": "contralto",
+        "language_singing_proficiency": ["Malayalam", "Tamil"]
+      }
+    },
+    {
+      "id": "UC027",
+      "name": "Sameer Qureshi",
+      "status": "active",
+      "created_at": "2020-10-14",
+      "updated_at": "2024-03-25",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 97,
+      "verification": { "verified": true, "verified_at": "2020-11-01", "method": "id_check" },
+      "bio": "Veteran foley supervisor with 23 years and 90+ feature film credits across Hindi, Marathi, and Urdu films. Leads a full-service foley stage in Mumbai. Known for authentic period textures — 1940s Bombay, Mughal court, colonial-era fabric.",
+      "personal_info": {
+        "gender": "male",
+        "age": 52,
+        "languages": ["Urdu", "Hindi", "English", "Marathi"],
+        "regional_background": "Uttar Pradesh"
+      },
+      "location": {
+        "current_city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India",
+        "willing_to_travel": false
+      },
+      "professional_info": {
+        "primary_craft": "Foley Artist",
+        "secondary_crafts": ["Sound Designer"],
+        "experience_years": 23,
+        "experience_level": "veteran",
+        "availability": "selective",
+        "looking_for": ["period_drama_films", "prestige_features", "high_budget_OTT"]
+      },
+      "projects": [
+        { "title": "Mughal-e-Azam Restored", "year": 2022, "role": "Foley Supervisor", "format": "restoration_project", "language": "Urdu/Hindi", "platform": "theatrical" },
+        { "title": "Bhaukaal S3", "year": 2023, "role": "Foley Supervisor", "format": "OTT_series", "language": "Hindi", "platform": "MX_Player" }
+      ],
+      "education_training": [
+        { "institution": "Film and Television Institute of India", "course": "Sound Engineering", "year_completed": 2001 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Gulzar", "craft": "Filmmaker", "note": "His foley breathes life into silence." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC027/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC027/cover.jpg"
+      },
+      "tags_self": ["period_foley", "foley_supervisor", "Mumbai_stage"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["ambient_sound_design"],
+        "instruments": [],
+        "software_proficiency": ["Pro_Tools", "Nuendo"],
+        "voice_range": null,
+        "language_singing_proficiency": []
+      }
+    },
+    {
+      "id": "UC028",
+      "name": "Amrutha Krishnan",
+      "status": "active",
+      "created_at": "2024-03-05",
+      "updated_at": "2025-02-14",
+      "onboarding_source": "social_media",
+      "profile_completeness": 72,
+      "verification": { "verified": false, "verified_at": null, "method": null },
+      "bio": "Upcoming voice artist and indie singer exploring Malayalam and English fusion songs. Active on short-form video platforms with a growing fanbase for ASMR and soft pop content.",
+      "personal_info": {
+        "gender": "female",
+        "age": 21,
+        "languages": ["Malayalam", "English", "Tamil"],
+        "regional_background": "Kerala"
+      },
+      "location": {
+        "current_city": "Thiruvananthapuram",
+        "state": "Kerala",
+        "country": "India",
+        "willing_to_travel": false
+      },
+      "professional_info": {
+        "primary_craft": "Voice Artist",
+        "secondary_crafts": ["Singer"],
+        "experience_years": 1,
+        "experience_level": "entry",
+        "availability": "available_now",
+        "looking_for": ["animation_voice_work", "ASMR_content", "indie_music_collaborations"]
+      },
+      "projects": [
+        { "title": "Soft Monsoon ASMR Series", "year": 2024, "role": "Voice Creator", "format": "digital_content", "language": "Malayalam/English", "platform": "YouTube" }
+      ],
+      "education_training": [
+        { "institution": "Kerala University", "course": "English Literature (ongoing)", "year_completed": null }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC028/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC028/cover.jpg"
+      },
+      "tags_self": ["ASMR", "soft_pop", "Malayalam_English_fusion"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["indie_pop", "ambient"],
+        "instruments": ["ukulele"],
+        "software_proficiency": ["Audacity", "GarageBand"],
+        "voice_range": "soprano",
+        "language_singing_proficiency": ["Malayalam", "English"]
+      }
+    },
+    {
+      "id": "UC029",
+      "name": "Govind Prasad",
+      "status": "active",
+      "created_at": "2021-03-20",
+      "updated_at": "2024-05-31",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 92,
+      "verification": { "verified": true, "verified_at": "2021-04-10", "method": "id_check" },
+      "bio": "Dhrupad and Khayal vocalist with 19 years of performance. Has performed at the Sawai Gandharva Bhimsen Mahotsav and HCL Concerts series. Brings the North Indian classical tradition into modern recording projects.",
+      "personal_info": {
+        "gender": "male",
+        "age": 46,
+        "languages": ["Hindi", "Sanskrit", "Braj_Bhasha", "English"],
+        "regional_background": "Uttar Pradesh"
+      },
+      "location": {
+        "current_city": "Varanasi",
+        "state": "Uttar Pradesh",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Singer",
+        "secondary_crafts": ["Music Director", "Composer"],
+        "experience_years": 19,
+        "experience_level": "senior",
+        "availability": "selective",
+        "looking_for": ["classical_concerts", "film_semi-classical_singing", "music_television"]
+      },
+      "projects": [
+        { "title": "Sawai Gandharva Bhimsen Mahotsav 2023", "year": 2023, "role": "Lead Vocalist", "format": "live_concert", "language": "Hindi/Sanskrit", "platform": "live" },
+        { "title": "Raag Yaman - Studio Session", "year": 2022, "role": "Vocalist", "format": "album", "language": "Hindi", "platform": "Spotify_Classical" }
+      ],
+      "education_training": [
+        { "institution": "Banaras Gharana", "course": "Dhrupad & Khayal (Guru-Shishya)", "year_completed": 2005 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Pandit Jasraj Foundation", "craft": "Institution", "note": "A faithful torchbearer of the Banaras Gharana." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC029/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC029/cover.jpg"
+      },
+      "tags_self": ["Dhrupad_vocalist", "Khayal_classical", "Banaras_Gharana"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["classical_hindustani", "devotional", "semi-classical"],
+        "instruments": ["tanpura", "harmonium"],
+        "software_proficiency": ["Logic_Pro"],
+        "voice_range": "bass-baritone",
+        "language_singing_proficiency": ["Hindi", "Sanskrit", "Braj_Bhasha"]
+      }
+    },
+    {
+      "id": "UC030",
+      "name": "Kezia Thomas",
+      "status": "active",
+      "created_at": "2023-02-28",
+      "updated_at": "2024-12-22",
+      "onboarding_source": "organic_search",
+      "profile_completeness": 84,
+      "verification": { "verified": true, "verified_at": "2023-03-15", "method": "social_verify" },
+      "bio": "Composer and music producer for short films and independent theatre in the Kerala Christian music tradition. Fuses Syriac choral heritage with ambient cinematic scoring.",
+      "personal_info": {
+        "gender": "female",
+        "age": 32,
+        "languages": ["Malayalam", "English", "Tamil", "Syriac"],
+        "regional_background": "Kerala"
+      },
+      "location": {
+        "current_city": "Kottayam",
+        "state": "Kerala",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Composer",
+        "secondary_crafts": ["Singer", "Music Producer"],
+        "experience_years": 8,
+        "experience_level": "mid",
+        "availability": "available_now",
+        "looking_for": ["indie_film_scoring", "choral_music_projects", "cross_cultural_collaborations"]
+      },
+      "projects": [
+        { "title": "Margam Kali Reimagined", "year": 2023, "role": "Composer & Vocalist", "format": "theatre_play", "language": "Malayalam", "platform": "stage" },
+        { "title": "Blessed Light Short Film", "year": 2022, "role": "Composer", "format": "short_film", "language": "Malayalam", "platform": "film_festival" }
+      ],
+      "education_training": [
+        { "institution": "CMC Choral Academy", "course": "Choral Conducting & Composition", "year_completed": 2017 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC030/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC030/cover.jpg"
+      },
+      "tags_self": ["Syriac_choral", "indie_cinema", "faith_inspired_music"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["choral_music", "ambient_cinematic", "film_score"],
+        "instruments": ["piano", "organ", "violin"],
+        "software_proficiency": ["Sibelius", "Logic_Pro", "Ableton"],
+        "voice_range": "contralto",
+        "language_singing_proficiency": ["Malayalam", "English", "Syriac"]
+      }
+    },
+    {
+      "id": "UC031",
+      "name": "Prashant Dubey",
+      "status": "active",
+      "created_at": "2022-08-09",
+      "updated_at": "2024-10-05",
+      "onboarding_source": "referral",
+      "profile_completeness": 88,
+      "verification": { "verified": true, "verified_at": "2022-09-01", "method": "id_check" },
+      "bio": "Boom operator with 9 years on Hindi TV serials and streaming series. Expert in cramped interiors and tight drama sets. Consistently delivers clean dialogue in multi-camera live-action setups.",
+      "personal_info": {
+        "gender": "male",
+        "age": 33,
+        "languages": ["Hindi", "English"],
+        "regional_background": "Rajasthan"
+      },
+      "location": {
+        "current_city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India",
+        "willing_to_travel": false
+      },
+      "professional_info": {
+        "primary_craft": "Boom Operator",
+        "secondary_crafts": [],
+        "experience_years": 9,
+        "experience_level": "mid",
+        "availability": "available_now",
+        "looking_for": ["TV_serials", "OTT_drama_series", "feature_films"]
+      },
+      "projects": [
+        { "title": "Anupamaa (Season 4)", "year": 2023, "role": "Boom Operator", "format": "TV_serial", "language": "Hindi", "platform": "StarPlus" },
+        { "title": "Panchayat S3", "year": 2023, "role": "Boom Operator", "format": "OTT_series", "language": "Hindi", "platform": "Amazon_Prime" }
+      ],
+      "education_training": [
+        { "institution": "FTII Short Course", "course": "Location Sound Recording", "year_completed": 2015 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC031/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC031/cover.jpg"
+      },
+      "tags_self": ["TV_drama_specialist", "multi_camera_sound", "Hindi_OTT"],
+      "craft_specific_attributes": {
+        "musical_specializations": [],
+        "instruments": [],
+        "software_proficiency": ["Sound_Devices_recorder", "Zoom_F8"],
+        "voice_range": null,
+        "language_singing_proficiency": []
+      }
+    },
+    {
+      "id": "UC032",
+      "name": "Janaki Murugavel",
+      "status": "active",
+      "created_at": "2021-10-07",
+      "updated_at": "2024-08-28",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 95,
+      "verification": { "verified": true, "verified_at": "2021-11-01", "method": "id_check" },
+      "bio": "Tamil music director known for haunting melodies rooted in Isai Vellalar traditions and Nadaswaram music. Scores for Tamil village dramas and rural realist cinema.",
+      "personal_info": {
+        "gender": "male",
+        "age": 48,
+        "languages": ["Tamil", "English", "Telugu"],
+        "regional_background": "Tamil Nadu"
+      },
+      "location": {
+        "current_city": "Madurai",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Music Director",
+        "secondary_crafts": ["Composer"],
+        "experience_years": 20,
+        "experience_level": "senior",
+        "availability": "project_basis",
+        "looking_for": ["Tamil_rural_dramas", "village_folklore_films", "OTT_Tamil_originals"]
+      },
+      "projects": [
+        { "title": "Kaadu Kudiyiruppu", "year": 2023, "role": "Music Director", "format": "feature_film", "language": "Tamil", "platform": "theatrical" },
+        { "title": "Vetri Vela", "year": 2021, "role": "Music Director", "format": "feature_film", "language": "Tamil", "platform": "theatrical" }
+      ],
+      "education_training": [
+        { "institution": "Nadaswaram Tradition (Guru-Shishya)", "course": "Nadaswaram & Carnatic Music", "year_completed": 2003 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Pa. Ranjith", "craft": "Director", "note": "His Nadaswaram carries the weight of caste history — that's rare." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC032/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC032/cover.jpg"
+      },
+      "tags_self": ["Nadaswaram_tradition", "rural_Tamil_cinema", "village_folk"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["folk_fusion", "classical_carnatic", "background_music", "film_score"],
+        "instruments": ["nadaswaram", "thavil", "violin"],
+        "software_proficiency": ["Logic_Pro", "Pro_Tools"],
+        "voice_range": null,
+        "language_singing_proficiency": []
+      }
+    },
+    {
+      "id": "UC033",
+      "name": "Ayesha Baig",
+      "status": "active",
+      "created_at": "2023-11-15",
+      "updated_at": "2025-02-18",
+      "onboarding_source": "social_media",
+      "profile_completeness": 76,
+      "verification": { "verified": false, "verified_at": null, "method": null },
+      "bio": "Pakistani-origin classical ghazal singer based in Lucknow. Trained under Ustad-level guidance in the Lucknow thumri tradition. Performs and records primarily in Urdu and Farsi.",
+      "personal_info": {
+        "gender": "female",
+        "age": 28,
+        "languages": ["Urdu", "Hindi", "Farsi", "English"],
+        "regional_background": "Lucknow"
+      },
+      "location": {
+        "current_city": "Lucknow",
+        "state": "Uttar Pradesh",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Singer",
+        "secondary_crafts": ["Voice Artist"],
+        "experience_years": 6,
+        "experience_level": "mid",
+        "availability": "project_basis",
+        "looking_for": ["ghazal_concerts", "film_semi_classical_playback", "poetry_recital_projects"]
+      },
+      "projects": [
+        { "title": "Mehfil-e-Ghazal Live", "year": 2023, "role": "Lead Vocalist", "format": "live_concert", "language": "Urdu", "platform": "live" },
+        { "title": "Dasht-e-Tanhai Album", "year": 2022, "role": "Vocalist", "format": "album", "language": "Urdu/Farsi", "platform": "Spotify" }
+      ],
+      "education_training": [
+        { "institution": "Bhatkhande Music Institute", "course": "Thumri & Ghazal Gayaki", "year_completed": 2020 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC033/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC033/cover.jpg"
+      },
+      "tags_self": ["ghazal_gayaki", "thumri_tradition", "Lucknow_classical"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["ghazal", "thumri", "semi-classical", "devotional"],
+        "instruments": ["harmonium", "sarangi"],
+        "software_proficiency": ["GarageBand", "Audacity"],
+        "voice_range": "mezzo-soprano",
+        "language_singing_proficiency": ["Urdu", "Hindi", "Farsi"]
+      }
+    },
+    {
+      "id": "UC034",
+      "name": "Bibek Chettri",
+      "status": "active",
+      "created_at": "2022-06-01",
+      "updated_at": "2024-07-30",
+      "onboarding_source": "organic_search",
+      "profile_completeness": 81,
+      "verification": { "verified": true, "verified_at": "2022-07-01", "method": "social_verify" },
+      "bio": "Nepali-Indian composer and multi-instrumentalist from Sikkim. Creates scores for Himalayan landscape documentaries and Nepali cinema, blending folk flute traditions with orchestral layers.",
+      "personal_info": {
+        "gender": "male",
+        "age": 35,
+        "languages": ["Nepali", "Hindi", "English", "Sikkimese"],
+        "regional_background": "Sikkim"
+      },
+      "location": {
+        "current_city": "Gangtok",
+        "state": "Sikkim",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Composer",
+        "secondary_crafts": ["Music Director", "Foley Artist"],
+        "experience_years": 10,
+        "experience_level": "mid",
+        "availability": "available_now",
+        "looking_for": ["documentary_scoring", "Himalayan_cinema", "OTT_originals"]
+      },
+      "projects": [
+        { "title": "Kangchenjunga: A Film", "year": 2023, "role": "Composer", "format": "documentary", "language": "Nepali/English", "platform": "festival_circuit" },
+        { "title": "Paat Phool", "year": 2022, "role": "Music Director", "format": "feature_film", "language": "Nepali", "platform": "theatrical" }
+      ],
+      "education_training": [
+        { "institution": "Self-taught with Guru Purnadas Baul", "course": "Flute & Folk Music", "year_completed": 2014 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC034/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC034/cover.jpg"
+      },
+      "tags_self": ["Himalayan_composer", "folk_flute", "documentary_scorer"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["folk_fusion", "ambient_cinematic", "film_score"],
+        "instruments": ["bansuri", "madal", "piano"],
+        "software_proficiency": ["Logic_Pro", "GarageBand", "Reaper"],
+        "voice_range": null,
+        "language_singing_proficiency": []
+      }
+    },
+    {
+      "id": "UC035",
+      "name": "Nandita Ghoshal",
+      "status": "active",
+      "created_at": "2021-09-14",
+      "updated_at": "2024-09-09",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 93,
+      "verification": { "verified": true, "verified_at": "2021-10-01", "method": "id_check" },
+      "bio": "Rabindra Sangeet specialist and film singer who bridges the Bengali classical tradition with contemporary cinema. Regularly collaborates with auteur directors for films that require emotionally precise vocal performances.",
+      "personal_info": {
+        "gender": "female",
+        "age": 42,
+        "languages": ["Bengali", "Hindi", "English", "Sanskrit"],
+        "regional_background": "West Bengal"
+      },
+      "location": {
+        "current_city": "Kolkata",
+        "state": "West Bengal",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Singer",
+        "secondary_crafts": ["Composer"],
+        "experience_years": 17,
+        "experience_level": "senior",
+        "availability": "selective",
+        "looking_for": ["Bengali_film_playback", "Rabindra_Sangeet_recordings", "arthouse_cinema_vocals"]
+      },
+      "projects": [
+        { "title": "Nadir Naam", "year": 2022, "role": "Playback Singer", "format": "feature_film", "language": "Bengali", "platform": "theatrical" },
+        { "title": "Ekla Cholo Re: Revisited", "year": 2023, "role": "Lead Vocalist", "format": "album", "language": "Bengali", "platform": "Spotify" }
+      ],
+      "education_training": [
+        { "institution": "Rabindra Bharati University", "course": "Rabindra Sangeet", "year_completed": 2007 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Anjan Dutta", "craft": "Director-Singer", "note": "A voice that understands what Tagore wanted to say." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC035/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC035/cover.jpg"
+      },
+      "tags_self": ["Rabindra_Sangeet", "Bengali_cinema", "classical_vocalist"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["Rabindra_Sangeet", "classical_hindustani", "film_score", "devotional"],
+        "instruments": ["esraj", "harmonium"],
+        "software_proficiency": ["Logic_Pro", "Audacity"],
+        "voice_range": "soprano",
+        "language_singing_proficiency": ["Bengali", "Sanskrit", "Hindi"]
+      }
+    },
+    {
+      "id": "UC036",
+      "name": "Ravi Shankar Naidu",
+      "status": "active",
+      "created_at": "2020-05-25",
+      "updated_at": "2023-12-15",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 90,
+      "verification": { "verified": true, "verified_at": "2020-06-10", "method": "id_check" },
+      "bio": "Music producer and mixing engineer for Telugu and Kannada film industries. Runs a private studio in Hyderabad offering full-stack music production and mixing. 26 years of experience across 130+ films.",
+      "personal_info": {
+        "gender": "male",
+        "age": 55,
+        "languages": ["Telugu", "Kannada", "Hindi", "English"],
+        "regional_background": "Andhra Pradesh"
+      },
+      "location": {
+        "current_city": "Hyderabad",
+        "state": "Telangana",
+        "country": "India",
+        "willing_to_travel": false
+      },
+      "professional_info": {
+        "primary_craft": "Music Producer",
+        "secondary_crafts": ["Sound Designer", "Music Director"],
+        "experience_years": 26,
+        "experience_level": "veteran",
+        "availability": "selective",
+        "looking_for": ["large_scale_Tollywood_productions", "album_mixing", "studio_collaborations"]
+      },
+      "projects": [
+        { "title": "Pushpa 2 (Music Mix)", "year": 2023, "role": "Mixing Engineer", "format": "feature_film", "language": "Telugu", "platform": "theatrical" },
+        { "title": "Vikrant Rona (Sound)", "year": 2022, "role": "Music Producer", "format": "feature_film", "language": "Kannada", "platform": "theatrical" }
+      ],
+      "education_training": [
+        { "institution": "FTII", "course": "Sound Recording", "year_completed": 1998 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Devi Sri Prasad", "craft": "Music Director", "note": "The finishing touch any big score needs." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC036/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC036/cover.jpg"
+      },
+      "tags_self": ["mixing_engineer", "Tollywood_veteran", "studio_owner"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["film_score", "background_music", "orchestral"],
+        "instruments": ["keyboard", "violin"],
+        "software_proficiency": ["Pro_Tools", "Nuendo", "SSL_console", "Logic_Pro"],
+        "voice_range": null,
+        "language_singing_proficiency": []
+      }
+    },
+    {
+      "id": "UC037",
+      "name": "Amita Deshpande",
+      "status": "active",
+      "created_at": "2023-07-04",
+      "updated_at": "2025-01-11",
+      "onboarding_source": "social_media",
+      "profile_completeness": 79,
+      "verification": { "verified": false, "verified_at": null, "method": null },
+      "bio": "Marathi singer and voice trainer based in Pune. Trained in Natya Sangeet — the classical singing form unique to Marathi theatre. Actively performs and trains the next generation of stage musicians.",
+      "personal_info": {
+        "gender": "female",
+        "age": 40,
+        "languages": ["Marathi", "Hindi", "English"],
+        "regional_background": "Maharashtra"
+      },
+      "location": {
+        "current_city": "Pune",
+        "state": "Maharashtra",
+        "country": "India",
+        "willing_to_travel": false
+      },
+      "professional_info": {
+        "primary_craft": "Singer",
+        "secondary_crafts": ["Music Director"],
+        "experience_years": 15,
+        "experience_level": "senior",
+        "availability": "project_basis",
+        "looking_for": ["Marathi_theatre_music", "Natya_Sangeet_recordings", "film_music"]
+      },
+      "projects": [
+        { "title": "Natya Sangeet Mahotsav 2023", "year": 2023, "role": "Lead Vocalist", "format": "live_concert", "language": "Marathi", "platform": "live" },
+        { "title": "Ti Phulrani (Musical)", "year": 2022, "role": "Music Director & Vocalist", "format": "theatre_play", "language": "Marathi", "platform": "stage" }
+      ],
+      "education_training": [
+        { "institution": "Gandharva Mahavidyalaya", "course": "Natya Sangeet & Hindustani Classical", "year_completed": 2009 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC037/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC037/cover.jpg"
+      },
+      "tags_self": ["Natya_Sangeet", "Marathi_theatre", "voice_trainer"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["Natya_Sangeet", "classical_hindustani", "theatre_music"],
+        "instruments": ["harmonium", "tabla"],
+        "software_proficiency": ["GarageBand"],
+        "voice_range": "mezzo-soprano",
+        "language_singing_proficiency": ["Marathi", "Hindi"]
+      }
+    },
+    {
+      "id": "UC038",
+      "name": "Deepak Bhutia",
+      "status": "active",
+      "created_at": "2022-02-16",
+      "updated_at": "2024-06-20",
+      "onboarding_source": "referral",
+      "profile_completeness": 87,
+      "verification": { "verified": true, "verified_at": "2022-03-05", "method": "portfolio_check" },
+      "bio": "Sound designer and boom operator for documentary films in Northeast India. Has worked extensively in Arunachal Pradesh and Nagaland capturing indigenous ritual soundscapes for international documentary houses.",
+      "personal_info": {
+        "gender": "male",
+        "age": 29,
+        "languages": ["Nepali", "Hindi", "English", "Sikkimese"],
+        "regional_background": "Sikkim"
+      },
+      "location": {
+        "current_city": "Siliguri",
+        "state": "West Bengal",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Boom Operator",
+        "secondary_crafts": ["Sound Designer", "Foley Artist"],
+        "experience_years": 6,
+        "experience_level": "mid",
+        "availability": "available_now",
+        "looking_for": ["documentary_projects", "Northeast_India_films", "ethnographic_field_recording"]
+      },
+      "projects": [
+        { "title": "The Naga Ceremony", "year": 2023, "role": "Boom Operator & Field Recordist", "format": "documentary", "language": "English", "platform": "Al_Jazeera" },
+        { "title": "Arunachal Diaries", "year": 2022, "role": "Sound Recordist", "format": "documentary", "language": "English/Hindi", "platform": "festival_circuit" }
+      ],
+      "education_training": [
+        { "institution": "SRFTI Kolkata", "course": "Sound Recording for Documentary", "year_completed": 2018 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC038/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC038/cover.jpg"
+      },
+      "tags_self": ["documentary_field_sound", "Northeast_India", "indigenous_soundscapes"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["ambient_sound_design", "ethnographic_field_recording"],
+        "instruments": [],
+        "software_proficiency": ["Pro_Tools", "Sound_Devices_recorder", "Reaper"],
+        "voice_range": null,
+        "language_singing_proficiency": []
+      }
+    },
+    {
+      "id": "UC039",
+      "name": "Rekha Sinha",
+      "status": "active",
+      "created_at": "2021-05-30",
+      "updated_at": "2024-04-14",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 96,
+      "verification": { "verified": true, "verified_at": "2021-06-15", "method": "id_check" },
+      "bio": "Music director and composer who has scored 15 Hindi OTT series. Trained in Western film scoring. Brings layered orchestral texture to crime dramas, psychological thrillers, and prestige biopics.",
+      "personal_info": {
+        "gender": "female",
+        "age": 38,
+        "languages": ["Hindi", "English", "Bengali"],
+        "regional_background": "West Bengal"
+      },
+      "location": {
+        "current_city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Music Director",
+        "secondary_crafts": ["Composer", "Music Producer"],
+        "experience_years": 13,
+        "experience_level": "senior",
+        "availability": "project_basis",
+        "looking_for": ["OTT_crime_drama_scoring", "biopic_music", "prestige_series"]
+      },
+      "projects": [
+        { "title": "Delhi Files S2", "year": 2023, "role": "Music Director", "format": "OTT_series", "language": "Hindi", "platform": "Netflix" },
+        { "title": "Ek Tha Tiger: Origins", "year": 2022, "role": "Composer", "format": "OTT_series", "language": "Hindi", "platform": "Amazon_Prime" }
+      ],
+      "education_training": [
+        { "institution": "Berklee College of Music", "course": "Film Scoring", "year_completed": 2011 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Anurag Kashyap", "craft": "Director", "note": "She scores for tension that you feel in your sternum." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC039/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC039/cover.jpg"
+      },
+      "tags_self": ["crime_drama_scorer", "OTT_specialist", "orchestral_tension"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["film_score", "orchestral", "background_music", "thriller_scoring"],
+        "instruments": ["piano", "cello"],
+        "software_proficiency": ["Logic_Pro", "Pro_Tools", "Spitfire_Audio", "Kontakt"],
+        "voice_range": null,
+        "language_singing_proficiency": []
+      }
+    },
+    {
+      "id": "UC040",
+      "name": "Subramaniam Pillai",
+      "status": "active",
+      "created_at": "2020-01-10",
+      "updated_at": "2024-02-28",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 99,
+      "verification": { "verified": true, "verified_at": "2020-02-01", "method": "id_check" },
+      "bio": "Doyen of South Indian film sound with 30 years of experience. Re-recording mixer and sound supervisor for over 200 Tamil, Telugu, and Hindi films. Ran the legendary Mani Sound Studio for two decades.",
+      "personal_info": {
+        "gender": "male",
+        "age": 62,
+        "languages": ["Tamil", "Malayalam", "Telugu", "Hindi", "English"],
+        "regional_background": "Tamil Nadu"
+      },
+      "location": {
+        "current_city": "Chennai",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "willing_to_travel": false
+      },
+      "professional_info": {
+        "primary_craft": "Sound Designer",
+        "secondary_crafts": ["Foley Artist", "Boom Operator"],
+        "experience_years": 30,
+        "experience_level": "veteran",
+        "availability": "selective",
+        "looking_for": ["prestige_film_projects", "sound_masterclass_teaching", "industry_advisory_roles"]
+      },
+      "projects": [
+        { "title": "Ponniyin Selvan II", "year": 2023, "role": "Sound Supervisor", "format": "feature_film", "language": "Tamil", "platform": "theatrical" },
+        { "title": "Kalki 2898 AD", "year": 2024, "role": "Re-recording Mixer", "format": "feature_film", "language": "Telugu/Tamil", "platform": "theatrical" }
+      ],
+      "education_training": [
+        { "institution": "Film and Television Institute of India", "course": "Sound Engineering (Gold Medalist)", "year_completed": 1994 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Mani Ratnam", "craft": "Director", "note": "There is no South Indian cinema without Pillai sir's ears." },
+        { "endorsed_by": "S. S. Rajamouli", "craft": "Director", "note": "The last word on sound in any room he enters." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UC040/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UC040/cover.jpg"
+      },
+      "tags_self": ["legend", "South_Indian_cinema_sound", "re-recording_mixer"],
+      "craft_specific_attributes": {
+        "musical_specializations": ["film_score", "ambient_sound_design", "spatial_audio", "orchestral_mixing"],
+        "instruments": [],
+        "software_proficiency": ["Pro_Tools", "Nuendo", "Dolby_Atmos_Renderer", "Izotope_RX", "SSL_console"],
+        "voice_range": null,
+        "language_singing_proficiency": []
+      }
+    }
+  ]
+}

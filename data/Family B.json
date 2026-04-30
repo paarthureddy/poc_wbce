@@ -1,0 +1,2059 @@
+{
+  "craft_family": "B",
+  "family_name": "Visual Crafts",
+  "crafts_included": ["Cinematographer", "Photographer", "Production Designer", "Art Director", "Costume Designer", "Colorist", "VFX Supervisor"],
+  "profiles": [
+    {
+      "id": "UB001",
+      "name": "Karthik Rajan",
+      "status": "active",
+      "created_at": "2022-03-10",
+      "updated_at": "2024-11-15",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 97,
+      "verification": { "verified": true, "verified_at": "2022-04-01", "method": "id_check" },
+      "bio": "Senior cinematographer with 17 years shooting Tamil and Telugu features. Known for naturalistic handheld work in realist rural dramas and bold anamorphic framing in action films.",
+      "personal_info": {
+        "gender": "male",
+        "age": 42,
+        "languages": ["Tamil", "Telugu", "English"],
+        "regional_background": "Tamil Nadu"
+      },
+      "location": {
+        "current_city": "Chennai",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Cinematographer",
+        "secondary_crafts": ["Colorist"],
+        "experience_years": 17,
+        "experience_level": "senior",
+        "availability": "project_basis",
+        "looking_for": ["feature_film_work", "OTT_series", "prestige_drama"]
+      },
+      "projects": [
+        { "title": "Kaadu Veedu", "year": 2023, "role": "Director of Photography", "format": "feature_film", "language": "Tamil", "platform": "theatrical" },
+        { "title": "Neer Nilaiyam", "year": 2022, "role": "DOP", "format": "OTT_series", "language": "Tamil", "platform": "Disney+Hotstar" },
+        { "title": "Vettai Mannan", "year": 2021, "role": "Cinematographer", "format": "feature_film", "language": "Telugu", "platform": "theatrical" }
+      ],
+      "education_training": [
+        { "institution": "Film and Television Institute of India", "course": "Cinematography", "year_completed": 2007 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Vetrimaaran", "craft": "Director", "note": "His handheld work gives my films their nervous heartbeat." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB001/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB001/cover.jpg"
+      },
+      "tags_self": ["naturalistic_light", "anamorphic", "rural_realism"],
+      "work_samples": [
+        { "type": "behind_the_scenes", "url": "https://portfolio.tribli.com/UB001/bts1.mp4", "label": "Kaadu Veedu lighting setup" }
+      ],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["naturalistic", "high_contrast", "earthy_palette"],
+        "equipment_familiarity": ["ARRI_Alexa_Mini", "Cooke_Anamorphic_Lenses", "DJI_Ronin", "Shotover_K1"],
+        "specializations": ["low_light", "rural_locations", "action_sequences"],
+        "preferred_format": ["anamorphic", "digital"]
+      }
+    },
+    {
+      "id": "UB002",
+      "name": "Priya Desai",
+      "status": "active",
+      "created_at": "2023-01-20",
+      "updated_at": "2025-01-10",
+      "onboarding_source": "social_media",
+      "profile_completeness": 91,
+      "verification": { "verified": true, "verified_at": "2023-02-10", "method": "portfolio_check" },
+      "bio": "Fashion and editorial photographer based in Mumbai. Works with leading couture labels and lifestyle magazines. Signature style: high-key minimalist frames with bold colour blocking.",
+      "personal_info": {
+        "gender": "female",
+        "age": 31,
+        "languages": ["Hindi", "English", "Gujarati"],
+        "regional_background": "Gujarat"
+      },
+      "location": {
+        "current_city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Photographer",
+        "secondary_crafts": ["Art Director"],
+        "experience_years": 8,
+        "experience_level": "mid",
+        "availability": "available_now",
+        "looking_for": ["fashion_editorial", "brand_campaigns", "lookbook_shoots"]
+      },
+      "projects": [
+        { "title": "Sabyasachi Festive 2023 Campaign", "year": 2023, "role": "Lead Photographer", "format": "brand_campaign", "language": "N/A", "platform": "print_digital" },
+        { "title": "Vogue India Cover Shoot", "year": 2022, "role": "Cover Photographer", "format": "editorial", "language": "N/A", "platform": "print" }
+      ],
+      "education_training": [
+        { "institution": "National Institute of Design", "course": "Photography & Visual Communication", "year_completed": 2016 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Sabyasachi Mukherjee", "craft": "Designer", "note": "She photographs clothes as if they breathe." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB002/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB002/cover.jpg"
+      },
+      "tags_self": ["fashion_photography", "minimalist_frames", "colour_blocking"],
+      "work_samples": [
+        { "type": "lookbook", "url": "https://portfolio.tribli.com/UB002/lookbook.pdf", "label": "2023 Campaign Portfolio" }
+      ],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["high_key", "minimalist", "stylized_color"],
+        "equipment_familiarity": ["Phase_One_IQ4", "Hasselblad_H6D", "Broncolor_Studio_Lights", "Canon_R5"],
+        "specializations": ["fashion_editorial", "beauty_photography", "product_photography"],
+        "preferred_format": ["medium_format", "digital"]
+      }
+    },
+    {
+      "id": "UB003",
+      "name": "Suresh Krishnamurthy",
+      "status": "active",
+      "created_at": "2021-07-14",
+      "updated_at": "2024-09-22",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 95,
+      "verification": { "verified": true, "verified_at": "2021-08-01", "method": "id_check" },
+      "bio": "Production designer with 20 years building iconic film sets. Specializes in large-scale period sets — Mughal courts, colonial bungalows, 1970s Bombay streets. Known for obsessive historical accuracy.",
+      "personal_info": {
+        "gender": "male",
+        "age": 49,
+        "languages": ["Hindi", "Kannada", "English", "Tamil"],
+        "regional_background": "Karnataka"
+      },
+      "location": {
+        "current_city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Production Designer",
+        "secondary_crafts": ["Art Director"],
+        "experience_years": 20,
+        "experience_level": "veteran",
+        "availability": "selective",
+        "looking_for": ["period_drama_productions", "large_scale_features", "prestige_OTT"]
+      },
+      "projects": [
+        { "title": "Heeramandi", "year": 2023, "role": "Production Designer", "format": "OTT_series", "language": "Urdu/Hindi", "platform": "Netflix" },
+        { "title": "Gangubai Kathiawadi", "year": 2022, "role": "Set Design Supervisor", "format": "feature_film", "language": "Hindi", "platform": "theatrical" }
+      ],
+      "education_training": [
+        { "institution": "Sir J.J. School of Art", "course": "Applied Arts & Set Design", "year_completed": 2004 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Sanjay Leela Bhansali", "craft": "Director", "note": "He doesn't build sets. He builds worlds." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB003/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB003/cover.jpg"
+      },
+      "tags_self": ["period_sets", "historical_accuracy", "large_scale_design"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["opulent", "period_authentic", "stylized_color"],
+        "equipment_familiarity": [],
+        "specializations": ["period_drama", "large_scale_sets", "historical_reconstruction"],
+        "preferred_format": ["digital", "wide_format"]
+      }
+    },
+    {
+      "id": "UB004",
+      "name": "Meera Nambiar",
+      "status": "active",
+      "created_at": "2022-09-05",
+      "updated_at": "2024-12-20",
+      "onboarding_source": "organic_search",
+      "profile_completeness": 88,
+      "verification": { "verified": true, "verified_at": "2022-10-01", "method": "portfolio_check" },
+      "bio": "Colorist for Malayalam and Tamil OTT films. Specializes in naturalistic colour grading — muted greens, warm ambers, and skin-tone precision. Dolby Vision certified.",
+      "personal_info": {
+        "gender": "female",
+        "age": 34,
+        "languages": ["Malayalam", "Tamil", "English"],
+        "regional_background": "Kerala"
+      },
+      "location": {
+        "current_city": "Kochi",
+        "state": "Kerala",
+        "country": "India",
+        "willing_to_travel": false
+      },
+      "professional_info": {
+        "primary_craft": "Colorist",
+        "secondary_crafts": ["Cinematographer"],
+        "experience_years": 10,
+        "experience_level": "senior",
+        "availability": "project_basis",
+        "looking_for": ["OTT_film_grading", "prestige_drama", "Dolby_Vision_projects"]
+      },
+      "projects": [
+        { "title": "Aadujeevitham", "year": 2023, "role": "Colorist", "format": "feature_film", "language": "Malayalam", "platform": "theatrical" },
+        { "title": "Minnal Murali", "year": 2021, "role": "Colorist", "format": "feature_film", "language": "Malayalam", "platform": "Netflix" }
+      ],
+      "education_training": [
+        { "institution": "Dolby Laboratories", "course": "Dolby Vision Certified Colorist", "year_completed": 2020 },
+        { "institution": "FTII Short Course", "course": "Digital Colour Grading", "year_completed": 2014 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Blessy", "craft": "Director", "note": "Her grades feel like natural memory, not correction." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB004/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB004/cover.jpg"
+      },
+      "tags_self": ["naturalistic_grade", "Dolby_Vision", "Malayalam_cinema"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["naturalistic", "muted_tones", "warm_amber"],
+        "equipment_familiarity": ["DaVinci_Resolve_Studio", "Dolby_Vision_Monitor", "Flanders_Scientific_Monitor"],
+        "specializations": ["Dolby_Vision", "HDR_grading", "skin_tone_precision"],
+        "preferred_format": ["digital", "HDR"]
+      }
+    },
+    {
+      "id": "UB005",
+      "name": "Zaheer Mirza",
+      "status": "active",
+      "created_at": "2021-11-22",
+      "updated_at": "2024-08-30",
+      "onboarding_source": "referral",
+      "profile_completeness": 93,
+      "verification": { "verified": true, "verified_at": "2021-12-10", "method": "id_check" },
+      "bio": "VFX Supervisor with 16 years delivering high-end visual effects for Bollywood and OTT films. Led VFX teams of 80+ artists on large-scale mythological and sci-fi productions.",
+      "personal_info": {
+        "gender": "male",
+        "age": 43,
+        "languages": ["Hindi", "Urdu", "English"],
+        "regional_background": "Uttar Pradesh"
+      },
+      "location": {
+        "current_city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "VFX Supervisor",
+        "secondary_crafts": ["Production Designer"],
+        "experience_years": 16,
+        "experience_level": "senior",
+        "availability": "project_basis",
+        "looking_for": ["VFX_heavy_features", "mythological_films", "sci-fi_OTT"]
+      },
+      "projects": [
+        { "title": "Adipurush", "year": 2023, "role": "VFX Supervisor", "format": "feature_film", "language": "Hindi/Telugu", "platform": "theatrical" },
+        { "title": "The Night Manager India (VFX)", "year": 2023, "role": "VFX Lead", "format": "OTT_series", "language": "Hindi", "platform": "Disney+Hotstar" }
+      ],
+      "education_training": [
+        { "institution": "Gnomon School of Visual Effects", "course": "VFX Supervision & Pipeline", "year_completed": 2008 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Om Raut", "craft": "Director", "note": "He makes the impossible look inevitable." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB005/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB005/cover.jpg"
+      },
+      "tags_self": ["VFX_heavy", "mythological_films", "large_team_leadership"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["stylized_color", "epic_scale", "photoreal_VFX"],
+        "equipment_familiarity": ["Houdini", "Nuke", "Maya", "Unreal_Engine"],
+        "specializations": ["VFX_heavy", "creature_FX", "environment_builds", "previs"],
+        "preferred_format": ["digital", "wide_format"]
+      }
+    },
+    {
+      "id": "UB006",
+      "name": "Ananya Roy",
+      "status": "active",
+      "created_at": "2023-04-18",
+      "updated_at": "2025-02-08",
+      "onboarding_source": "social_media",
+      "profile_completeness": 82,
+      "verification": { "verified": false, "verified_at": null, "method": null },
+      "bio": "Costume designer for Bengali and Hindi indie films. Works in a decolonial aesthetic — reviving handloom weaves, natural dyes, and pre-Partition silhouettes in contemporary cinema.",
+      "personal_info": {
+        "gender": "female",
+        "age": 29,
+        "languages": ["Bengali", "Hindi", "English"],
+        "regional_background": "West Bengal"
+      },
+      "location": {
+        "current_city": "Kolkata",
+        "state": "West Bengal",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Costume Designer",
+        "secondary_crafts": ["Art Director"],
+        "experience_years": 6,
+        "experience_level": "mid",
+        "availability": "available_now",
+        "looking_for": ["arthouse_film_costumes", "period_indie_films", "OTT_drama"]
+      },
+      "projects": [
+        { "title": "Ektara", "year": 2023, "role": "Costume Designer", "format": "feature_film", "language": "Bengali", "platform": "theatrical" },
+        { "title": "Bhaanga Baati", "year": 2022, "role": "Wardrobe Designer", "format": "short_film", "language": "Bengali", "platform": "film_festival" }
+      ],
+      "education_training": [
+        { "institution": "National Institute of Fashion Technology Kolkata", "course": "Fashion Design (Film Specialization)", "year_completed": 2019 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB006/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB006/cover.jpg"
+      },
+      "tags_self": ["handloom_revival", "decolonial_design", "Bengali_indie"],
+      "work_samples": [
+        { "type": "makeup_lookbook", "url": "https://portfolio.tribli.com/UB006/costumes2023.pdf", "label": "Ektara costume portfolio" }
+      ],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["earthy_palette", "naturalistic", "period_authentic"],
+        "equipment_familiarity": [],
+        "specializations": ["period_drama", "handloom_textiles", "pre-Independence_silhouettes"],
+        "preferred_format": ["digital"]
+      }
+    },
+    {
+      "id": "UB007",
+      "name": "Rajiv Menon",
+      "status": "active",
+      "created_at": "2020-05-30",
+      "updated_at": "2024-07-15",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 99,
+      "verification": { "verified": true, "verified_at": "2020-06-10", "method": "id_check" },
+      "bio": "Veteran cinematographer with 28 years and 55 feature film credits. Pioneered the use of natural diffused light in Tamil cinema. Known internationally for his collaboration with festival-circuit directors.",
+      "personal_info": {
+        "gender": "male",
+        "age": 57,
+        "languages": ["Tamil", "English", "Hindi", "French"],
+        "regional_background": "Tamil Nadu"
+      },
+      "location": {
+        "current_city": "Chennai",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Cinematographer",
+        "secondary_crafts": ["Colorist", "Production Designer"],
+        "experience_years": 28,
+        "experience_level": "veteran",
+        "availability": "selective",
+        "looking_for": ["international_co_productions", "arthouse_festival_films", "prestige_OTT"]
+      },
+      "projects": [
+        { "title": "Ponniyin Selvan I", "year": 2022, "role": "Cinematographer", "format": "feature_film", "language": "Tamil", "platform": "theatrical" },
+        { "title": "Kandukondain Kandukondain Restored", "year": 2023, "role": "Restoration Supervisor", "format": "restoration_project", "language": "Tamil", "platform": "theatrical" }
+      ],
+      "education_training": [
+        { "institution": "Film and Television Institute of India", "course": "Cinematography (Gold Medalist)", "year_completed": 1996 },
+        { "institution": "La Fémis Paris", "course": "Advanced Cinematography", "year_completed": 1998 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Mani Ratnam", "craft": "Director", "note": "He can light a set with a single candle and make it cinema." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB007/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB007/cover.jpg"
+      },
+      "tags_self": ["diffused_natural_light", "Tamil_cinema_legend", "international_DOP"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["naturalistic", "soft_diffused", "warm_tones"],
+        "equipment_familiarity": ["ARRI_Alexa_65", "Panavision_Primo_Lenses", "Steadicam", "Technocrane"],
+        "specializations": ["period_drama", "low_light", "intimate_drama"],
+        "preferred_format": ["anamorphic", "wide_format", "digital"]
+      }
+    },
+    {
+      "id": "UB008",
+      "name": "Diksha Tripathi",
+      "status": "active",
+      "created_at": "2023-06-02",
+      "updated_at": "2025-01-25",
+      "onboarding_source": "organic_search",
+      "profile_completeness": 79,
+      "verification": { "verified": false, "verified_at": null, "method": null },
+      "bio": "Emerging photographer and visual storyteller from Varanasi. Documents the spiritual and everyday life of the Ganga ghats in dramatic black-and-white. Sells limited edition prints internationally.",
+      "personal_info": {
+        "gender": "female",
+        "age": 24,
+        "languages": ["Hindi", "English", "Bhojpuri"],
+        "regional_background": "Uttar Pradesh"
+      },
+      "location": {
+        "current_city": "Varanasi",
+        "state": "Uttar Pradesh",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Photographer",
+        "secondary_crafts": [],
+        "experience_years": 3,
+        "experience_level": "entry",
+        "availability": "available_now",
+        "looking_for": ["documentary_photography", "fine_art_commissions", "film_stills"]
+      },
+      "projects": [
+        { "title": "Ganga After Dark", "year": 2023, "role": "Photographer", "format": "photo_series", "language": "N/A", "platform": "gallery_exhibition" },
+        { "title": "Kashi Diaries", "year": 2024, "role": "Photojournalist", "format": "editorial", "language": "N/A", "platform": "The_Hindu_Weekend" }
+      ],
+      "education_training": [
+        { "institution": "Banaras Hindu University", "course": "Fine Arts & Photography", "year_completed": 2023 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB008/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB008/cover.jpg"
+      },
+      "tags_self": ["black_and_white", "documentary_photography", "Varanasi"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["high_contrast", "black_and_white", "documentary_realism"],
+        "equipment_familiarity": ["Leica_M11", "Nikon_Z6", "Darkroom_printing"],
+        "specializations": ["documentary_photography", "spiritual_themes", "low_light"],
+        "preferred_format": ["digital", "film_grain_emulation"]
+      }
+    },
+    {
+      "id": "UB009",
+      "name": "Arun Krishnaswamy",
+      "status": "active",
+      "created_at": "2022-01-17",
+      "updated_at": "2024-10-10",
+      "onboarding_source": "referral",
+      "profile_completeness": 90,
+      "verification": { "verified": true, "verified_at": "2022-02-01", "method": "id_check" },
+      "bio": "Art director for Tamil and Malayalam features. Expert in constructing lived-in spaces — messy lower-middle-class interiors, crumbling government buildings, and market-street chaos that feel absolutely real.",
+      "personal_info": {
+        "gender": "male",
+        "age": 38,
+        "languages": ["Tamil", "Malayalam", "English"],
+        "regional_background": "Tamil Nadu"
+      },
+      "location": {
+        "current_city": "Chennai",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Art Director",
+        "secondary_crafts": ["Production Designer"],
+        "experience_years": 13,
+        "experience_level": "senior",
+        "availability": "project_basis",
+        "looking_for": ["realist_cinema_art_direction", "OTT_drama", "indie_features"]
+      },
+      "projects": [
+        { "title": "Viduthalai Part 2", "year": 2024, "role": "Art Director", "format": "feature_film", "language": "Tamil", "platform": "theatrical" },
+        { "title": "Juni", "year": 2022, "role": "Art Director", "format": "OTT_series", "language": "Tamil", "platform": "Amazon_Prime" }
+      ],
+      "education_training": [
+        { "institution": "Government College of Fine Arts Chennai", "course": "Painting & Art Direction", "year_completed": 2011 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Vetrimaaran", "craft": "Director", "note": "He finds the soul of working-class spaces." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB009/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB009/cover.jpg"
+      },
+      "tags_self": ["realist_sets", "lower_middle_class", "Tamil_realism"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["naturalistic", "earthy_palette", "documentary_realism"],
+        "equipment_familiarity": [],
+        "specializations": ["realist_interiors", "lived_in_spaces", "low_budget_ingenuity"],
+        "preferred_format": ["digital"]
+      }
+    },
+    {
+      "id": "UB010",
+      "name": "Shreya Venkataraman",
+      "status": "active",
+      "created_at": "2023-08-14",
+      "updated_at": "2025-02-15",
+      "onboarding_source": "social_media",
+      "profile_completeness": 85,
+      "verification": { "verified": true, "verified_at": "2023-09-01", "method": "social_verify" },
+      "bio": "Costume designer for contemporary Bollywood and fashion films. Mixes streetwear with high-fashion and focuses on character-driven wardrobe that tells backstory without dialogue.",
+      "personal_info": {
+        "gender": "female",
+        "age": 32,
+        "languages": ["Hindi", "English", "Tamil"],
+        "regional_background": "Tamil Nadu"
+      },
+      "location": {
+        "current_city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Costume Designer",
+        "secondary_crafts": ["Art Director"],
+        "experience_years": 8,
+        "experience_level": "mid",
+        "availability": "available_now",
+        "looking_for": ["contemporary_film_costumes", "fashion_films", "OTT_series"]
+      },
+      "projects": [
+        { "title": "Kho Gaye Hum Kahan", "year": 2023, "role": "Costume Designer", "format": "feature_film", "language": "Hindi", "platform": "Netflix" },
+        { "title": "Jawan (Wardrobe Unit)", "year": 2023, "role": "Costume Team Lead", "format": "feature_film", "language": "Hindi", "platform": "theatrical" }
+      ],
+      "education_training": [
+        { "institution": "NIFT Mumbai", "course": "Fashion Design (Film & Television)", "year_completed": 2016 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB010/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB010/cover.jpg"
+      },
+      "tags_self": ["contemporary_costume", "streetwear_high_fashion", "character_wardrobe"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["stylized_color", "contemporary", "character_driven"],
+        "equipment_familiarity": [],
+        "specializations": ["contemporary_fashion", "character_based_wardrobe", "streetwear"],
+        "preferred_format": ["digital"]
+      }
+    },
+    {
+      "id": "UB011",
+      "name": "Thomas Kuriakose",
+      "status": "active",
+      "created_at": "2021-04-09",
+      "updated_at": "2024-06-18",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 94,
+      "verification": { "verified": true, "verified_at": "2021-05-01", "method": "id_check" },
+      "bio": "Aerial and underwater cinematographer for nature documentaries and action features. Certified commercial drone pilot and PADI divemaster. Shot for BBC Earth and National Geographic India.",
+      "personal_info": {
+        "gender": "male",
+        "age": 40,
+        "languages": ["Malayalam", "English", "Hindi"],
+        "regional_background": "Kerala"
+      },
+      "location": {
+        "current_city": "Kochi",
+        "state": "Kerala",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Cinematographer",
+        "secondary_crafts": ["Photographer"],
+        "experience_years": 15,
+        "experience_level": "senior",
+        "availability": "project_basis",
+        "looking_for": ["nature_documentaries", "aerial_work", "underwater_sequences"]
+      },
+      "projects": [
+        { "title": "Kerala: The Green Canopy", "year": 2023, "role": "Aerial DOP", "format": "documentary", "language": "English", "platform": "BBC_Earth" },
+        { "title": "Marakkar (Underwater Unit)", "year": 2021, "role": "Underwater Cinematographer", "format": "feature_film", "language": "Malayalam", "platform": "theatrical" }
+      ],
+      "education_training": [
+        { "institution": "FTII", "course": "Cinematography", "year_completed": 2009 },
+        { "institution": "PADI", "course": "Divemaster Certification", "year_completed": 2012 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "BBC Natural History Unit", "craft": "Production House", "note": "Exceptional eye for marine compositions." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB011/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB011/cover.jpg"
+      },
+      "tags_self": ["aerial_cinematography", "underwater", "nature_documentary"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["naturalistic", "epic_landscape", "rich_color"],
+        "equipment_familiarity": ["DJI_Inspire_3", "RED_Komodo_6K", "Nauticam_Housing", "Freefly_Alta"],
+        "specializations": ["aerial", "underwater", "nature_documentary", "action_sequences"],
+        "preferred_format": ["digital", "wide_format"]
+      }
+    },
+    {
+      "id": "UB012",
+      "name": "Poornima Iyer",
+      "status": "active",
+      "created_at": "2022-11-08",
+      "updated_at": "2025-01-05",
+      "onboarding_source": "organic_search",
+      "profile_completeness": 87,
+      "verification": { "verified": true, "verified_at": "2022-12-01", "method": "portfolio_check" },
+      "bio": "Colorist and DI supervisor for Tamil and Kannada features. Expert in cross-platform HDR delivery for theatrical, Netflix, and Amazon Prime. Runs a boutique DI suite in Chennai.",
+      "personal_info": {
+        "gender": "female",
+        "age": 36,
+        "languages": ["Tamil", "Kannada", "English", "Hindi"],
+        "regional_background": "Tamil Nadu"
+      },
+      "location": {
+        "current_city": "Chennai",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "willing_to_travel": false
+      },
+      "professional_info": {
+        "primary_craft": "Colorist",
+        "secondary_crafts": ["Cinematographer"],
+        "experience_years": 11,
+        "experience_level": "senior",
+        "availability": "project_basis",
+        "looking_for": ["feature_film_DI", "OTT_HDR_delivery", "commercial_campaigns"]
+      },
+      "projects": [
+        { "title": "Kantara", "year": 2022, "role": "DI Colorist", "format": "feature_film", "language": "Kannada", "platform": "theatrical" },
+        { "title": "Iraivan", "year": 2023, "role": "Colorist", "format": "feature_film", "language": "Tamil", "platform": "theatrical" }
+      ],
+      "education_training": [
+        { "institution": "DaVinci Resolve Master Training", "course": "DI & Colour Science", "year_completed": 2014 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Rishab Shetty", "craft": "Director", "note": "The forest in Kantara looks alive because of her grades." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB012/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB012/cover.jpg"
+      },
+      "tags_self": ["DI_specialist", "HDR_delivery", "Kannada_Tamil_cinema"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["rich_color", "earthy_palette", "naturalistic"],
+        "equipment_familiarity": ["DaVinci_Resolve_Studio", "Baselight", "Sony_BVM_Monitor", "Flanders_Scientific_Monitor"],
+        "specializations": ["HDR_grading", "cross_platform_delivery", "DI_supervision"],
+        "preferred_format": ["digital", "HDR"]
+      }
+    },
+    {
+      "id": "UB013",
+      "name": "Vikram Singh",
+      "status": "active",
+      "created_at": "2022-05-20",
+      "updated_at": "2024-09-14",
+      "onboarding_source": "referral",
+      "profile_completeness": 91,
+      "verification": { "verified": true, "verified_at": "2022-06-05", "method": "id_check" },
+      "bio": "VFX supervisor from Delhi with 14 years specializing in invisible VFX — digital environment extensions, set replacements, and de-ageing. Worked on international co-productions with UK and South Korea.",
+      "personal_info": {
+        "gender": "male",
+        "age": 39,
+        "languages": ["Hindi", "English", "Punjabi"],
+        "regional_background": "Delhi"
+      },
+      "location": {
+        "current_city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "VFX Supervisor",
+        "secondary_crafts": ["Cinematographer"],
+        "experience_years": 14,
+        "experience_level": "senior",
+        "availability": "project_basis",
+        "looking_for": ["invisible_VFX", "international_co_productions", "OTT_features"]
+      },
+      "projects": [
+        { "title": "Brahmastra (VFX Unit)", "year": 2022, "role": "VFX Supervisor", "format": "feature_film", "language": "Hindi", "platform": "theatrical" },
+        { "title": "Scoop (Netflix)", "year": 2023, "role": "VFX Supervisor", "format": "OTT_series", "language": "Hindi", "platform": "Netflix" }
+      ],
+      "education_training": [
+        { "institution": "Gnomon School of Visual Effects", "course": "Compositing & VFX Supervision", "year_completed": 2010 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB013/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB013/cover.jpg"
+      },
+      "tags_self": ["invisible_VFX", "de_ageing", "environment_extension"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["photoreal_VFX", "naturalistic", "invisible_effects"],
+        "equipment_familiarity": ["Nuke", "Houdini", "After_Effects", "Maya"],
+        "specializations": ["invisible_VFX", "environment_builds", "de_ageing", "set_replacement"],
+        "preferred_format": ["digital"]
+      }
+    },
+    {
+      "id": "UB014",
+      "name": "Lakshmi Subramaniam",
+      "status": "active",
+      "created_at": "2021-09-30",
+      "updated_at": "2024-08-22",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 96,
+      "verification": { "verified": true, "verified_at": "2021-10-15", "method": "id_check" },
+      "bio": "Production designer for Telugu mass entertainers and action spectaculars. Expert in designing extravagant fight arenas, stylized villain lairs, and high-octane action environments.",
+      "personal_info": {
+        "gender": "female",
+        "age": 45,
+        "languages": ["Telugu", "Tamil", "Hindi", "English"],
+        "regional_background": "Andhra Pradesh"
+      },
+      "location": {
+        "current_city": "Hyderabad",
+        "state": "Telangana",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Production Designer",
+        "secondary_crafts": ["Art Director"],
+        "experience_years": 18,
+        "experience_level": "senior",
+        "availability": "selective",
+        "looking_for": ["Telugu_mass_entertainers", "action_films", "VFX_heavy_productions"]
+      },
+      "projects": [
+        { "title": "Salaar (Set Design)", "year": 2023, "role": "Production Designer", "format": "feature_film", "language": "Telugu/Hindi", "platform": "theatrical" },
+        { "title": "Akhanda", "year": 2021, "role": "Art Director", "format": "feature_film", "language": "Telugu", "platform": "theatrical" }
+      ],
+      "education_training": [
+        { "institution": "Sir J.J. School of Art", "course": "Sculpture & Set Design", "year_completed": 2006 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Prashanth Neel", "craft": "Director", "note": "Her action environments feel genuinely dangerous." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB014/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB014/cover.jpg"
+      },
+      "tags_self": ["mass_entertainer_design", "action_environments", "Tollywood"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["stylized_color", "epic_scale", "high_contrast"],
+        "equipment_familiarity": [],
+        "specializations": ["large_scale_sets", "action_environments", "VFX_heavy"],
+        "preferred_format": ["digital", "wide_format"]
+      }
+    },
+    {
+      "id": "UB015",
+      "name": "Arjun Basu",
+      "status": "active",
+      "created_at": "2023-02-01",
+      "updated_at": "2024-11-29",
+      "onboarding_source": "organic_search",
+      "profile_completeness": 81,
+      "verification": { "verified": false, "verified_at": null, "method": null },
+      "bio": "Documentary and street photographer based in Kolkata. Trained under Henri Cartier-Bresson Foundation methodology. Captures fleeting urban moments with a 35mm film aesthetic.",
+      "personal_info": {
+        "gender": "male",
+        "age": 27,
+        "languages": ["Bengali", "Hindi", "English"],
+        "regional_background": "West Bengal"
+      },
+      "location": {
+        "current_city": "Kolkata",
+        "state": "West Bengal",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Photographer",
+        "secondary_crafts": [],
+        "experience_years": 4,
+        "experience_level": "entry",
+        "availability": "available_now",
+        "looking_for": ["documentary_photography", "editorial_commissions", "film_stills"]
+      },
+      "projects": [
+        { "title": "Kolkata Rush Hour", "year": 2023, "role": "Photographer", "format": "photo_series", "language": "N/A", "platform": "gallery_exhibition" },
+        { "title": "Ananda Bazar Patrika Weekend Feature", "year": 2024, "role": "Photojournalist", "format": "editorial", "language": "N/A", "platform": "print" }
+      ],
+      "education_training": [
+        { "institution": "Chitrakoot Art Institute", "course": "Photography & Visual Journalism", "year_completed": 2022 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB015/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB015/cover.jpg"
+      },
+      "tags_self": ["street_photography", "35mm_aesthetic", "documentary_realism"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["high_contrast", "black_and_white", "documentary_realism"],
+        "equipment_familiarity": ["Fujifilm_X100V", "Leica_M6", "Ilford_HP5_Film"],
+        "specializations": ["street_photography", "documentary_photography", "photojournalism"],
+        "preferred_format": ["film", "digital"]
+      }
+    },
+    {
+      "id": "UB016",
+      "name": "Geeta Pillai",
+      "status": "active",
+      "created_at": "2022-07-25",
+      "updated_at": "2024-10-08",
+      "onboarding_source": "referral",
+      "profile_completeness": 89,
+      "verification": { "verified": true, "verified_at": "2022-08-10", "method": "id_check" },
+      "bio": "Costume designer specializing in South Indian classical dance costumes and period Malayalam films. Revives dying weave traditions — Kasavu, Kaithari, and Mundum Neriyathum — for screen.",
+      "personal_info": {
+        "gender": "female",
+        "age": 43,
+        "languages": ["Malayalam", "Tamil", "English"],
+        "regional_background": "Kerala"
+      },
+      "location": {
+        "current_city": "Thiruvananthapuram",
+        "state": "Kerala",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Costume Designer",
+        "secondary_crafts": ["Art Director"],
+        "experience_years": 16,
+        "experience_level": "senior",
+        "availability": "project_basis",
+        "looking_for": ["Malayalam_period_films", "classical_dance_productions", "OTT_Kerala_originals"]
+      },
+      "projects": [
+        { "title": "Theevandi (Costume)", "year": 2022, "role": "Costume Designer", "format": "feature_film", "language": "Malayalam", "platform": "theatrical" },
+        { "title": "Kerala Varma Pazhassi Raja Revival", "year": 2023, "role": "Wardrobe Designer", "format": "documentary_drama", "language": "Malayalam", "platform": "Kerala_TV" }
+      ],
+      "education_training": [
+        { "institution": "NIFT Chennai", "course": "Textiles & Fashion Design", "year_completed": 2008 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB016/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB016/cover.jpg"
+      },
+      "tags_self": ["Kasavu_weaves", "classical_dance_costume", "Kerala_textiles"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["period_authentic", "naturalistic", "earthy_palette"],
+        "equipment_familiarity": [],
+        "specializations": ["period_drama", "classical_dance_costumes", "heritage_textiles"],
+        "preferred_format": ["digital"]
+      }
+    },
+    {
+      "id": "UB017",
+      "name": "Imran Sheikh",
+      "status": "active",
+      "created_at": "2021-06-14",
+      "updated_at": "2024-07-30",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 92,
+      "verification": { "verified": true, "verified_at": "2021-07-01", "method": "id_check" },
+      "bio": "Art director for Bollywood commercials and music videos. Builds hyper-stylized surrealist sets — floating architecture, inverted gravity, neon dreamscapes. Works extensively with pop and electronic music artists.",
+      "personal_info": {
+        "gender": "male",
+        "age": 35,
+        "languages": ["Hindi", "Urdu", "English"],
+        "regional_background": "Maharashtra"
+      },
+      "location": {
+        "current_city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Art Director",
+        "secondary_crafts": ["Production Designer", "Photographer"],
+        "experience_years": 11,
+        "experience_level": "senior",
+        "availability": "available_now",
+        "looking_for": ["music_video_art_direction", "commercial_sets", "fashion_films"]
+      },
+      "projects": [
+        { "title": "Badshah – Paani Paani MV", "year": 2022, "role": "Art Director", "format": "music_video", "language": "Hindi", "platform": "YouTube" },
+        { "title": "Tanishq Diwali Campaign", "year": 2023, "role": "Art Director", "format": "TVC", "language": "Hindi", "platform": "broadcast" }
+      ],
+      "education_training": [
+        { "institution": "Sophia Polytechnic Mumbai", "course": "Interior Design & Set Direction", "year_completed": 2013 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB017/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB017/cover.jpg"
+      },
+      "tags_self": ["surrealist_sets", "neon_dreamscapes", "music_video_art_direction"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["stylized_color", "surrealist", "neon", "high_contrast"],
+        "equipment_familiarity": [],
+        "specializations": ["music_video_sets", "surrealist_design", "commercial_art_direction"],
+        "preferred_format": ["digital"]
+      }
+    },
+    {
+      "id": "UB018",
+      "name": "Sanjukta Datta",
+      "status": "active",
+      "created_at": "2024-01-08",
+      "updated_at": "2025-02-20",
+      "onboarding_source": "social_media",
+      "profile_completeness": 73,
+      "verification": { "verified": false, "verified_at": null, "method": null },
+      "bio": "Young VFX artist and compositor specializing in motion graphics for OTT show title sequences and short films. Based in Pune with remote-first workflow.",
+      "personal_info": {
+        "gender": "female",
+        "age": 22,
+        "languages": ["Bengali", "Hindi", "English"],
+        "regional_background": "West Bengal"
+      },
+      "location": {
+        "current_city": "Pune",
+        "state": "Maharashtra",
+        "country": "India",
+        "willing_to_travel": false
+      },
+      "professional_info": {
+        "primary_craft": "VFX Supervisor",
+        "secondary_crafts": [],
+        "experience_years": 2,
+        "experience_level": "entry",
+        "availability": "available_now",
+        "looking_for": ["OTT_title_sequences", "motion_graphics", "short_film_VFX"]
+      },
+      "projects": [
+        { "title": "Paatal Lok S2 (Title Sequence)", "year": 2024, "role": "Motion Graphics Artist", "format": "OTT_series", "language": "Hindi", "platform": "Amazon_Prime" }
+      ],
+      "education_training": [
+        { "institution": "Arena Animation Pune", "course": "VFX & Motion Graphics", "year_completed": 2023 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB018/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB018/cover.jpg"
+      },
+      "tags_self": ["motion_graphics", "title_sequences", "compositor"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["stylized_color", "kinetic_design"],
+        "equipment_familiarity": ["After_Effects", "Cinema_4D", "Nuke"],
+        "specializations": ["motion_graphics", "compositing", "title_design"],
+        "preferred_format": ["digital"]
+      }
+    },
+    {
+      "id": "UB019",
+      "name": "Mahesh Babu Naidu",
+      "status": "active",
+      "created_at": "2020-10-05",
+      "updated_at": "2024-05-17",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 98,
+      "verification": { "verified": true, "verified_at": "2020-11-01", "method": "id_check" },
+      "bio": "Veteran art director and production designer for Telugu cinema with 25 years. Built sets for 80+ films including some of the highest-grossing Telugu films of all time. Deep expertise in mythological and historical sets.",
+      "personal_info": {
+        "gender": "male",
+        "age": 54,
+        "languages": ["Telugu", "Hindi", "English", "Tamil"],
+        "regional_background": "Andhra Pradesh"
+      },
+      "location": {
+        "current_city": "Hyderabad",
+        "state": "Telangana",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Production Designer",
+        "secondary_crafts": ["Art Director"],
+        "experience_years": 25,
+        "experience_level": "veteran",
+        "availability": "selective",
+        "looking_for": ["mythological_blockbusters", "historical_epics", "prestige_Telugu_films"]
+      },
+      "projects": [
+        { "title": "Baahubali: The Conclusion (Mahishmati Sets)", "year": 2017, "role": "Senior Art Director", "format": "feature_film", "language": "Telugu", "platform": "theatrical" },
+        { "title": "Kalki 2898 AD (Sets)", "year": 2024, "role": "Production Designer", "format": "feature_film", "language": "Telugu/Hindi", "platform": "theatrical" }
+      ],
+      "education_training": [
+        { "institution": "Govt. College of Fine Arts Hyderabad", "course": "Sculpture & Applied Arts", "year_completed": 1999 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "S. S. Rajamouli", "craft": "Director", "note": "He is the architect of our epic worlds." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB019/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB019/cover.jpg"
+      },
+      "tags_self": ["mythological_sets", "epic_Telugu_cinema", "historical_design"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["opulent", "epic_scale", "period_authentic"],
+        "equipment_familiarity": [],
+        "specializations": ["mythological_sets", "large_scale_sets", "historical_reconstruction", "VFX_heavy"],
+        "preferred_format": ["digital", "wide_format"]
+      }
+    },
+    {
+      "id": "UB020",
+      "name": "Preethi Chakravarthy",
+      "status": "active",
+      "created_at": "2023-05-11",
+      "updated_at": "2025-01-14",
+      "onboarding_source": "organic_search",
+      "profile_completeness": 84,
+      "verification": { "verified": true, "verified_at": "2023-06-01", "method": "portfolio_check" },
+      "bio": "Cinematographer for Tamil indie films and music videos. Shoots on 16mm and Super 8 for emotional texture. Brings an analogue warmth to digital-era storytelling.",
+      "personal_info": {
+        "gender": "female",
+        "age": 28,
+        "languages": ["Tamil", "English", "Hindi"],
+        "regional_background": "Tamil Nadu"
+      },
+      "location": {
+        "current_city": "Chennai",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Cinematographer",
+        "secondary_crafts": ["Colorist"],
+        "experience_years": 5,
+        "experience_level": "mid",
+        "availability": "available_now",
+        "looking_for": ["indie_Tamil_films", "music_video_DOP", "short_film_projects"]
+      },
+      "projects": [
+        { "title": "Veyil Varum", "year": 2023, "role": "DOP", "format": "short_film", "language": "Tamil", "platform": "film_festival" },
+        { "title": "Aridhi Music Video", "year": 2024, "role": "Cinematographer", "format": "music_video", "language": "Tamil", "platform": "YouTube" }
+      ],
+      "education_training": [
+        { "institution": "Satyajit Ray Film and Television Institute", "course": "Cinematography (16mm specialization)", "year_completed": 2020 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB020/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB020/cover.jpg"
+      },
+      "tags_self": ["16mm_film", "analogue_warmth", "Tamil_indie"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["warm_tones", "film_grain", "naturalistic"],
+        "equipment_familiarity": ["Bolex_H16", "Canon_Scoopic", "ARRI_Alexa_Mini"],
+        "specializations": ["16mm_shooting", "low_light", "music_videos"],
+        "preferred_format": ["film", "anamorphic"]
+      }
+    },
+    {
+      "id": "UB021",
+      "name": "Ranjith Nair",
+      "status": "active",
+      "created_at": "2022-04-06",
+      "updated_at": "2024-11-02",
+      "onboarding_source": "referral",
+      "profile_completeness": 88,
+      "verification": { "verified": true, "verified_at": "2022-05-01", "method": "id_check" },
+      "bio": "Production designer for Malayalam commercial cinema and OTT thrillers. Builds production-efficient sets that maximize screen impact on limited budgets. Expert in hybrid practical-virtual set design.",
+      "personal_info": {
+        "gender": "male",
+        "age": 37,
+        "languages": ["Malayalam", "Tamil", "English", "Hindi"],
+        "regional_background": "Kerala"
+      },
+      "location": {
+        "current_city": "Kochi",
+        "state": "Kerala",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Production Designer",
+        "secondary_crafts": ["Art Director", "VFX Supervisor"],
+        "experience_years": 12,
+        "experience_level": "senior",
+        "availability": "project_basis",
+        "looking_for": ["Malayalam_OTT_thrillers", "budget_efficient_productions", "virtual_production"]
+      },
+      "projects": [
+        { "title": "Forensic (Sets)", "year": 2022, "role": "Production Designer", "format": "feature_film", "language": "Malayalam", "platform": "theatrical" },
+        { "title": "Jana Gana Mana", "year": 2022, "role": "Art Director", "format": "feature_film", "language": "Malayalam", "platform": "theatrical" }
+      ],
+      "education_training": [
+        { "institution": "College of Fine Arts Thrissur", "course": "Painting & Production Design", "year_completed": 2012 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB021/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB021/cover.jpg"
+      },
+      "tags_self": ["budget_efficient_design", "thriller_environments", "virtual_production"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["high_contrast", "dark_moody", "realistic"],
+        "equipment_familiarity": ["Unreal_Engine", "LED_Volume"],
+        "specializations": ["thriller_sets", "virtual_production", "practical_VFX_integration"],
+        "preferred_format": ["digital"]
+      }
+    },
+    {
+      "id": "UB022",
+      "name": "Deepthi Shankar",
+      "status": "active",
+      "created_at": "2023-09-20",
+      "updated_at": "2025-02-10",
+      "onboarding_source": "social_media",
+      "profile_completeness": 77,
+      "verification": { "verified": false, "verified_at": null, "method": null },
+      "bio": "Wedding and portrait photographer based in Bengaluru. Shoots emotionally rich candid moments — documentary-style wedding coverage with a photojournalistic eye.",
+      "personal_info": {
+        "gender": "female",
+        "age": 26,
+        "languages": ["Kannada", "Tamil", "English", "Hindi"],
+        "regional_background": "Karnataka"
+      },
+      "location": {
+        "current_city": "Bengaluru",
+        "state": "Karnataka",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Photographer",
+        "secondary_crafts": [],
+        "experience_years": 3,
+        "experience_level": "entry",
+        "availability": "available_now",
+        "looking_for": ["wedding_photography", "portrait_commissions", "editorial_work"]
+      },
+      "projects": [
+        { "title": "The Raghavan Wedding", "year": 2024, "role": "Lead Photographer", "format": "wedding", "language": "N/A", "platform": "client_gallery" },
+        { "title": "Femina Bridal Portfolio Shoot", "year": 2023, "role": "Photographer", "format": "editorial", "language": "N/A", "platform": "print" }
+      ],
+      "education_training": [
+        { "institution": "Bangalore School of Photography", "course": "Portrait & Wedding Photography", "year_completed": 2022 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB022/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB022/cover.jpg"
+      },
+      "tags_self": ["wedding_photography", "candid_moments", "photojournalistic"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["warm_tones", "naturalistic", "soft_diffused"],
+        "equipment_familiarity": ["Sony_A7IV", "Canon_EOS_R6", "Profoto_B10"],
+        "specializations": ["wedding_photography", "portrait_photography", "candid_photojournalism"],
+        "preferred_format": ["digital"]
+      }
+    },
+    {
+      "id": "UB023",
+      "name": "Balaji Venkatesan",
+      "status": "active",
+      "created_at": "2021-03-01",
+      "updated_at": "2024-04-20",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 94,
+      "verification": { "verified": true, "verified_at": "2021-04-01", "method": "id_check" },
+      "bio": "Senior colorist with 18 years and 70+ Tamil and Telugu film credits. Known for managing the entire digital intermediate pipeline from on-set LUT design through final deliverables.",
+      "personal_info": {
+        "gender": "male",
+        "age": 46,
+        "languages": ["Tamil", "Telugu", "English"],
+        "regional_background": "Tamil Nadu"
+      },
+      "location": {
+        "current_city": "Chennai",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "willing_to_travel": false
+      },
+      "professional_info": {
+        "primary_craft": "Colorist",
+        "secondary_crafts": ["Cinematographer"],
+        "experience_years": 18,
+        "experience_level": "senior",
+        "availability": "project_basis",
+        "looking_for": ["large_budget_films", "DI_pipeline_supervision", "commercial_campaigns"]
+      },
+      "projects": [
+        { "title": "RRR (Tamil DI)", "year": 2022, "role": "DI Colorist", "format": "feature_film", "language": "Tamil", "platform": "theatrical" },
+        { "title": "PS-2 (DI)", "year": 2023, "role": "Senior Colorist", "format": "feature_film", "language": "Tamil", "platform": "theatrical" }
+      ],
+      "education_training": [
+        { "institution": "Kodak Film Academy", "course": "Colour Science & Film Chemistry", "year_completed": 2006 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Lyca Productions", "craft": "Production House", "note": "The gold standard of DI in South India." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB023/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB023/cover.jpg"
+      },
+      "tags_self": ["DI_pipeline", "LUT_design", "Tamil_Telugu_cinema"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["rich_color", "high_contrast", "stylized_color"],
+        "equipment_familiarity": ["DaVinci_Resolve_Studio", "Baselight", "Lustre", "Sony_BVM_Monitor"],
+        "specializations": ["DI_supervision", "LUT_design", "on_set_colour_management"],
+        "preferred_format": ["digital", "HDR", "anamorphic"]
+      }
+    },
+    {
+      "id": "UB024",
+      "name": "Sonal Mehta",
+      "status": "active",
+      "created_at": "2022-08-15",
+      "updated_at": "2024-12-05",
+      "onboarding_source": "organic_search",
+      "profile_completeness": 86,
+      "verification": { "verified": true, "verified_at": "2022-09-01", "method": "portfolio_check" },
+      "bio": "Costume designer for Hindi OTT crime dramas and social realist films. Expert in sourcing authentic costumes for underclass characters — migrant workers, street vendors, domestic workers — without stereotyping.",
+      "personal_info": {
+        "gender": "female",
+        "age": 33,
+        "languages": ["Hindi", "Gujarati", "English"],
+        "regional_background": "Rajasthan"
+      },
+      "location": {
+        "current_city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Costume Designer",
+        "secondary_crafts": ["Art Director"],
+        "experience_years": 9,
+        "experience_level": "mid",
+        "availability": "project_basis",
+        "looking_for": ["social_realist_films", "OTT_crime_drama", "indie_features"]
+      },
+      "projects": [
+        { "title": "Panchayat S3 (Costume)", "year": 2023, "role": "Costume Designer", "format": "OTT_series", "language": "Hindi", "platform": "Amazon_Prime" },
+        { "title": "Zwigato (Wardrobe)", "year": 2022, "role": "Wardrobe Designer", "format": "feature_film", "language": "Hindi", "platform": "theatrical" }
+      ],
+      "education_training": [
+        { "institution": "NIFT Delhi", "course": "Fashion Design (Styling & Costume)", "year_completed": 2015 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB024/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB024/cover.jpg"
+      },
+      "tags_self": ["social_realism_costume", "character_authenticity", "working_class_wardrobe"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["earthy_palette", "naturalistic", "documentary_realism"],
+        "equipment_familiarity": [],
+        "specializations": ["social_realist_wardrobe", "character_based_costume", "period_sourcing"],
+        "preferred_format": ["digital"]
+      }
+    },
+    {
+      "id": "UB025",
+      "name": "Debashish Ghosh",
+      "status": "active",
+      "created_at": "2021-11-11",
+      "updated_at": "2024-08-09",
+      "onboarding_source": "referral",
+      "profile_completeness": 90,
+      "verification": { "verified": true, "verified_at": "2021-12-01", "method": "id_check" },
+      "bio": "Cinematographer for Bengali art cinema and Indian festival-circuit films. Prefers long-take observational style and natural window light. Three films selected for international festivals.",
+      "personal_info": {
+        "gender": "male",
+        "age": 44,
+        "languages": ["Bengali", "Hindi", "English", "French"],
+        "regional_background": "West Bengal"
+      },
+      "location": {
+        "current_city": "Kolkata",
+        "state": "West Bengal",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Cinematographer",
+        "secondary_crafts": ["Production Designer"],
+        "experience_years": 17,
+        "experience_level": "senior",
+        "availability": "selective",
+        "looking_for": ["arthouse_Bengali_cinema", "international_festival_films", "documentary_work"]
+      },
+      "projects": [
+        { "title": "Aborto", "year": 2023, "role": "DOP", "format": "feature_film", "language": "Bengali", "platform": "film_festival" },
+        { "title": "Kaalbela", "year": 2021, "role": "Cinematographer", "format": "feature_film", "language": "Bengali", "platform": "theatrical" }
+      ],
+      "education_training": [
+        { "institution": "SRFTI Kolkata", "course": "Cinematography", "year_completed": 2007 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Cannes Directors Fortnight", "craft": "Film Festival", "note": "Selected — 2023 Directors Fortnight." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB025/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB025/cover.jpg"
+      },
+      "tags_self": ["long_take_observation", "natural_window_light", "Bengali_arthouse"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["naturalistic", "muted_tones", "documentary_realism"],
+        "equipment_familiarity": ["ARRI_Alexa_Mini_LF", "Zeiss_Supreme_Primes", "Steadicam"],
+        "specializations": ["long_take_cinematography", "natural_light", "intimate_drama"],
+        "preferred_format": ["digital", "wide_format"]
+      }
+    },
+    {
+      "id": "UB026",
+      "name": "Anita Kulkarni",
+      "status": "active",
+      "created_at": "2023-03-07",
+      "updated_at": "2024-12-28",
+      "onboarding_source": "social_media",
+      "profile_completeness": 80,
+      "verification": { "verified": false, "verified_at": null, "method": null },
+      "bio": "Marathi costume designer working in contemporary social drama and historical productions. Combines traditional Paithani weave designs with modern silhouettes for strong female protagonist roles.",
+      "personal_info": {
+        "gender": "female",
+        "age": 30,
+        "languages": ["Marathi", "Hindi", "English"],
+        "regional_background": "Maharashtra"
+      },
+      "location": {
+        "current_city": "Pune",
+        "state": "Maharashtra",
+        "country": "India",
+        "willing_to_travel": false
+      },
+      "professional_info": {
+        "primary_craft": "Costume Designer",
+        "secondary_crafts": [],
+        "experience_years": 6,
+        "experience_level": "mid",
+        "availability": "available_now",
+        "looking_for": ["Marathi_feature_films", "OTT_social_drama", "period_productions"]
+      },
+      "projects": [
+        { "title": "Dhurala", "year": 2022, "role": "Costume Designer", "format": "feature_film", "language": "Marathi", "platform": "theatrical" }
+      ],
+      "education_training": [
+        { "institution": "NIFT Pune", "course": "Fashion Design", "year_completed": 2019 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB026/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB026/cover.jpg"
+      },
+      "tags_self": ["Paithani_design", "Marathi_cinema", "female_protagonist_wardrobe"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["earthy_palette", "period_authentic", "stylized_color"],
+        "equipment_familiarity": [],
+        "specializations": ["heritage_textiles", "period_drama", "character_based_costume"],
+        "preferred_format": ["digital"]
+      }
+    },
+    {
+      "id": "UB027",
+      "name": "Sundar Rajan",
+      "status": "active",
+      "created_at": "2020-08-22",
+      "updated_at": "2024-03-31",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 97,
+      "verification": { "verified": true, "verified_at": "2020-09-10", "method": "id_check" },
+      "bio": "Senior DOP for Hindi feature films with 22 years and 45 credits. Specialist in rain and monsoon photography — flooding streets, reflective wet surfaces, and atmospheric diffusion. Known for innovative in-camera practical effects.",
+      "personal_info": {
+        "gender": "male",
+        "age": 51,
+        "languages": ["Tamil", "Hindi", "English"],
+        "regional_background": "Tamil Nadu"
+      },
+      "location": {
+        "current_city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Cinematographer",
+        "secondary_crafts": ["Production Designer"],
+        "experience_years": 22,
+        "experience_level": "veteran",
+        "availability": "selective",
+        "looking_for": ["prestige_Hindi_features", "monsoon_drama", "large_scale_action"]
+      },
+      "projects": [
+        { "title": "Singham Again (Rain Sequences)", "year": 2024, "role": "DOP", "format": "feature_film", "language": "Hindi", "platform": "theatrical" },
+        { "title": "Bombay Rains", "year": 2022, "role": "Cinematographer", "format": "feature_film", "language": "Hindi", "platform": "theatrical" }
+      ],
+      "education_training": [
+        { "institution": "Film and Television Institute of India", "course": "Cinematography", "year_completed": 2002 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Rohit Shetty", "craft": "Director", "note": "When it needs to rain on screen, there is only one call to make." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB027/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB027/cover.jpg"
+      },
+      "tags_self": ["monsoon_photography", "practical_effects", "Bollywood_veteran"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["dark_moody", "naturalistic", "high_contrast"],
+        "equipment_familiarity": ["Sony_Venice_2", "ARRI_Alexa_LF", "Technocrane", "DJI_Ronin"],
+        "specializations": ["rain_photography", "practical_in_camera_effects", "action_sequences", "low_light"],
+        "preferred_format": ["digital", "wide_format"]
+      }
+    },
+    {
+      "id": "UB028",
+      "name": "Alisha Fernandes",
+      "status": "active",
+      "created_at": "2022-10-19",
+      "updated_at": "2025-01-31",
+      "onboarding_source": "organic_search",
+      "profile_completeness": 88,
+      "verification": { "verified": true, "verified_at": "2022-11-01", "method": "portfolio_check" },
+      "bio": "Art director for Goa-based tourism campaigns and lifestyle brands. Brings a coastal Mediterranean warmth to set design — whitewash, terracotta, oceanic light. Also directs food photography sets.",
+      "personal_info": {
+        "gender": "female",
+        "age": 34,
+        "languages": ["Konkani", "English", "Hindi", "Portuguese"],
+        "regional_background": "Goa"
+      },
+      "location": {
+        "current_city": "Panaji",
+        "state": "Goa",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Art Director",
+        "secondary_crafts": ["Photographer"],
+        "experience_years": 10,
+        "experience_level": "senior",
+        "availability": "project_basis",
+        "looking_for": ["tourism_campaigns", "lifestyle_brand_shoots", "food_photography_sets"]
+      },
+      "projects": [
+        { "title": "Goa Tourism 2024 Campaign", "year": 2024, "role": "Art Director", "format": "brand_campaign", "language": "English", "platform": "digital" },
+        { "title": "Taj Hotels Goa Cookbook", "year": 2023, "role": "Food Set Art Director", "format": "editorial", "language": "English", "platform": "print" }
+      ],
+      "education_training": [
+        { "institution": "IDC IIT Bombay", "course": "Visual Communication Design", "year_completed": 2014 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB028/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB028/cover.jpg"
+      },
+      "tags_self": ["coastal_aesthetic", "Mediterranean_warmth", "food_set_design"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["warm_tones", "naturalistic", "pastel_coastal"],
+        "equipment_familiarity": [],
+        "specializations": ["lifestyle_sets", "food_photography_design", "tourism_campaigns"],
+        "preferred_format": ["digital"]
+      }
+    },
+    {
+      "id": "UB029",
+      "name": "Yusuf Khan",
+      "status": "active",
+      "created_at": "2022-02-14",
+      "updated_at": "2024-07-03",
+      "onboarding_source": "referral",
+      "profile_completeness": 92,
+      "verification": { "verified": true, "verified_at": "2022-03-01", "method": "id_check" },
+      "bio": "VFX supervisor with 13 years specializing in photoreal creature design and digital doubles for Indian mythological and fantasy films. Pioneer of Indian-language fantasy VFX pipelines.",
+      "personal_info": {
+        "gender": "male",
+        "age": 38,
+        "languages": ["Hindi", "English", "Urdu"],
+        "regional_background": "Maharashtra"
+      },
+      "location": {
+        "current_city": "Pune",
+        "state": "Maharashtra",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "VFX Supervisor",
+        "secondary_crafts": ["Production Designer"],
+        "experience_years": 13,
+        "experience_level": "senior",
+        "availability": "project_basis",
+        "looking_for": ["fantasy_films", "creature_VFX", "mythology_OTT"]
+      },
+      "projects": [
+        { "title": "Hanuman (VFX)", "year": 2024, "role": "VFX Supervisor", "format": "feature_film", "language": "Telugu/Hindi", "platform": "theatrical" },
+        { "title": "Asur S2 (VFX)", "year": 2023, "role": "VFX Lead", "format": "OTT_series", "language": "Hindi", "platform": "JioCinema" }
+      ],
+      "education_training": [
+        { "institution": "Symbiosis Institute of Design", "course": "Animation & VFX", "year_completed": 2011 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB029/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB029/cover.jpg"
+      },
+      "tags_self": ["creature_VFX", "digital_doubles", "fantasy_pipeline"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["stylized_color", "fantasy_realism", "photoreal_VFX"],
+        "equipment_familiarity": ["Houdini", "ZBrush", "Maya", "Nuke", "Unreal_Engine"],
+        "specializations": ["creature_FX", "digital_doubles", "VFX_heavy", "fantasy_environments"],
+        "preferred_format": ["digital", "wide_format"]
+      }
+    },
+    {
+      "id": "UB030",
+      "name": "Nalini Pai",
+      "status": "active",
+      "created_at": "2021-08-08",
+      "updated_at": "2024-05-26",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 93,
+      "verification": { "verified": true, "verified_at": "2021-09-01", "method": "id_check" },
+      "bio": "Production designer for Kannada commercial cinema with 15 years. Expert in designing fantasy-realist village environments that blend myth with naturalism — a visual language unique to Kannada folk narratives.",
+      "personal_info": {
+        "gender": "female",
+        "age": 43,
+        "languages": ["Kannada", "Tamil", "Hindi", "English"],
+        "regional_background": "Karnataka"
+      },
+      "location": {
+        "current_city": "Bengaluru",
+        "state": "Karnataka",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Production Designer",
+        "secondary_crafts": ["Costume Designer", "Art Director"],
+        "experience_years": 15,
+        "experience_level": "senior",
+        "availability": "project_basis",
+        "looking_for": ["Kannada_film_design", "folk_fantasy_productions", "OTT_originals"]
+      },
+      "projects": [
+        { "title": "Kantara (Set Design Unit)", "year": 2022, "role": "Production Designer", "format": "feature_film", "language": "Kannada", "platform": "theatrical" },
+        { "title": "Toliprema Remake Design", "year": 2023, "role": "Art Director", "format": "feature_film", "language": "Kannada", "platform": "theatrical" }
+      ],
+      "education_training": [
+        { "institution": "Karnataka Chitrakala Parishath", "course": "Fine Arts & Production Design", "year_completed": 2009 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Rishab Shetty", "craft": "Director", "note": "She designed the visual grammar of the village for us." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB030/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB030/cover.jpg"
+      },
+      "tags_self": ["folk_fantasy_design", "Kannada_cinema", "village_sets"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["earthy_palette", "naturalistic", "folk_realism"],
+        "equipment_familiarity": [],
+        "specializations": ["folk_environments", "village_sets", "fantasy_realism", "natural_materials"],
+        "preferred_format": ["digital"]
+      }
+    },
+    {
+      "id": "UB031",
+      "name": "Sunil Awasthi",
+      "status": "active",
+      "created_at": "2023-01-30",
+      "updated_at": "2025-01-07",
+      "onboarding_source": "social_media",
+      "profile_completeness": 83,
+      "verification": { "verified": false, "verified_at": null, "method": null },
+      "bio": "Wildlife and conservation photographer based in Madhya Pradesh. Has documented tigers, leopards, and vultures in Kanha and Pench for international conservation NGOs and BBC Wildlife Magazine.",
+      "personal_info": {
+        "gender": "male",
+        "age": 36,
+        "languages": ["Hindi", "English"],
+        "regional_background": "Madhya Pradesh"
+      },
+      "location": {
+        "current_city": "Jabalpur",
+        "state": "Madhya Pradesh",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Photographer",
+        "secondary_crafts": ["Cinematographer"],
+        "experience_years": 10,
+        "experience_level": "mid",
+        "availability": "project_basis",
+        "looking_for": ["wildlife_photography_commissions", "conservation_campaigns", "documentary_stills"]
+      },
+      "projects": [
+        { "title": "Tigers of Kanha", "year": 2023, "role": "Lead Photographer", "format": "photo_book", "language": "English", "platform": "print" },
+        { "title": "WWF India Campaign", "year": 2022, "role": "Conservation Photographer", "format": "campaign", "language": "English", "platform": "digital" }
+      ],
+      "education_training": [
+        { "institution": "Wildlife Institute of India", "course": "Wildlife Photography Workshop", "year_completed": 2014 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB031/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB031/cover.jpg"
+      },
+      "tags_self": ["wildlife_photography", "conservation", "tigers"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["naturalistic", "rich_color", "epic_landscape"],
+        "equipment_familiarity": ["Canon_EOS_R5", "Nikon_Z9", "600mm_Super_Telephoto", "Camera_Traps"],
+        "specializations": ["wildlife_photography", "nature_documentary", "low_light"],
+        "preferred_format": ["digital"]
+      }
+    },
+    {
+      "id": "UB032",
+      "name": "Chandana Bose",
+      "status": "active",
+      "created_at": "2022-06-28",
+      "updated_at": "2024-11-18",
+      "onboarding_source": "referral",
+      "profile_completeness": 89,
+      "verification": { "verified": true, "verified_at": "2022-07-15", "method": "portfolio_check" },
+      "bio": "Art director for Bengali art-house cinema and experimental theatre. Creates sparse, symbolic sets where every object carries narrative weight. Strongly influenced by German Expressionism and Satyajit Ray.",
+      "personal_info": {
+        "gender": "female",
+        "age": 39,
+        "languages": ["Bengali", "Hindi", "English", "German"],
+        "regional_background": "West Bengal"
+      },
+      "location": {
+        "current_city": "Kolkata",
+        "state": "West Bengal",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Art Director",
+        "secondary_crafts": ["Production Designer"],
+        "experience_years": 13,
+        "experience_level": "senior",
+        "availability": "project_basis",
+        "looking_for": ["Bengali_arthouse_films", "experimental_theatre_design", "international_co_productions"]
+      },
+      "projects": [
+        { "title": "Duti Pata", "year": 2023, "role": "Art Director", "format": "feature_film", "language": "Bengali", "platform": "film_festival" },
+        { "title": "Khelna Ghar Theatre Production", "year": 2022, "role": "Set Designer", "format": "theatre_play", "language": "Bengali", "platform": "stage" }
+      ],
+      "education_training": [
+        { "institution": "Government College of Art Kolkata", "course": "Fine Arts & Set Design", "year_completed": 2011 },
+        { "institution": "HFF Munich (Exchange)", "course": "Film Production Design", "year_completed": 2014 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Aparna Sen", "craft": "Director", "note": "Her sets communicate what dialogue cannot." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB032/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB032/cover.jpg"
+      },
+      "tags_self": ["expressionist_design", "sparse_symbolic_sets", "Bengali_arthouse"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["dark_moody", "high_contrast", "minimal_symbolic"],
+        "equipment_familiarity": [],
+        "specializations": ["expressionist_design", "symbolic_set_language", "intimate_drama"],
+        "preferred_format": ["digital", "film"]
+      }
+    },
+    {
+      "id": "UB033",
+      "name": "Pradeep Chatterjee",
+      "status": "active",
+      "created_at": "2020-12-01",
+      "updated_at": "2024-01-15",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 96,
+      "verification": { "verified": true, "verified_at": "2020-12-20", "method": "id_check" },
+      "bio": "Senior cinematographer for Bollywood and Punjabi films with 21 years. Specialist in stadium-scale action spectaculars and multi-camera live event coverage. Mentors DOP aspirants at FTII short programs.",
+      "personal_info": {
+        "gender": "male",
+        "age": 50,
+        "languages": ["Bengali", "Hindi", "English", "Punjabi"],
+        "regional_background": "West Bengal"
+      },
+      "location": {
+        "current_city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Cinematographer",
+        "secondary_crafts": ["Colorist"],
+        "experience_years": 21,
+        "experience_level": "veteran",
+        "availability": "selective",
+        "looking_for": ["large_scale_action_films", "Bollywood_blockbusters", "mentoring"]
+      },
+      "projects": [
+        { "title": "War 2 (Unit)", "year": 2024, "role": "Cinematographer", "format": "feature_film", "language": "Hindi", "platform": "theatrical" },
+        { "title": "Pathaan (Action Unit DOP)", "year": 2023, "role": "Action Unit DOP", "format": "feature_film", "language": "Hindi", "platform": "theatrical" }
+      ],
+      "education_training": [
+        { "institution": "Film and Television Institute of India", "course": "Cinematography", "year_completed": 2003 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Siddharth Anand", "craft": "Director", "note": "Stadium-scale action — he's built for it." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB033/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB033/cover.jpg"
+      },
+      "tags_self": ["action_DOP", "large_scale_spectacle", "multi_camera"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["high_contrast", "stylized_color", "kinetic"],
+        "equipment_familiarity": ["RED_V_Raptor", "ARRI_Alexa_LF", "Freefly_Wave", "Shotover_K1"],
+        "specializations": ["action_sequences", "large_scale_spectacle", "multi_camera_coverage"],
+        "preferred_format": ["digital", "anamorphic", "wide_format"]
+      }
+    },
+    {
+      "id": "UB034",
+      "name": "Farida Hussain",
+      "status": "active",
+      "created_at": "2023-07-14",
+      "updated_at": "2025-02-03",
+      "onboarding_source": "social_media",
+      "profile_completeness": 78,
+      "verification": { "verified": false, "verified_at": null, "method": null },
+      "bio": "Portrait and fine-art photographer based in Lucknow. Documents vanishing craft traditions and artisan communities of Uttar Pradesh — chikankari embroiderers, zardozi craftsmen, block printers.",
+      "personal_info": {
+        "gender": "female",
+        "age": 30,
+        "languages": ["Urdu", "Hindi", "English"],
+        "regional_background": "Uttar Pradesh"
+      },
+      "location": {
+        "current_city": "Lucknow",
+        "state": "Uttar Pradesh",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Photographer",
+        "secondary_crafts": [],
+        "experience_years": 5,
+        "experience_level": "mid",
+        "availability": "available_now",
+        "looking_for": ["documentary_photography", "heritage_campaigns", "editorial_commissions"]
+      },
+      "projects": [
+        { "title": "Chikankari Wali", "year": 2023, "role": "Photographer", "format": "photo_series", "language": "N/A", "platform": "gallery_exhibition" },
+        { "title": "UP Tourism Crafts Campaign", "year": 2024, "role": "Lead Photographer", "format": "campaign", "language": "Hindi", "platform": "digital" }
+      ],
+      "education_training": [
+        { "institution": "Lucknow University", "course": "Fine Arts (Photography)", "year_completed": 2020 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB034/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB034/cover.jpg"
+      },
+      "tags_self": ["artisan_documentation", "fine_art_photography", "UP_craft_heritage"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["warm_tones", "documentary_realism", "high_detail"],
+        "equipment_familiarity": ["Canon_EOS_R", "Sony_A7III", "Natural_Light_Modifiers"],
+        "specializations": ["documentary_photography", "portrait_photography", "heritage_documentation"],
+        "preferred_format": ["digital"]
+      }
+    },
+    {
+      "id": "UB035",
+      "name": "Renu Mathur",
+      "status": "active",
+      "created_at": "2021-05-18",
+      "updated_at": "2024-06-10",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 94,
+      "verification": { "verified": true, "verified_at": "2021-06-01", "method": "id_check" },
+      "bio": "Veteran costume designer for Hindi television and OTT with 20 years. Has costumed 15 long-running serials. Expert in managing large wardrobe departments and continuity across 300+ episode runs.",
+      "personal_info": {
+        "gender": "female",
+        "age": 52,
+        "languages": ["Hindi", "Rajasthani", "English"],
+        "regional_background": "Rajasthan"
+      },
+      "location": {
+        "current_city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India",
+        "willing_to_travel": false
+      },
+      "professional_info": {
+        "primary_craft": "Costume Designer",
+        "secondary_crafts": ["Art Director"],
+        "experience_years": 20,
+        "experience_level": "veteran",
+        "availability": "selective",
+        "looking_for": ["long_run_TV_serials", "OTT_daily_dramas", "department_head_roles"]
+      },
+      "projects": [
+        { "title": "Yeh Rishta Kya Kehlata Hai (Season 18)", "year": 2023, "role": "Costume Head", "format": "TV_serial", "language": "Hindi", "platform": "StarPlus" },
+        { "title": "Anupamaa (Wardrobe Dept)", "year": 2022, "role": "Costume Designer", "format": "TV_serial", "language": "Hindi", "platform": "StarPlus" }
+      ],
+      "education_training": [
+        { "institution": "NIFT Mumbai", "course": "Fashion Design", "year_completed": 2004 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Rajan Shahi", "craft": "Producer", "note": "Renu runs a wardrobe department like a fine clock." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB035/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB035/cover.jpg"
+      },
+      "tags_self": ["TV_costume_veteran", "wardrobe_department_head", "continuity_expert"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["contemporary", "character_driven", "naturalistic"],
+        "equipment_familiarity": [],
+        "specializations": ["TV_serial_wardrobe", "large_department_management", "continuity"],
+        "preferred_format": ["digital"]
+      }
+    },
+    {
+      "id": "UB036",
+      "name": "Raghav Acharya",
+      "status": "active",
+      "created_at": "2023-10-03",
+      "updated_at": "2025-01-20",
+      "onboarding_source": "organic_search",
+      "profile_completeness": 76,
+      "verification": { "verified": false, "verified_at": null, "method": null },
+      "bio": "Upcoming colorist specializing in online colour for music videos and web series. Based in Hyderabad with a home studio setup. Rapid turnaround for indie productions on DaVinci Resolve.",
+      "personal_info": {
+        "gender": "male",
+        "age": 25,
+        "languages": ["Telugu", "Hindi", "English"],
+        "regional_background": "Telangana"
+      },
+      "location": {
+        "current_city": "Hyderabad",
+        "state": "Telangana",
+        "country": "India",
+        "willing_to_travel": false
+      },
+      "professional_info": {
+        "primary_craft": "Colorist",
+        "secondary_crafts": [],
+        "experience_years": 3,
+        "experience_level": "entry",
+        "availability": "available_now",
+        "looking_for": ["music_video_colouring", "web_series_grading", "indie_short_films"]
+      },
+      "projects": [
+        { "title": "Sid Sriram – Yaake Inthaa MV", "year": 2024, "role": "Colorist", "format": "music_video", "language": "Telugu", "platform": "YouTube" },
+        { "title": "Mana Telugu Web Series", "year": 2023, "role": "Online Colorist", "format": "web_series", "language": "Telugu", "platform": "YouTube" }
+      ],
+      "education_training": [
+        { "institution": "DaVinci Resolve Certified Training", "course": "Colour Grading & Online Finishing", "year_completed": 2022 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB036/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB036/cover.jpg"
+      },
+      "tags_self": ["indie_colorist", "music_video_grading", "fast_turnaround"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["stylized_color", "vibrant", "warm_tones"],
+        "equipment_familiarity": ["DaVinci_Resolve_Studio", "Asus_ProArt_Monitor"],
+        "specializations": ["music_video_grading", "online_finishing", "web_series"],
+        "preferred_format": ["digital"]
+      }
+    },
+    {
+      "id": "UB037",
+      "name": "Nisha Balan",
+      "status": "active",
+      "created_at": "2022-03-25",
+      "updated_at": "2024-10-27",
+      "onboarding_source": "referral",
+      "profile_completeness": 91,
+      "verification": { "verified": true, "verified_at": "2022-04-10", "method": "id_check" },
+      "bio": "Cinematographer for Malayalam and Tamil OTT thrillers. Specializes in confined, claustrophobic spaces — single-room dramas, interrogation rooms, urban apartments. Uses available light radically.",
+      "personal_info": {
+        "gender": "female",
+        "age": 35,
+        "languages": ["Malayalam", "Tamil", "English"],
+        "regional_background": "Kerala"
+      },
+      "location": {
+        "current_city": "Kochi",
+        "state": "Kerala",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Cinematographer",
+        "secondary_crafts": ["Colorist"],
+        "experience_years": 10,
+        "experience_level": "mid",
+        "availability": "project_basis",
+        "looking_for": ["psychological_thriller_DOP", "confined_drama", "OTT_original_series"]
+      },
+      "projects": [
+        { "title": "Joji (Camera Unit)", "year": 2021, "role": "Additional Cinematographer", "format": "feature_film", "language": "Malayalam", "platform": "Amazon_Prime" },
+        { "title": "Anarkali S2", "year": 2023, "role": "DOP", "format": "OTT_series", "language": "Malayalam", "platform": "Manorama_MAX" }
+      ],
+      "education_training": [
+        { "institution": "AKT Film Institute", "course": "Cinematography & Lighting", "year_completed": 2014 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB037/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB037/cover.jpg"
+      },
+      "tags_self": ["claustrophobic_cinematography", "available_light", "OTT_thriller"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["dark_moody", "high_contrast", "naturalistic"],
+        "equipment_familiarity": ["Sony_FX3", "Zeiss_CP3_Lenses", "LED_Panels"],
+        "specializations": ["low_light", "confined_spaces", "psychological_thriller"],
+        "preferred_format": ["digital"]
+      }
+    },
+    {
+      "id": "UB038",
+      "name": "Aakash Sharma",
+      "status": "active",
+      "created_at": "2023-04-01",
+      "updated_at": "2025-01-30",
+      "onboarding_source": "social_media",
+      "profile_completeness": 80,
+      "verification": { "verified": false, "verified_at": null, "method": null },
+      "bio": "Emerging art director and prop designer for Himachal Pradesh-based indie films and web content. Builds hand-crafted set pieces using traditional Pahadi woodcraft and textiles.",
+      "personal_info": {
+        "gender": "male",
+        "age": 23,
+        "languages": ["Hindi", "Pahari", "English"],
+        "regional_background": "Himachal Pradesh"
+      },
+      "location": {
+        "current_city": "Shimla",
+        "state": "Himachal Pradesh",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "Art Director",
+        "secondary_crafts": ["Production Designer"],
+        "experience_years": 2,
+        "experience_level": "entry",
+        "availability": "available_now",
+        "looking_for": ["indie_Himachal_films", "web_series", "short_film_art_direction"]
+      },
+      "projects": [
+        { "title": "Pahadi Kahani Short Film", "year": 2024, "role": "Art Director", "format": "short_film", "language": "Hindi/Pahari", "platform": "film_festival" }
+      ],
+      "education_training": [
+        { "institution": "Himachal Pradesh University", "course": "Fine Arts", "year_completed": 2023 }
+      ],
+      "endorsements": [],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB038/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB038/cover.jpg"
+      },
+      "tags_self": ["Pahadi_craft", "handmade_props", "mountain_aesthetic"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["earthy_palette", "naturalistic", "folk_realism"],
+        "equipment_familiarity": [],
+        "specializations": ["handcrafted_props", "folk_environments", "low_budget_ingenuity"],
+        "preferred_format": ["digital"]
+      }
+    },
+    {
+      "id": "UB039",
+      "name": "Revathi Govindan",
+      "status": "active",
+      "created_at": "2021-10-20",
+      "updated_at": "2024-09-01",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 95,
+      "verification": { "verified": true, "verified_at": "2021-11-05", "method": "id_check" },
+      "bio": "VFX supervisor and motion capture specialist for Tamil and Hindi action films. Leads India's first certified motion capture studio for Indian language fantasy and superhero content.",
+      "personal_info": {
+        "gender": "female",
+        "age": 40,
+        "languages": ["Tamil", "Hindi", "English"],
+        "regional_background": "Tamil Nadu"
+      },
+      "location": {
+        "current_city": "Chennai",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "willing_to_travel": true
+      },
+      "professional_info": {
+        "primary_craft": "VFX Supervisor",
+        "secondary_crafts": ["Cinematographer"],
+        "experience_years": 15,
+        "experience_level": "senior",
+        "availability": "project_basis",
+        "looking_for": ["superhero_Tamil_films", "motion_capture_projects", "VFX_heavy_OTT"]
+      },
+      "projects": [
+        { "title": "Enthiran 3 (VFX)", "year": 2025, "role": "VFX Supervisor", "format": "feature_film", "language": "Tamil", "platform": "theatrical" },
+        { "title": "Saaho (Motion Capture Unit)", "year": 2019, "role": "MoCap Supervisor", "format": "feature_film", "language": "Hindi/Telugu", "platform": "theatrical" }
+      ],
+      "education_training": [
+        { "institution": "IIT Bombay IDC", "course": "Animation & Interactive Media", "year_completed": 2009 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Shankar", "craft": "Director", "note": "She future-proofed our entire VFX pipeline." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB039/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB039/cover.jpg"
+      },
+      "tags_self": ["motion_capture", "superhero_VFX", "Tamil_VFX_pioneer"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["stylized_color", "photoreal_VFX", "epic_scale"],
+        "equipment_familiarity": ["Houdini", "Unreal_Engine", "OptiTrack_MoCap", "Nuke", "Maya"],
+        "specializations": ["motion_capture", "VFX_heavy", "digital_doubles", "superhero_FX"],
+        "preferred_format": ["digital", "wide_format"]
+      }
+    },
+    {
+      "id": "UB040",
+      "name": "Praveen Das",
+      "status": "active",
+      "created_at": "2020-02-28",
+      "updated_at": "2024-01-08",
+      "onboarding_source": "industry_partner",
+      "profile_completeness": 98,
+      "verification": { "verified": true, "verified_at": "2020-03-10", "method": "id_check" },
+      "bio": "Doyen of Malayalam cinema production design with 28 years and 100+ film credits. Built the visual identity of an entire generation of Kerala cinema. Known for poetic, spare interiors that hold deep emotional resonance.",
+      "personal_info": {
+        "gender": "male",
+        "age": 60,
+        "languages": ["Malayalam", "Tamil", "Hindi", "English"],
+        "regional_background": "Kerala"
+      },
+      "location": {
+        "current_city": "Thiruvananthapuram",
+        "state": "Kerala",
+        "country": "India",
+        "willing_to_travel": false
+      },
+      "professional_info": {
+        "primary_craft": "Production Designer",
+        "secondary_crafts": ["Art Director", "Costume Designer"],
+        "experience_years": 28,
+        "experience_level": "veteran",
+        "availability": "selective",
+        "looking_for": ["prestige_Malayalam_cinema", "advisory_roles", "masterclass_teaching"]
+      },
+      "projects": [
+        { "title": "2018: Everyone is a Hero", "year": 2023, "role": "Production Designer", "format": "feature_film", "language": "Malayalam", "platform": "theatrical" },
+        { "title": "Drishyam 2", "year": 2022, "role": "Production Designer", "format": "feature_film", "language": "Malayalam", "platform": "theatrical" }
+      ],
+      "education_training": [
+        { "institution": "Film and Television Institute of India", "course": "Production Design (Gold Medalist)", "year_completed": 1996 }
+      ],
+      "endorsements": [
+        { "endorsed_by": "Adoor Gopalakrishnan", "craft": "Director", "note": "He is the conscience of every frame he designs." },
+        { "endorsed_by": "Mohanlal", "craft": "Actor", "note": "Walking into his sets, I always feel I've come home." }
+      ],
+      "media": {
+        "profile_photo": "https://media.tribli.com/UB040/photo.jpg",
+        "cover_photo": "https://media.tribli.com/UB040/cover.jpg"
+      },
+      "tags_self": ["Malayalam_cinema_legend", "poetic_spaces", "sparse_realism"],
+      "craft_specific_attributes": {
+        "visual_style_tags": ["naturalistic", "earthy_palette", "sparse_symbolic"],
+        "equipment_familiarity": [],
+        "specializations": ["intimate_drama", "lived_in_spaces", "period_drama", "realist_interiors"],
+        "preferred_format": ["digital", "wide_format"]
+      }
+    }
+  ]
+}

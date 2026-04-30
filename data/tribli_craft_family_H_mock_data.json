@@ -1,0 +1,3547 @@
+[
+  {
+    "id": "user_h_001",
+    "name": "Karthik Sai Vellanki",
+    "status": "active",
+    "created_at": "2026-01-10T09:00:00Z",
+    "updated_at": "2026-04-15T10:00:00Z",
+    "onboarding_source": "founder_invite",
+    "verification": {
+      "level": "platform_verified",
+      "verified_credits_count": 8,
+      "peer_endorsements_count": 6
+    },
+    "profile_completeness": 0.94,
+    "personal_info": {
+      "gender": "Male",
+      "age": 28,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Bengaluru", "Chennai"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Telugu Comedy and Entertainment"
+      },
+      "secondary_crafts": [
+        { "craft": "Actor", "subcraft": "Digital and Web Series" }
+      ],
+      "experience_years": 5,
+      "experience_level": "mid_level",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["brand_collaborations", "web_series_acting", "digital_film_acting", "ott_projects"]
+    },
+    "bio": "Telugu comedy creator with 1.2M YouTube subscribers and a highly engaged Instagram following. Known for sketch comedy and cultural commentary on Telugu millennial life. Have crossed to screen in 2 AHA web series as a supporting actor. Looking to expand into lead roles.",
+    "tags_self": ["comedy_creator", "telugu_memes", "millennial_life", "sketch_comedy", "aha"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "YouTube",
+          "handle": "@karthiksai_comedy",
+          "followers": 1200000,
+          "engagement_rate": 6.8,
+          "verified_on_platform": true,
+          "is_primary": true
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@karthiksai_official",
+          "followers": 480000,
+          "engagement_rate": 7.2,
+          "verified_on_platform": true,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "YouTube",
+      "content_categories": ["comedy", "sketch", "cultural_commentary", "entertainment"],
+      "audience_demographics": {
+        "primary_age": "18-34",
+        "primary_geo": "Andhra Pradesh and Telangana"
+      },
+      "brand_collaborations_count": 24,
+      "notable_brand_partners": ["Amazon India", "Swiggy", "Myntra", "Flipkart"]
+    },
+    "projects": [
+      {
+        "id": "proj_h001_001",
+        "name": "Ye Maaya Chesave Raa (AHA)",
+        "type": "web_series",
+        "year": 2024,
+        "role": "Supporting Actor",
+        "role_weight": 0.5,
+        "banner": "AHA",
+        "production_house": "AHA Originals",
+        "verified": true,
+        "proof_link": null,
+        "collaborators_on_platform": []
+      }
+    ],
+    "education_training": [
+      {
+        "type": "self_taught",
+        "name": "Self-taught filmmaking and editing via YouTube",
+        "year": 2019,
+        "duration": "ongoing"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [
+      {
+        "type": "youtube_link",
+        "url": "https://youtube.com/channel/karthiksai_comedy",
+        "title": "Channel — Telugu Comedy Sketches",
+        "year": 2024,
+        "role_credit": "Creator, Writer, Actor"
+      }
+    ],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_001",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_002",
+    "name": "Preethi Reddy Annavarapu",
+    "status": "active",
+    "created_at": "2026-01-14T10:00:00Z",
+    "updated_at": "2026-04-18T09:30:00Z",
+    "onboarding_source": "founder_invite",
+    "verification": {
+      "level": "platform_verified",
+      "verified_credits_count": 5,
+      "peer_endorsements_count": 4
+    },
+    "profile_completeness": 0.91,
+    "personal_info": {
+      "gender": "Female",
+      "age": 25,
+      "languages": ["Telugu", "English", "Hindi"],
+      "regional_background": "Coastal Andhra"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Bengaluru"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Beauty and Lifestyle Influencer"
+      },
+      "secondary_crafts": [
+        { "craft": "Actor", "subcraft": "Commercial and Brand Film Actor" }
+      ],
+      "experience_years": 4,
+      "experience_level": "mid_level",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["brand_collaborations", "ad_film_acting", "product_endorsements", "web_series_roles"]
+    },
+    "bio": "Telugu beauty and lifestyle creator with 850K Instagram followers and a loyal YouTube community. South India's most followed Telugu beauty creator in the 22-30 age segment. Regular on-screen presence in brand films for NYKAA, L'Oreal India, and Myntra. Looking for acting roles beyond brand content.",
+    "tags_self": ["beauty_creator", "telugu_lifestyle", "nykaa", "loreal", "south_india_influencer"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "Instagram",
+          "handle": "@preethireddy_beauty",
+          "followers": 850000,
+          "engagement_rate": 8.4,
+          "verified_on_platform": true,
+          "is_primary": true
+        },
+        {
+          "platform": "YouTube",
+          "handle": "@preethireddybeauty",
+          "followers": 320000,
+          "engagement_rate": 5.2,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "Instagram",
+      "content_categories": ["beauty", "skincare", "lifestyle", "fashion", "GRWM"],
+      "audience_demographics": {
+        "primary_age": "18-28",
+        "primary_geo": "South India, primarily Telugu-speaking"
+      },
+      "brand_collaborations_count": 42,
+      "notable_brand_partners": ["NYKAA", "L'Oreal India", "Myntra", "Mamaearth", "Dove India"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "B.Com — Osmania University",
+        "year": 2022,
+        "duration": "3 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [
+      {
+        "type": "instagram_reel",
+        "url": "https://instagram.com/reel/preethi_loreal",
+        "title": "L'Oreal India Brand Campaign",
+        "year": 2024,
+        "role_credit": "Brand Ambassador and On-screen Talent"
+      }
+    ],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_002",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_003",
+    "name": "Venkata Siva Sankar Pulipati",
+    "status": "active",
+    "created_at": "2026-01-20T09:00:00Z",
+    "updated_at": "2026-04-10T11:00:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 3,
+      "peer_endorsements_count": 4
+    },
+    "profile_completeness": 0.82,
+    "personal_info": {
+      "gender": "Male",
+      "age": 31,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Tech and Gadget YouTuber"
+      },
+      "secondary_crafts": [],
+      "experience_years": 6,
+      "experience_level": "mid_level",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["tech_brand_deals", "product_launches", "event_hosting", "corporate_video_hosting"]
+    },
+    "bio": "Telugu-language tech YouTuber with 2.4M subscribers making tech accessible to non-English audiences across Andhra and Telangana. Reviews gadgets, explains tech in simple Telugu, and covers startup news. Have hosted 3 Samsung India product launch events. Open to hosting and corporate video work.",
+    "tags_self": ["tech_youtuber", "telugu_tech", "samsung_events", "gadget_reviews", "2M_plus"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "YouTube",
+          "handle": "@telugutechwala",
+          "followers": 2400000,
+          "engagement_rate": 5.6,
+          "verified_on_platform": true,
+          "is_primary": true
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@telugutechwala",
+          "followers": 180000,
+          "engagement_rate": 3.8,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "YouTube",
+      "content_categories": ["technology", "gadget_reviews", "explainer_tech", "startup_news"],
+      "audience_demographics": {
+        "primary_age": "20-38",
+        "primary_geo": "Andhra Pradesh, Telangana"
+      },
+      "brand_collaborations_count": 38,
+      "notable_brand_partners": ["Samsung India", "OnePlus", "realme", "HP India"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "B.Tech Computer Science — JNTU Hyderabad",
+        "year": 2018,
+        "duration": "4 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_003",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_004",
+    "name": "Swapna Latha Komuravelli",
+    "status": "active",
+    "created_at": "2026-02-01T09:30:00Z",
+    "updated_at": "2026-04-20T10:00:00Z",
+    "onboarding_source": "self_signup",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 1
+    },
+    "profile_completeness": 0.62,
+    "personal_info": {
+      "gender": "Female",
+      "age": 23,
+      "languages": ["Telugu", "English"],
+      "regional_background": "Coastal Andhra"
+    },
+    "location": {
+      "current_city": "Vijayawada",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "willing_to_travel": ["Vijayawada", "Hyderabad", "Vizag"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Food and Cooking Creator"
+      },
+      "secondary_crafts": [],
+      "experience_years": 2,
+      "experience_level": "emerging",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["food_brand_deals", "cooking_show_hosting", "recipe_content_partnerships"]
+    },
+    "bio": "Vijayawada-based Telugu food creator focused on traditional Andhra recipes and coastal seafood. 180K Instagram followers and growing fast. Content bridges traditional home cooking with modern presentation. Looking for food brand partnerships and cooking show hosting opportunities.",
+    "tags_self": ["food_creator", "andhra_recipes", "coastal_seafood", "traditional_cooking", "vijayawada"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "Instagram",
+          "handle": "@swapna_telugu_food",
+          "followers": 180000,
+          "engagement_rate": 9.2,
+          "verified_on_platform": false,
+          "is_primary": true
+        },
+        {
+          "platform": "YouTube",
+          "handle": "@swapnatelugurecipes",
+          "followers": 42000,
+          "engagement_rate": 6.1,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "Instagram",
+      "content_categories": ["food", "cooking", "traditional_recipes", "andhra_cuisine"],
+      "audience_demographics": {
+        "primary_age": "25-45",
+        "primary_geo": "Andhra Pradesh"
+      },
+      "brand_collaborations_count": 8,
+      "notable_brand_partners": ["Priya Foods", "MTR Foods", "Godrej Nature's Basket"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "BSc Home Science — Acharya Nagarjuna University",
+        "year": 2024,
+        "duration": "3 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_004",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_005",
+    "name": "Naga Teja Manthena",
+    "status": "active",
+    "created_at": "2026-01-25T10:00:00Z",
+    "updated_at": "2026-04-05T09:00:00Z",
+    "onboarding_source": "founder_invite",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 6,
+      "peer_endorsements_count": 5
+    },
+    "profile_completeness": 0.88,
+    "personal_info": {
+      "gender": "Male",
+      "age": 27,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Delhi", "Chennai"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Fitness and Wellness Influencer"
+      },
+      "secondary_crafts": [
+        { "craft": "Actor", "subcraft": "Commercial and Action Roles" }
+      ],
+      "experience_years": 4,
+      "experience_level": "mid_level",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["fitness_brand_deals", "action_film_roles", "health_app_partnerships", "hosting"]
+    },
+    "bio": "Hyderabad fitness creator with 620K Instagram followers and a strong presence across YouTube and Moj. Calisthenics specialist and certified personal trainer. Have appeared in 3 fitness brand TVCs as on-screen talent. Physically capable for action roles and comfortable on camera.",
+    "tags_self": ["fitness_creator", "calisthenics", "certified_trainer", "action_capable", "tvc_talent"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "Instagram",
+          "handle": "@nagateja_fit",
+          "followers": 620000,
+          "engagement_rate": 7.8,
+          "verified_on_platform": true,
+          "is_primary": true
+        },
+        {
+          "platform": "YouTube",
+          "handle": "@nagatejafitness",
+          "followers": 220000,
+          "engagement_rate": 5.4,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "Instagram",
+      "content_categories": ["fitness", "calisthenics", "nutrition", "wellness", "workout_tutorials"],
+      "audience_demographics": {
+        "primary_age": "18-32",
+        "primary_geo": "South India and Metro cities"
+      },
+      "brand_collaborations_count": 28,
+      "notable_brand_partners": ["MuscleBlaze", "Cult.fit", "Decathlon India", "boAt Lifestyle"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "certification",
+        "name": "ACE Certified Personal Trainer",
+        "year": 2022,
+        "duration": "6 months"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_005",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_006",
+    "name": "Anusha Varma Datla",
+    "status": "active",
+    "created_at": "2026-02-05T09:00:00Z",
+    "updated_at": "2026-04-12T10:00:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 2,
+      "peer_endorsements_count": 3
+    },
+    "profile_completeness": 0.76,
+    "personal_info": {
+      "gender": "Female",
+      "age": 26,
+      "languages": ["Telugu", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Bengaluru"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Travel and Lifestyle Creator"
+      },
+      "secondary_crafts": [],
+      "experience_years": 3,
+      "experience_level": "emerging",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["travel_brand_deals", "tourism_board_partnerships", "hosting_travel_shows"]
+    },
+    "bio": "Telugu travel creator documenting South India's hidden destinations with a cinematic eye. 290K Instagram followers with a reputation for stunning visual storytelling. Work has been featured by Telangana Tourism and Karnataka Tourism. Increasingly interested in hosting travel documentary formats.",
+    "tags_self": ["travel_creator", "south_india_travel", "telangana_tourism", "cinematic_travel", "hosting"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "Instagram",
+          "handle": "@anusha_wanders",
+          "followers": 290000,
+          "engagement_rate": 8.1,
+          "verified_on_platform": false,
+          "is_primary": true
+        },
+        {
+          "platform": "YouTube",
+          "handle": "@anushawanders",
+          "followers": 68000,
+          "engagement_rate": 7.3,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "Instagram",
+      "content_categories": ["travel", "lifestyle", "photography", "south_india_heritage"],
+      "audience_demographics": {
+        "primary_age": "22-38",
+        "primary_geo": "South India, urban metros"
+      },
+      "brand_collaborations_count": 16,
+      "notable_brand_partners": ["Telangana Tourism", "Karnataka Tourism", "Airbnb India", "MakeMyTrip"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "BA Visual Communication — Hyderabad Central University",
+        "year": 2023,
+        "duration": "3 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_006",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_007",
+    "name": "Rohith Chandra Pasam",
+    "status": "active",
+    "created_at": "2026-01-28T09:30:00Z",
+    "updated_at": "2026-04-08T10:30:00Z",
+    "onboarding_source": "founder_invite",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 4,
+      "peer_endorsements_count": 3
+    },
+    "profile_completeness": 0.80,
+    "personal_info": {
+      "gender": "Male",
+      "age": 29,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Chennai"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Podcaster",
+        "subcraft": "Telugu Film and Entertainment Podcast Host"
+      },
+      "secondary_crafts": [
+        { "craft": "Content Creator", "subcraft": "Film Review Creator" }
+      ],
+      "experience_years": 4,
+      "experience_level": "mid_level",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["podcast_sponsorships", "event_hosting", "film_review_platform_deals", "interview_hosting"]
+    },
+    "bio": "Host of 'Cinemaa Maatalu', Telugu's most popular film podcast with 180K Spotify listeners and 320K YouTube subscribers. Have interviewed over 60 Telugu film personalities including directors, actors, and technicians. Known for deep-dive analytical conversations rather than promotional chat.",
+    "tags_self": ["telugu_film_podcast", "cinemaa_maatalu", "film_analysis", "celebrity_interviews"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "YouTube",
+          "handle": "@cinemaamaatalu",
+          "followers": 320000,
+          "engagement_rate": 6.4,
+          "verified_on_platform": false,
+          "is_primary": true
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@rohith_cinemaa",
+          "followers": 95000,
+          "engagement_rate": 5.8,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "YouTube",
+      "content_categories": ["film_podcast", "celebrity_interviews", "film_analysis", "entertainment_news"],
+      "audience_demographics": {
+        "primary_age": "20-40",
+        "primary_geo": "Andhra Pradesh and Telangana"
+      },
+      "brand_collaborations_count": 14,
+      "notable_brand_partners": ["BookMyShow", "SonyLIV", "AHA", "Spotify India"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "BA Journalism — Osmania University",
+        "year": 2019,
+        "duration": "3 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_007",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_008",
+    "name": "Divya Sree Kalavala",
+    "status": "active",
+    "created_at": "2026-02-08T10:00:00Z",
+    "updated_at": "2026-04-22T09:00:00Z",
+    "onboarding_source": "self_signup",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 2
+    },
+    "profile_completeness": 0.58,
+    "personal_info": {
+      "gender": "Female",
+      "age": 22,
+      "languages": ["Telugu", "English"],
+      "regional_background": "Coastal Andhra"
+    },
+    "location": {
+      "current_city": "Vizag",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "willing_to_travel": ["Vizag", "Hyderabad"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Fashion and Styling Creator"
+      },
+      "secondary_crafts": [],
+      "experience_years": 1,
+      "experience_level": "newcomer",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["fashion_brand_deals", "styling_collaborations", "model_casting"]
+    },
+    "bio": "Vizag-based fashion creator just starting out. 62K Instagram followers after 14 months of posting. Content focuses on affordable Indian fashion and how to style traditional South Indian outfits for modern occasions. Looking for my first paid brand collaboration and open to small acting or modelling work.",
+    "tags_self": ["fashion_creator", "affordable_fashion", "traditional_modern", "vizag", "newcomer"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "Instagram",
+          "handle": "@divyasree_style",
+          "followers": 62000,
+          "engagement_rate": 10.4,
+          "verified_on_platform": false,
+          "is_primary": true
+        }
+      ],
+      "primary_platform": "Instagram",
+      "content_categories": ["fashion", "styling", "traditional_wear", "outfit_ideas"],
+      "audience_demographics": {
+        "primary_age": "18-28",
+        "primary_geo": "Andhra Pradesh"
+      },
+      "brand_collaborations_count": 2,
+      "notable_brand_partners": ["FabIndia (gifting only)", "Meesho Campaign"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "B.Com — Andhra University",
+        "year": 2025,
+        "duration": "3 years (final year)"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_008",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_009",
+    "name": "Sumanth Reddy Chavali",
+    "status": "active",
+    "created_at": "2026-01-22T09:00:00Z",
+    "updated_at": "2026-03-28T11:00:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 5,
+      "peer_endorsements_count": 4
+    },
+    "profile_completeness": 0.84,
+    "personal_info": {
+      "gender": "Male",
+      "age": 30,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Delhi", "Bengaluru"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Finance and Stock Market Educator"
+      },
+      "secondary_crafts": [],
+      "experience_years": 5,
+      "experience_level": "mid_level",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["fintech_brand_deals", "investment_app_partnerships", "event_speaking", "corporate_content"]
+    },
+    "bio": "Telugu finance creator making stock markets and personal finance accessible to Telugu audiences. 940K YouTube subscribers. Have partnered with Zerodha, Groww, and Angel One. Regular speaker at startup events. Looking for fintech platform deals and corporate finance education content projects.",
+    "tags_self": ["finance_creator", "stock_market_telugu", "zerodha", "groww", "financial_literacy"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "YouTube",
+          "handle": "@teluguinvestor",
+          "followers": 940000,
+          "engagement_rate": 6.2,
+          "verified_on_platform": true,
+          "is_primary": true
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@sumanth_finance",
+          "followers": 210000,
+          "engagement_rate": 4.8,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "YouTube",
+      "content_categories": ["personal_finance", "stock_market", "investment", "financial_literacy"],
+      "audience_demographics": {
+        "primary_age": "22-42",
+        "primary_geo": "South India, particularly working professionals"
+      },
+      "brand_collaborations_count": 32,
+      "notable_brand_partners": ["Zerodha", "Groww", "Angel One", "HDFC Securities"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "MBA Finance — IIM Rohtak",
+        "year": 2019,
+        "duration": "2 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_009",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_010",
+    "name": "Bhavani Sri Yarlagadda",
+    "status": "active",
+    "created_at": "2026-02-10T09:30:00Z",
+    "updated_at": "2026-04-16T10:00:00Z",
+    "onboarding_source": "self_signup",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 1
+    },
+    "profile_completeness": 0.55,
+    "personal_info": {
+      "gender": "Female",
+      "age": 24,
+      "languages": ["Telugu", "English"],
+      "regional_background": "Rayalaseema"
+    },
+    "location": {
+      "current_city": "Kurnool",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "willing_to_travel": ["Kurnool", "Hyderabad", "Bengaluru"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Regional Language Educator and Creator"
+      },
+      "secondary_crafts": [],
+      "experience_years": 2,
+      "experience_level": "emerging",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["ed_tech_brand_deals", "teaching_app_partnerships", "content_writing_work"]
+    },
+    "bio": "Kurnool-based creator making educational content in Rayalaseema Telugu dialect. Explains government schemes, exam preparation, and career guidance for rural AP youth. 120K YouTube subscribers, mostly from Tier 2 and Tier 3 Andhra towns. First in family to create content professionally.",
+    "tags_self": ["edu_creator", "rayalaseema_telugu", "govt_schemes", "rural_andhra", "first_gen_creator"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "YouTube",
+          "handle": "@rayalaseema_edu",
+          "followers": 120000,
+          "engagement_rate": 8.7,
+          "verified_on_platform": false,
+          "is_primary": true
+        }
+      ],
+      "primary_platform": "YouTube",
+      "content_categories": ["education", "government_schemes", "career_guidance", "exam_preparation"],
+      "audience_demographics": {
+        "primary_age": "16-28",
+        "primary_geo": "Rayalaseema districts, rural AP"
+      },
+      "brand_collaborations_count": 4,
+      "notable_brand_partners": ["Unacademy Telangana", "BYJU's Telugu"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "BA Telugu Literature — Sri Krishnadevaraya University",
+        "year": 2023,
+        "duration": "3 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_010",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_011",
+    "name": "Rakesh Varma Boddu",
+    "status": "active",
+    "created_at": "2026-01-18T09:00:00Z",
+    "updated_at": "2026-03-25T10:30:00Z",
+    "onboarding_source": "founder_invite",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 7,
+      "peer_endorsements_count": 5
+    },
+    "profile_completeness": 0.87,
+    "personal_info": {
+      "gender": "Male",
+      "age": 32,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Coastal Andhra"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Delhi"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Motorsports and Automobile Creator"
+      },
+      "secondary_crafts": [],
+      "experience_years": 6,
+      "experience_level": "mid_level",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["automotive_brand_deals", "motorsports_event_coverage", "corporate_vehicle_launches"]
+    },
+    "bio": "Telugu auto and motorsports creator with 1.1M YouTube subscribers. Reviews cars and bikes in Telugu, covers Formula 1, MotoGP, and Indian Rally Championship. Have been credentialed press at 3 Formula E rounds. Only Telugu creator with consistent motorsports coverage at this scale.",
+    "tags_self": ["auto_creator", "motorsports_telugu", "formula1_telugu", "car_reviews", "credentialed_press"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "YouTube",
+          "handle": "@telugumotors",
+          "followers": 1100000,
+          "engagement_rate": 5.9,
+          "verified_on_platform": true,
+          "is_primary": true
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@rakesh_telugumotors",
+          "followers": 280000,
+          "engagement_rate": 4.4,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "YouTube",
+      "content_categories": ["automotive", "motorsports", "car_reviews", "F1", "MotoGP"],
+      "audience_demographics": {
+        "primary_age": "18-40",
+        "primary_geo": "South India, metro cities"
+      },
+      "brand_collaborations_count": 26,
+      "notable_brand_partners": ["Hyundai India", "MG Motors", "Yamaha India", "Shell India"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "B.Tech Mechanical Engineering — NIT Warangal",
+        "year": 2017,
+        "duration": "4 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_011",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_012",
+    "name": "Mounika Reddy Palleti",
+    "status": "active",
+    "created_at": "2026-02-12T09:00:00Z",
+    "updated_at": "2026-04-18T10:30:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 3,
+      "peer_endorsements_count": 3
+    },
+    "profile_completeness": 0.74,
+    "personal_info": {
+      "gender": "Female",
+      "age": 27,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Bengaluru"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Mental Health and Wellness Advocate"
+      },
+      "secondary_crafts": [],
+      "experience_years": 3,
+      "experience_level": "emerging",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["wellness_brand_deals", "mental_health_app_partnerships", "speaking_engagements"]
+    },
+    "bio": "Telugu mental health awareness creator bridging psychology with everyday language for South Indian audiences. 380K Instagram followers. Certified counsellor. Have been featured in The News Minute, Banega Swasth India, and collaborated with iCall. Making mental health conversations normal in Telugu communities.",
+    "tags_self": ["mental_health_creator", "telugu_psychology", "certified_counsellor", "awareness", "wellness"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "Instagram",
+          "handle": "@mounika_mentalhealth",
+          "followers": 380000,
+          "engagement_rate": 9.6,
+          "verified_on_platform": false,
+          "is_primary": true
+        },
+        {
+          "platform": "YouTube",
+          "handle": "@mounikawellness",
+          "followers": 88000,
+          "engagement_rate": 7.2,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "Instagram",
+      "content_categories": ["mental_health", "psychology", "wellness", "anxiety_awareness", "self_care"],
+      "audience_demographics": {
+        "primary_age": "20-35",
+        "primary_geo": "South India, urban"
+      },
+      "brand_collaborations_count": 12,
+      "notable_brand_partners": ["iCall TISS", "YourDOST", "Headspace India", "Licious Wellbeing"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "MSc Counselling Psychology — Osmania University",
+        "year": 2022,
+        "duration": "2 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_012",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_013",
+    "name": "Aakash Narayana Chebrolu",
+    "status": "active",
+    "created_at": "2026-02-15T09:00:00Z",
+    "updated_at": "2026-04-06T10:00:00Z",
+    "onboarding_source": "self_signup",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 0
+    },
+    "profile_completeness": 0.47,
+    "personal_info": {
+      "gender": "Male",
+      "age": 21,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Warangal",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Warangal", "Hyderabad"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Gaming Creator and Streamer"
+      },
+      "secondary_crafts": [],
+      "experience_years": 2,
+      "experience_level": "newcomer",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["gaming_brand_deals", "peripheral_sponsorships", "esports_commentary_work"]
+    },
+    "bio": "Warangal-based Telugu gaming creator streaming BGMI and GTA on YouTube and Loco. 55K subscribers in 18 months. Growing fastest in Tier 2 Telangana with a highly engaged young audience. First Telugu gaming creator from Warangal to reach 50K. Looking for my first gaming peripheral sponsorship.",
+    "tags_self": ["gaming_creator", "bgmi", "telugu_gaming", "warangal", "newcomer", "loco"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "YouTube",
+          "handle": "@aakash_telugugaming",
+          "followers": 55000,
+          "engagement_rate": 12.4,
+          "verified_on_platform": false,
+          "is_primary": true
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@aakash_gamer_wgl",
+          "followers": 18000,
+          "engagement_rate": 8.2,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "YouTube",
+      "content_categories": ["gaming", "BGMI", "GTA", "game_reviews", "esports"],
+      "audience_demographics": {
+        "primary_age": "15-24",
+        "primary_geo": "Telangana, Tier 2 cities"
+      },
+      "brand_collaborations_count": 1,
+      "notable_brand_partners": ["Noise Headphones (gifting only)"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "B.Tech IT — Kakatiya University",
+        "year": 2026,
+        "duration": "4 years (ongoing)"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_013",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_014",
+    "name": "Sravanthi Nair Pullela",
+    "status": "active",
+    "created_at": "2026-01-30T09:00:00Z",
+    "updated_at": "2026-04-04T09:30:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 4,
+      "peer_endorsements_count": 4
+    },
+    "profile_completeness": 0.79,
+    "personal_info": {
+      "gender": "Female",
+      "age": 28,
+      "languages": ["Telugu", "Malayalam", "English", "Hindi"],
+      "regional_background": "Coastal Andhra"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Kochi", "Mumbai", "Bengaluru"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Dance and Classical Arts Creator"
+      },
+      "secondary_crafts": [
+        { "craft": "Actor", "subcraft": "Dance-Centric Film Roles" }
+      ],
+      "experience_years": 5,
+      "experience_level": "mid_level",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["dance_brand_partnerships", "dance_sequence_film_work", "classical_arts_events"]
+    },
+    "bio": "Kuchipudi and Bharatanatyam trained dancer turned content creator. 410K Instagram followers combining classical Indian dance with contemporary expression. Have performed at Kalakshetra and Hyderabad's Ravindra Bharathi stage. Creating content that bridges classical arts and younger audiences.",
+    "tags_self": ["kuchipudi", "bharatanatyam", "dance_creator", "classical_arts", "kalakshetra"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "Instagram",
+          "handle": "@sravanthi_dances",
+          "followers": 410000,
+          "engagement_rate": 8.8,
+          "verified_on_platform": false,
+          "is_primary": true
+        },
+        {
+          "platform": "YouTube",
+          "handle": "@sravanthidance",
+          "followers": 140000,
+          "engagement_rate": 7.6,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "Instagram",
+      "content_categories": ["classical_dance", "kuchipudi", "contemporary_fusion", "arts_education"],
+      "audience_demographics": {
+        "primary_age": "18-40",
+        "primary_geo": "South India, Indian diaspora"
+      },
+      "brand_collaborations_count": 18,
+      "notable_brand_partners": ["Kalyan Jewellers", "Pothys Sarees", "TATA Titan", "Joy Jewels"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "Arangetram Kuchipudi — Kalakshetra Chennai",
+        "year": 2018,
+        "duration": "4 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_014",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_015",
+    "name": "Harish Kumar Sunkara",
+    "status": "active",
+    "created_at": "2026-02-03T09:30:00Z",
+    "updated_at": "2026-04-10T10:00:00Z",
+    "onboarding_source": "self_signup",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 1
+    },
+    "profile_completeness": 0.52,
+    "personal_info": {
+      "gender": "Male",
+      "age": 25,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Motivational and Self-Development Creator"
+      },
+      "secondary_crafts": [],
+      "experience_years": 2,
+      "experience_level": "emerging",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["brand_deals", "speaking_event_work", "edtech_partnerships"]
+    },
+    "bio": "Telugu motivational creator making self-development content for students and working professionals. 155K YouTube subscribers in 2 years. Content covers productivity, morning routines, and career mindset. Heavily inspired by Telugu professionals who made it from small-town backgrounds.",
+    "tags_self": ["motivation_creator", "self_development", "telugu_students", "productivity", "small_town_to_big"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "YouTube",
+          "handle": "@harishkumar_telugu",
+          "followers": 155000,
+          "engagement_rate": 7.4,
+          "verified_on_platform": false,
+          "is_primary": true
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@harishkumar_motivation",
+          "followers": 48000,
+          "engagement_rate": 6.8,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "YouTube",
+      "content_categories": ["motivation", "productivity", "self_development", "career", "mindset"],
+      "audience_demographics": {
+        "primary_age": "18-30",
+        "primary_geo": "Andhra Pradesh and Telangana, Tier 2 cities"
+      },
+      "brand_collaborations_count": 6,
+      "notable_brand_partners": ["Notion India", "Skillshare", "Internshala"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "B.Tech — JNTU Kakinada",
+        "year": 2023,
+        "duration": "4 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_015",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_016",
+    "name": "Ramya Sri Velamuri",
+    "status": "active",
+    "created_at": "2026-02-18T09:00:00Z",
+    "updated_at": "2026-04-14T10:30:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 6,
+      "peer_endorsements_count": 4
+    },
+    "profile_completeness": 0.81,
+    "personal_info": {
+      "gender": "Female",
+      "age": 29,
+      "languages": ["Telugu", "Tamil", "English"],
+      "regional_background": "Coastal Andhra"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Chennai", "Mumbai", "Bengaluru"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Parenting and Family Lifestyle Creator"
+      },
+      "secondary_crafts": [],
+      "experience_years": 4,
+      "experience_level": "mid_level",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["parent_brand_deals", "baby_product_partnerships", "family_lifestyle_campaigns"]
+    },
+    "bio": "Telugu-Tamil bilingual parenting creator documenting honest family life with 440K Instagram followers. Known for debunking parenting myths in South Indian cultural contexts and advocating for gentle parenting in Telugu households. Partner of choice for Johnson & Johnson, Pampers, and Himalaya baby.",
+    "tags_self": ["parenting_creator", "gentle_parenting", "telugu_tamil_family", "honest_content", "momfluencer"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "Instagram",
+          "handle": "@ramyasri_family",
+          "followers": 440000,
+          "engagement_rate": 8.2,
+          "verified_on_platform": true,
+          "is_primary": true
+        },
+        {
+          "platform": "YouTube",
+          "handle": "@ramyasrifamily",
+          "followers": 110000,
+          "engagement_rate": 6.4,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "Instagram",
+      "content_categories": ["parenting", "family_lifestyle", "baby_care", "south_indian_family_culture"],
+      "audience_demographics": {
+        "primary_age": "24-38",
+        "primary_geo": "South India, particularly Telugu and Tamil families"
+      },
+      "brand_collaborations_count": 35,
+      "notable_brand_partners": ["Johnson and Johnson", "Pampers", "Himalaya Baby", "Mamy Poko Pants"]
+    },
+    "projects": [],
+    "education_training": [],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_016",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_017",
+    "name": "Naveen Krishna Jagarlapudi",
+    "status": "active",
+    "created_at": "2026-01-20T09:00:00Z",
+    "updated_at": "2026-03-30T11:00:00Z",
+    "onboarding_source": "founder_invite",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 5,
+      "peer_endorsements_count": 4
+    },
+    "profile_completeness": 0.83,
+    "personal_info": {
+      "gender": "Male",
+      "age": 33,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Coastal Andhra"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Delhi", "Bengaluru"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Podcaster",
+        "subcraft": "Business and Startup Podcast Host"
+      },
+      "secondary_crafts": [
+        { "craft": "Content Creator", "subcraft": "Business and Entrepreneurship Creator" }
+      ],
+      "experience_years": 5,
+      "experience_level": "mid_level",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["podcast_sponsorships", "startup_event_mc_work", "corporate_content_hosting"]
+    },
+    "bio": "Host of 'Founder Gari Vishayam', Telugu's first startup and entrepreneurship podcast with 95K Spotify listeners. Interviews Telugu founders building from Hyderabad and Amaravati. Have spoken at T-Hub, NSRCEL IIM Bangalore, and IIIT Hyderabad entrepreneurship summit.",
+    "tags_self": ["startup_podcast", "telugu_founders", "thub", "nsrcel", "entrepreneurship"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "YouTube",
+          "handle": "@foundergari",
+          "followers": 145000,
+          "engagement_rate": 5.8,
+          "verified_on_platform": false,
+          "is_primary": true
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@naveen_foundergari",
+          "followers": 62000,
+          "engagement_rate": 5.2,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "YouTube",
+      "content_categories": ["startup", "entrepreneurship", "founder_stories", "business", "venture_capital"],
+      "audience_demographics": {
+        "primary_age": "22-40",
+        "primary_geo": "Andhra Pradesh, Telangana, Indian startup ecosystem"
+      },
+      "brand_collaborations_count": 18,
+      "notable_brand_partners": ["Razorpay", "Zoho", "AWS India", "WeWork India"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "MBA — ISB Hyderabad",
+        "year": 2018,
+        "duration": "1 year"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_017",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_018",
+    "name": "Tejaswini Devi Kandula",
+    "status": "active",
+    "created_at": "2026-02-22T09:30:00Z",
+    "updated_at": "2026-04-19T10:00:00Z",
+    "onboarding_source": "self_signup",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 1
+    },
+    "profile_completeness": 0.57,
+    "personal_info": {
+      "gender": "Female",
+      "age": 23,
+      "languages": ["Telugu", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Book and Literature Creator"
+      },
+      "secondary_crafts": [],
+      "experience_years": 2,
+      "experience_level": "emerging",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["book_publishing_deals", "library_brand_work", "literary_event_hosting"]
+    },
+    "bio": "Telugu BookTok and BookTube creator making Telugu and English literature accessible. 88K Instagram followers and a highly engaged literary community. Run Hyderabad's most active Telugu reader community online with 12K members. Looking to expand into Telugu literary event hosting.",
+    "tags_self": ["booktok", "booktube", "telugu_literature", "reader_community", "hyderabad"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "Instagram",
+          "handle": "@tejaswini_reads_telugu",
+          "followers": 88000,
+          "engagement_rate": 11.2,
+          "verified_on_platform": false,
+          "is_primary": true
+        },
+        {
+          "platform": "YouTube",
+          "handle": "@telugubooks",
+          "followers": 24000,
+          "engagement_rate": 8.8,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "Instagram",
+      "content_categories": ["books", "literature", "telugu_literature", "book_reviews", "reading"],
+      "audience_demographics": {
+        "primary_age": "18-35",
+        "primary_geo": "Andhra Pradesh and Telangana, urban"
+      },
+      "brand_collaborations_count": 5,
+      "notable_brand_partners": ["Penguin India Telugu", "Abhinava Publications", "Audible India"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "MA Telugu Literature — Osmania University",
+        "year": 2025,
+        "duration": "2 years (ongoing)"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_018",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_019",
+    "name": "Sai Charan Maguluri",
+    "status": "active",
+    "created_at": "2026-01-16T09:00:00Z",
+    "updated_at": "2026-03-22T10:00:00Z",
+    "onboarding_source": "founder_invite",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 8,
+      "peer_endorsements_count": 6
+    },
+    "profile_completeness": 0.89,
+    "personal_info": {
+      "gender": "Male",
+      "age": 30,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Bengaluru", "Chennai"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Roast and Commentary Creator"
+      },
+      "secondary_crafts": [
+        { "craft": "Actor", "subcraft": "Comedy and Character Roles" }
+      ],
+      "experience_years": 5,
+      "experience_level": "mid_level",
+      "availability": {
+        "type": "freelance",
+        "currently_available": false,
+        "next_available_from": "2026-06-01"
+      },
+      "looking_for": ["brand_collaborations", "web_series_roles", "standup_comedy_events", "ott_comedy"]
+    },
+    "bio": "Telugu roast and commentary creator with 1.8M YouTube subscribers. Known for sharp political satire and Tollywood film roasts. Have crossed into standup comedy performing at 3 sold-out Hyderabad shows. Looking for acting opportunities in comedy web series and OTT specials.",
+    "tags_self": ["roast_creator", "telugu_satire", "tollywood_roasts", "standup_comedy", "1M_plus"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "YouTube",
+          "handle": "@saicharan_roasts",
+          "followers": 1800000,
+          "engagement_rate": 7.6,
+          "verified_on_platform": true,
+          "is_primary": true
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@saicharan_official",
+          "followers": 580000,
+          "engagement_rate": 8.4,
+          "verified_on_platform": true,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "YouTube",
+      "content_categories": ["roast", "satire", "commentary", "comedy", "film_review"],
+      "audience_demographics": {
+        "primary_age": "18-32",
+        "primary_geo": "Andhra Pradesh and Telangana, urban youth"
+      },
+      "brand_collaborations_count": 30,
+      "notable_brand_partners": ["CRED", "Swiggy", "Bumble India", "YouTube Premium"]
+    },
+    "projects": [],
+    "education_training": [],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_019",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_020",
+    "name": "Sailaja Kumari Boddupalli",
+    "status": "active",
+    "created_at": "2026-02-25T10:00:00Z",
+    "updated_at": "2026-04-21T09:30:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 2
+    },
+    "profile_completeness": 0.60,
+    "personal_info": {
+      "gender": "Female",
+      "age": 26,
+      "languages": ["Telugu", "English", "Hindi"],
+      "regional_background": "Coastal Andhra"
+    },
+    "location": {
+      "current_city": "Vijayawada",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "willing_to_travel": ["Vijayawada", "Hyderabad", "Chennai"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Skincare and Dermatology Creator"
+      },
+      "secondary_crafts": [],
+      "experience_years": 3,
+      "experience_level": "emerging",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["skincare_brand_deals", "dermatology_app_partnerships", "health_content_work"]
+    },
+    "bio": "Telugu skincare educator combining dermatology training with creator skills. 260K Instagram followers. Content debunks skincare myths common in South Indian households and recommends evidence-based approaches. Recently featured in Health Shots and Femina India.",
+    "tags_self": ["skincare_creator", "dermatology_content", "evidence_based", "telugu_skincare", "health_shots"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "Instagram",
+          "handle": "@sailaja_skin_telugu",
+          "followers": 260000,
+          "engagement_rate": 9.4,
+          "verified_on_platform": false,
+          "is_primary": true
+        },
+        {
+          "platform": "YouTube",
+          "handle": "@sailajaskincare",
+          "followers": 58000,
+          "engagement_rate": 7.1,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "Instagram",
+      "content_categories": ["skincare", "dermatology", "health", "beauty_science"],
+      "audience_demographics": {
+        "primary_age": "20-35",
+        "primary_geo": "South India"
+      },
+      "brand_collaborations_count": 18,
+      "notable_brand_partners": ["Minimalist India", "Dot and Key", "CeraVe India", "The Derma Co"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "MBBS — Andhra Medical College Vizag",
+        "year": 2024,
+        "duration": "5.5 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_020",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_021",
+    "name": "Manoj Kumar Thota",
+    "status": "active",
+    "created_at": "2026-01-24T09:00:00Z",
+    "updated_at": "2026-03-28T11:00:00Z",
+    "onboarding_source": "founder_invite",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 5,
+      "peer_endorsements_count": 4
+    },
+    "profile_completeness": 0.82,
+    "personal_info": {
+      "gender": "Male",
+      "age": 28,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Delhi", "Bengaluru"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Sports Content Creator and Commentator"
+      },
+      "secondary_crafts": [],
+      "experience_years": 4,
+      "experience_level": "mid_level",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["sports_brand_deals", "commentary_work", "sports_event_hosting"]
+    },
+    "bio": "Telugu sports creator covering cricket, kabaddi, and kho-kho in Telugu. 560K YouTube subscribers. Exclusively covers Indian sports from a Telugu perspective with deep analytical commentary. Have done official commentary for 2 PKL matches on Fan TV. Seeking broadcast commentary opportunities.",
+    "tags_self": ["sports_creator", "telugu_cricket", "pkl_kabaddi", "sports_commentary", "fan_tv"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "YouTube",
+          "handle": "@telusports",
+          "followers": 560000,
+          "engagement_rate": 6.8,
+          "verified_on_platform": true,
+          "is_primary": true
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@manoj_telusports",
+          "followers": 125000,
+          "engagement_rate": 5.4,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "YouTube",
+      "content_categories": ["cricket", "kabaddi", "sports_analysis", "sports_news", "kho_kho"],
+      "audience_demographics": {
+        "primary_age": "18-38",
+        "primary_geo": "Andhra Pradesh and Telangana"
+      },
+      "brand_collaborations_count": 20,
+      "notable_brand_partners": ["Dream11", "MPL", "Cricbuzz", "Puma India"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "BA Physical Education — Acharya Nagarjuna University",
+        "year": 2020,
+        "duration": "3 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_021",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_022",
+    "name": "Pooja Lakshmi Gedela",
+    "status": "active",
+    "created_at": "2026-02-28T09:30:00Z",
+    "updated_at": "2026-04-24T10:00:00Z",
+    "onboarding_source": "self_signup",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 1
+    },
+    "profile_completeness": 0.54,
+    "personal_info": {
+      "gender": "Female",
+      "age": 22,
+      "languages": ["Telugu", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Sustainable Living and Eco Creator"
+      },
+      "secondary_crafts": [],
+      "experience_years": 1,
+      "experience_level": "newcomer",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["eco_brand_deals", "sustainable_lifestyle_partnerships"]
+    },
+    "bio": "Hyderabad's first Telugu eco and sustainable living creator. 45K Instagram followers documenting zero-waste lifestyle in a Telugu household. Very early but growing fast in a niche almost entirely ignored in Telugu content. Looking for first paid partnership with an Indian eco or sustainable brand.",
+    "tags_self": ["eco_creator", "sustainability_telugu", "zero_waste", "green_lifestyle", "niche_creator"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "Instagram",
+          "handle": "@pooja_eco_telugu",
+          "followers": 45000,
+          "engagement_rate": 12.8,
+          "verified_on_platform": false,
+          "is_primary": true
+        }
+      ],
+      "primary_platform": "Instagram",
+      "content_categories": ["sustainability", "eco_living", "zero_waste", "green_lifestyle"],
+      "audience_demographics": {
+        "primary_age": "18-32",
+        "primary_geo": "Hyderabad, urban south India"
+      },
+      "brand_collaborations_count": 1,
+      "notable_brand_partners": ["Salam Bombay (gifting only)"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "B.Tech Environmental Engineering — JNTU Hyderabad",
+        "year": 2026,
+        "duration": "4 years (final year)"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_022",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_023",
+    "name": "Venkatesh Naidu Karthikeyan",
+    "status": "active",
+    "created_at": "2026-01-22T09:00:00Z",
+    "updated_at": "2026-03-20T10:00:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 4,
+      "peer_endorsements_count": 3
+    },
+    "profile_completeness": 0.77,
+    "personal_info": {
+      "gender": "Male",
+      "age": 34,
+      "languages": ["Telugu", "Tamil", "English", "Hindi"],
+      "regional_background": "Coastal Andhra"
+    },
+    "location": {
+      "current_city": "Chennai",
+      "state": "Tamil Nadu",
+      "country": "India",
+      "willing_to_travel": ["Chennai", "Hyderabad", "Mumbai", "Bengaluru"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Podcaster",
+        "subcraft": "True Crime and Investigation Podcast Host"
+      },
+      "secondary_crafts": [],
+      "experience_years": 5,
+      "experience_level": "mid_level",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["podcast_sponsorships", "crime_docuseries_hosting", "true_crime_content_deals"]
+    },
+    "bio": "Host of 'Nija Kathalu', a Telugu true crime podcast with 160K Spotify listeners making it the most listened-to Telugu true crime content. Deeply researched episodes on unsolved South Indian cases. Now actively looking to host Telugu crime docuseries formats for OTT.",
+    "tags_self": ["true_crime_telugu", "nija_kathalu", "crime_podcast", "south_india_cases", "docuseries"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "YouTube",
+          "handle": "@nijakathalu",
+          "followers": 280000,
+          "engagement_rate": 7.2,
+          "verified_on_platform": false,
+          "is_primary": true
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@venkatesh_nijakathalu",
+          "followers": 72000,
+          "engagement_rate": 6.4,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "YouTube",
+      "content_categories": ["true_crime", "investigation", "mystery", "south_india_cases"],
+      "audience_demographics": {
+        "primary_age": "22-42",
+        "primary_geo": "Andhra Pradesh, Telangana, Tamil Nadu"
+      },
+      "brand_collaborations_count": 10,
+      "notable_brand_partners": ["Spotify India", "Audible India", "VPN India sponsor"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "BA Criminology — University of Madras",
+        "year": 2015,
+        "duration": "3 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_023",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_024",
+    "name": "Sindhu Priya Vaddeboina",
+    "status": "active",
+    "created_at": "2026-03-02T09:30:00Z",
+    "updated_at": "2026-04-23T10:30:00Z",
+    "onboarding_source": "self_signup",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 0
+    },
+    "profile_completeness": 0.49,
+    "personal_info": {
+      "gender": "Female",
+      "age": 21,
+      "languages": ["Telugu", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Karimnagar",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Karimnagar", "Hyderabad"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Student Life and Campus Creator"
+      },
+      "secondary_crafts": [],
+      "experience_years": 1,
+      "experience_level": "newcomer",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["student_brand_deals", "college_events_hosting", "content_collaborations"]
+    },
+    "bio": "College student creator from Karimnagar documenting engineering student life in small-town Telangana. 38K Instagram followers, very relatable content about JEE stress, hostel life, and first-gen college experiences. Young but growing fast in an underserved niche.",
+    "tags_self": ["student_creator", "engineering_life", "karimnagar", "telangana_student", "hostel_life"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "Instagram",
+          "handle": "@sindhu_kmnr_student",
+          "followers": 38000,
+          "engagement_rate": 13.6,
+          "verified_on_platform": false,
+          "is_primary": true
+        }
+      ],
+      "primary_platform": "Instagram",
+      "content_categories": ["student_life", "college_content", "telangana_youth", "education"],
+      "audience_demographics": {
+        "primary_age": "15-22",
+        "primary_geo": "Telangana, smaller towns"
+      },
+      "brand_collaborations_count": 0,
+      "notable_brand_partners": []
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "B.Tech — NIT Warangal",
+        "year": 2028,
+        "duration": "4 years (2nd year)"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_024",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_025",
+    "name": "Rajesh Narayana Uppala",
+    "status": "active",
+    "created_at": "2026-01-26T09:00:00Z",
+    "updated_at": "2026-03-30T10:00:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 6,
+      "peer_endorsements_count": 5
+    },
+    "profile_completeness": 0.85,
+    "personal_info": {
+      "gender": "Male",
+      "age": 35,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Delhi", "Bengaluru"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Short Drama and Narrative Creator"
+      },
+      "secondary_crafts": [
+        { "craft": "Actor", "subcraft": "Digital Drama Lead" },
+        { "craft": "Director", "subcraft": "Short Form Digital Director" }
+      ],
+      "experience_years": 6,
+      "experience_level": "mid_level",
+      "availability": {
+        "type": "freelance",
+        "currently_available": false,
+        "next_available_from": "2026-07-01"
+      },
+      "looking_for": ["web_series_roles", "ott_roles", "short_film_direction", "digital_content_ip"]
+    },
+    "bio": "Telugu short-drama content creator who produces and acts in mini-series on YouTube. 680K subscribers. Known for emotionally resonant 10-15 minute drama episodes addressing middle-class Telugu family issues. Have crossed to screen with a supporting role in a ZEE5 Telugu series.",
+    "tags_self": ["short_drama_creator", "mini_series", "telugu_family_drama", "zee5", "actor_creator"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "YouTube",
+          "handle": "@telugudramas_rajesh",
+          "followers": 680000,
+          "engagement_rate": 8.2,
+          "verified_on_platform": true,
+          "is_primary": true
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@rajesh_telugudrama",
+          "followers": 190000,
+          "engagement_rate": 7.4,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "YouTube",
+      "content_categories": ["short_drama", "family_drama", "emotional_content", "narrative_series"],
+      "audience_demographics": {
+        "primary_age": "25-50",
+        "primary_geo": "Andhra Pradesh and Telangana"
+      },
+      "brand_collaborations_count": 22,
+      "notable_brand_partners": ["ZEE5 Telugu", "Sun NXT", "Tata 1mg", "PolicyBazaar"]
+    },
+    "projects": [
+      {
+        "id": "proj_h025_001",
+        "name": "Manchi Roju (ZEE5)",
+        "type": "web_series",
+        "year": 2025,
+        "role": "Supporting Actor",
+        "role_weight": 0.5,
+        "banner": "ZEE5 India",
+        "production_house": "ZEE5 Telugu",
+        "verified": true,
+        "proof_link": null,
+        "collaborators_on_platform": []
+      }
+    ],
+    "education_training": [],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_025",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_026",
+    "name": "Kavitha Naga Parvathi Koneru",
+    "status": "active",
+    "created_at": "2026-02-06T09:00:00Z",
+    "updated_at": "2026-04-11T10:00:00Z",
+    "onboarding_source": "self_signup",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 2
+    },
+    "profile_completeness": 0.61,
+    "personal_info": {
+      "gender": "Female",
+      "age": 30,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Coastal Andhra"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Bengaluru"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Wedding and Events Content Creator"
+      },
+      "secondary_crafts": [],
+      "experience_years": 4,
+      "experience_level": "emerging",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["wedding_brand_deals", "event_coverage_work", "bridal_brand_partnerships"]
+    },
+    "bio": "Telugu wedding and events content creator with 210K Instagram followers. Cover Telugu and Kannada weddings across South India with a cinematic visual style. Have worked with WeddingWire India, Shaadi.com, and Tanishq for branded wedding content campaigns.",
+    "tags_self": ["wedding_creator", "south_indian_weddings", "telugu_weddings", "bridal_content", "shaadi"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "Instagram",
+          "handle": "@kavitha_telugu_weddings",
+          "followers": 210000,
+          "engagement_rate": 8.6,
+          "verified_on_platform": false,
+          "is_primary": true
+        },
+        {
+          "platform": "YouTube",
+          "handle": "@kavithaweddings",
+          "followers": 48000,
+          "engagement_rate": 6.2,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "Instagram",
+      "content_categories": ["weddings", "events", "bridal", "south_indian_culture"],
+      "audience_demographics": {
+        "primary_age": "22-35",
+        "primary_geo": "South India"
+      },
+      "brand_collaborations_count": 22,
+      "notable_brand_partners": ["WeddingWire India", "Shaadi.com", "Tanishq", "Malabar Gold"]
+    },
+    "projects": [],
+    "education_training": [],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_026",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_027",
+    "name": "Dinesh Babu Gangavarapu",
+    "status": "active",
+    "created_at": "2026-02-16T09:30:00Z",
+    "updated_at": "2026-04-13T10:00:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 3,
+      "peer_endorsements_count": 3
+    },
+    "profile_completeness": 0.73,
+    "personal_info": {
+      "gender": "Male",
+      "age": 26,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Coastal Andhra"
+    },
+    "location": {
+      "current_city": "Vizag",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "willing_to_travel": ["Vizag", "Hyderabad", "Chennai"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Political Satire and News Commentary"
+      },
+      "secondary_crafts": [],
+      "experience_years": 3,
+      "experience_level": "emerging",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["digital_news_platform_deals", "political_commentary_work", "event_speaking"]
+    },
+    "bio": "Vizag-based Telugu political satire creator with 340K YouTube subscribers. Known for fair-handed AP and Telangana political commentary delivered in sharp satirical style. Covered 2024 state elections extensively. Have been cited in The Hindu and Deccan Chronicle digital editions.",
+    "tags_self": ["political_satire", "andhra_politics", "telangana_politics", "news_commentary", "vizag"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "YouTube",
+          "handle": "@dinesh_political_satire",
+          "followers": 340000,
+          "engagement_rate": 7.8,
+          "verified_on_platform": false,
+          "is_primary": true
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@dinesh_satire",
+          "followers": 82000,
+          "engagement_rate": 6.4,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "YouTube",
+      "content_categories": ["political_satire", "news_commentary", "AP_politics", "Telangana_politics"],
+      "audience_demographics": {
+        "primary_age": "22-45",
+        "primary_geo": "Andhra Pradesh and Telangana"
+      },
+      "brand_collaborations_count": 8,
+      "notable_brand_partners": ["The News Minute", "Scroll India", "VPN sponsor"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "BA Political Science — Andhra University",
+        "year": 2021,
+        "duration": "3 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_027",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_028",
+    "name": "Varsha Sri Rayaprolu",
+    "status": "active",
+    "created_at": "2026-03-05T09:00:00Z",
+    "updated_at": "2026-04-26T10:00:00Z",
+    "onboarding_source": "self_signup",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 1
+    },
+    "profile_completeness": 0.56,
+    "personal_info": {
+      "gender": "Female",
+      "age": 24,
+      "languages": ["Telugu", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Bengaluru"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Art and Illustration Creator"
+      },
+      "secondary_crafts": [],
+      "experience_years": 2,
+      "experience_level": "emerging",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["art_brand_deals", "custom_illustration_work", "cultural_brand_partnerships"]
+    },
+    "bio": "Telugu illustrator and visual artist whose work celebrates Telugu folklore, mythology, and cultural motifs in contemporary graphic styles. 95K Instagram followers. Have been commissioned for murals by Hyderabad Metro Rail Limited and illustrated for Penguin India Telugu's children's titles.",
+    "tags_self": ["telugu_art", "illustration", "telugu_mythology", "folk_art_modern", "hyderabad_metro_mural"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "Instagram",
+          "handle": "@varsha_telugu_art",
+          "followers": 95000,
+          "engagement_rate": 10.8,
+          "verified_on_platform": false,
+          "is_primary": true
+        }
+      ],
+      "primary_platform": "Instagram",
+      "content_categories": ["art", "illustration", "telugu_culture", "mythology_art", "folk_art"],
+      "audience_demographics": {
+        "primary_age": "20-40",
+        "primary_geo": "South India, Indian art community"
+      },
+      "brand_collaborations_count": 10,
+      "notable_brand_partners": ["Hyderabad Metro Rail", "Penguin India Telugu", "Fabindia", "Ekart Logistics"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "BFA Visual Communication — Jawaharlal Nehru Architecture and Fine Arts University",
+        "year": 2024,
+        "duration": "4 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_028",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_029",
+    "name": "Suresh Goud Mudhiraj",
+    "status": "active",
+    "created_at": "2026-01-28T09:00:00Z",
+    "updated_at": "2026-04-02T10:00:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 4,
+      "peer_endorsements_count": 3
+    },
+    "profile_completeness": 0.79,
+    "personal_info": {
+      "gender": "Male",
+      "age": 31,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Delhi"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Podcaster",
+        "subcraft": "Telugu History and Heritage Podcast"
+      },
+      "secondary_crafts": [
+        { "craft": "Content Creator", "subcraft": "History Documentary Creator" }
+      ],
+      "experience_years": 4,
+      "experience_level": "mid_level",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["heritage_brand_deals", "documentary_hosting", "tourism_partnerships", "educational_content"]
+    },
+    "bio": "Telugu history and heritage podcast host with 75K Spotify listeners. Covers untold stories from Telugu and Deccan history including the Kakatiya empire, Satavahana dynasty, and Nizam era. Have collaborated with the Hyderabad Heritage Trust and Archaeological Survey of India on content.",
+    "tags_self": ["telugu_history", "deccan_heritage", "kakatiya", "nizam_era", "asi_collaboration"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "YouTube",
+          "handle": "@telugu_history_goud",
+          "followers": 165000,
+          "engagement_rate": 6.8,
+          "verified_on_platform": false,
+          "is_primary": true
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@sureshgoud_history",
+          "followers": 58000,
+          "engagement_rate": 5.6,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "YouTube",
+      "content_categories": ["history", "heritage", "telugu_culture", "archaeology", "deccan_history"],
+      "audience_demographics": {
+        "primary_age": "25-55",
+        "primary_geo": "Andhra Pradesh and Telangana"
+      },
+      "brand_collaborations_count": 10,
+      "notable_brand_partners": ["Telangana Tourism", "Hyderabad Heritage Trust", "ASI India"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "MA History — Osmania University",
+        "year": 2018,
+        "duration": "2 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_029",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_030",
+    "name": "Keerthi Lakshmi Pidugu",
+    "status": "active",
+    "created_at": "2026-03-10T09:30:00Z",
+    "updated_at": "2026-04-27T10:00:00Z",
+    "onboarding_source": "self_signup",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 0
+    },
+    "profile_completeness": 0.48,
+    "personal_info": {
+      "gender": "Female",
+      "age": 20,
+      "languages": ["Telugu", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Short Form Video Creator"
+      },
+      "secondary_crafts": [],
+      "experience_years": 1,
+      "experience_level": "newcomer",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["first_brand_deal", "collaborations_with_other_creators"]
+    },
+    "bio": "Hyderabad college student making Telugu Reels about everyday city life — street food, local slang, college moments. 28K Instagram followers after 8 months. Very authentic and raw style that resonates with Hyderabadi youth. Just starting out, learning every day.",
+    "tags_self": ["hyderabad_reels", "street_food", "hyderabadi_slang", "city_life", "just_starting"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "Instagram",
+          "handle": "@keerthi_hyd_reels",
+          "followers": 28000,
+          "engagement_rate": 14.2,
+          "verified_on_platform": false,
+          "is_primary": true
+        }
+      ],
+      "primary_platform": "Instagram",
+      "content_categories": ["city_life", "street_food", "hyderabad_culture", "college_life"],
+      "audience_demographics": {
+        "primary_age": "15-25",
+        "primary_geo": "Hyderabad"
+      },
+      "brand_collaborations_count": 0,
+      "notable_brand_partners": []
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "B.Tech CSE — CBIT Hyderabad",
+        "year": 2028,
+        "duration": "4 years (1st year)"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_030",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_031",
+    "name": "Prashanth Reddy Neredimalli",
+    "status": "active",
+    "created_at": "2026-01-20T09:00:00Z",
+    "updated_at": "2026-03-26T10:00:00Z",
+    "onboarding_source": "founder_invite",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 7,
+      "peer_endorsements_count": 5
+    },
+    "profile_completeness": 0.86,
+    "personal_info": {
+      "gender": "Male",
+      "age": 29,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Delhi", "Bengaluru"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "React and Reaction Content Creator"
+      },
+      "secondary_crafts": [
+        { "craft": "Actor", "subcraft": "Digital Sketch and Reaction Format" }
+      ],
+      "experience_years": 5,
+      "experience_level": "mid_level",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["brand_deals", "web_series_roles", "scripted_digital_content"]
+    },
+    "bio": "Telugu reaction and commentary creator with 1.5M YouTube subscribers. Reaction content focused on Tollywood trailers, music launches, and Telugu pop culture moments. Extremely high engagement — comments often drive actual social conversations about the films being reacted to. Looking for acting opportunities.",
+    "tags_self": ["reaction_creator", "trailer_reactions", "tollywood_fan_content", "1M_plus", "high_engagement"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "YouTube",
+          "handle": "@prashanth_reactions_telugu",
+          "followers": 1500000,
+          "engagement_rate": 9.2,
+          "verified_on_platform": true,
+          "is_primary": true
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@prashanth_rct",
+          "followers": 420000,
+          "engagement_rate": 8.6,
+          "verified_on_platform": true,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "YouTube",
+      "content_categories": ["reaction", "commentary", "tollywood_fan", "trailer_reactions", "music_reactions"],
+      "audience_demographics": {
+        "primary_age": "16-32",
+        "primary_geo": "Andhra Pradesh and Telangana"
+      },
+      "brand_collaborations_count": 28,
+      "notable_brand_partners": ["BookMyShow", "Amazon Prime Video Telugu", "Aha", "Samsung India"]
+    },
+    "projects": [],
+    "education_training": [],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_031",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_032",
+    "name": "Annapurna Devi Vanapalli",
+    "status": "active",
+    "created_at": "2026-02-20T09:30:00Z",
+    "updated_at": "2026-04-16T10:30:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 2
+    },
+    "profile_completeness": 0.59,
+    "personal_info": {
+      "gender": "Female",
+      "age": 35,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Coastal Andhra"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Bengaluru"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Spiritual and Devotional Content Creator"
+      },
+      "secondary_crafts": [],
+      "experience_years": 4,
+      "experience_level": "emerging",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["devotional_brand_deals", "puja_item_partnerships", "spiritual_content_deals"]
+    },
+    "bio": "Telugu devotional and spiritual content creator with 320K YouTube subscribers. Covers Telugu pujas, festivals, temple stories, and Vedic traditions in accessible modern language. Content reaches Telugu diaspora globally. Have partnered with Siddha Peetham Trust and Sri Venkateswara temple trust.",
+    "tags_self": ["devotional_creator", "telugu_puja", "temple_stories", "vedic_traditions", "diaspora"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "YouTube",
+          "handle": "@annapurna_telugu_bhakti",
+          "followers": 320000,
+          "engagement_rate": 7.4,
+          "verified_on_platform": false,
+          "is_primary": true
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@annapurna_bhakti",
+          "followers": 90000,
+          "engagement_rate": 6.8,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "YouTube",
+      "content_categories": ["devotional", "spiritual", "telugu_festivals", "puja_guides", "temple_stories"],
+      "audience_demographics": {
+        "primary_age": "30-60",
+        "primary_geo": "South India and Telugu diaspora globally"
+      },
+      "brand_collaborations_count": 14,
+      "notable_brand_partners": ["Sri Venkateswara Trust", "Patanjali", "Cycle Pure Agarbathies"]
+    },
+    "projects": [],
+    "education_training": [],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_032",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_033",
+    "name": "Siddharth Rao Gonugunta",
+    "status": "active",
+    "created_at": "2026-02-04T09:00:00Z",
+    "updated_at": "2026-04-08T10:30:00Z",
+    "onboarding_source": "self_signup",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 1
+    },
+    "profile_completeness": 0.51,
+    "personal_info": {
+      "gender": "Male",
+      "age": 23,
+      "languages": ["Telugu", "English", "Hindi"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Photography and Visual Content Creator"
+      },
+      "secondary_crafts": [],
+      "experience_years": 2,
+      "experience_level": "emerging",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["photography_brand_deals", "event_photography_work", "visual_content_creation"]
+    },
+    "bio": "Hyderabad photographer and visual content creator with a cinematic documentary style. 72K Instagram followers. Primarily shoots urban Hyderabad street photography and South Indian cultural events. Transitioning from hobbyist to professional — looking for paid photography and brand content work.",
+    "tags_self": ["street_photographer", "hyderabad_photography", "visual_storytelling", "documentary_style"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "Instagram",
+          "handle": "@siddharth_shoots_hyd",
+          "followers": 72000,
+          "engagement_rate": 9.8,
+          "verified_on_platform": false,
+          "is_primary": true
+        }
+      ],
+      "primary_platform": "Instagram",
+      "content_categories": ["photography", "street_photography", "event_photography", "hyderabad_visual"],
+      "audience_demographics": {
+        "primary_age": "18-35",
+        "primary_geo": "Hyderabad, photography enthusiasts"
+      },
+      "brand_collaborations_count": 3,
+      "notable_brand_partners": ["Canon India (ambassador program)", "Hyderabad Biryani Festival (event)"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "workshop",
+        "name": "Documentary Photography Masterclass — India Photo Festival Hyderabad",
+        "year": 2024,
+        "duration": "1 week"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_033",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_034",
+    "name": "Pavithra Kumari Bobbala",
+    "status": "active",
+    "created_at": "2026-03-08T09:00:00Z",
+    "updated_at": "2026-04-25T10:00:00Z",
+    "onboarding_source": "self_signup",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 1
+    },
+    "profile_completeness": 0.53,
+    "personal_info": {
+      "gender": "Female",
+      "age": 22,
+      "languages": ["Telugu", "English"],
+      "regional_background": "Coastal Andhra"
+    },
+    "location": {
+      "current_city": "Guntur",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "willing_to_travel": ["Guntur", "Vijayawada", "Hyderabad"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Agriculture and Rural Andhra Creator"
+      },
+      "secondary_crafts": [],
+      "experience_years": 1,
+      "experience_level": "newcomer",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["agri_brand_deals", "rural_platform_partnerships"]
+    },
+    "bio": "Guntur-based creator documenting Andhra agriculture, chilli farming, and rural village life with genuine insider access. 52K YouTube subscribers mostly from rural AP. Content bridges urban and rural Telugu worlds. A unique creator in a niche with almost no competition.",
+    "tags_self": ["agriculture_creator", "guntur_chilli", "rural_andhra", "farmer_stories", "village_life"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "YouTube",
+          "handle": "@pavithra_rytu_channel",
+          "followers": 52000,
+          "engagement_rate": 11.4,
+          "verified_on_platform": false,
+          "is_primary": true
+        }
+      ],
+      "primary_platform": "YouTube",
+      "content_categories": ["agriculture", "rural_life", "andhra_farming", "village_culture"],
+      "audience_demographics": {
+        "primary_age": "25-55",
+        "primary_geo": "Rural Andhra Pradesh"
+      },
+      "brand_collaborations_count": 2,
+      "notable_brand_partners": ["Kisan Credit Card Campaign", "AP Government Agriculture Dept"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "BSc Agriculture — Acharya NG Ranga Agricultural University",
+        "year": 2025,
+        "duration": "4 years (final year)"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_034",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_035",
+    "name": "Chandra Sekhar Gannavarapu",
+    "status": "active",
+    "created_at": "2026-01-24T09:00:00Z",
+    "updated_at": "2026-03-25T10:00:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 5,
+      "peer_endorsements_count": 4
+    },
+    "profile_completeness": 0.80,
+    "personal_info": {
+      "gender": "Male",
+      "age": 32,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Delhi", "Bengaluru"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Telugu Vlogger and Lifestyle Creator"
+      },
+      "secondary_crafts": [],
+      "experience_years": 5,
+      "experience_level": "mid_level",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["lifestyle_brand_deals", "travel_brand_deals", "hosting_work"]
+    },
+    "bio": "Daily Telugu vlogger documenting authentic Hyderabad life — food, culture, events, people. 720K YouTube subscribers with a loyal long-term audience. Content has a strong journalistic quality that makes it stand out from entertainment-first vloggers. Have interviewed prominent Hyderabad personalities.",
+    "tags_self": ["daily_vlogger", "hyderabad_vlog", "authentic_hyderabad", "lifestyle", "journalistic_style"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "YouTube",
+          "handle": "@chandra_telugu_vlog",
+          "followers": 720000,
+          "engagement_rate": 6.8,
+          "verified_on_platform": true,
+          "is_primary": true
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@chandra_hyd_vlog",
+          "followers": 195000,
+          "engagement_rate": 5.8,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "YouTube",
+      "content_categories": ["vlogging", "hyderabad_culture", "food", "events", "lifestyle"],
+      "audience_demographics": {
+        "primary_age": "22-42",
+        "primary_geo": "Hyderabad, Telugu diaspora"
+      },
+      "brand_collaborations_count": 30,
+      "notable_brand_partners": ["Hyderabad House Restaurant", "JW Marriott Hyderabad", "Flipkart India", "Ola"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "BA Journalism — Hyderabad Central University",
+        "year": 2017,
+        "duration": "3 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_035",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_036",
+    "name": "Lakshmi Priya Siripuram",
+    "status": "active",
+    "created_at": "2026-02-14T09:30:00Z",
+    "updated_at": "2026-04-12T10:30:00Z",
+    "onboarding_source": "self_signup",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 2
+    },
+    "profile_completeness": 0.62,
+    "personal_info": {
+      "gender": "Female",
+      "age": 27,
+      "languages": ["Telugu", "English"],
+      "regional_background": "Coastal Andhra"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Bengaluru"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Career and Women Empowerment Creator"
+      },
+      "secondary_crafts": [],
+      "experience_years": 3,
+      "experience_level": "emerging",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["women_brand_deals", "career_platform_partnerships", "corporate_speaking"]
+    },
+    "bio": "Telugu career and women empowerment creator documenting real stories of women breaking barriers in Telugu households and workplaces. 195K Instagram followers. Have been featured by LinkedIn India, Women Who Lead India, and Sheroes. Corporate speaking work at Cognizant Hyderabad and Infosys Hyderabad.",
+    "tags_self": ["women_empowerment", "career_creator", "linkedin_india", "corporate_speaker", "telugu_women"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "Instagram",
+          "handle": "@lakshmipriya_career",
+          "followers": 195000,
+          "engagement_rate": 9.2,
+          "verified_on_platform": false,
+          "is_primary": true
+        },
+        {
+          "platform": "YouTube",
+          "handle": "@lakshmipriya_telugu_career",
+          "followers": 45000,
+          "engagement_rate": 7.4,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "Instagram",
+      "content_categories": ["career", "women_empowerment", "workplace", "leadership", "inspiration"],
+      "audience_demographics": {
+        "primary_age": "22-38",
+        "primary_geo": "South India, working women"
+      },
+      "brand_collaborations_count": 14,
+      "notable_brand_partners": ["LinkedIn India", "Sheroes", "Coursera India", "Dove India"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "MBA HR — XLRI Jamshedpur",
+        "year": 2022,
+        "duration": "2 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_036",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_037",
+    "name": "Kishore Babu Vemula",
+    "status": "active",
+    "created_at": "2026-02-18T09:00:00Z",
+    "updated_at": "2026-04-14T10:00:00Z",
+    "onboarding_source": "referral",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 4,
+      "peer_endorsements_count": 3
+    },
+    "profile_completeness": 0.75,
+    "personal_info": {
+      "gender": "Male",
+      "age": 30,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Bengaluru"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Telugu Cooking and Restaurant Creator"
+      },
+      "secondary_crafts": [],
+      "experience_years": 4,
+      "experience_level": "mid_level",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["restaurant_brand_deals", "food_app_partnerships", "cooking_show_hosting"]
+    },
+    "bio": "Hyderabad food creator focused on Telugu cuisine, Hyderabadi street food, and restaurant reviews. 480K YouTube subscribers. Known for finding hidden gem dhabas and local eateries overlooked by mainstream food media. Have been featured in Zomato's content partner program.",
+    "tags_self": ["hyderabadi_food", "street_food_creator", "restaurant_reviews", "zomato_partner", "dhabas"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "YouTube",
+          "handle": "@kishore_telugu_food",
+          "followers": 480000,
+          "engagement_rate": 7.6,
+          "verified_on_platform": true,
+          "is_primary": true
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@kishore_hyd_food",
+          "followers": 148000,
+          "engagement_rate": 6.8,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "YouTube",
+      "content_categories": ["food", "street_food", "restaurant_reviews", "hyderabadi_cuisine", "telugu_food"],
+      "audience_demographics": {
+        "primary_age": "20-42",
+        "primary_geo": "Hyderabad and South India"
+      },
+      "brand_collaborations_count": 22,
+      "notable_brand_partners": ["Zomato", "Swiggy Instamart", "Hotel Chand Biryani House", "Dum Pukht"]
+    },
+    "projects": [],
+    "education_training": [],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_037",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_038",
+    "name": "Sirisha Devi Koneti",
+    "status": "active",
+    "created_at": "2026-03-14T09:30:00Z",
+    "updated_at": "2026-04-28T10:00:00Z",
+    "onboarding_source": "self_signup",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 0
+    },
+    "profile_completeness": 0.46,
+    "personal_info": {
+      "gender": "Female",
+      "age": 23,
+      "languages": ["Telugu", "English"],
+      "regional_background": "Rayalaseema"
+    },
+    "location": {
+      "current_city": "Tirupati",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "willing_to_travel": ["Tirupati", "Hyderabad", "Chennai"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Pilgrimage and Spiritual Tourism Creator"
+      },
+      "secondary_crafts": [],
+      "experience_years": 1,
+      "experience_level": "newcomer",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["temple_tourism_deals", "pilgrimage_brand_work"]
+    },
+    "bio": "Tirupati-based creator documenting Tirumala, Tirupati temples, and Rayalaseema pilgrimage routes. 42K YouTube subscribers with growing overseas Telugu audience. Very niche but deeply passionate creator in a space that has real search demand and minimal competition.",
+    "tags_self": ["tirumala_content", "pilgrimage_creator", "tirupati", "temple_tourism", "rayalaseema_temples"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "YouTube",
+          "handle": "@sirisha_tirumala",
+          "followers": 42000,
+          "engagement_rate": 10.6,
+          "verified_on_platform": false,
+          "is_primary": true
+        }
+      ],
+      "primary_platform": "YouTube",
+      "content_categories": ["pilgrimage", "temple_tourism", "spirituality", "tirumala", "rayalaseema_heritage"],
+      "audience_demographics": {
+        "primary_age": "35-65",
+        "primary_geo": "South India and Telugu diaspora globally"
+      },
+      "brand_collaborations_count": 1,
+      "notable_brand_partners": ["AP Tourism (gifting only)"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "BA Tourism Management — Sri Venkateswara University Tirupati",
+        "year": 2025,
+        "duration": "3 years (final year)"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_038",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_039",
+    "name": "Aravind Reddy Kalluri",
+    "status": "active",
+    "created_at": "2026-01-26T09:00:00Z",
+    "updated_at": "2026-04-01T10:00:00Z",
+    "onboarding_source": "founder_invite",
+    "verification": {
+      "level": "peer_verified",
+      "verified_credits_count": 6,
+      "peer_endorsements_count": 5
+    },
+    "profile_completeness": 0.84,
+    "personal_info": {
+      "gender": "Male",
+      "age": 31,
+      "languages": ["Telugu", "Hindi", "English"],
+      "regional_background": "Telangana"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai", "Bengaluru", "Delhi"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "OTT and Film Review Creator"
+      },
+      "secondary_crafts": [
+        { "craft": "Podcaster", "subcraft": "Telugu Cinema Podcast" }
+      ],
+      "experience_years": 5,
+      "experience_level": "mid_level",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["ott_platform_deals", "film_awards_hosting", "entertainment_media_work"]
+    },
+    "bio": "Telugu OTT and film review creator with 840K YouTube subscribers. Deep-dive reviews of Telugu, Tamil, and Hindi cinema with critical analysis beyond typical promotional content. Have been invited as jury member for 2 regional film festivals. Looking for entertainment media and hosting opportunities.",
+    "tags_self": ["film_reviewer", "ott_reviews", "critical_analysis", "film_jury", "840K"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "YouTube",
+          "handle": "@aravind_film_reviews",
+          "followers": 840000,
+          "engagement_rate": 7.4,
+          "verified_on_platform": true,
+          "is_primary": true
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@aravind_reviews",
+          "followers": 210000,
+          "engagement_rate": 6.2,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "YouTube",
+      "content_categories": ["film_reviews", "ott_reviews", "cinema_analysis", "entertainment", "awards"],
+      "audience_demographics": {
+        "primary_age": "20-42",
+        "primary_geo": "South India and cinema enthusiasts nationally"
+      },
+      "brand_collaborations_count": 26,
+      "notable_brand_partners": ["Netflix India", "AHA", "ZEE5", "BookMyShow"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "MA Film Studies — University of Hyderabad",
+        "year": 2018,
+        "duration": "2 years"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_039",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  },
+
+  {
+    "id": "user_h_040",
+    "name": "Deepthi Sree Matlapudi",
+    "status": "active",
+    "created_at": "2026-03-18T09:30:00Z",
+    "updated_at": "2026-04-29T10:00:00Z",
+    "onboarding_source": "self_signup",
+    "verification": {
+      "level": "self_attested",
+      "verified_credits_count": 0,
+      "peer_endorsements_count": 1
+    },
+    "profile_completeness": 0.50,
+    "personal_info": {
+      "gender": "Female",
+      "age": 22,
+      "languages": ["Telugu", "English"],
+      "regional_background": "Coastal Andhra"
+    },
+    "location": {
+      "current_city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "willing_to_travel": ["Hyderabad", "Mumbai"]
+    },
+    "professional_info": {
+      "primary_craft": {
+        "craft": "Content Creator",
+        "subcraft": "Unboxing and Product Review Creator"
+      },
+      "secondary_crafts": [],
+      "experience_years": 1,
+      "experience_level": "newcomer",
+      "availability": {
+        "type": "freelance",
+        "currently_available": true,
+        "next_available_from": null
+      },
+      "looking_for": ["product_review_deals", "unboxing_partnerships", "e_commerce_brand_deals"]
+    },
+    "bio": "Telugu unboxing and honest product review creator just starting out. 34K YouTube subscribers in 10 months. Covers gadgets, beauty products, and fashion hauls in Telugu. What's different: genuinely honest reviews including negatives, which has built a trusting audience fast.",
+    "tags_self": ["unboxing_creator", "honest_reviews", "telugu_unboxing", "gadgets_beauty", "newcomer"],
+    "craft_specific_attributes": {
+      "platforms": [
+        {
+          "platform": "YouTube",
+          "handle": "@deepthi_telugu_unbox",
+          "followers": 34000,
+          "engagement_rate": 12.8,
+          "verified_on_platform": false,
+          "is_primary": true
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@deepthi_reviews",
+          "followers": 12000,
+          "engagement_rate": 10.4,
+          "verified_on_platform": false,
+          "is_primary": false
+        }
+      ],
+      "primary_platform": "YouTube",
+      "content_categories": ["unboxing", "product_reviews", "gadgets", "beauty_hauls", "fashion_hauls"],
+      "audience_demographics": {
+        "primary_age": "16-28",
+        "primary_geo": "South India, Telugu-speaking youth"
+      },
+      "brand_collaborations_count": 2,
+      "notable_brand_partners": ["realme India (gifting)", "Nykaa (affiliate)"]
+    },
+    "projects": [],
+    "education_training": [
+      {
+        "type": "formal_education",
+        "name": "BBA — ICFAI Business School Hyderabad",
+        "year": 2026,
+        "duration": "3 years (2nd year)"
+      }
+    ],
+    "endorsements": [],
+    "work_samples": [],
+    "media": {
+      "profile_photo": "https://i.pravatar.cc/300?u=user_h_040",
+      "cover_photo": "",
+      "portfolio_images": [],
+      "showreel_links": []
+    },
+    "ratings": null
+  }
+]
