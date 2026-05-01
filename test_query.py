@@ -20,19 +20,19 @@ def run_test_query():
     
     query = """
     MATCH (u:User)-[:HAS_PRIMARY_CRAFT]->(c:Craft)
-    WHERE c.name =~ '(?i).*director.*'
+    WHERE toLower(c.name) CONTAINS 'director'
     
     MATCH (u)-[:LIVES_IN]->(l:Location)
-    WHERE l.name =~ '(?i).*hyderabad.*'
+    WHERE toLower(l.name) CONTAINS 'hyderabad'
     
     MATCH (u)-[:CREDITED_ON]->(p:Project)<-[:PRODUCED]-(b:Banner)
-    WHERE b.name =~ '(?i).*mythri.*'
+    WHERE toLower(b.name) CONTAINS 'mythri'
     
     // Check if "mass" is in their tags or project types
     WITH u, c, l, b, collect(p.type) as project_types
-    WHERE any(tag IN u.tags_self WHERE tag =~ '(?i).*mass.*') 
-       OR any(ptype IN project_types WHERE ptype =~ '(?i).*mass.*')
-       OR u.bio =~ '(?i).*mass.*'
+    WHERE any(tag IN u.tags_self WHERE toLower(tag) CONTAINS 'mass') 
+       OR any(ptype IN project_types WHERE toLower(ptype) CONTAINS 'mass')
+       OR toLower(u.bio) CONTAINS 'mass'
        
     RETURN u.name AS Name, c.name AS Craft, l.name AS Location, b.name AS Banner
     """

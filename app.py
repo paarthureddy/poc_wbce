@@ -72,7 +72,7 @@ def build_cypher(params):
     
     node_wheres = []
     if params.get("gender"):
-        node_wheres.append(f"u.gender =~ '(?i)^{params['gender']}$'")
+        node_wheres.append(f"toLower(u.gender) = toLower('{params['gender']}')")
     if params.get("age_range"):
         if params["age_range"] == "young": node_wheres.append("u.age <= 30")
         elif params["age_range"] == "mid": node_wheres.append("u.age > 30 AND u.age <= 50")
@@ -83,15 +83,15 @@ def build_cypher(params):
     
     if params.get("craft"):
         craft = params["craft"]
-        lines.append(f"MATCH (u)-[:HAS_PRIMARY_CRAFT]->(c:Craft) WHERE c.name =~ '(?i).*{craft}.*'")
+        lines.append(f"MATCH (u)-[:HAS_PRIMARY_CRAFT]->(c:Craft) WHERE toLower(c.name) CONTAINS toLower('{craft}')")
         
     if params.get("location"):
         loc = params["location"]
-        lines.append(f"MATCH (u)-[:LIVES_IN]->(l:Location) WHERE l.name =~ '(?i).*{loc}.*'")
+        lines.append(f"MATCH (u)-[:LIVES_IN]->(l:Location) WHERE toLower(l.name) CONTAINS toLower('{loc}')")
         
     if params.get("banner"):
         banner = params["banner"]
-        lines.append(f"MATCH (u)-[:CREDITED_ON]->(p_banner:Project)<-[:PRODUCED]-(b:Banner) WHERE b.name =~ '(?i).*{banner}.*'")
+        lines.append(f"MATCH (u)-[:CREDITED_ON]->(p_banner:Project)<-[:PRODUCED]-(b:Banner) WHERE toLower(b.name) CONTAINS toLower('{banner}')")
         
     # Role/context words that describe the casting need but are NOT searchable tags in the graph
     STOP_WORDS = {"brother", "sister", "friend", "villain", "hero", "role", "character"}
@@ -115,7 +115,7 @@ def build_cypher(params):
         # Use OR — if a profile matches ANY of the trait words it qualifies
         kw_conditions = []
         for kw in all_keywords:
-            kw_conditions.append(f"(any(tag IN u.tags_self WHERE tag =~ '(?i).*{kw}.*') OR any(tag IN u.appearance_tags WHERE tag =~ '(?i).*{kw}.*') OR u.build =~ '(?i).*{kw}.*' OR any(ptype IN project_types WHERE ptype =~ '(?i).*{kw}.*') OR u.bio =~ '(?i).*{kw}.*')")
+            kw_conditions.append(f"(any(tag IN u.tags_self WHERE toLower(tag) CONTAINS toLower('{kw}')) OR any(tag IN u.appearance_tags WHERE toLower(tag) CONTAINS toLower('{kw}')) OR toLower(u.build) CONTAINS toLower('{kw}') OR any(ptype IN project_types WHERE toLower(ptype) CONTAINS toLower('{kw}')) OR toLower(u.bio) CONTAINS toLower('{kw}'))")
         lines.append("WHERE " + " OR ".join(kw_conditions))
             
     lines.append("RETURN DISTINCT u.id AS id, u.name AS Name, u.bio AS Bio")
