@@ -112,7 +112,8 @@ def process_data(session, profiles):
             SET u.name = $name, u.bio = $bio, u.gender = $gender, u.age = $age,
                 u.experience_years = $exp, u.languages_spoken = $langs,
                 u.looking_for = $looking, u.tags_self = $tags,
-                u.verification_level = $verification_level
+                u.verification_level = $verification_level,
+                u.build = $build, u.appearance_tags = $appearance_tags
         """, id=p.get("id"), name=p.get("name"), bio=p.get("bio"),
             gender=p.get("personal_info", {}).get("gender"),
             age=p.get("personal_info", {}).get("age"),
@@ -120,7 +121,9 @@ def process_data(session, profiles):
             langs=p.get("personal_info", {}).get("languages", []),
             looking=p.get("professional_info", {}).get("looking_for", []),
             tags=p.get("tags_self", []),
-            verification_level=p.get("verification", {}).get("level") if isinstance(p.get("verification"), dict) else None)
+            verification_level=p.get("verification", {}).get("level") if isinstance(p.get("verification"), dict) else None,
+            build=p.get("craft_specific_attributes", {}).get("physical_attributes", {}).get("build"),
+            appearance_tags=p.get("craft_specific_attributes", {}).get("appearance_tags", []))
             
     # Phase 5: WorkSamples
     for p in profiles:
