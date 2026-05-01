@@ -33,10 +33,11 @@ def decompose_prompt(user_query):
     - "craft": (string) The role they are looking for (e.g., "director", "actor"). null if not specified.
     - "location": (string) The city they should live in (e.g., "hyderabad"). null if not specified.
     - "banner": (string) A production banner they have worked with (e.g., "mythri"). null if not specified.
-    - "keywords": (list of strings) Atomic descriptive words. Extract single words, not phrases (e.g., ["brother"]). empty list if none.
+    - "keywords": (list of strings) Atomic descriptive words. Extract single words, not phrases (e.g., ["mass", "action"]). empty list if none.
+      CRITICAL: Only include keywords that describe craft specializations, genres, or technical skills. 
+      DROP conversational filler, time references, budget references, and availability words.
+      Examples to drop: "soonish", "available", "budget", "experienced", "good", "best", "need", "someone", "like", "prefer", "based".
     - "gender": (string) "male" or "female" if the query explicitly mentions a gender (e.g., "guy", "brother", "actress"). otherwise null.
-    - "age_range": (string) One of "young", "mid", "senior" if the query hints at age (e.g., "young" or "30-year-old"), otherwise null.
-    - "physique": (list of strings) If physique is mentioned, provide 1-2 standard atomic synonyms (e.g., ["athletic", "fit"]). empty list if none.
     
     Example input: "Find me a director in Hyderabad who works in mass entertainers and has worked with Mythri"
     Example output:
@@ -94,16 +95,20 @@ def build_cypher(params):
         lines.append(f"MATCH (u)-[:CREDITED_ON]->(p_banner:Project)<-[:PRODUCED]-(b:Banner) WHERE toLower(b.name) CONTAINS toLower('{banner}')")
         
     # Role/context words that describe the casting need but are NOT searchable tags in the graph
-    STOP_WORDS = {"brother", "sister", "friend", "villain", "hero", "role", "character"}
+    STOP_WORDS = {
+        "brother", "sister", "friend", "villain", "hero", "role", "character", 
+        "soonish", "available", "budget", "experienced", "good", "best", 
+        "need", "someone", "like", "prefer", "based", "looking", "want", "find"
+    }
 
-    # Physique synonyms come from the physique field — use OR (any match is enough)
+    # Physique synonyms come from the physique field
     physique_kws = []
     if params.get("physique") and isinstance(params["physique"], list):
         physique_kws = params["physique"]
     elif params.get("physique") and isinstance(params["physique"], str):
         physique_kws = [params["physique"]]
 
-    # Generic keywords (genres, vibe words) — filter out stop words, use OR as well
+    # Generic keywords (genres, vibe words) — filter out stop words
     generic_kws = [k for k in (params.get("keywords") or []) if k.lower() not in STOP_WORDS]
 
     all_keywords = physique_kws + generic_kws
@@ -112,13 +117,23 @@ def build_cypher(params):
         lines.append("WITH DISTINCT u")
         lines.append("OPTIONAL MATCH (u)-[:CREDITED_ON]->(p_keywords:Project)")
         lines.append("WITH u, collect(p_keywords.type) as project_types")
-        # Use OR — if a profile matches ANY of the trait words it qualifies
-        kw_conditions = []
+        
+        # Soft Scoring: Keywords contribute positively, but absence isn't disqualifying
+        score_cases = []
         for kw in all_keywords:
-            kw_conditions.append(f"(any(tag IN u.tags_self WHERE toLower(tag) CONTAINS toLower('{kw}')) OR any(tag IN u.appearance_tags WHERE toLower(tag) CONTAINS toLower('{kw}')) OR toLower(u.build) CONTAINS toLower('{kw}') OR any(ptype IN project_types WHERE toLower(ptype) CONTAINS toLower('{kw}')) OR toLower(u.bio) CONTAINS toLower('{kw}'))")
-        lines.append("WHERE " + " OR ".join(kw_conditions))
+            kw_clean = kw.replace("'", "\\'") # basic escaping
+            score_cases.append(f"(CASE WHEN toLower(u.bio) CONTAINS toLower('{kw_clean}') THEN 1 ELSE 0 END)")
+            score_cases.append(f"(CASE WHEN any(tag IN u.tags_self WHERE toLower(tag) CONTAINS toLower('{kw_clean}')) THEN 1 ELSE 0 END)")
+            score_cases.append(f"(CASE WHEN any(tag IN u.appearance_tags WHERE toLower(tag) CONTAINS toLower('{kw_clean}')) THEN 1 ELSE 0 END)")
+            score_cases.append(f"(CASE WHEN toLower(u.build) CONTAINS toLower('{kw_clean}') THEN 1 ELSE 0 END)")
+            score_cases.append(f"(CASE WHEN any(ptype IN project_types WHERE toLower(ptype) CONTAINS toLower('{kw_clean}')) THEN 1 ELSE 0 END)")
             
-    lines.append("RETURN DISTINCT u.id AS id, u.name AS Name, u.bio AS Bio")
+        lines.append("WITH u, (" + " + ".join(score_cases) + ") AS keyword_score")
+        lines.append("RETURN DISTINCT u.id AS id, u.name AS Name, u.bio AS Bio, keyword_score")
+        lines.append("ORDER BY keyword_score DESC")
+    else:
+        lines.append("RETURN DISTINCT u.id AS id, u.name AS Name, u.bio AS Bio, 0 AS keyword_score")
+        
     return "\n".join(lines)
 
 def execute_cypher(query):
@@ -156,10 +171,11 @@ if st.button("Search") and user_query:
     with st.spinner("Executing Graph Query..."):
         results = execute_cypher(cypher_query)
         
-    st.subheader(f"3. Graph Results ({len(results)} matches)")
+        st.subheader(f"3. Graph Results ({len(results)} matches)")
     if results:
         for r in results:
-            with st.expander(r['Name']):
+            score_text = f" (Score: {r.get('keyword_score', 0)})" if r.get('keyword_score', 0) > 0 else ""
+            with st.expander(f"{r['Name']}{score_text}"):
                 st.write(r['Bio'])
     else:
         st.warning("No matches found in the graph.")

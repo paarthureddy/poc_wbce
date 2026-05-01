@@ -284,7 +284,9 @@ def process_data(session, profiles):
     print("Computing derived edges...")
     session.run("""
         MATCH (u:User)-[:CREDITED_ON]->(p:Project)<-[:PRODUCED]-(b:Banner)
-        WITH u, b, COUNT(p) as credits
+        WITH u, b, count(p) as credits
+        // Keep threshold at >= 3. AFFILIATED_WITH represents patronage/long-term loyalty.
+        // It is expected to be sparse/rare. Diluting it with a lower threshold breaks WBCE.
         WHERE credits >= 3
         MERGE (u)-[:AFFILIATED_WITH]->(b)
     """)
