@@ -96,6 +96,25 @@ def run_checks():
                 print(f"Check 6 FAIL: Found 0 directors matching the criteria.")
                 success = False
 
+            # Check 7: COLLABORATED_WITH Properties
+            res7 = session.run("""
+                MATCH (a:User {id: 'user_g_001'})-[r:COLLABORATED_WITH]->(b:User {id: 'user_g_012'})
+                RETURN r.project_count as cnt
+            """).single()
+            if not res7 or res7["cnt"] < 1:
+                print(f"Check 7 FAIL: user_g_001 -> user_g_012 COLLABORATED_WITH edge missing or project_count < 1.")
+                success = False
+            else:
+                res8 = session.run("""
+                    MATCH (b:User {id: 'user_g_012'})-[r:COLLABORATED_WITH]->(a:User {id: 'user_g_001'})
+                    RETURN r.project_count as cnt
+                """).single()
+                if not res8 or res8["cnt"] < 1:
+                    print("Check 7 FAIL: user_g_012 -> user_g_001 COLLABORATED_WITH reverse edge missing or project_count < 1.")
+                    success = False
+                else:
+                    print(f"Check 7 PASS: user_g_001 and user_g_012 have bidirectional COLLABORATED_WITH edges with project_count={res7['cnt']}.")
+
     finally:
         driver.close()
 

@@ -229,6 +229,14 @@ def process_data(session, profiles):
                     MERGE (b)-[:PRODUCED]->(p)
                 """, title=title, banner=banner)
                 
+            # Add missing CREDITED_ON edges for collaborators
+            for collab_id in proj.get("collaborators_on_platform", []):
+                if title:
+                    session.run("""
+                        MATCH (u2:User {id: $collab_id}), (p:Project {title: $title})
+                        MERGE (u2)-[:CREDITED_ON]->(p)
+                    """, collab_id=collab_id, title=title)
+                
         # Previous Banners worked with
         for b in p.get("professional_info", {}).get("previous_banners_worked_with", []):
             bn = normalize_name(b)
@@ -284,8 +292,11 @@ def process_data(session, profiles):
     session.run("""
         MATCH (u1:User)-[:CREDITED_ON]->(p:Project)<-[:CREDITED_ON]-(u2:User)
         WHERE u1.id < u2.id
-        MERGE (u1)-[:COLLABORATED_WITH]->(u2)
-        MERGE (u2)-[:COLLABORATED_WITH]->(u1)
+        WITH u1, u2, count(p) as shared_projects
+        MERGE (u1)-[r1:COLLABORATED_WITH]->(u2)
+        SET r1.project_count = shared_projects
+        MERGE (u2)-[r2:COLLABORATED_WITH]->(u1)
+        SET r2.project_count = shared_projects
     """)
     
     # Phase 8: Final Indexes
