@@ -37,22 +37,9 @@ def decompose_prompt(user_query):
     - "keywords": (list of strings) Atomic descriptive words. Extract single words, not phrases (e.g., ["mass", "action"]). empty list if none.
       CRITICAL: Only include keywords that describe craft specializations, genres, or technical skills. 
       DROP conversational filler, time references, budget references, and availability words.
-      Examples to drop: "soonish", "available", "budget", "experienced", "good", "best", "need", "someone", "like", "prefer", "based".
     - "gender": (string) "male" or "female" if the query explicitly mentions a gender (e.g., "guy", "brother", "actress"). otherwise null.
     
-    Example input: "Find me a director in Hyderabad who works in mass entertainers and has worked with Mythri"
-    Example output:
-    {
-      "craft": "director",
-      "location": "hyderabad",
-      "banner": "mythri",
-      "keywords": ["mass", "entertainer"],
-      "gender": null,
-      "age_range": null,
-      "physique": []
-    }
-    
-    IMPORTANT: Do NOT repeat the input, do NOT add explanations, and do NOT produce any other text. If any field cannot be extracted, set it to null (or an empty list for "keywords" and "physique").
+    IMPORTANT: Do NOT repeat the input, do NOT add explanations, and do NOT produce any other text.
     """
     
     response = llm_client.chat.completions.create(
@@ -63,7 +50,6 @@ def decompose_prompt(user_query):
         ]
     )
     
-    # Clean up output to ensure valid JSON parsing
     raw_output = response.choices[0].message.content.strip()
     if raw_output.startswith("```json"):
         raw_output = raw_output[7:-3]
@@ -95,23 +81,14 @@ def build_cypher(params):
         banner = params["banner"]
         lines.append(f"MATCH (u)-[:CREDITED_ON]->(p_banner:Project)<-[:PRODUCED]-(b:Banner) WHERE toLower(b.name) CONTAINS toLower('{banner}')")
         
-    # Role/context words that describe the casting need but are NOT searchable tags in the graph
     STOP_WORDS = {
         "brother", "sister", "friend", "villain", "hero", "role", "character", 
         "soonish", "available", "budget", "experienced", "good", "best", 
         "need", "someone", "like", "prefer", "based", "looking", "want", "find"
     }
 
-    # Physique synonyms come from the physique field
-    physique_kws = []
-    if params.get("physique") and isinstance(params["physique"], list):
-        physique_kws = params["physique"]
-    elif params.get("physique") and isinstance(params["physique"], str):
-        physique_kws = [params["physique"]]
-
-    # Generic keywords (genres, vibe words) — filter out stop words
+    physique_kws = params.get("physique", []) if isinstance(params.get("physique"), list) else ([params.get("physique")] if params.get("physique") else [])
     generic_kws = [k for k in (params.get("keywords") or []) if k.lower() not in STOP_WORDS]
-
     all_keywords = physique_kws + generic_kws
 
     if all_keywords:
@@ -119,10 +96,9 @@ def build_cypher(params):
         lines.append("OPTIONAL MATCH (u)-[:CREDITED_ON]->(p_keywords:Project)")
         lines.append("WITH u, collect(p_keywords.type) as project_types")
         
-        # Soft Scoring: Keywords contribute positively, but absence isn't disqualifying
         score_cases = []
         for kw in all_keywords:
-            kw_clean = kw.replace("'", "\\'") # basic escaping
+            kw_clean = kw.replace("'", "\\'")
             score_cases.append(f"(CASE WHEN toLower(u.bio) CONTAINS toLower('{kw_clean}') THEN 1 ELSE 0 END)")
             score_cases.append(f"(CASE WHEN any(tag IN u.tags_self WHERE toLower(tag) CONTAINS toLower('{kw_clean}')) THEN 1 ELSE 0 END)")
             score_cases.append(f"(CASE WHEN any(tag IN u.appearance_tags WHERE toLower(tag) CONTAINS toLower('{kw_clean}')) THEN 1 ELSE 0 END)")
@@ -130,10 +106,14 @@ def build_cypher(params):
             score_cases.append(f"(CASE WHEN any(ptype IN project_types WHERE toLower(ptype) CONTAINS toLower('{kw_clean}')) THEN 1 ELSE 0 END)")
             
         lines.append("WITH u, (" + " + ".join(score_cases) + ") AS keyword_score")
-        lines.append("RETURN DISTINCT u.id AS id, u.name AS Name, u.bio AS Bio, keyword_score")
+        lines.append("OPTIONAL MATCH (u)-[:HAS_PRIMARY_CRAFT]->(craft:Craft)")
+        lines.append("OPTIONAL MATCH (u)-[:LIVES_IN]->(loc:Location)")
+        lines.append("RETURN DISTINCT u.id AS id, u.name AS Name, u.age AS Age, u.bio AS Bio, collect(DISTINCT craft.name)[0] AS Craft, collect(DISTINCT loc.name)[0] AS Region, keyword_score")
         lines.append("ORDER BY keyword_score DESC")
     else:
-        lines.append("RETURN DISTINCT u.id AS id, u.name AS Name, u.bio AS Bio, 0 AS keyword_score")
+        lines.append("OPTIONAL MATCH (u)-[:HAS_PRIMARY_CRAFT]->(craft:Craft)")
+        lines.append("OPTIONAL MATCH (u)-[:LIVES_IN]->(loc:Location)")
+        lines.append("RETURN DISTINCT u.id AS id, u.name AS Name, u.age AS Age, u.bio AS Bio, collect(DISTINCT craft.name)[0] AS Craft, collect(DISTINCT loc.name)[0] AS Region, 0 AS keyword_score")
         
     return "\n".join(lines)
 
@@ -145,47 +125,87 @@ def execute_cypher(query):
 # -----------------
 # STREAMLIT UI
 # -----------------
-st.set_page_config(page_title="Talent Search POC", layout="wide")
+st.set_page_config(page_title="Talent Search", page_icon="🔍", layout="centered")
 
-st.title("Talent Search Engine POC")
-st.markdown("Search across the Neo4j graph using natural language.")
+st.markdown("""
+<style>
+.profile-card {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+.profile-header {
+    margin-bottom: 12px;
+}
+.profile-name {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #111111;
+    margin: 0 0 8px 0;
+}
+.profile-meta {
+    font-size: 0.9em;
+    color: #666666;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.meta-item {
+    display: flex;
+    align-items: center;
+}
+.profile-bio {
+    color: #333333;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-top: 12px;
+}
+</style>
+""", unsafe_allow_html=True)
 
-user_query = st.text_input("Search:", placeholder="e.g. Find me a director in Hyderabad who works in mass entertainers and has worked with Mythri")
+st.title("Talent Search Engine")
+
+user_query = st.text_input("Search query:", placeholder="e.g. Find me a director in Hyderabad...")
 
 if st.button("Search") and user_query:
-    with st.spinner("Decomposing prompt using Azure OpenAI..."):
+    with st.spinner("Searching..."):
         try:
             params = decompose_prompt(user_query)
         except Exception as e:
             st.error(f"Error calling LLM: {e}")
             st.stop()
             
-    st.subheader("1. Prompt Decomposition")
-    st.json(params)
-    
-    with st.spinner("Building Cypher Query..."):
         cypher_query = build_cypher(params)
-        
-    st.subheader("2. Generated Cypher")
-    st.code(cypher_query, language="cypher")
-    
-    with st.spinner("Executing Graph Query..."):
         results = execute_cypher(cypher_query)
-        
-    with st.spinner("Ranking Candidates with WBCE..."):
-        # query context comes from the LLM parsed params
         ranked_results = rank_candidates(results, params, driver)
         
-        st.subheader(f"3. Ranked Results ({len(ranked_results)} matches)")
     if ranked_results:
         for r in ranked_results:
-            ccs = r.get('ccs_total', 0)
-            score_text = f" (CCS: {ccs:.2f})" if ccs > 0 else ""
-            with st.expander(f"{r['Name']}{score_text}"):
-                st.write(r['Bio'])
-                if r.get('ccs_breakdown'):
-                    st.write("**Top Score Contributions:**")
-                    for b in r['ccs_breakdown'][:3]: # Show top 3
-                        st.write(f"- {b['project_title']}: {b['contribution']:.3f} (Factors: Φ={b['phi']:.2f}, H={b['h']:.2f}, V={b['v']:.2f}, Δ={b['delta']:.2f}, Γ={b['gamma']:.2f})")
+            name = r.get('Name', 'Unknown Name')
+            age = r.get('Age', 'N/A')
+            craft = r.get('Craft', 'Craft Not Specified')
+            region = r.get('Region', 'Region Not Specified')
+            bio = r.get('Bio', '')
+            
+            # Format the card HTML
+            card_html = f"""
+            <div class="profile-card">
+                <div class="profile-header">
+                    <h3 class="profile-name">{name}</h3>
+                    <div class="profile-meta">
+                        <span class="meta-item">{craft.title()}</span> •
+                        <span class="meta-item">{region.title()}</span> •
+                        <span class="meta-item">{age} years old</span>
+                    </div>
+                </div>
+                <div class="profile-bio">
+                    {bio}
+                </div>
+            </div>
+            """
+            st.markdown(card_html, unsafe_allow_html=True)
     else:
-        st.warning("No matches found in the graph.")
+        st.info("No professionals found matching your criteria.")
