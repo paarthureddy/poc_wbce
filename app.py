@@ -4,6 +4,7 @@ import streamlit as st
 from neo4j import GraphDatabase
 from openai import AzureOpenAI
 from dotenv import load_dotenv
+from lib.pipeline.rank import rank_candidates
 
 # Load env variables
 load_dotenv()
@@ -171,11 +172,20 @@ if st.button("Search") and user_query:
     with st.spinner("Executing Graph Query..."):
         results = execute_cypher(cypher_query)
         
-        st.subheader(f"3. Graph Results ({len(results)} matches)")
-    if results:
-        for r in results:
-            score_text = f" (Score: {r.get('keyword_score', 0)})" if r.get('keyword_score', 0) > 0 else ""
+    with st.spinner("Ranking Candidates with WBCE..."):
+        # query context comes from the LLM parsed params
+        ranked_results = rank_candidates(results, params, driver)
+        
+        st.subheader(f"3. Ranked Results ({len(ranked_results)} matches)")
+    if ranked_results:
+        for r in ranked_results:
+            ccs = r.get('ccs_total', 0)
+            score_text = f" (CCS: {ccs:.2f})" if ccs > 0 else ""
             with st.expander(f"{r['Name']}{score_text}"):
                 st.write(r['Bio'])
+                if r.get('ccs_breakdown'):
+                    st.write("**Top Score Contributions:**")
+                    for b in r['ccs_breakdown'][:3]: # Show top 3
+                        st.write(f"- {b['project_title']}: {b['contribution']:.3f} (Factors: Φ={b['phi']:.2f}, H={b['h']:.2f}, V={b['v']:.2f}, Δ={b['delta']:.2f}, Γ={b['gamma']:.2f})")
     else:
         st.warning("No matches found in the graph.")
