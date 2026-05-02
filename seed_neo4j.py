@@ -100,8 +100,8 @@ def process_data(session, profiles):
     for title, data in projects.items():
         session.run("""
             MERGE (p:Project {title: $norm_title})
-            ON CREATE SET p.original_title = $title, p.year = $year, p.type = $type
-        """, norm_title=title, title=data.get("title"), year=data.get("year"), type=data.get("type"))
+            ON CREATE SET p.original_title = $title, p.year = $year, p.type = $type, p.tier = coalesce($tier, 3)
+        """, norm_title=title, title=data.get("title"), year=data.get("year"), type=data.get("type"), tier=data.get("tier", 3))
         
     # Phase 4: Users
     for p in profiles:
@@ -162,6 +162,17 @@ def process_data(session, profiles):
                 MERGE (sub)-[:CHILD_OF]->(main)
                 MERGE (sub)-[:PART_OF]->(main)
             """, subname=subcraft, mainname=pc)
+            
+        # Trained Under (Lineage)
+        trained = p.get("craft_specific_attributes", {}).get("trained_under")
+        if trained:
+            t_name = normalize_name(trained.split("(")[0])
+            if t_name:
+                session.run("""
+                    MATCH (u:User {id: $uid})
+                    MERGE (m:User {name: $mname})
+                    MERGE (u)-[:TRAINED_UNDER]->(m)
+                """, uid=uid, mname=t_name)
 
         # Lives In
         city = normalize_name(p.get("location", {}).get("current_city"))
