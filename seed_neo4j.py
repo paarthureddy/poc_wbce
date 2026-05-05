@@ -107,13 +107,20 @@ def process_data(session, profiles):
     for p in profiles:
         uid = p.get("id")
         if not uid: continue
+        loc_obj = p.get("location", {}) or {}
+        phys = (p.get("craft_specific_attributes", {}) or {}).get("physical_attributes", {}) or {}
         session.run("""
             MERGE (u:User {id: $id})
             SET u.name = $name, u.bio = $bio, u.gender = $gender, u.age = $age,
                 u.experience_years = $exp, u.languages_spoken = $langs,
                 u.looking_for = $looking, u.tags_self = $tags,
                 u.verification_level = $verification_level,
-                u.build = $build, u.appearance_tags = $appearance_tags
+                u.build = $build, u.appearance_tags = $appearance_tags,
+                u.height_cm = $height_cm,
+                u.location_city = $location_city,
+                u.location_state = $location_state,
+                u.location_country = $location_country,
+                u.regional_background = $regional_background
         """, id=p.get("id"), name=p.get("name"), bio=p.get("bio"),
             gender=p.get("personal_info", {}).get("gender"),
             age=p.get("personal_info", {}).get("age"),
@@ -122,8 +129,14 @@ def process_data(session, profiles):
             looking=p.get("professional_info", {}).get("looking_for", []),
             tags=p.get("tags_self", []),
             verification_level=p.get("verification", {}).get("level") if isinstance(p.get("verification"), dict) else None,
-            build=p.get("craft_specific_attributes", {}).get("physical_attributes", {}).get("build"),
-            appearance_tags=p.get("craft_specific_attributes", {}).get("appearance_tags", []))
+            build=phys.get("build"),
+            appearance_tags=(p.get("craft_specific_attributes", {}) or {}).get("appearance_tags", []),
+            height_cm=phys.get("height_cm"),
+            location_city=loc_obj.get("current_city"),
+            location_state=loc_obj.get("state"),
+            location_country=loc_obj.get("country"),
+            regional_background=(p.get("personal_info", {}) or {}).get("regional_background"),
+        )
             
     # Phase 5: WorkSamples
     for p in profiles:
@@ -297,7 +310,7 @@ def process_data(session, profiles):
         MATCH (u:User)-[:CREDITED_ON]->(p:Project)<-[:PRODUCED]-(b:Banner)
         WITH u, b, count(p) as credits
         // Keep threshold at >= 3. AFFILIATED_WITH represents patronage/long-term loyalty.
-        // It is expected to be sparse/rare. Diluting it with a lower threshold breaks WBCE.
+        // It is expected to be sparse/rare. Diluting it with a lower threshold breaks CCS calibration.
         WHERE credits >= 3
         MERGE (u)-[:AFFILIATED_WITH]->(b)
     """)
