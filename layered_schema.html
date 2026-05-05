@@ -4,574 +4,281 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Layered Profile Schema</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-    font-size: 15px;
-    line-height: 1.6;
-    color: #1a1a1a;
-    background: #fafaf9;
-    padding: 40px 20px;
-}
-
-.container {
-    max-width: 920px;
-    margin: 0 auto;
-}
-
-/* HEADER */
-.header {
-    margin-bottom: 40px;
-}
-.header h1 {
-    font-size: 32px;
-    font-weight: 500;
-    letter-spacing: -0.5px;
-    margin-bottom: 8px;
-    color: #0a0a0a;
-}
-.header p {
-    font-size: 15px;
-    color: #6b6b6b;
-    line-height: 1.6;
-    max-width: 720px;
-}
-
-/* STATS GRID */
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
-    margin-bottom: 56px;
-}
-.stat-card {
-    background: #f1efe8;
-    padding: 18px;
-    border-radius: 8px;
-}
-.stat-label {
-    font-size: 12px;
-    color: #6b6b6b;
-    margin-bottom: 6px;
-}
-.stat-value {
-    font-size: 26px;
-    font-weight: 500;
-    color: #0a0a0a;
-}
-
-/* SECTION HEADERS */
-.section-block {
-    margin-bottom: 48px;
-}
-.section-header {
-    margin-bottom: 20px;
-}
-.section-header h2 {
-    font-size: 22px;
-    font-weight: 500;
-    color: #0a0a0a;
-    margin-bottom: 4px;
-}
-.section-header p {
-    font-size: 14px;
-    color: #6b6b6b;
-}
-
-/* UNIVERSAL CORE CARDS */
-.core-card {
-    background: white;
-    border: 0.5px solid rgba(0, 0, 0, 0.12);
-    border-radius: 12px;
-    padding: 22px 26px;
-    margin-bottom: 12px;
-}
-.core-card-label {
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: #999;
-    margin-bottom: 14px;
-    font-weight: 500;
-}
-.core-card table {
-    width: 100%;
-    font-size: 14px;
-    border-collapse: collapse;
-}
-.core-card td {
-    padding: 7px 0;
-    vertical-align: top;
-}
-.core-card td:first-child {
-    width: 30%;
-    font-family: 'SF Mono', Menlo, Consolas, monospace;
-    font-size: 13px;
-    color: #1a1a1a;
-}
-.core-card td:nth-child(2) {
-    width: 18%;
-    color: #888;
-    font-size: 13px;
-}
-.core-card td:last-child {
-    color: #555;
-}
-
-/* FAMILY CARDS */
-.family-card {
-    background: white;
-    border: 0.5px solid rgba(0, 0, 0, 0.12);
-    border-radius: 12px;
-    padding: 22px 26px;
-    margin-bottom: 14px;
-}
-.family-header {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    gap: 12px;
-}
-.family-letter {
-    font-size: 11px;
-    color: #999;
-    font-weight: 500;
-    letter-spacing: 1.2px;
-    margin-bottom: 4px;
-}
-.family-title {
-    font-size: 18px;
-    font-weight: 500;
-    color: #0a0a0a;
-    margin: 0;
-}
-.badge {
-    font-size: 11px;
-    padding: 4px 10px;
-    border-radius: 6px;
-    font-weight: 500;
-    white-space: nowrap;
-}
-.badge-active {
-    background: #eaf3de;
-    color: #27500a;
-}
-.badge-planned {
-    background: #f1efe8;
-    color: #444441;
-}
-.crafts-list {
-    font-size: 14px;
-    color: #6b6b6b;
-    margin-bottom: 16px;
-    line-height: 1.6;
-}
-.fields-section {
-    border-top: 0.5px solid rgba(0, 0, 0, 0.08);
-    padding-top: 14px;
-}
-.fields-label {
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: #999;
-    margin-bottom: 12px;
-    font-weight: 500;
-}
-.family-card table {
-    width: 100%;
-    font-size: 14px;
-    border-collapse: collapse;
-}
-.family-card td {
-    padding: 6px 0;
-    vertical-align: top;
-}
-.family-card td:first-child {
-    width: 38%;
-    font-family: 'SF Mono', Menlo, Consolas, monospace;
-    font-size: 13px;
-    color: #1a1a1a;
-}
-.family-card td:last-child {
-    color: #555;
-}
-
-/* LOOKUP TABLE */
-.lookup-card {
-    background: white;
-    border: 0.5px solid rgba(0, 0, 0, 0.12);
-    border-radius: 12px;
-    padding: 22px 26px;
-}
-.lookup-card table {
-    width: 100%;
-    font-size: 14px;
-    border-collapse: collapse;
-}
-.lookup-card thead tr {
-    border-bottom: 0.5px solid rgba(0, 0, 0, 0.12);
-}
-.lookup-card th {
-    text-align: left;
-    padding: 10px 0;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: #999;
-    font-weight: 500;
-}
-.lookup-card td {
-    padding: 9px 0;
-    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
-}
-.lookup-card tbody tr:last-child td {
-    border-bottom: none;
-}
-.lookup-card td:first-child {
-    width: 50%;
-    color: #1a1a1a;
-}
-.lookup-card td:last-child {
-    color: #6b6b6b;
-}
-
-/* RESPONSIVE */
-@media (max-width: 700px) {
-    .stats-grid { grid-template-columns: repeat(2, 1fr); }
-    body { padding: 20px 14px; }
-    .header h1 { font-size: 26px; }
-    .core-card, .family-card, .lookup-card { padding: 18px 20px; }
-}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;font-size:15px;line-height:1.7;color:#1a1a1a;background:#f8f9fa;padding:40px 20px}
+.container{max-width:960px;margin:0 auto}
+.header{margin-bottom:48px;text-align:center}
+.header h1{font-size:36px;font-weight:700;margin-bottom:8px;background:linear-gradient(135deg,#667eea,#764ba2);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.header p{font-size:16px;color:#6b7280;max-width:640px;margin:0 auto}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:56px}
+.stat-card{background:white;padding:24px;border-radius:16px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,0.06);border:1px solid #e5e7eb}
+.stat-icon{font-size:28px;margin-bottom:8px}
+.stat-value{font-size:32px;font-weight:700;color:#111}
+.stat-label{font-size:13px;color:#6b7280;margin-top:4px}
+.section-block{margin-bottom:56px}
+.section-header{margin-bottom:24px}
+.section-header h2{font-size:24px;font-weight:700;color:#111;margin-bottom:6px;display:flex;align-items:center;gap:10px}
+.section-header p{font-size:14px;color:#6b7280}
+.core-card{background:white;border-radius:16px;padding:24px 28px;margin-bottom:14px;box-shadow:0 1px 3px rgba(0,0,0,0.06);border:1px solid #e5e7eb}
+.core-card-label{font-size:13px;font-weight:600;color:#667eea;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.field-row{display:flex;padding:10px 0;border-bottom:1px solid #f3f4f6;align-items:flex-start}
+.field-row:last-child{border-bottom:none}
+.field-name{width:200px;flex-shrink:0;font-weight:500;color:#374151;font-size:14px}
+.field-desc{flex:1;color:#6b7280;font-size:14px}
+.family-card{background:white;border-radius:16px;padding:24px 28px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,0.06);border-left:4px solid #667eea;border-top:1px solid #e5e7eb;border-right:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb}
+.family-card.green{border-left-color:#10b981}
+.family-card.blue{border-left-color:#3b82f6}
+.family-card.purple{border-left-color:#8b5cf6}
+.family-card.orange{border-left-color:#f59e0b}
+.family-card.pink{border-left-color:#ec4899}
+.family-card.teal{border-left-color:#14b8a6}
+.family-card.indigo{border-left-color:#6366f1}
+.family-card.red{border-left-color:#ef4444}
+.family-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px}
+.family-letter{font-size:11px;font-weight:600;letter-spacing:1.5px;color:#9ca3af;text-transform:uppercase}
+.family-title{font-size:20px;font-weight:700;color:#111;margin:4px 0}
+.badge{font-size:12px;padding:5px 12px;border-radius:20px;font-weight:600}
+.badge-active{background:#d1fae5;color:#065f46}
+.badge-planned{background:#f3f4f6;color:#6b7280}
+.crafts-list{font-size:14px;color:#6b7280;margin-bottom:16px;line-height:1.8}
+.craft-tag{display:inline-block;background:#f3f4f6;padding:3px 10px;border-radius:8px;margin:3px 4px 3px 0;font-size:13px;color:#374151}
+.fields-label{font-size:12px;font-weight:600;color:#9ca3af;letter-spacing:1px;text-transform:uppercase;margin:16px 0 12px;padding-top:16px;border-top:1px solid #f3f4f6}
+.lookup-card{background:white;border-radius:16px;padding:24px 28px;box-shadow:0 1px 3px rgba(0,0,0,0.06);border:1px solid #e5e7eb}
+.lookup-card table{width:100%;font-size:14px;border-collapse:collapse}
+.lookup-card th{text-align:left;padding:12px 0;font-size:12px;font-weight:600;letter-spacing:1px;color:#9ca3af;text-transform:uppercase;border-bottom:2px solid #e5e7eb}
+.lookup-card td{padding:10px 0;border-bottom:1px solid #f3f4f6;color:#374151}
+.lookup-card tr:last-child td{border-bottom:none}
+.lookup-family{color:#6b7280;font-size:13px}
+@media(max-width:700px){.stats-grid{grid-template-columns:repeat(2,1fr)}.field-name{width:140px}}
 </style>
 </head>
 <body>
-
 <div class="container">
 
-<!-- HEADER -->
 <div class="header">
-    <h1>Layered profile schema</h1>
-    <p>A universal core every profile fills out, plus craft-specific fields based on profession. Eight craft families covering 24 distinct professions.</p>
+<h1>Layered Profile Schema</h1>
+<p>A universal core every profile fills out, plus craft-specific fields based on profession. Eight craft families covering 24 distinct professions.</p>
 </div>
 
-<!-- STATS -->
 <div class="stats-grid">
-    <div class="stat-card">
-        <div class="stat-label">Universal fields</div>
-        <div class="stat-value">28</div>
-    </div>
-    <div class="stat-card">
-        <div class="stat-label">Craft families</div>
-        <div class="stat-value">8</div>
-    </div>
-    <div class="stat-card">
-        <div class="stat-label">Distinct crafts</div>
-        <div class="stat-value">24</div>
-    </div>
-    <div class="stat-card">
-        <div class="stat-label">Active in MVP</div>
-        <div class="stat-value">5 / 8</div>
-    </div>
+<div class="stat-card"><div class="stat-icon">📋</div><div class="stat-value">28</div><div class="stat-label">Universal fields</div></div>
+<div class="stat-card"><div class="stat-icon">🎬</div><div class="stat-value">8</div><div class="stat-label">Craft families</div></div>
+<div class="stat-card"><div class="stat-icon">🎭</div><div class="stat-value">24</div><div class="stat-label">Distinct crafts</div></div>
+<div class="stat-card"><div class="stat-icon">✅</div><div class="stat-value">5 / 8</div><div class="stat-label">Active in MVP</div></div>
 </div>
 
-<!-- UNIVERSAL CORE -->
 <div class="section-block">
-    <div class="section-header">
-        <h2>Universal core</h2>
-        <p>These fields exist on every profile, regardless of profession.</p>
-    </div>
-
-    <div class="core-card">
-        <div class="core-card-label">Identity</div>
-        <table>
-            <tr><td>id</td><td>string</td><td>Unique identifier</td></tr>
-            <tr><td>name</td><td>string</td><td>Display name</td></tr>
-            <tr><td>status</td><td>enum</td><td>active or inactive</td></tr>
-            <tr><td>created_at</td><td>datetime</td><td>When profile was created</td></tr>
-            <tr><td>updated_at</td><td>datetime</td><td>Last edit timestamp</td></tr>
-            <tr><td>onboarding_source</td><td>enum</td><td>founder_invite, referral, self_signup</td></tr>
-            <tr><td>profile_completeness</td><td>float</td><td>0 to 1, how filled-out the profile is</td></tr>
-            <tr><td>verification</td><td>object</td><td>Trust level and counts</td></tr>
-        </table>
-    </div>
-
-    <div class="core-card">
-        <div class="core-card-label">Personal</div>
-        <table>
-            <tr><td>gender</td><td>enum</td><td>Male, Female, Non-binary, Prefer not to say</td></tr>
-            <tr><td>age</td><td>integer</td><td>Filterable for casting and tier calibration</td></tr>
-            <tr><td>languages_spoken</td><td>array</td><td>Languages the user works in</td></tr>
-            <tr><td>regional_background</td><td>enum</td><td>Telangana, Coastal Andhra, Rayalaseema, etc.</td></tr>
-            <tr><td>bio</td><td>text</td><td>Free-text self-description, fully searchable</td></tr>
-        </table>
-    </div>
-
-    <div class="core-card">
-        <div class="core-card-label">Location</div>
-        <table>
-            <tr><td>current_city</td><td>string</td><td>Where they live now</td></tr>
-            <tr><td>state</td><td>string</td><td>State within country</td></tr>
-            <tr><td>country</td><td>string</td><td>Country of residence</td></tr>
-            <tr><td>willing_to_travel</td><td>array</td><td>Other cities they will work in</td></tr>
-        </table>
-    </div>
-
-    <div class="core-card">
-        <div class="core-card-label">Professional</div>
-        <table>
-            <tr><td>primary_craft</td><td>object</td><td>Main profession with subcraft</td></tr>
-            <tr><td>secondary_crafts</td><td>array</td><td>Other crafts they practice</td></tr>
-            <tr><td>experience_years</td><td>integer</td><td>Years working in primary craft</td></tr>
-            <tr><td>experience_level</td><td>enum</td><td>newcomer, emerging, mid_level, senior, veteran, legend</td></tr>
-            <tr><td>availability</td><td>object</td><td>Type, currently_available, next_available_from</td></tr>
-            <tr><td>looking_for</td><td>array</td><td>Opportunity types they want</td></tr>
-        </table>
-    </div>
-
-    <div class="core-card">
-        <div class="core-card-label">Discovery and history</div>
-        <table>
-            <tr><td>tags_self</td><td>array</td><td>Free-text identity tags</td></tr>
-            <tr><td>projects</td><td>array</td><td>Formal credits with role and proof</td></tr>
-            <tr><td>work_samples</td><td>array</td><td>Portfolio links, reels, showcase pieces</td></tr>
-            <tr><td>education_training</td><td>array</td><td>Schools, workshops, apprenticeships</td></tr>
-            <tr><td>endorsements</td><td>array</td><td>Peer endorsements (v2)</td></tr>
-            <tr><td>media</td><td>object</td><td>Profile photo, cover, portfolio images</td></tr>
-        </table>
-    </div>
+<div class="section-header">
+<h2>📄 Universal Core</h2>
+<p>These fields exist on every profile, regardless of profession. Think of this as the "base layer" that everyone fills out.</p>
 </div>
 
-<!-- EIGHT FAMILIES -->
+<div class="core-card">
+<div class="core-card-label">🆔 Identity</div>
+<div class="field-row"><div class="field-name">ID</div><div class="field-desc">Unique identifier for each person</div></div>
+<div class="field-row"><div class="field-name">Name</div><div class="field-desc">Display name shown on their profile</div></div>
+<div class="field-row"><div class="field-name">Status</div><div class="field-desc">Whether the profile is active or inactive</div></div>
+<div class="field-row"><div class="field-name">Created at</div><div class="field-desc">When the profile was first created</div></div>
+<div class="field-row"><div class="field-name">Updated at</div><div class="field-desc">When the profile was last edited</div></div>
+<div class="field-row"><div class="field-name">Onboarding source</div><div class="field-desc">How they joined — founder invite, referral, or self-signup</div></div>
+<div class="field-row"><div class="field-name">Profile completeness</div><div class="field-desc">A score from 0 to 1 showing how filled-out the profile is</div></div>
+<div class="field-row"><div class="field-name">Verification</div><div class="field-desc">Trust level — how many credits and peer endorsements they have</div></div>
+</div>
+
+<div class="core-card">
+<div class="core-card-label">👤 Personal</div>
+<div class="field-row"><div class="field-name">Gender</div><div class="field-desc">Male, Female, Non-binary, or Prefer not to say</div></div>
+<div class="field-row"><div class="field-name">Age</div><div class="field-desc">Used for casting filters and experience-level calibration</div></div>
+<div class="field-row"><div class="field-name">Languages spoken</div><div class="field-desc">All languages the person works in</div></div>
+<div class="field-row"><div class="field-name">Regional background</div><div class="field-desc">Cultural root — Telangana, Coastal Andhra, Rayalaseema, etc.</div></div>
+<div class="field-row"><div class="field-name">Bio</div><div class="field-desc">Free-text self-description — fully searchable by the engine</div></div>
+</div>
+
+<div class="core-card">
+<div class="core-card-label">📍 Location</div>
+<div class="field-row"><div class="field-name">Current city</div><div class="field-desc">Where they currently live</div></div>
+<div class="field-row"><div class="field-name">State</div><div class="field-desc">State within the country</div></div>
+<div class="field-row"><div class="field-name">Country</div><div class="field-desc">Country of residence</div></div>
+<div class="field-row"><div class="field-name">Willing to travel</div><div class="field-desc">Other cities they are open to working in</div></div>
+</div>
+
+<div class="core-card">
+<div class="core-card-label">💼 Professional</div>
+<div class="field-row"><div class="field-name">Primary craft</div><div class="field-desc">Their main profession with a specific subcraft</div></div>
+<div class="field-row"><div class="field-name">Secondary crafts</div><div class="field-desc">Other crafts they also practice</div></div>
+<div class="field-row"><div class="field-name">Experience (years)</div><div class="field-desc">Total years working in their primary craft</div></div>
+<div class="field-row"><div class="field-name">Experience level</div><div class="field-desc">Newcomer → Emerging → Mid-level → Senior → Veteran → Legend</div></div>
+<div class="field-row"><div class="field-name">Availability</div><div class="field-desc">Type of work, whether currently available, and next free date</div></div>
+<div class="field-row"><div class="field-name">Looking for</div><div class="field-desc">The types of opportunities they want</div></div>
+</div>
+
+<div class="core-card">
+<div class="core-card-label">🔍 Discovery &amp; History</div>
+<div class="field-row"><div class="field-name">Tags (self)</div><div class="field-desc">Free-text identity tags they assign themselves</div></div>
+<div class="field-row"><div class="field-name">Projects</div><div class="field-desc">Formal credits with role, year, banner, and proof links</div></div>
+<div class="field-row"><div class="field-name">Work samples</div><div class="field-desc">Portfolio links, reels, and showcase pieces</div></div>
+<div class="field-row"><div class="field-name">Education &amp; training</div><div class="field-desc">Film schools, workshops, apprenticeships they've completed</div></div>
+<div class="field-row"><div class="field-name">Endorsements</div><div class="field-desc">Peer endorsements from collaborators (coming in v2)</div></div>
+<div class="field-row"><div class="field-name">Media</div><div class="field-desc">Profile photo, cover image, and portfolio images</div></div>
+</div>
+</div>
+
 <div class="section-block">
-    <div class="section-header">
-        <h2>Eight craft families</h2>
-        <p>Each family adds craft-specific fields on top of the universal core. Visible only to users in that family during onboarding.</p>
-    </div>
-
-    <!-- FAMILY A -->
-    <div class="family-card">
-        <div class="family-header">
-            <div>
-                <div class="family-letter">FAMILY A</div>
-                <h3 class="family-title">Performers</h3>
-            </div>
-            <span class="badge badge-active">Active · 40 profiles</span>
-        </div>
-        <div class="crafts-list">Actor, Child Actor, Voice Artist, Dancer, Model, Theatre Actor, Singer</div>
-        <div class="fields-section">
-            <div class="fields-label">Craft-specific fields</div>
-            <table>
-                <tr><td>physical_attributes</td><td>height_cm, build, complexion, eye_color, hair_color</td></tr>
-                <tr><td>appearance_tags</td><td>athletic, modern, classical, character-look</td></tr>
-                <tr><td>performance_specializations</td><td>method_acting, comedy, action, dance_trained</td></tr>
-                <tr><td>playable_age_range</td><td>Min and max age they can convincingly portray</td></tr>
-                <tr><td>accents_dialects</td><td>Telangana_Telugu, Standard_Hindi, etc.</td></tr>
-            </table>
-        </div>
-    </div>
-
-    <!-- FAMILY B -->
-    <div class="family-card">
-        <div class="family-header">
-            <div>
-                <div class="family-letter">FAMILY B</div>
-                <h3 class="family-title">Visual crafts</h3>
-            </div>
-            <span class="badge badge-active">Active · 40 profiles</span>
-        </div>
-        <div class="crafts-list">Cinematographer, Photographer, Production Designer, Art Director, Costume Designer, Colorist, VFX Supervisor</div>
-        <div class="fields-section">
-            <div class="fields-label">Craft-specific fields</div>
-            <table>
-                <tr><td>visual_style_tags</td><td>dark_moody, naturalistic, high_contrast, stylized_color</td></tr>
-                <tr><td>equipment_familiarity</td><td>RED_Komodo, ARRI_Alexa, Sony_Venice, DJI_Ronin</td></tr>
-                <tr><td>specializations</td><td>underwater, aerial, low_light, period_drama</td></tr>
-                <tr><td>preferred_format</td><td>digital, anamorphic, wide_format</td></tr>
-            </table>
-        </div>
-    </div>
-
-    <!-- FAMILY C -->
-    <div class="family-card">
-        <div class="family-header">
-            <div>
-                <div class="family-letter">FAMILY C</div>
-                <h3 class="family-title">Sound and music</h3>
-            </div>
-            <span class="badge badge-active">Active · 40 profiles</span>
-        </div>
-        <div class="crafts-list">Sound Designer, Music Director, Music Producer, Composer, Foley Artist, Boom Operator</div>
-        <div class="fields-section">
-            <div class="fields-label">Craft-specific fields</div>
-            <table>
-                <tr><td>musical_specializations</td><td>film_score, indie_pop, classical_carnatic, background</td></tr>
-                <tr><td>instruments</td><td>piano, guitar, tabla, mridangam, violin</td></tr>
-                <tr><td>software_proficiency</td><td>Pro_Tools, Logic_Pro, Nuendo, Ableton</td></tr>
-                <tr><td>voice_range</td><td>soprano, alto, tenor, baritone, bass</td></tr>
-                <tr><td>singing_languages</td><td>Languages they can sing in professionally</td></tr>
-            </table>
-        </div>
-    </div>
-
-    <!-- FAMILY D -->
-    <div class="family-card">
-        <div class="family-header">
-            <div>
-                <div class="family-letter">FAMILY D</div>
-                <h3 class="family-title">Action and movement</h3>
-            </div>
-            <span class="badge badge-planned">Planned · v2</span>
-        </div>
-        <div class="crafts-list">Stunt Coordinator, Fight Master, Action Director, Choreographer, Dance Master</div>
-        <div class="fields-section">
-            <div class="fields-label">Craft-specific fields</div>
-            <table>
-                <tr><td>fight_styles</td><td>wire_work, MMA_grounded, period_sword, weapons_handling</td></tr>
-                <tr><td>dance_styles</td><td>kuchipudi, hip_hop, contemporary, cinematic_mass</td></tr>
-                <tr><td>stunt_specializations</td><td>motorbike_chase, rooftop_parkour, fire_gags, high_falls</td></tr>
-                <tr><td>physical_qualifications</td><td>Licenses, certifications, physical capabilities</td></tr>
-                <tr><td>performer_or_coordinator</td><td>performer, coordinator, both</td></tr>
-            </table>
-        </div>
-    </div>
-
-    <!-- FAMILY E -->
-    <div class="family-card">
-        <div class="family-header">
-            <div>
-                <div class="family-letter">FAMILY E</div>
-                <h3 class="family-title">Beauty and wardrobe</h3>
-            </div>
-            <span class="badge badge-planned">Planned · v2</span>
-        </div>
-        <div class="crafts-list">Makeup Artist, Hair Stylist, Costume Designer, Stylist</div>
-        <div class="fields-section">
-            <div class="fields-label">Craft-specific fields</div>
-            <table>
-                <tr><td>makeup_specializations</td><td>bridal, prosthetic, period_drama, horror_FX</td></tr>
-                <tr><td>wardrobe_eras</td><td>1940s, 1980s, contemporary, futuristic</td></tr>
-                <tr><td>product_brand_familiarity</td><td>MAC, Kryolan, Ben_Nye and others</td></tr>
-                <tr><td>lookbook_links</td><td>Visual portfolios of finished work</td></tr>
-            </table>
-        </div>
-    </div>
-
-    <!-- FAMILY F -->
-    <div class="family-card">
-        <div class="family-header">
-            <div>
-                <div class="family-letter">FAMILY F</div>
-                <h3 class="family-title">Below-the-line technical crew</h3>
-            </div>
-            <span class="badge badge-planned">Planned · v2</span>
-        </div>
-        <div class="crafts-list">Gaffer, Focus Puller, Boom Operator, Best Boy, Camera Operator, DIT, Data Wrangler</div>
-        <div class="fields-section">
-            <div class="fields-label">Craft-specific fields</div>
-            <table>
-                <tr><td>equipment_certifications</td><td>genie_lift, rigging_safety, high_voltage</td></tr>
-                <tr><td>set_role_experience</td><td>studio_floor, outdoor_locations, underwater_unit, aerial</td></tr>
-                <tr><td>union_memberships</td><td>FWICE, TFCC, MAA</td></tr>
-                <tr><td>department_seniority</td><td>Position within department hierarchy</td></tr>
-            </table>
-        </div>
-    </div>
-
-    <!-- FAMILY G -->
-    <div class="family-card">
-        <div class="family-header">
-            <div>
-                <div class="family-letter">FAMILY G</div>
-                <h3 class="family-title">Direction, writing, production</h3>
-            </div>
-            <span class="badge badge-active">Active · 40 profiles</span>
-        </div>
-        <div class="crafts-list">Director, Writer, Producer, Line Producer, Casting Director, First AD</div>
-        <div class="fields-section">
-            <div class="fields-label">Craft-specific fields</div>
-            <table>
-                <tr><td>genre_specializations</td><td>action, romance, thriller, biographical, family_drama</td></tr>
-                <tr><td>narrative_specializations</td><td>ensemble, character_driven, high_concept, documentary</td></tr>
-                <tr><td>production_scale_handled</td><td>Budget tiers worked at, in crore</td></tr>
-                <tr><td>directing_style_tags</td><td>actor_centric, visual_first, improvisational</td></tr>
-                <tr><td>previous_banners_worked_with</td><td>Production houses they have credits with</td></tr>
-            </table>
-        </div>
-    </div>
-
-    <!-- FAMILY H -->
-    <div class="family-card">
-        <div class="family-header">
-            <div>
-                <div class="family-letter">FAMILY H</div>
-                <h3 class="family-title">Creators and influencers</h3>
-            </div>
-            <span class="badge badge-active">Active · 40 profiles</span>
-        </div>
-        <div class="crafts-list">Content Creator, Influencer, YouTuber, Podcaster</div>
-        <div class="fields-section">
-            <div class="fields-label">Craft-specific fields</div>
-            <table>
-                <tr><td>platforms</td><td>Per-platform: handle, followers, engagement_rate, verified</td></tr>
-                <tr><td>primary_platform</td><td>Where most of their audience lives</td></tr>
-                <tr><td>content_categories</td><td>comedy, beauty, fitness, tech, food, travel</td></tr>
-                <tr><td>audience_demographics</td><td>Primary age range and geographic distribution</td></tr>
-                <tr><td>brand_collaborations_count</td><td>Total paid brand partnerships completed</td></tr>
-            </table>
-        </div>
-    </div>
+<div class="section-header">
+<h2>🎬 Eight Craft Families</h2>
+<p>Each family adds craft-specific fields on top of the universal core. During onboarding, users only see the fields relevant to their profession.</p>
 </div>
 
-<!-- LOOKUP TABLE -->
+<div class="family-card green">
+<div class="family-top">
+<div><div class="family-letter">FAMILY A</div><h3 class="family-title">Performers</h3></div>
+<span class="badge badge-active">✅ Active · 40 profiles</span>
+</div>
+<div class="crafts-list"><span class="craft-tag">Actor</span><span class="craft-tag">Child Actor</span><span class="craft-tag">Voice Artist</span><span class="craft-tag">Dancer</span><span class="craft-tag">Model</span><span class="craft-tag">Theatre Actor</span><span class="craft-tag">Singer</span></div>
+<div class="fields-label">What extra info do we capture?</div>
+<div class="field-row"><div class="field-name">Physical attributes</div><div class="field-desc">Height, build, complexion, eye color, hair color</div></div>
+<div class="field-row"><div class="field-name">Appearance tags</div><div class="field-desc">Athletic, modern, classical, character-look</div></div>
+<div class="field-row"><div class="field-name">Performance skills</div><div class="field-desc">Method acting, comedy, action, dance-trained</div></div>
+<div class="field-row"><div class="field-name">Playable age range</div><div class="field-desc">Min and max age they can convincingly portray on screen</div></div>
+<div class="field-row"><div class="field-name">Accents &amp; dialects</div><div class="field-desc">Telangana Telugu, Standard Hindi, etc.</div></div>
+</div>
+
+<div class="family-card blue">
+<div class="family-top">
+<div><div class="family-letter">FAMILY B</div><h3 class="family-title">Visual Crafts</h3></div>
+<span class="badge badge-active">✅ Active · 40 profiles</span>
+</div>
+<div class="crafts-list"><span class="craft-tag">Cinematographer</span><span class="craft-tag">Photographer</span><span class="craft-tag">Production Designer</span><span class="craft-tag">Art Director</span><span class="craft-tag">Costume Designer</span><span class="craft-tag">Colorist</span><span class="craft-tag">VFX Supervisor</span></div>
+<div class="fields-label">What extra info do we capture?</div>
+<div class="field-row"><div class="field-name">Visual style tags</div><div class="field-desc">Dark/moody, naturalistic, high-contrast, stylized color</div></div>
+<div class="field-row"><div class="field-name">Equipment familiarity</div><div class="field-desc">RED Komodo, ARRI Alexa, Sony Venice, DJI Ronin</div></div>
+<div class="field-row"><div class="field-name">Specializations</div><div class="field-desc">Underwater, aerial, low-light, period drama</div></div>
+<div class="field-row"><div class="field-name">Preferred format</div><div class="field-desc">Digital, anamorphic, wide format</div></div>
+</div>
+
+<div class="family-card purple">
+<div class="family-top">
+<div><div class="family-letter">FAMILY C</div><h3 class="family-title">Sound &amp; Music</h3></div>
+<span class="badge badge-active">✅ Active · 40 profiles</span>
+</div>
+<div class="crafts-list"><span class="craft-tag">Sound Designer</span><span class="craft-tag">Music Director</span><span class="craft-tag">Music Producer</span><span class="craft-tag">Composer</span><span class="craft-tag">Foley Artist</span><span class="craft-tag">Boom Operator</span></div>
+<div class="fields-label">What extra info do we capture?</div>
+<div class="field-row"><div class="field-name">Musical specializations</div><div class="field-desc">Film score, indie pop, classical Carnatic, background</div></div>
+<div class="field-row"><div class="field-name">Instruments</div><div class="field-desc">Piano, guitar, tabla, mridangam, violin</div></div>
+<div class="field-row"><div class="field-name">Software proficiency</div><div class="field-desc">Pro Tools, Logic Pro, Nuendo, Ableton</div></div>
+<div class="field-row"><div class="field-name">Voice range</div><div class="field-desc">Soprano, alto, tenor, baritone, bass</div></div>
+<div class="field-row"><div class="field-name">Singing languages</div><div class="field-desc">Languages they can sing in professionally</div></div>
+</div>
+
+<div class="family-card orange">
+<div class="family-top">
+<div><div class="family-letter">FAMILY D</div><h3 class="family-title">Action &amp; Movement</h3></div>
+<span class="badge badge-planned">🕐 Planned · v2</span>
+</div>
+<div class="crafts-list"><span class="craft-tag">Stunt Coordinator</span><span class="craft-tag">Fight Master</span><span class="craft-tag">Action Director</span><span class="craft-tag">Choreographer</span><span class="craft-tag">Dance Master</span></div>
+<div class="fields-label">What extra info will we capture?</div>
+<div class="field-row"><div class="field-name">Fight styles</div><div class="field-desc">Wire work, MMA-grounded, period sword, weapons handling</div></div>
+<div class="field-row"><div class="field-name">Dance styles</div><div class="field-desc">Kuchipudi, hip-hop, contemporary, cinematic mass</div></div>
+<div class="field-row"><div class="field-name">Stunt specializations</div><div class="field-desc">Motorbike chase, rooftop parkour, fire gags, high falls</div></div>
+<div class="field-row"><div class="field-name">Physical qualifications</div><div class="field-desc">Licenses, certifications, physical capabilities</div></div>
+<div class="field-row"><div class="field-name">Performer or coordinator</div><div class="field-desc">Whether they perform stunts, coordinate them, or both</div></div>
+</div>
+
+<div class="family-card pink">
+<div class="family-top">
+<div><div class="family-letter">FAMILY E</div><h3 class="family-title">Beauty &amp; Wardrobe</h3></div>
+<span class="badge badge-planned">🕐 Planned · v2</span>
+</div>
+<div class="crafts-list"><span class="craft-tag">Makeup Artist</span><span class="craft-tag">Hair Stylist</span><span class="craft-tag">Costume Designer</span><span class="craft-tag">Stylist</span></div>
+<div class="fields-label">What extra info will we capture?</div>
+<div class="field-row"><div class="field-name">Makeup specializations</div><div class="field-desc">Bridal, prosthetic, period drama, horror FX</div></div>
+<div class="field-row"><div class="field-name">Wardrobe eras</div><div class="field-desc">1940s, 1980s, contemporary, futuristic</div></div>
+<div class="field-row"><div class="field-name">Product/brand familiarity</div><div class="field-desc">MAC, Kryolan, Ben Nye, and others</div></div>
+<div class="field-row"><div class="field-name">Lookbook links</div><div class="field-desc">Visual portfolios of their finished work</div></div>
+</div>
+
+<div class="family-card teal">
+<div class="family-top">
+<div><div class="family-letter">FAMILY F</div><h3 class="family-title">Below-the-Line Technical Crew</h3></div>
+<span class="badge badge-planned">🕐 Planned · v2</span>
+</div>
+<div class="crafts-list"><span class="craft-tag">Gaffer</span><span class="craft-tag">Focus Puller</span><span class="craft-tag">Boom Operator</span><span class="craft-tag">Best Boy</span><span class="craft-tag">Camera Operator</span><span class="craft-tag">DIT</span><span class="craft-tag">Data Wrangler</span></div>
+<div class="fields-label">What extra info will we capture?</div>
+<div class="field-row"><div class="field-name">Equipment certifications</div><div class="field-desc">Genie lift, rigging safety, high voltage</div></div>
+<div class="field-row"><div class="field-name">Set role experience</div><div class="field-desc">Studio floor, outdoor locations, underwater unit, aerial</div></div>
+<div class="field-row"><div class="field-name">Union memberships</div><div class="field-desc">FWICE, TFCC, MAA</div></div>
+<div class="field-row"><div class="field-name">Department seniority</div><div class="field-desc">Their position within the department hierarchy</div></div>
+</div>
+
+<div class="family-card indigo">
+<div class="family-top">
+<div><div class="family-letter">FAMILY G</div><h3 class="family-title">Direction, Writing &amp; Production</h3></div>
+<span class="badge badge-active">✅ Active · 40 profiles</span>
+</div>
+<div class="crafts-list"><span class="craft-tag">Director</span><span class="craft-tag">Writer</span><span class="craft-tag">Producer</span><span class="craft-tag">Line Producer</span><span class="craft-tag">Casting Director</span><span class="craft-tag">First AD</span></div>
+<div class="fields-label">What extra info do we capture?</div>
+<div class="field-row"><div class="field-name">Genre specializations</div><div class="field-desc">Action, romance, thriller, biographical, family drama</div></div>
+<div class="field-row"><div class="field-name">Narrative specializations</div><div class="field-desc">Ensemble, character-driven, high-concept, documentary</div></div>
+<div class="field-row"><div class="field-name">Production scale handled</div><div class="field-desc">Budget tiers they have worked at, measured in crore</div></div>
+<div class="field-row"><div class="field-name">Directing style tags</div><div class="field-desc">Actor-centric, visual-first, improvisational</div></div>
+<div class="field-row"><div class="field-name">Banners worked with</div><div class="field-desc">Production houses they have formal credits with</div></div>
+</div>
+
+<div class="family-card red">
+<div class="family-top">
+<div><div class="family-letter">FAMILY H</div><h3 class="family-title">Creators &amp; Influencers</h3></div>
+<span class="badge badge-active">✅ Active · 40 profiles</span>
+</div>
+<div class="crafts-list"><span class="craft-tag">Content Creator</span><span class="craft-tag">Influencer</span><span class="craft-tag">YouTuber</span><span class="craft-tag">Podcaster</span></div>
+<div class="fields-label">What extra info do we capture?</div>
+<div class="field-row"><div class="field-name">Platforms</div><div class="field-desc">Per-platform handle, followers, engagement rate, verified status</div></div>
+<div class="field-row"><div class="field-name">Primary platform</div><div class="field-desc">Where most of their audience lives</div></div>
+<div class="field-row"><div class="field-name">Content categories</div><div class="field-desc">Comedy, beauty, fitness, tech, food, travel</div></div>
+<div class="field-row"><div class="field-name">Audience demographics</div><div class="field-desc">Primary age range and geographic distribution of followers</div></div>
+<div class="field-row"><div class="field-name">Brand collaborations</div><div class="field-desc">Total number of paid brand partnerships completed</div></div>
+</div>
+</div>
+
 <div class="section-block">
-    <div class="section-header">
-        <h2>All 24 crafts mapped to families</h2>
-        <p>When a user picks their primary craft during onboarding, the system shows the matching family's craft-specific fields.</p>
-    </div>
-
-    <div class="lookup-card">
-        <table>
-            <thead>
-                <tr>
-                    <th>Craft</th>
-                    <th>Family</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>Actor</td><td>A · Performers</td></tr>
-                <tr><td>Child Actor</td><td>A · Performers</td></tr>
-                <tr><td>Voice Artist</td><td>A · Performers</td></tr>
-                <tr><td>Dancer</td><td>A · Performers</td></tr>
-                <tr><td>Model</td><td>A · Performers</td></tr>
-                <tr><td>Singer</td><td>A · Performers</td></tr>
-                <tr><td>Cinematographer</td><td>B · Visual crafts</td></tr>
-                <tr><td>Production Designer</td><td>B · Visual crafts</td></tr>
-                <tr><td>Costume Designer</td><td>B · Visual crafts</td></tr>
-                <tr><td>Colorist</td><td>B · Visual crafts</td></tr>
-                <tr><td>VFX Supervisor</td><td>B · Visual crafts</td></tr>
-                <tr><td>Sound Designer</td><td>C · Sound and music</td></tr>
-                <tr><td>Music Director</td><td>C · Sound and music</td></tr>
-                <tr><td>Composer</td><td>C · Sound and music</td></tr>
-                <tr><td>Stunt Coordinator</td><td>D · Action and movement</td></tr>
-                <tr><td>Choreographer</td><td>D · Action and movement</td></tr>
-                <tr><td>Makeup Artist</td><td>E · Beauty and wardrobe</td></tr>
-                <tr><td>Hair Stylist</td><td>E · Beauty and wardrobe</td></tr>
-                <tr><td>Gaffer</td><td>F · Below-the-line crew</td></tr>
-                <tr><td>Director</td><td>G · Direction and production</td></tr>
-                <tr><td>Writer</td><td>G · Direction and production</td></tr>
-                <tr><td>Producer</td><td>G · Direction and production</td></tr>
-                <tr><td>Casting Director</td><td>G · Direction and production</td></tr>
-                <tr><td>Content Creator</td><td>H · Creators and influencers</td></tr>
-            </tbody>
-        </table>
-    </div>
+<div class="section-header">
+<h2>📖 All 24 Crafts → Family Mapping</h2>
+<p>When someone picks their primary craft during onboarding, the system automatically shows the matching family's extra fields.</p>
+</div>
+<div class="lookup-card">
+<table>
+<thead><tr><th>Craft</th><th>Family</th></tr></thead>
+<tbody>
+<tr><td>Actor</td><td class="lookup-family">A · Performers</td></tr>
+<tr><td>Child Actor</td><td class="lookup-family">A · Performers</td></tr>
+<tr><td>Voice Artist</td><td class="lookup-family">A · Performers</td></tr>
+<tr><td>Dancer</td><td class="lookup-family">A · Performers</td></tr>
+<tr><td>Model</td><td class="lookup-family">A · Performers</td></tr>
+<tr><td>Singer</td><td class="lookup-family">A · Performers</td></tr>
+<tr><td>Cinematographer</td><td class="lookup-family">B · Visual Crafts</td></tr>
+<tr><td>Production Designer</td><td class="lookup-family">B · Visual Crafts</td></tr>
+<tr><td>Costume Designer</td><td class="lookup-family">B · Visual Crafts</td></tr>
+<tr><td>Colorist</td><td class="lookup-family">B · Visual Crafts</td></tr>
+<tr><td>VFX Supervisor</td><td class="lookup-family">B · Visual Crafts</td></tr>
+<tr><td>Sound Designer</td><td class="lookup-family">C · Sound &amp; Music</td></tr>
+<tr><td>Music Director</td><td class="lookup-family">C · Sound &amp; Music</td></tr>
+<tr><td>Composer</td><td class="lookup-family">C · Sound &amp; Music</td></tr>
+<tr><td>Stunt Coordinator</td><td class="lookup-family">D · Action &amp; Movement</td></tr>
+<tr><td>Choreographer</td><td class="lookup-family">D · Action &amp; Movement</td></tr>
+<tr><td>Makeup Artist</td><td class="lookup-family">E · Beauty &amp; Wardrobe</td></tr>
+<tr><td>Hair Stylist</td><td class="lookup-family">E · Beauty &amp; Wardrobe</td></tr>
+<tr><td>Gaffer</td><td class="lookup-family">F · Below-the-Line Crew</td></tr>
+<tr><td>Director</td><td class="lookup-family">G · Direction &amp; Production</td></tr>
+<tr><td>Writer</td><td class="lookup-family">G · Direction &amp; Production</td></tr>
+<tr><td>Producer</td><td class="lookup-family">G · Direction &amp; Production</td></tr>
+<tr><td>Casting Director</td><td class="lookup-family">G · Direction &amp; Production</td></tr>
+<tr><td>Content Creator</td><td class="lookup-family">H · Creators &amp; Influencers</td></tr>
+</tbody>
+</table>
+</div>
 </div>
 
 </div>
-
 </body>
 </html>
