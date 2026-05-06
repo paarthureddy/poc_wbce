@@ -112,8 +112,31 @@ def decompose_prompt(user_query):
 
     raw_output = response.choices[0].message.content.strip()
     if raw_output.startswith("```json"):
-        raw_output = raw_output[7:-3]
-    return json.loads(raw_output)
+        raw_output = raw_output[7:]
+    if raw_output.endswith("```"):
+        raw_output = raw_output[:-3]
+    raw_output = raw_output.strip()
+
+    try:
+        result = json.loads(raw_output)
+    except json.JSONDecodeError:
+        # Fallback: treat the whole query as a raw craft search
+        return {
+            "craft": user_query.strip().lower(),
+            "location": None, "location_city": None, "location_state": None,
+            "location_raw": None, "banner": None, "language": None,
+            "keywords": [], "gender": None, "relationship_hint": None,
+            "age_range": None, "tier": None,
+            "height_min_cm": None, "height_max_cm": None,
+        }
+
+    # Normalize language: if LLM returned 'telugu and hindi', keep only the first language
+    lang = result.get("language")
+    if lang and isinstance(lang, str) and len(lang.split()) > 2:
+        # e.g. 'telugu and hindi' -> 'telugu'
+        result["language"] = lang.split()[0].strip().lower()
+
+    return result
 
 
 def execute_cypher(query):

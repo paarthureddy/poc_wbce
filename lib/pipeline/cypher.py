@@ -92,6 +92,7 @@ def build_cypher(params):
         if hmax_i is not None:
             h_wheres.append(f"u.height_cm <= {hmax_i}")
         if h_wheres:
+            lines.append("WITH DISTINCT u")
             lines.append("WHERE " + " AND ".join(h_wheres))
 
     STOP_WORDS = {
