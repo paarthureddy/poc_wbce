@@ -74,7 +74,7 @@ def decompose_prompt(user_query):
     Your job is to read a natural language search query and extract key parameters.
 
     You must output a raw JSON object (and nothing else, no markdown formatting) with these exact keys:
-    - "craft": (string) The role they are looking for (e.g., "director", "actor"). null if not specified.
+    - "craft": (string) The role they are looking for (e.g., "director", "actor"). null if not specified. CRITICAL: Always normalize gendered crafts to their root craft (e.g. "actress" -> "actor", "heroine" -> "actor").
     - "location": (string) Legacy location string (often a city like "hyderabad"). null if not specified.
     - "location_city": (string) The city, if explicitly specified. null if not specified.
     - "location_state": (string) The state/region, if explicitly specified (e.g., "uttar pradesh"). null if not specified.
