@@ -80,22 +80,24 @@ def decompose_prompt(user_query):
     - "location_state": (string) The state/region, if explicitly specified. null if not specified.
     - "location_raw": (string) Copy of the location phrase only.
     - "banner": (string) A production banner they have worked with. null if not specified.
-    - "keywords": (list of strings) Atomic descriptive words. Extract single words, not phrases (e.g., ["mass", "thriller"]). empty list if none.
-      CRITICAL: Only include keywords that describe craft specializations, genres, or technical skills. DROP conversational filler.
-    - "gender": (string) MUST BE exactly "male" or "female". INFER this intelligently! If the query says "actress", "heroine", "sister", "woman", "girl", output "female". If it says "brother", "guy", "hero", "man", output "male". If unspecified, output null.
-    - "relationship_hint": (string) If the query uses relationship words like "brother" / "sister", output that single word; otherwise null.
-    - "age_range": (string) One of "young", "mid", "senior", or null. Map "young", "emerging", "junior" to "young". Map "senior", "veteran" to "mid" unless clearly over 50 then "senior". If no age signal, null.
+    - "language": (string) A language the person should speak (e.g., "telugu", "hindi", "tamil"). null if not specified. CRITICAL: Extract language separately — do NOT put it in keywords.
+    - "keywords": (list of strings) Atomic descriptive words for craft specializations, genres, or physical attributes (e.g., ["mass", "thriller", "dark", "tall"]). DO NOT include languages, relationship words (brother/sister/villain/hero/role/character), or conversational filler. Empty list if none.
+    - "gender": (string) MUST BE exactly "male" or "female". INFER intelligently: "actress", "heroine", "sister", "woman", "girl" -> "female". "brother", "guy", "hero", "man" -> "male". Unspecified -> null.
+    - "relationship_hint": (string) If the query uses relationship words like "brother" / "sister", output that word; otherwise null.
+    - "age_range": (string) One of "young", "mid", "senior", or null.
     - "tier": (integer or null) Production scale (1-5).
     - "height_min_cm": (integer or null)
     - "height_max_cm": (integer or null)
 
     EXAMPLES:
     User: "I need a heroine for my next movie"
-    JSON: {{"craft": "actor", "gender": "female", ...}}
+    JSON: {{"craft": "actor", "gender": "female", "language": null, "keywords": [], ...}}
     User: "looking for a brother character"
-    JSON: {{"craft": "actor", "gender": "male", "relationship_hint": "brother", ...}}
-    User: "actress in hyderabad"
-    JSON: {{"craft": "actor", "gender": "female", "location_city": "hyderabad", ...}}
+    JSON: {{"craft": "actor", "gender": "male", "relationship_hint": "brother", "language": null, "keywords": [], ...}}
+    User: "actor who speaks telugu, tall and dark"
+    JSON: {{"craft": "actor", "gender": null, "language": "telugu", "keywords": ["tall", "dark"], ...}}
+    User: "I need an actor to play villain's brother role, tall dark, speaks telugu"
+    JSON: {{"craft": "actor", "gender": "male", "language": "telugu", "keywords": ["tall", "dark"], "relationship_hint": "brother", ...}}
 
     IMPORTANT: Do NOT repeat the input, do NOT add explanations, and do NOT produce any other text.
     """

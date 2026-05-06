@@ -28,13 +28,12 @@ def build_cypher(params):
         lines.append("WHERE " + " AND ".join(node_wheres))
 
     if params.get("craft"):
-        craft = params["craft"]
+        craft = _escape_cypher_string(params["craft"])
         lines.append(
             f"MATCH (u)-[:HAS_PRIMARY_CRAFT]->(c:Craft) WHERE toLower(c.name) CONTAINS toLower('{craft}')"
         )
 
-    # Location matching: use normalized state/city if present, otherwise legacy `location`.
-    # Retrieval checks both profile properties (seeded) and graph edges for recall.
+    # --- Location matching ---
     loc_city = params.get("location_city")
     loc_state = params.get("location_state")
     loc_legacy = params.get("location")
@@ -63,12 +62,21 @@ def build_cypher(params):
         lines.append("WHERE " + " OR ".join(ors))
 
     if params.get("banner"):
-        banner = params["banner"]
+        banner = _escape_cypher_string(params["banner"])
         lines.append(
             f"MATCH (u)-[:CREDITED_ON]->(p_banner:Project)<-[:PRODUCED]-(b:Banner) WHERE toLower(b.name) CONTAINS toLower('{banner}')"
         )
 
-    # Height range (cm) if present in params.
+    # --- Language filter ---
+    language = params.get("language")
+    if language:
+        lang_esc = _escape_cypher_string(language)
+        lines.append("WITH DISTINCT u")
+        lines.append(
+            f"WHERE any(lang IN u.languages_spoken WHERE toLower(lang) CONTAINS toLower('{lang_esc}'))"
+        )
+
+    # --- Height range ---
     hmin = params.get("height_min_cm")
     hmax = params.get("height_max_cm")
     try:
@@ -84,34 +92,14 @@ def build_cypher(params):
         if hmax_i is not None:
             h_wheres.append(f"u.height_cm <= {hmax_i}")
         if h_wheres:
-            if any(line.startswith("WITH DISTINCT u, l, lt") for line in lines):
-                # already in a WITH/WHERE context due to location
-                lines.append("AND " + " AND ".join(h_wheres))
-            else:
-                lines.append("WHERE " + " AND ".join(h_wheres))
+            lines.append("WHERE " + " AND ".join(h_wheres))
 
     STOP_WORDS = {
-        "brother",
-        "sister",
-        "friend",
-        "villain",
-        "hero",
-        "role",
-        "character",
-        "soonish",
-        "available",
-        "budget",
-        "experienced",
-        "good",
-        "best",
-        "need",
-        "someone",
-        "like",
-        "prefer",
-        "based",
-        "looking",
-        "want",
-        "find",
+        "brother", "sister", "friend", "villain", "hero", "role", "character",
+        "soonish", "available", "budget", "experienced", "good", "best",
+        "need", "someone", "like", "prefer", "based", "looking", "want", "find",
+        # languages must never end up in keyword scoring
+        "telugu", "hindi", "tamil", "kannada", "malayalam", "english",
     }
 
     physique_kws = (
@@ -123,13 +111,14 @@ def build_cypher(params):
     all_keywords = physique_kws + generic_kws
 
     if all_keywords:
+        # WITH DISTINCT u resets variable scope cleanly regardless of prior WITH blocks
         lines.append("WITH DISTINCT u")
         lines.append("OPTIONAL MATCH (u)-[:CREDITED_ON]->(p_keywords:Project)")
         lines.append("WITH u, collect(p_keywords.type) as project_types")
 
         score_cases = []
         for kw in all_keywords:
-            kw_clean = kw.replace("'", "\\'")
+            kw_clean = _escape_cypher_string(kw)
             score_cases.append(
                 f"(CASE WHEN toLower(u.bio) CONTAINS toLower('{kw_clean}') THEN 1 ELSE 0 END)"
             )
