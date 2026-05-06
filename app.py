@@ -74,21 +74,28 @@ def decompose_prompt(user_query):
     Your job is to read a natural language search query and extract key parameters.
 
     You must output a raw JSON object (and nothing else, no markdown formatting) with these exact keys:
-    - "craft": (string) The role they are looking for (e.g., "director", "actor"). null if not specified. CRITICAL: Always normalize gendered crafts to their root craft (e.g. "actress" -> "actor", "heroine" -> "actor").
+    - "craft": (string) The root role they are looking for. CRITICAL: Always normalize gendered crafts to their root craft (e.g., "actress" -> "actor", "heroine" -> "actor", "cameraman" -> "cinematographer"). null if not specified.
     - "location": (string) Legacy location string (often a city like "hyderabad"). null if not specified.
     - "location_city": (string) The city, if explicitly specified. null if not specified.
-    - "location_state": (string) The state/region, if explicitly specified (e.g., "uttar pradesh"). null if not specified.
-    - "location_raw": (string) Copy of the location phrase only (not the full user query) if you can isolate it; otherwise null.
-    - "banner": (string) A production banner they have worked with (e.g., "mythri"). null if not specified.
+    - "location_state": (string) The state/region, if explicitly specified. null if not specified.
+    - "location_raw": (string) Copy of the location phrase only.
+    - "banner": (string) A production banner they have worked with. null if not specified.
     - "keywords": (list of strings) Atomic descriptive words. Extract single words, not phrases (e.g., ["mass", "thriller"]). empty list if none.
-      CRITICAL: Only include keywords that describe craft specializations, genres, or technical skills.
-      DROP conversational filler, time references, budget references, and availability words.
-    - "gender": (string) "male" or "female" if the query explicitly mentions a gender (e.g., "guy", "brother", "actress"). otherwise null.
+      CRITICAL: Only include keywords that describe craft specializations, genres, or technical skills. DROP conversational filler.
+    - "gender": (string) MUST BE exactly "male" or "female". INFER this intelligently! If the query says "actress", "heroine", "sister", "woman", "girl", output "female". If it says "brother", "guy", "hero", "man", output "male". If unspecified, output null.
     - "relationship_hint": (string) If the query uses relationship words like "brother" / "sister", output that single word; otherwise null.
-    - "age_range": (string) One of "young", "mid", "senior", or null. Map "young", "emerging", "new", "junior" to "young" (typically age <= 30). Map "senior", "veteran", "experienced" to "mid" unless clearly over 50 then "senior". If no age signal, null.
-    - "tier": (integer or null) Production scale for the role they need: 1 = mega-budget pan-India, 2 = big-budget Telugu theatrical, 3 = mid-budget, 4 = indie, 5 = micro-budget/shorts. null if no budget/scale signal (e.g. no mention of budget, scale, blockbuster, indie, short film).
-    - "height_min_cm": (integer or null) If user specified a height, normalize to a lower bound in centimeters; otherwise null.
-    - "height_max_cm": (integer or null) If user specified a height, normalize to an upper bound in centimeters; otherwise null.
+    - "age_range": (string) One of "young", "mid", "senior", or null. Map "young", "emerging", "junior" to "young". Map "senior", "veteran" to "mid" unless clearly over 50 then "senior". If no age signal, null.
+    - "tier": (integer or null) Production scale (1-5).
+    - "height_min_cm": (integer or null)
+    - "height_max_cm": (integer or null)
+
+    EXAMPLES:
+    User: "I need a heroine for my next movie"
+    JSON: {{"craft": "actor", "gender": "female", ...}}
+    User: "looking for a brother character"
+    JSON: {{"craft": "actor", "gender": "male", "relationship_hint": "brother", ...}}
+    User: "actress in hyderabad"
+    JSON: {{"craft": "actor", "gender": "female", "location_city": "hyderabad", ...}}
 
     IMPORTANT: Do NOT repeat the input, do NOT add explanations, and do NOT produce any other text.
     """
