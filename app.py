@@ -59,7 +59,28 @@ else:
 LLM_MODEL = _env_strip("LLM_MODEL_NAME", "gpt-5-mini") or "gpt-5-mini"
 
 
+import functools
+
+@functools.lru_cache(maxsize=128)
 def decompose_prompt(user_query):
+    if len(user_query.strip().split()) == 1 and user_query.strip().isalpha():
+        # Fast bypass for single word queries like "actor", "director"
+        return {
+            "craft": user_query.strip().lower(),
+            "location": None,
+            "location_city": None,
+            "location_state": None,
+            "location_raw": None,
+            "banner": None,
+            "keywords": [],
+            "gender": None,
+            "relationship_hint": None,
+            "age_range": None,
+            "tier": None,
+            "height_min_cm": None,
+            "height_max_cm": None
+        }
+
     if llm_client is None:
         raise RuntimeError(
             "Azure OpenAI credentials are missing. Set OAI_KEY_LLM and OAI_BASE_LLM "
