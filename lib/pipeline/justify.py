@@ -11,9 +11,9 @@ from typing import Any
 from ..graph.fetch_candidate_context import fetch_candidate_context
 from ..graph.fetch_justification_facts import fetch_justification_facts
 
-JUSTIFICATION_MAX_CHARS = 900
-JUSTIFICATION_MIN_SENTENCES = 3
-JUSTIFICATION_MAX_SENTENCES = 5
+JUSTIFICATION_MAX_CHARS = 1500
+JUSTIFICATION_MIN_SENTENCES = 1
+JUSTIFICATION_MAX_SENTENCES = 20
 LLM_DEFAULT_TIMEOUT_SEC = 14
 
 _BANNED_COMPARATIVES = re.compile(
@@ -323,19 +323,9 @@ def template_justification(evidence: dict) -> str:
             )
         )
 
-    text = " ".join(parts).strip()
-    text = re.sub(r"\s+", " ", text)
-    sents = [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if s.strip()]
-    if len(sents) < JUSTIFICATION_MIN_SENTENCES:
-        text = (
-            text
-            + " "
-            + "This wording is generated only from the structured fields and credit signals shown in Tribli."
-        )
-        text = re.sub(r"\s+", " ", text).strip()
-        sents = [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if s.strip()]
-    if len(sents) > JUSTIFICATION_MAX_SENTENCES:
-        text = " ".join(sents[: JUSTIFICATION_MAX_SENTENCES])
+    # Format as bullet points
+    md_parts = [f"- {p}" for p in parts if p.strip()]
+    text = "\n".join(md_parts)
     if len(text) > JUSTIFICATION_MAX_CHARS:
         text = text[: JUSTIFICATION_MAX_CHARS - 3] + "..."
     return text
@@ -348,11 +338,7 @@ def validate_justification(text: str, evidence: dict) -> bool:
         return False
     if len(text) > JUSTIFICATION_MAX_CHARS:
         return False
-    sentences = [s for s in re.split(r"(?<=[.!?])\s+", text.strip()) if s.strip()]
-    if len(sentences) > JUSTIFICATION_MAX_SENTENCES + 1:
-        return False
-    if len(sentences) < JUSTIFICATION_MIN_SENTENCES:
-        return False
+    # Sentence limits removed to allow markdown bullet points.
     allowed = _collect_allowed_number_strings(evidence)
     for num in re.findall(r"\b\d+\b", text):
         if num in allowed:
@@ -370,14 +356,15 @@ def _llm_generate(
     evidence: dict,
     timeout_sec: float,
 ) -> str:
-    system = """You write one short paragraph for a film-industry talent search product.
+    system = """You are a talent evaluation assistant for a film-industry talent search product.
+Write a highly structured, meaningful summary of why this candidate matches the search query. 
 Rules:
-- Output exactly one paragraph in plain English, 3 to 5 sentences.
+- Format the output using Markdown. Use bolding, bullet points, and brief sections (e.g., **Key Alignment**, **Credit Highlights**, **Verification**).
+- Keep it concise, punchy, and highly scannable for a busy recruiter, producer, or director.
 - Do not use Greek letters, do not say CCS, do not quote numeric factor scores (no decimals like 0.85).
 - Do not compare to other candidates or mention ranking position.
 - Only state facts that appear in the JSON evidence. If something is missing, say it is not shown in the data instead of inventing it.
-- Reflect the user's query: emphasize what they asked for (craft, location, banner, genre keywords, tier) when relevant.
-- Use professional but accessible language."""
+- Reflect the user's query: emphasize what they asked for (craft, location, banner, genre keywords, tier) when relevant."""
 
     user = (
         "Write the justification paragraph.\n\nEVIDENCE_JSON:\n"

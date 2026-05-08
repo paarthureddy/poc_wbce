@@ -113,59 +113,9 @@ def execute_cypher(query):
 # -----------------
 # STREAMLIT UI
 # -----------------
-st.set_page_config(page_title="Talent Search", page_icon="🔍", layout="centered")
+st.set_page_config(page_title="WBCE", page_icon="🔍", layout="centered")
 
-st.markdown(
-    """
-<style>
-.profile-card {
-    background-color: #ffffff;
-    padding: 24px;
-    border-radius: 8px;
-    margin-bottom: 16px;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-}
-.profile-header {
-    margin-bottom: 12px;
-}
-.profile-name {
-    font-size: 1.4em;
-    font-weight: 600;
-    color: #111111;
-    margin: 0 0 8px 0;
-}
-.profile-meta {
-    font-size: 0.9em;
-    color: #666666;
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-}
-.meta-item {
-    display: flex;
-    align-items: center;
-}
-.profile-bio {
-    color: #333333;
-    font-size: 1em;
-    line-height: 1.6;
-    margin-top: 12px;
-}
-.justification {
-    color: #555555;
-    font-size: 0.95em;
-    line-height: 1.55;
-    margin-top: 12px;
-    padding-top: 8px;
-    border-top: 1px solid #eeeeee;
-}
-</style>
-""",
-    unsafe_allow_html=True,
-)
-
-st.title("Talent Search Engine")
+st.title("WBCE")
 
 if llm_client is None:
     st.warning(
@@ -229,30 +179,22 @@ with tab_search:
             ccs = r.get("ccs_total", 0)
             fs = r.get("final_score", 0)
 
-            just = r.get("justification")
-            just_html = ""
-            if just:
-                just_html = f'<p class="justification">{html.escape(just)}</p>'
+            just = r.get("justification", "")
 
-            card_html = f"""
-            <div class="profile-card">
-                <div class="profile-header">
-                    <h3 class="profile-name">{name}</h3>
-                    <div class="profile-meta">
-                        <span class="meta-item">{craft.title()}</span> •
-                        <span class="meta-item">{region.title()}</span> •
-                        <span class="meta-item">{age} years old</span> •
-                        <span class="meta-item">CCS {ccs:.4f}</span> •
-                        <span class="meta-item">Score {fs:.4f}</span>
-                    </div>
-                </div>
-                <div class="profile-bio">
-                    {bio}
-                </div>
-                {just_html}
-            </div>
-            """
-            st.markdown(card_html, unsafe_allow_html=True)
+            expander_title = f"{name} • {craft.title()} ({region.title()}) • Score: {fs:.4f}"
+            with st.expander(expander_title):
+                st.markdown(f"### {name}")
+                st.caption(f"**{craft.title()}** • {region.title()} • {age} years old • CCS: {ccs:.4f}")
+                
+                if just:
+                    st.markdown("---")
+                    st.markdown("#### Evaluation Summary")
+                    st.markdown(just)
+                
+                if bio:
+                    st.markdown("---")
+                    st.markdown("#### Full Profile Details")
+                    st.markdown(f"_{bio}_")
 
         # Optional quality pass: refine only top 3 justifications with LLM.
         # This keeps first response fast and avoids waiting on 10 LLM calls.
