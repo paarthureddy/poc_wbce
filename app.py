@@ -59,6 +59,9 @@ else:
 LLM_MODEL = _env_strip("LLM_MODEL_NAME", "gpt-5-mini") or "gpt-5-mini"
 
 
+import functools
+
+@functools.lru_cache(maxsize=128)
 def decompose_prompt(user_query):
     if llm_client is None:
         raise RuntimeError(
@@ -71,21 +74,30 @@ def decompose_prompt(user_query):
     Your job is to read a natural language search query and extract key parameters.
 
     You must output a raw JSON object (and nothing else, no markdown formatting) with these exact keys:
-    - "craft": (string) The role they are looking for (e.g., "director", "actor"). null if not specified.
+    - "craft": (string) The root role they are looking for. CRITICAL: Always normalize gendered crafts to their root craft (e.g., "actress" -> "actor", "heroine" -> "actor", "cameraman" -> "cinematographer"). null if not specified.
     - "location": (string) Legacy location string (often a city like "hyderabad"). null if not specified.
     - "location_city": (string) The city, if explicitly specified. null if not specified.
-    - "location_state": (string) The state/region, if explicitly specified (e.g., "uttar pradesh"). null if not specified.
-    - "location_raw": (string) Copy of the location phrase only (not the full user query) if you can isolate it; otherwise null.
-    - "banner": (string) A production banner they have worked with (e.g., "mythri"). null if not specified.
-    - "keywords": (list of strings) Atomic descriptive words. Extract single words, not phrases (e.g., ["mass", "thriller"]). empty list if none.
-      CRITICAL: Only include keywords that describe craft specializations, genres, or technical skills.
-      DROP conversational filler, time references, budget references, and availability words.
-    - "gender": (string) "male" or "female" if the query explicitly mentions a gender (e.g., "guy", "brother", "actress"). otherwise null.
-    - "relationship_hint": (string) If the query uses relationship words like "brother" / "sister", output that single word; otherwise null.
-    - "age_range": (string) One of "young", "mid", "senior", or null. Map "young", "emerging", "new", "junior" to "young" (typically age <= 30). Map "senior", "veteran", "experienced" to "mid" unless clearly over 50 then "senior". If no age signal, null.
-    - "tier": (integer or null) Production scale for the role they need: 1 = mega-budget pan-India, 2 = big-budget Telugu theatrical, 3 = mid-budget, 4 = indie, 5 = micro-budget/shorts. null if no budget/scale signal (e.g. no mention of budget, scale, blockbuster, indie, short film).
-    - "height_min_cm": (integer or null) If user specified a height, normalize to a lower bound in centimeters; otherwise null.
-    - "height_max_cm": (integer or null) If user specified a height, normalize to an upper bound in centimeters; otherwise null.
+    - "location_state": (string) The state/region, if explicitly specified. null if not specified.
+    - "location_raw": (string) Copy of the location phrase only.
+    - "banner": (string) A production banner they have worked with. null if not specified.
+    - "language": (string) A language the person should speak (e.g., "telugu", "hindi", "tamil"). null if not specified. CRITICAL: Extract language separately — do NOT put it in keywords.
+    - "keywords": (list of strings) Atomic descriptive words for craft specializations, genres, or physical attributes (e.g., ["mass", "thriller", "dark", "tall"]). DO NOT include languages, relationship words (brother/sister/villain/hero/role/character), or conversational filler. Empty list if none.
+    - "gender": (string) MUST BE exactly "male" or "female". INFER intelligently: "actress", "heroine", "sister", "woman", "girl" -> "female". "brother", "guy", "hero", "man" -> "male". Unspecified -> null.
+    - "relationship_hint": (string) If the query uses relationship words like "brother" / "sister", output that word; otherwise null.
+    - "age_range": (string) One of "young", "mid", "senior", or null.
+    - "tier": (integer or null) Production scale (1-5).
+    - "height_min_cm": (integer or null)
+    - "height_max_cm": (integer or null)
+
+    EXAMPLES:
+    User: "I need a heroine for my next movie"
+    JSON: {{"craft": "actor", "gender": "female", "language": null, "keywords": [], ...}}
+    User: "looking for a brother character"
+    JSON: {{"craft": "actor", "gender": "male", "relationship_hint": "brother", "language": null, "keywords": [], ...}}
+    User: "actor who speaks telugu, tall and dark"
+    JSON: {{"craft": "actor", "gender": null, "language": "telugu", "keywords": ["tall", "dark"], ...}}
+    User: "I need an actor to play villain's brother role, tall dark, speaks telugu"
+    JSON: {{"craft": "actor", "gender": "male", "language": "telugu", "keywords": ["tall", "dark"], "relationship_hint": "brother", ...}}
 
     IMPORTANT: Do NOT repeat the input, do NOT add explanations, and do NOT produce any other text.
     """
@@ -100,8 +112,31 @@ def decompose_prompt(user_query):
 
     raw_output = response.choices[0].message.content.strip()
     if raw_output.startswith("```json"):
-        raw_output = raw_output[7:-3]
-    return json.loads(raw_output)
+        raw_output = raw_output[7:]
+    if raw_output.endswith("```"):
+        raw_output = raw_output[:-3]
+    raw_output = raw_output.strip()
+
+    try:
+        result = json.loads(raw_output)
+    except json.JSONDecodeError:
+        # Fallback: treat the whole query as a raw craft search
+        return {
+            "craft": user_query.strip().lower(),
+            "location": None, "location_city": None, "location_state": None,
+            "location_raw": None, "banner": None, "language": None,
+            "keywords": [], "gender": None, "relationship_hint": None,
+            "age_range": None, "tier": None,
+            "height_min_cm": None, "height_max_cm": None,
+        }
+
+    # Normalize language: if LLM returned 'telugu and hindi', keep only the first language
+    lang = result.get("language")
+    if lang and isinstance(lang, str) and len(lang.split()) > 2:
+        # e.g. 'telugu and hindi' -> 'telugu'
+        result["language"] = lang.split()[0].strip().lower()
+
+    return result
 
 
 def execute_cypher(query):

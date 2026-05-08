@@ -2,7 +2,7 @@ import os
 import re
 from neo4j import GraphDatabase
 
-from ..graph.fetch_candidate_context import fetch_candidate_context
+from ..graph.fetch_candidate_context import fetch_candidates_context
 from ..math.ccs import compute_ccs
 from ..math.constants import (
     FINAL_SCORE_CCS_WEIGHT,
@@ -43,8 +43,14 @@ def rank_candidates(candidates, query_context, driver=None):
     ranked_candidates = []
     try:
         with driver.session() as session:
+            user_ids = [cand["id"] for cand in candidates]
+            from ..graph.fetch_candidate_context import fetch_candidates_context
+            cands_data_map = fetch_candidates_context(session, user_ids)
+
             for cand in candidates:
-                cand_data = fetch_candidate_context(session, cand["id"])
+                cand_data = cands_data_map.get(cand["id"])
+                if not cand_data:
+                    cand_data = {"verification_level": None, "experience_years": None, "context": {}, "credits": []}
                 ccs_result = compute_ccs(cand_data, qc)
 
                 cand_copy = cand.copy()
