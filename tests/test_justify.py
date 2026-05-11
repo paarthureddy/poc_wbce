@@ -187,5 +187,8 @@ def test_template_renders_query_match_section():
         qc,
     )
     t = template_justification(ev)
-    assert "Query Match" in t
-    assert "language" in t.lower()
+    assert "Why this profile was surfaced" in t
+    # Producer-friendly natural-language output, not raw field names.
+    assert "primary_craft =" not in t
+    assert "languages_spoken =" not in t
+    assert "Telugu" in t or "telugu" in t.lower()

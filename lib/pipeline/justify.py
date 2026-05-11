@@ -361,84 +361,206 @@ def _ensure_sentence_punctuation(s: str) -> str:
     return s
 
 
+_PRONOUN_BY_GENDER = {
+    "male": ("He", "him", "his"),
+    "female": ("She", "her", "her"),
+}
+
+
+def _pronouns(gender: str | None) -> tuple[str, str, str]:
+    g = (gender or "").lower()
+    return _PRONOUN_BY_GENDER.get(g, ("They", "them", "their"))
+
+
+def _phrase_for_alignment(a: dict, cand: dict) -> tuple[str, str]:
+    """
+    Turn a query_alignment entry into a producer-readable sentence.
+    Returns (verdict, sentence). No raw field names, no '=' signs.
+    """
+    dim = a["dimension"]
+    asked = str(a["asked_for"])
+    verdict = a["verdict"]
+    he, him, his = _pronouns(cand.get("gender"))
+
+    # Craft
+    if dim == "craft":
+        if verdict == "matched":
+            cv = cand.get("primary_craft") or asked
+            article = "an" if cv[:1].lower() in "aeiou" else "a"
+            return verdict, f"Works as {article} {cv}, which is exactly the role you asked for."
+        if verdict == "contradicts":
+            return verdict, f"Primary craft is {cand.get('primary_craft')}, not {asked} as requested."
+        return verdict, f"No primary craft is listed in {his.lower()} profile, so the {asked} match can't be confirmed from data."
+
+    # Location
+    if dim == "location":
+        loc = cand.get("location_city") or cand.get("location_state")
+        if verdict == "matched":
+            return verdict, f"Based in {loc or asked.title()}, matching your {asked.title()} requirement."
+        if verdict == "contradicts":
+            return verdict, f"Based in {loc}, not {asked.title()} as requested."
+        return verdict, f"Location is not recorded in the profile — can't confirm {asked.title()}."
+
+    # Language
+    if dim == "language":
+        langs = cand.get("languages_spoken") or []
+        if verdict == "matched":
+            others = [l for l in langs if l.lower() != asked.lower()]
+            extra = f" (also {', '.join(others)})" if others else ""
+            return verdict, f"Speaks {asked.title()}{extra}, matching your language requirement."
+        if verdict == "contradicts":
+            return verdict, f"Listed languages are {', '.join(langs) if langs else 'unspecified'} — {asked.title()} is not among them."
+        return verdict, f"No languages are listed on the profile — can't confirm {asked.title()} from data."
+
+    # Banner
+    if dim == "banner":
+        if verdict == "matched":
+            return verdict, f"Has worked with {asked} — a direct banner match."
+        return verdict, f"No work with {asked} is on record."
+
+    # Gender
+    if dim == "gender":
+        if verdict == "matched":
+            return verdict, f"{he} matches the {asked} brief you asked for."
+        if verdict == "contradicts":
+            return verdict, f"Profile gender is {cand.get('gender')}, not {asked} as requested."
+        return verdict, f"Gender is not specified on the profile."
+
+    # Age range
+    if dim == "age_range":
+        age = cand.get("age")
+        if verdict == "matched":
+            return verdict, f"Aged {age}, which fits the {asked} bracket."
+        if verdict == "contradicts":
+            return verdict, f"Aged {age}, which falls outside the {asked} bracket you asked for."
+        return verdict, f"Age is not specified on the profile — can't confirm {asked} bracket."
+
+    # Physical: tall
+    if dim == "physical:tall":
+        h = cand.get("height_cm")
+        if verdict == "matched":
+            return verdict, f"Stands {h} cm — fits the 'tall' brief." if h else f"Profile tags describe {him} as tall."
+        if verdict == "contradicts":
+            return verdict, f"Stands {h} cm, which is on the shorter side — does not match 'tall'."
+        return verdict, f"Height isn't recorded in the profile, so 'tall' can't be confirmed from data alone — worth checking {his} portfolio."
+
+    # Physical: short
+    if dim == "physical:short":
+        h = cand.get("height_cm")
+        if verdict == "matched":
+            return verdict, f"Stands {h} cm — fits the 'short' brief."
+        if verdict == "contradicts":
+            return verdict, f"Stands {h} cm, taller than the 'short' brief."
+        return verdict, f"Height isn't recorded — 'short' can't be confirmed from data."
+
+    # Complexion (dark/fair)
+    if dim == "physical:complexion":
+        tags = ", ".join(cand.get("appearance_tags") or []) or None
+        if verdict == "matched":
+            base = f"Profile describes {his} look as {tags}." if tags else f"Profile mentions a {asked} complexion."
+            return verdict, base + f" Matches your '{asked}' brief."
+        if verdict == "contradicts":
+            return verdict, f"Profile describes a different complexion ({tags or 'fair'}) — does not match '{asked}'."
+        return verdict, f"Complexion isn't recorded in the profile, so '{asked}' can't be confirmed from data — best verified from {his} portfolio photos."
+
+    # Generic keyword (e.g. "mass", "thriller", "action")
+    if dim.startswith("keyword:"):
+        if verdict == "matched":
+            return verdict, f"Profile tags or bio mention '{asked}', which aligns with your brief."
+        return verdict, f"'{asked}' isn't tagged in the profile — soft signal at best."
+
+    # Fallback
+    return verdict, f"{asked}: {verdict}."
+
+
 def template_justification(evidence: dict) -> str:
-    """Deterministic markdown fallback used when LLM is unavailable or rejected."""
+    """Deterministic, producer-readable fallback used when LLM is unavailable or rejected."""
     cand = evidence["candidate"]
     sq = evidence["structured_query"]
     alignment = evidence.get("query_alignment") or []
+    name = cand.get("name") or "This professional"
+    first = name.split()[0] if name else "They"
     craft = (cand.get("primary_craft") or sq.get("craft") or "their craft").strip()
-    region = cand.get("region") or cand.get("location_city") or ""
+    region = cand.get("location_city") or cand.get("region") or ""
     exp_y = cand.get("experience_years")
-    ver = cand.get("verification_level") or "unknown"
+    ver = (cand.get("verification_level") or "").strip()
     n_credits = evidence["credit_summary"]["total_graph_credits"]
     peer_c = evidence["credit_summary"]["credits_with_peer_co_credit_signal"]
     endorse = int(cand.get("peer_endorsement_count") or 0)
     mentors = evidence.get("mentors") or []
     top = evidence.get("ccs_credit_breakdown_top") or []
+    he, _him, his = _pronouns(cand.get("gender"))
 
     out: list[str] = []
 
-    # Query alignment section — most important
-    if alignment:
-        match_lines = []
-        gap_lines = []
-        conflict_lines = []
-        for a in alignment:
-            dim = a["dimension"]
-            asked = a["asked_for"]
-            ev = a["evidence"]
-            label = dim.split(":", 1)[-1] if ":" in dim else dim
-            if a["verdict"] == "matched":
-                match_lines.append(f"**{label}** ({asked}) — {ev}")
-            elif a["verdict"] == "contradicts":
-                conflict_lines.append(f"**{label}** ({asked}) — {ev}")
-            else:
-                gap_lines.append(f"**{label}** ({asked}) — {ev}")
+    # --- Why he/she fits ---
+    out.append("**Why this profile was surfaced**")
+    matched, gaps, conflicts = [], [], []
+    for a in alignment:
+        v, sentence = _phrase_for_alignment(a, cand)
+        if v == "matched":
+            matched.append(sentence)
+        elif v == "contradicts":
+            conflicts.append(sentence)
+        else:
+            gaps.append(sentence)
 
-        out.append("**Query Match**")
-        if match_lines:
-            for ln in match_lines:
-                out.append(f"- ✅ {ln}")
-        if conflict_lines:
-            for ln in conflict_lines:
-                out.append(f"- ⚠️ {ln}")
-        if gap_lines:
-            for ln in gap_lines:
-                out.append(f"- ❔ Not shown in profile data — {ln}")
+    if matched:
+        for s in matched:
+            out.append(f"- ✅ {s}")
+    if conflicts:
+        for s in conflicts:
+            out.append(f"- ⚠️ {s}")
+    if gaps:
+        for s in gaps:
+            out.append(f"- ❔ {s}")
+    if not (matched or conflicts or gaps):
+        intro = f"{first} is a {craft}"
+        if region:
+            intro += f" based in {region.title()}"
+        out.append(f"- {intro}.")
 
-    # Credits
+    # --- Track record ---
     out.append("")
-    out.append("**Credibility Signals**")
+    out.append("**Track record**")
     if n_credits == 0:
         out.append(
-            "- On-record film and series credits are sparse, so ranking leans on profile fields and keyword alignment."
+            f"- No film or series credits are on record yet, so this ranking leans on profile fit and keyword signals rather than a credit history."
         )
     else:
         ylatest = evidence["credit_summary"].get("latest_credit_year")
-        out.append(
-            f"- {n_credits} on-record project credits, with peer co-credit corroboration on {peer_c} of them."
-        )
+        titles = [t.get("title") for t in top[:3] if t.get("title")]
+        sentence = f"- {n_credits} on-record credit{'s' if n_credits != 1 else ''}"
+        if titles:
+            sentence += f" — including {', '.join(titles)}"
         if ylatest:
-            out.append(f"- Most recent on-record credit year: {ylatest}.")
-        if top:
-            titles = [t.get("title") for t in top[:3] if t.get("title")]
-            if titles:
-                out.append("- Key credited work: " + ", ".join(titles) + ".")
+            sentence += f" (most recent: {ylatest})"
+        sentence += "."
+        out.append(sentence)
+        if peer_c:
+            out.append(f"- {peer_c} of those credits are corroborated by peer co-credits on the same project.")
+        else:
+            out.append(f"- No peer co-credits on these projects yet — credit history is not yet independently corroborated.")
 
     if mentors:
         out.append(f"- Trained under {mentors[0]}.")
 
-    # Verification / experience
+    # --- Profile snapshot ---
     out.append("")
-    out.append("**Profile**")
-    out.append(
-        f"- Craft: {craft}"
-        + (f" • Region: {region}" if region else "")
-        + (f" • Experience: {exp_y} years" if exp_y is not None else "")
-    )
-    out.append(f"- Verification status: {ver}.")
+    out.append("**Profile snapshot**")
+    snap_bits = [craft.title()]
+    if region:
+        snap_bits.append(region.title())
+    if exp_y is not None:
+        snap_bits.append(f"{exp_y} years experience")
+    out.append("- " + " • ".join(snap_bits) + ".")
+
+    if ver and ver.lower() != "unknown":
+        out.append(f"- Verification: {ver}.")
+    else:
+        out.append("- Verification status is not recorded on the profile.")
     if endorse:
-        out.append(f"- Peer endorsements on platform: {endorse}.")
+        out.append(f"- {endorse} peer endorsement{'s' if endorse != 1 else ''} on platform.")
 
     text = "\n".join(out).strip()
     if len(text) > JUSTIFICATION_MAX_CHARS:
@@ -463,23 +585,34 @@ def validate_justification(text: str, evidence: dict) -> bool:
 
 
 def _llm_generate(client: Any, model: str, evidence: dict, timeout_sec: float) -> str:
-    system = """You are a talent evaluation assistant for a film-industry talent search product. Your job is to explain to a busy producer/director WHY this specific candidate is being shown for THEIR query.
+    system = """You are writing a casting recommendation for a film/TV producer. They typed a search query, our ranking system surfaced this candidate, and now you explain — in producer language — why this person is on the shortlist and what gaps remain.
 
-OUTPUT FORMAT (Markdown, scannable):
-- Start with a **Query Match** section that addresses EACH dimension in `query_alignment`:
-  - For verdict "matched": say so plainly with the supporting evidence (e.g., "Speaks Telugu — listed in languages_spoken").
-  - For verdict "contradicts": flag the mismatch honestly (e.g., "Located in Mumbai, not Hyderabad as requested").
-  - For verdict "silent": say the profile does not record this attribute (e.g., "Complexion not recorded in profile data — cannot confirm 'dark' on record").
-- Then a **Credibility Signals** section: credits count, peer corroboration, latest year, key titles.
-- Then a **Profile** section: craft, region/city, experience years, verification, mentors if any.
+WRITE LIKE A HUMAN CASTING ASSISTANT TALKING TO A PRODUCER, not like a database report.
 
-HARD RULES:
-- Only state facts that appear in the evidence JSON. NEVER invent heights, languages, credits, or attributes that aren't there.
-- If something the user asked for is silent in the data, SAY THAT explicitly — do not paper over it.
-- Do not use Greek letters, do not mention "CCS", "score", "ranking position", or compare to other candidates.
-- Do not include decimal scores or percentages.
-- Keep total output under 200 words. Use short bullets, bold labels, emojis sparingly (✅ ⚠️ ❔ are fine).
-- Be honest. A producer wants to know what fits AND what doesn't — they will make the final call."""
+OUTPUT (Markdown):
+**Why this profile was surfaced**
+- 3–6 short bullets. Each bullet addresses ONE thing the producer asked for in `query_alignment`.
+- Use ✅ for things the profile confirms, ⚠️ for things that conflict with the brief, ❔ for things the profile is silent on.
+- Write FULL SENTENCES referring to the person by name or "he/she". Examples:
+  - "✅ Speaks Telugu and Hindi — fits your language brief."
+  - "✅ Stands 178 cm, matching the 'tall' requirement."
+  - "❔ Complexion is not recorded on the profile — best verified from his portfolio photos."
+  - "⚠️ Based in Mumbai, not Hyderabad as requested."
+
+**Track record**
+- 1–3 bullets covering credits, recent year, and peer corroboration. Mention 1–2 specific project titles if available.
+
+**Profile snapshot**
+- Single line: craft • region • years of experience.
+- Verification status if known.
+
+ABSOLUTE RULES:
+- NEVER write raw field names like `languages_spoken =`, `primary_craft =`, `height_cm = 178`, `appearance_tags`, or array dumps like `['Telugu', 'Hindi']`. Translate to natural prose ("speaks Telugu and Hindi").
+- NEVER mention "CCS", "score", "ranking", "evidence JSON", "alignment verdict", or any system internals.
+- NEVER invent data not present in the evidence. If `languages_spoken` is empty, say languages aren't listed on the profile — do not guess.
+- If a field is silent in the data, acknowledge the gap politely; do not pretend it's a match.
+- Do not compare to other candidates. Do not use percentages or decimal scores.
+- Keep the whole output under 180 words. The producer is busy."""
 
     user = (
         "Write the evaluation. Address every item in `query_alignment`.\n\nEVIDENCE_JSON:\n"
@@ -518,28 +651,33 @@ def attach_justifications(
     head = out[:limit]
     tail = out[limit:]
 
-    def build_one(row: dict) -> tuple[str, str, dict, dict]:
+    def build_one(row: dict) -> tuple[str, str, str, dict, dict]:
         uid = row["id"]
         with driver.session() as session:
             facts = fetch_justification_facts(session, uid)
             cand = fetch_candidate_context(session, uid)
         evidence = build_justification_evidence(row, facts, cand, query_context)
         text = template_justification(evidence)
+        source = "template"
         if llm_client and model:
             try:
                 raw = _llm_generate(llm_client, model, evidence, timeout_sec)
-                # Preserve markdown line breaks — only collapse intra-line whitespace.
                 raw = "\n".join(re.sub(r"[ \t]+", " ", ln).strip() for ln in raw.splitlines())
                 raw = re.sub(r"\n{3,}", "\n\n", raw).strip()
                 if validate_justification(raw, evidence):
                     text = raw
-            except Exception:
-                pass
+                    source = "llm"
+                else:
+                    source = "template_after_llm_rejected"
+            except Exception as e:
+                source = f"template_after_llm_error:{type(e).__name__}"
         if not validate_justification(text, evidence):
             text = template_justification(evidence)
-        return uid, text, facts, cand
+            source = "template"
+        return uid, text, source, facts, cand
 
     id_to_text: dict[str, str] = {}
+    id_to_source: dict[str, str] = {}
     id_to_facts: dict[str, dict] = {}
     id_to_ctx: dict[str, dict] = {}
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as ex:
@@ -547,17 +685,19 @@ def attach_justifications(
         for fut in concurrent.futures.as_completed(futures, timeout=timeout_sec * limit + 5):
             row = futures[fut]
             try:
-                uid, text, facts, cand = fut.result(timeout=timeout_sec + 5)
+                uid, text, source, facts, cand = fut.result(timeout=timeout_sec + 5)
                 id_to_text[uid] = text
+                id_to_source[uid] = source
                 id_to_facts[uid] = facts
                 id_to_ctx[uid] = cand
-            except Exception:
+            except Exception as e:
                 uid = row["id"]
                 with driver.session() as session:
                     facts = fetch_justification_facts(session, uid)
                     cand = fetch_candidate_context(session, uid)
                 ev = build_justification_evidence(row, facts, cand, query_context)
                 id_to_text[uid] = template_justification(ev)
+                id_to_source[uid] = f"template_after_pool_error:{type(e).__name__}"
                 id_to_facts[uid] = facts
                 id_to_ctx[uid] = cand
 
@@ -572,6 +712,7 @@ def attach_justifications(
                 query_context,
             )
         )
+        r["justification_source"] = id_to_source.get(uid, "template")
         r["_profile_facts"] = id_to_facts.get(uid, {})
         r["_candidate_context"] = id_to_ctx.get(uid, {})
         merged.append(r)
