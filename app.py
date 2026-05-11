@@ -6,7 +6,7 @@ from pathlib import Path
 import streamlit as st
 import streamlit.components.v1 as components
 from neo4j import GraphDatabase
-from openai import OpenAI
+from openai import AzureOpenAI
 from dotenv import load_dotenv
 from lib.pipeline.rank import rank_candidates
 from lib.pipeline.cypher import build_cypher
@@ -37,35 +37,29 @@ PASSWORD = _env_strip("NEO4J_PASSWORD", "password") or "password"
 
 driver = GraphDatabase.driver(URI, auth=(USER, PASSWORD))
 
-# Setup Gemini client via OpenAI-compatible endpoint
-_api_key = _env_strip("GEMINI_API_KEY")
-_base_url = _env_strip("GEMINI_BASE_URL") or "https://generativelanguage.googleapis.com/v1beta/openai/"
+# Setup Azure OpenAI client
+_api_key = _env_strip("OAI_KEY_LLM") or _env_strip("AZURE_OPENAI_API_KEY")
+_endpoint = _env_strip("OAI_BASE_LLM") or _env_strip("AZURE_OPENAI_ENDPOINT")
+_api_version = (
+    _env_strip("OAI_VERSION")
+    or _env_strip("OPENAI_API_VERSION")
+    or "2024-12-01-preview"
+)
 
-llm_client: OpenAI | None
-if _api_key:
-    llm_client = OpenAI(
+llm_client: AzureOpenAI | None
+if _api_key and _endpoint:
+    llm_client = AzureOpenAI(
         api_key=_api_key,
-        base_url=_base_url,
+        api_version=_api_version,
+        azure_endpoint=_endpoint,
     )
 else:
     llm_client = None
 
-LLM_MODEL = _env_strip("LLM_MODEL_NAME", "gemini-2.5-flash") or "gemini-2.5-flash"
+LLM_MODEL = _env_strip("LLM_MODEL_NAME", "gpt-5.4-nano") or "gpt-5.4-nano"
 
-# Gemini client for justification text (OpenAI-compatible endpoint, faster than Azure for this use).
-_gemini_key = _env_strip("GEMINI_API_KEY")
-_gemini_base = _env_strip("GEMINI_BASE_URL") or "https://generativelanguage.googleapis.com/v1beta/openai/"
-GEMINI_MODEL = _env_strip("GEMINI_MODEL_NAME") or "gemini-2.5-flash"
-
-gemini_client: OpenAI | None
-if _gemini_key:
-    gemini_client = OpenAI(api_key=_gemini_key, base_url=_gemini_base)
-else:
-    gemini_client = None
-
-# Pick justification client: prefer Gemini for speed, fall back to Azure if Gemini missing.
-JUSTIFY_CLIENT = gemini_client or llm_client
-JUSTIFY_MODEL = GEMINI_MODEL if gemini_client else LLM_MODEL
+JUSTIFY_CLIENT = llm_client
+JUSTIFY_MODEL = LLM_MODEL
 
 
 import functools
@@ -74,7 +68,7 @@ import functools
 def decompose_prompt(user_query):
     if llm_client is None:
         raise RuntimeError(
-            "Gemini API credentials are missing. Set GEMINI_API_KEY "
+            "Azure OpenAI credentials are missing. Set OAI_KEY_LLM and OAI_BASE_LLM "
             f"in {_APP_DIR / '.env'} — see .env.example."
         )
     system_prompt = """
@@ -162,8 +156,8 @@ st.title("WBCE")
 
 if llm_client is None:
     st.warning(
-        "Gemini API is not configured (`GEMINI_API_KEY` missing). "
-        f"Add it to `{_APP_DIR / '.env'}` (see `.env.example`), then restart Streamlit."
+        "Azure OpenAI is not configured (`OAI_KEY_LLM` / `OAI_BASE_LLM` missing). "
+        f"Add them to `{_APP_DIR / '.env'}` (see `.env.example`), then restart Streamlit."
     )
 
 tab_search, tab_structured, tab_schema = st.tabs(["Search", "Structured Query", "Schema Reference"])

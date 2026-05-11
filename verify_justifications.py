@@ -39,13 +39,14 @@ def _run_case(driver, label: str, raw_q: str, params: dict, use_llm: bool) -> fl
     llm_client = None
     model = None
     if use_llm:
-        from openai import OpenAI
+        from openai import AzureOpenAI
 
-        llm_client = OpenAI(
-            api_key=os.getenv("GEMINI_API_KEY"),
-            base_url=os.getenv("GEMINI_BASE_URL", "https://generativelanguage.googleapis.com/v1beta/openai/"),
+        llm_client = AzureOpenAI(
+            api_key=os.getenv("OAI_KEY_LLM"),
+            api_version=os.getenv("OAI_VERSION", "2024-12-01-preview"),
+            azure_endpoint=os.getenv("OAI_BASE_LLM"),
         )
-        model = os.getenv("LLM_MODEL_NAME", "gemini-2.5-flash")
+        model = os.getenv("LLM_MODEL_NAME", "gpt-5.4-nano")
     ranked = attach_justifications(
         ranked, p, driver, limit=10, llm_client=llm_client, model=model
     )
