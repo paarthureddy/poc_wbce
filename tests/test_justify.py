@@ -2,8 +2,8 @@ from lib.pipeline.justify import (
     build_justification_evidence,
     template_justification,
     validate_justification,
-    _collect_allowed_number_strings,
     _as_plain_craft,
+    _compute_query_alignment,
 )
 
 
@@ -58,12 +58,21 @@ def _sample_profile_facts():
         "name": "Test User",
         "age": 40,
         "bio": "Bio",
+        "gender": "male",
         "experience_years": 15,
         "verification_level": "peer_verified",
         "looking_for": [],
         "tags_self": ["mass_entertainer"],
         "primary_craft": "Director",
         "peer_endorsement_count": 3,
+        "height_cm": 180,
+        "build": "athletic",
+        "appearance_tags": [],
+        "languages_spoken": ["Telugu"],
+        "location_city": "Hyderabad",
+        "location_state": "Telangana",
+        "location_country": "India",
+        "regional_background": "Telugu",
     }
 
 
@@ -76,6 +85,7 @@ def test_build_evidence_has_core_keys():
         qc,
     )
     assert "structured_query" in ev
+    assert "query_alignment" in ev
     assert ev["structured_query"]["craft"] == "director"
     assert ev["credit_summary"]["total_graph_credits"] == 1
     assert ev["ccs_credit_breakdown_top"][0]["title"] == "Alpha"
@@ -94,62 +104,88 @@ def test_template_passes_validation():
 
 
 def test_validate_rejects_comparative():
-    qc = {"raw_query": "q"}
-    ev = build_justification_evidence(
-        _sample_ranked_row(),
-        _sample_profile_facts(),
-        _sample_candidate_data(),
-        qc,
-    )
-    bad = (
-        "Test User is a director. They worked on Alpha in 2022. "
-        "They are better than other candidates in this list."
-    )
+    ev = {"candidate": {}, "structured_query": {}, "query_alignment": []}
+    bad = "Test User is a director. They are better than other candidates."
     assert not validate_justification(bad, ev)
 
 
-def test_validate_rejects_unknown_number():
-    qc = {"raw_query": "q"}
-    ev = build_justification_evidence(
-        _sample_ranked_row(),
-        _sample_profile_facts(),
-        _sample_candidate_data(),
-        qc,
-    )
-    bad = (
-        "Test User is a director with 99 verified credits. "
-        "They worked on Alpha in 2022. "
-        "They are based in Hyderabad."
-    )
+def test_validate_rejects_decimal_scores():
+    ev = {"candidate": {}, "structured_query": {}, "query_alignment": []}
+    bad = "Strong fit with score 0.85 and verified credits."
     assert not validate_justification(bad, ev)
 
 
-def test_allowed_numbers_include_query_digits():
-    ev = {
-        "candidate": {"age": 30},
-        "structured_query": {},
-        "credit_summary": {},
-        "ccs_credit_breakdown_top": [],
-        "query_numeric_tokens": ["22"],
-        "keyword_relevance_score": None,
-    }
-    assert "22" in _collect_allowed_number_strings(ev)
+def test_validate_rejects_percentages():
+    ev = {"candidate": {}, "structured_query": {}, "query_alignment": []}
+    bad = "Matches 92% of query criteria."
+    assert not validate_justification(bad, ev)
+
+
+def test_validate_allows_plain_integers():
+    """The new validator no longer whitelist-rejects integers — only decimals/percentages."""
+    ev = {"candidate": {}, "structured_query": {}, "query_alignment": []}
+    good = "5 credits, height 183 cm, most recent year 2023."
+    assert validate_justification(good, ev)
 
 
 def test_as_plain_craft_from_dict():
     assert _as_plain_craft({"craft": "Director", "subcraft": "X"}) == "Director"
 
 
-def test_template_does_not_claim_keyword_alignment_when_score_zero():
-    qc = {"raw_query": "action telangana telugu", "craft": "actor", "keywords": ["action", "telangana", "telugu"]}
-    row = _sample_ranked_row()
-    row["keyword_score"] = 0
+def test_query_alignment_language_match():
+    sq = {"language": "telugu"}
+    facts = {"languages_spoken": ["Telugu", "English"]}
+    align = _compute_query_alignment(sq, facts, "", [], [], [])
+    lang = [a for a in align if a["dimension"] == "language"][0]
+    assert lang["verdict"] == "matched"
+
+
+def test_query_alignment_language_silent():
+    sq = {"language": "telugu"}
+    facts = {"languages_spoken": []}
+    align = _compute_query_alignment(sq, facts, "", [], [], [])
+    lang = [a for a in align if a["dimension"] == "language"][0]
+    assert lang["verdict"] == "silent"
+
+
+def test_query_alignment_tall_match_by_height():
+    sq = {"keywords": ["tall"]}
+    facts = {"height_cm": 185}
+    align = _compute_query_alignment(sq, facts, "", [], [], [])
+    tall = [a for a in align if a["dimension"] == "physical:tall"][0]
+    assert tall["verdict"] == "matched"
+
+
+def test_query_alignment_dark_match_via_appearance():
+    sq = {"keywords": ["dark"]}
+    facts = {"appearance_tags": ["dusky"]}
+    align = _compute_query_alignment(sq, facts, "", [], [], [])
+    dark = [a for a in align if a["dimension"] == "physical:complexion"][0]
+    assert dark["verdict"] == "matched"
+
+
+def test_query_alignment_silent_when_profile_missing_attribute():
+    sq = {"keywords": ["dark"]}
+    facts = {"appearance_tags": [], "bio": ""}
+    align = _compute_query_alignment(sq, facts, "", [], [], [])
+    dark = [a for a in align if a["dimension"] == "physical:complexion"][0]
+    assert dark["verdict"] == "silent"
+
+
+def test_template_renders_query_match_section():
+    qc = {
+        "raw_query": "tall dark telugu actor",
+        "craft": "director",
+        "language": "telugu",
+        "keywords": ["tall"],
+        "location_city": "Hyderabad",
+    }
     ev = build_justification_evidence(
-        row,
+        _sample_ranked_row(),
         _sample_profile_facts(),
         _sample_candidate_data(),
         qc,
     )
-    t = template_justification(ev).lower()
-    assert "keywords action, telangana, telugu align" not in t
-    assert "direct overlap" in t
+    t = template_justification(ev)
+    assert "Query Match" in t
+    assert "language" in t.lower()

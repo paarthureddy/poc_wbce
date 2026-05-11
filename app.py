@@ -6,7 +6,7 @@ from pathlib import Path
 import streamlit as st
 import streamlit.components.v1 as components
 from neo4j import GraphDatabase
-from openai import AzureOpenAI
+from openai import AzureOpenAI, OpenAI
 from dotenv import load_dotenv
 from lib.pipeline.rank import rank_candidates
 from lib.pipeline.cypher import build_cypher
@@ -57,6 +57,21 @@ else:
     llm_client = None
 
 LLM_MODEL = _env_strip("LLM_MODEL_NAME", "gpt-5-mini") or "gpt-5-mini"
+
+# Gemini client for justification text (OpenAI-compatible endpoint, faster than Azure for this use).
+_gemini_key = _env_strip("GEMINI_API_KEY")
+_gemini_base = _env_strip("GEMINI_BASE_URL") or "https://generativelanguage.googleapis.com/v1beta/openai/"
+GEMINI_MODEL = _env_strip("GEMINI_MODEL_NAME") or "gemini-2.5-flash"
+
+gemini_client: OpenAI | None
+if _gemini_key:
+    gemini_client = OpenAI(api_key=_gemini_key, base_url=_gemini_base)
+else:
+    gemini_client = None
+
+# Pick justification client: prefer Gemini for speed, fall back to Azure if Gemini missing.
+JUSTIFY_CLIENT = gemini_client or llm_client
+JUSTIFY_MODEL = GEMINI_MODEL if gemini_client else LLM_MODEL
 
 
 import functools
@@ -173,7 +188,7 @@ with tab_search:
     )
 
     if st.button("Search") and user_query:
-        with st.spinner("Searching and scoring (fast mode)..."):
+        with st.spinner("Searching, scoring, and generating evaluations..."):
             try:
                 params = decompose_prompt(user_query)
             except Exception as e:
@@ -190,22 +205,23 @@ with tab_search:
             cypher_query = build_cypher(params)
             results = execute_cypher(cypher_query)
             ranked_results = rank_candidates(results, params, driver)
-            # Fast first paint: deterministic justifications for top 10.
+            # Single pass: top 10 justifications via Gemini Flash in parallel.
             ranked_results = attach_justifications(
                 ranked_results,
                 params,
                 driver,
                 limit=10,
-                llm_client=None,
-                model=None,
+                llm_client=JUSTIFY_CLIENT,
+                model=JUSTIFY_MODEL if JUSTIFY_CLIENT else None,
+                timeout_sec=8,
+                max_workers=10,
             )
             st.session_state["ranked_results"] = ranked_results
             st.session_state["query_params"] = params
-            st.session_state["llm_upgrade_pending"] = bool(llm_client)
 
     ranked_results = st.session_state.get("ranked_results")
     if ranked_results:
-        for r in ranked_results:
+        for idx, r in enumerate(ranked_results):
             name = r.get("Name", "Unknown Name")
             age = r.get("Age", "N/A")
             craft = r.get("Craft", "Craft Not Specified")
@@ -213,48 +229,120 @@ with tab_search:
             bio = r.get("Bio", "")
             ccs = r.get("ccs_total", 0)
             fs = r.get("final_score", 0)
-
             just = r.get("justification", "")
+            facts = r.get("_profile_facts") or {}
+            ctx = (r.get("_candidate_context") or {}).get("context") or {}
+            credits = (r.get("_candidate_context") or {}).get("credits") or []
 
             expander_title = f"{name} • {craft.title()} ({region.title()}) • Score: {fs:.4f}"
             with st.expander(expander_title):
                 st.markdown(f"### {name}")
                 st.caption(f"**{craft.title()}** • {region.title()} • {age} years old • CCS: {ccs:.4f}")
-                
+
                 if just:
                     st.markdown("---")
                     st.markdown("#### Evaluation Summary")
                     st.markdown(just)
-                
-                if bio:
-                    st.markdown("---")
-                    st.markdown("#### Full Profile Details")
-                    st.markdown(f"_{bio}_")
 
-        # Optional quality pass: refine only top 3 justifications with LLM.
-        # This keeps first response fast and avoids waiting on 10 LLM calls.
-        if st.session_state.get("llm_upgrade_pending") and llm_client is not None:
-            with st.status("Refining top 3 explanations...", expanded=False):
-                try:
-                    refined = attach_justifications(
-                        ranked_results,
-                        st.session_state.get("query_params") or {},
-                        driver,
-                        limit=3,
-                        llm_client=llm_client,
-                        model=LLM_MODEL,
-                        timeout_sec=6,
-                        max_workers=3,
-                    )
-                    merged = list(ranked_results)
-                    for idx in range(min(3, len(merged), len(refined))):
-                        merged[idx]["justification"] = refined[idx].get("justification")
-                    st.session_state["ranked_results"] = merged
-                except Exception as e:
-                    st.warning(f"LLM refinement skipped: {e}")
-                finally:
-                    st.session_state["llm_upgrade_pending"] = False
-            st.rerun()
+                st.markdown("---")
+                show_profile_key = f"show_profile_{r.get('id', idx)}"
+                if st.toggle("Show Full Profile", key=show_profile_key):
+                    st.markdown("#### Profile Details")
+
+                    bio_to_show = facts.get("bio") or bio
+                    if bio_to_show:
+                        st.markdown(f"_{bio_to_show}_")
+
+                    # Personal
+                    personal_rows = []
+                    if facts.get("gender"):
+                        personal_rows.append(f"- **Gender:** {facts['gender']}")
+                    if facts.get("age") is not None:
+                        personal_rows.append(f"- **Age:** {facts['age']}")
+                    if facts.get("experience_years") is not None:
+                        personal_rows.append(f"- **Experience:** {facts['experience_years']} years")
+                    if facts.get("verification_level"):
+                        personal_rows.append(f"- **Verification:** {facts['verification_level']}")
+                    if personal_rows:
+                        st.markdown("**Personal**")
+                        st.markdown("\n".join(personal_rows))
+
+                    # Location
+                    loc_rows = []
+                    if facts.get("location_city"):
+                        loc_rows.append(f"- **City:** {facts['location_city']}")
+                    if facts.get("location_state"):
+                        loc_rows.append(f"- **State:** {facts['location_state']}")
+                    if facts.get("location_country"):
+                        loc_rows.append(f"- **Country:** {facts['location_country']}")
+                    if facts.get("regional_background"):
+                        loc_rows.append(f"- **Regional background:** {facts['regional_background']}")
+                    if loc_rows:
+                        st.markdown("**Location**")
+                        st.markdown("\n".join(loc_rows))
+
+                    # Physical
+                    phys_rows = []
+                    if facts.get("height_cm") is not None:
+                        phys_rows.append(f"- **Height:** {facts['height_cm']} cm")
+                    if facts.get("build"):
+                        phys_rows.append(f"- **Build:** {facts['build']}")
+                    if facts.get("appearance_tags"):
+                        phys_rows.append(f"- **Appearance tags:** {', '.join(facts['appearance_tags'])}")
+                    if phys_rows:
+                        st.markdown("**Physical Attributes**")
+                        st.markdown("\n".join(phys_rows))
+
+                    # Languages + tags
+                    misc_rows = []
+                    if facts.get("languages_spoken"):
+                        misc_rows.append(f"- **Languages:** {', '.join(facts['languages_spoken'])}")
+                    if facts.get("tags_self"):
+                        misc_rows.append(f"- **Self-tags:** {', '.join(facts['tags_self'])}")
+                    if facts.get("looking_for"):
+                        misc_rows.append(f"- **Looking for:** {', '.join(facts['looking_for'])}")
+                    if misc_rows:
+                        st.markdown("**Languages & Self-described**")
+                        st.markdown("\n".join(misc_rows))
+
+                    # Industry context
+                    affiliated = ctx.get("affiliated_banners") or []
+                    credited_banners = ctx.get("credited_banners") or []
+                    mentors = ctx.get("mentor_names") or []
+                    endorse = facts.get("peer_endorsement_count") or 0
+                    ind_rows = []
+                    if affiliated:
+                        ind_rows.append(f"- **Affiliated banners:** {', '.join(affiliated)}")
+                    if credited_banners:
+                        ind_rows.append(f"- **Credited via banners:** {', '.join(credited_banners)}")
+                    if mentors:
+                        ind_rows.append(f"- **Trained under:** {', '.join(mentors)}")
+                    if endorse:
+                        ind_rows.append(f"- **Peer endorsements:** {endorse}")
+                    if ind_rows:
+                        st.markdown("**Industry Context**")
+                        st.markdown("\n".join(ind_rows))
+
+                    # Credits table
+                    if credits:
+                        st.markdown(f"**Credits ({len(credits)})**")
+                        for c in sorted(credits, key=lambda x: (x.get("year") or 0), reverse=True)[:20]:
+                            line = f"- *{c.get('title', 'Untitled')}*"
+                            meta = []
+                            if c.get("year"):
+                                meta.append(str(c["year"]))
+                            if c.get("role"):
+                                meta.append(c["role"])
+                            if c.get("project_type"):
+                                meta.append(c["project_type"])
+                            if c.get("tier") is not None:
+                                meta.append(f"tier {c['tier']}")
+                            vcount = len(c.get("verifiers") or [])
+                            if vcount:
+                                meta.append(f"{vcount} peer co-credit(s)")
+                            if meta:
+                                line += " — " + " • ".join(meta)
+                            st.markdown(line)
     elif st.session_state.get("ranked_results") == []:
         st.info("No professionals found matching your criteria.")
 

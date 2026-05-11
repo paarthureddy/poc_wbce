@@ -11,17 +11,21 @@ from typing import Any
 from ..graph.fetch_candidate_context import fetch_candidate_context
 from ..graph.fetch_justification_facts import fetch_justification_facts
 
-JUSTIFICATION_MAX_CHARS = 1500
-JUSTIFICATION_MIN_SENTENCES = 1
-JUSTIFICATION_MAX_SENTENCES = 20
+JUSTIFICATION_MAX_CHARS = 1800
 LLM_DEFAULT_TIMEOUT_SEC = 14
 
 _BANNED_COMPARATIVES = re.compile(
     r"\b(better than|worse than|higher rank|lower rank|ranked above|ranked below|"
-    r"compared to|versus|vs\.| vs |unlike|other candidates|other profiles|"
+    r"compared to|other candidates|other profiles|"
     r"number one|#1|first place|second place)\b",
     re.IGNORECASE,
 )
+
+# Tokens commonly used to describe complexion in profile data
+_DARK_TOKENS = {"dark", "dusky", "wheatish", "tan", "tanned", "brown", "deep"}
+_FAIR_TOKENS = {"fair", "light", "pale"}
+_TALL_THRESHOLD_CM = 175
+_SHORT_THRESHOLD_CM = 165
 
 
 def _strip_internal_qc(qc: dict) -> dict:
@@ -29,7 +33,6 @@ def _strip_internal_qc(qc: dict) -> dict:
 
 
 def _as_plain_craft(value: Any) -> str:
-    """Neo4j / Cypher sometimes returns nested structures, avoid dumping dicts into prose."""
     m: dict | None = None
     if isinstance(value, dict):
         m = value
@@ -46,49 +49,182 @@ def _as_plain_craft(value: Any) -> str:
     return "their craft"
 
 
-def _collect_allowed_number_strings(evidence: dict) -> set[str]:
-    """Digits that may appear in a grounded justification (conservative whitelist)."""
-    allowed: set[str] = set()
+def _norm_list(xs):
+    return [str(x).strip() for x in (xs or []) if x and str(x).strip()]
 
-    def add_int(v: Any) -> None:
-        if v is None:
-            return
-        if isinstance(v, bool):
-            return
-        if isinstance(v, int):
-            allowed.add(str(v))
-        elif isinstance(v, float) and v == int(v):
-            allowed.add(str(int(v)))
 
-    cand = evidence.get("candidate") or {}
-    add_int(cand.get("age"))
-    add_int(cand.get("experience_years"))
-    add_int(cand.get("peer_endorsement_count"))
+def _contains_any(haystack: str, needles: set[str]) -> bool:
+    hl = (haystack or "").lower()
+    return any(n in hl for n in needles)
 
-    cs = evidence.get("credit_summary") or {}
-    add_int(cs.get("total_graph_credits"))
-    add_int(cs.get("credits_with_peer_co_credit_signal"))
-    add_int(cs.get("latest_credit_year"))
-    for y in cs.get("years_present") or []:
-        add_int(y)
 
-    sq = evidence.get("structured_query") or {}
-    add_int(sq.get("tier"))
+def _compute_query_alignment(
+    sq: dict,
+    facts: dict,
+    bio: str,
+    banners_a: list,
+    banners_c: list,
+    locations_graph: list,
+) -> list[dict]:
+    """
+    For every dimension the user explicitly asked for, return a verdict:
+      matched   - profile data supports it
+      contradicts - profile data conflicts with it
+      silent    - profile has no info either way
+    Each entry includes the evidence string we used. Strictly grounded.
+    """
+    alignment: list[dict] = []
 
-    kr = evidence.get("keyword_relevance_score")
-    if kr is not None:
-        allowed.add(str(int(kr)))
+    def add(dim, asked, verdict, evidence):
+        alignment.append({
+            "dimension": dim,
+            "asked_for": asked,
+            "verdict": verdict,
+            "evidence": evidence,
+        })
 
-    for t in evidence.get("ccs_credit_breakdown_top") or []:
-        add_int(t.get("year"))
-        add_int(t.get("peer_verifiers_on_this_credit"))
+    # --- Craft ---
+    if sq.get("craft"):
+        cand_craft = (facts.get("primary_craft") or "").lower()
+        if cand_craft and sq["craft"].lower() in cand_craft:
+            add("craft", sq["craft"], "matched", f"primary_craft = {facts.get('primary_craft')}")
+        elif cand_craft:
+            add("craft", sq["craft"], "contradicts", f"primary_craft = {facts.get('primary_craft')}")
+        else:
+            add("craft", sq["craft"], "silent", "no primary_craft on profile")
 
-    for tok in evidence.get("query_numeric_tokens") or []:
-        allowed.add(str(tok))
+    # --- Location ---
+    asked_loc = sq.get("location_city") or sq.get("location") or sq.get("location_state")
+    if asked_loc:
+        cand_loc_parts = [
+            facts.get("location_city"),
+            facts.get("location_state"),
+            facts.get("location_country"),
+        ]
+        cand_loc_join = " | ".join([str(x) for x in cand_loc_parts if x]).lower()
+        graph_loc_join = " | ".join(locations_graph).lower()
+        if asked_loc.lower() in cand_loc_join or asked_loc.lower() in graph_loc_join:
+            ev = cand_loc_join or graph_loc_join
+            add("location", asked_loc, "matched", ev)
+        elif cand_loc_join or graph_loc_join:
+            add("location", asked_loc, "contradicts", cand_loc_join or graph_loc_join)
+        else:
+            add("location", asked_loc, "silent", "no location on profile")
 
-    for y in range(1990, 2040):
-        allowed.add(str(y))
-    return allowed
+    # --- Language ---
+    if sq.get("language"):
+        langs = [l.lower() for l in _norm_list(facts.get("languages_spoken"))]
+        asked = sq["language"].lower()
+        if any(asked in l or l in asked for l in langs):
+            add("language", sq["language"], "matched", f"languages_spoken = {facts.get('languages_spoken')}")
+        elif langs:
+            add("language", sq["language"], "contradicts", f"languages_spoken = {facts.get('languages_spoken')}")
+        else:
+            # Check regional background as soft signal
+            rb = (facts.get("regional_background") or "").lower()
+            if rb and asked in rb:
+                add("language", sq["language"], "matched", f"regional_background = {facts.get('regional_background')}")
+            else:
+                add("language", sq["language"], "silent", "no languages_spoken on profile")
+
+    # --- Banner ---
+    if sq.get("banner"):
+        bn = sq["banner"].lower()
+        all_banners = [b for b in (banners_a + banners_c) if b]
+        matched = [b for b in all_banners if bn in str(b).lower()]
+        if matched:
+            add("banner", sq["banner"], "matched", f"banners = {matched[:3]}")
+        elif all_banners:
+            add("banner", sq["banner"], "silent", f"affiliated/credited banners present but no overlap: {all_banners[:3]}")
+        else:
+            add("banner", sq["banner"], "silent", "no banner edges in graph")
+
+    # --- Gender ---
+    if sq.get("gender"):
+        g = (facts.get("gender") or "").lower()
+        if g and sq["gender"].lower() == g:
+            add("gender", sq["gender"], "matched", f"gender = {facts.get('gender')}")
+        elif g:
+            add("gender", sq["gender"], "contradicts", f"gender = {facts.get('gender')}")
+        else:
+            add("gender", sq["gender"], "silent", "no gender on profile")
+
+    # --- Age range ---
+    if sq.get("age_range"):
+        age = facts.get("age")
+        ar = sq["age_range"]
+        if isinstance(age, (int, float)):
+            in_range = (
+                (ar == "young" and age <= 30)
+                or (ar == "mid" and 30 < age <= 50)
+                or (ar == "senior" and age > 50)
+            )
+            if in_range:
+                add("age_range", ar, "matched", f"age = {int(age)}")
+            else:
+                add("age_range", ar, "contradicts", f"age = {int(age)}")
+        else:
+            add("age_range", ar, "silent", "no age on profile")
+
+    # --- Physical / appearance keywords from query ---
+    kws = [str(k).lower() for k in (sq.get("keywords") or [])]
+    appearance_tags = [a.lower() for a in _norm_list(facts.get("appearance_tags"))]
+    build_val = (facts.get("build") or "").lower()
+    bio_l = (bio or "").lower()
+    height = facts.get("height_cm")
+
+    if "tall" in kws:
+        if isinstance(height, (int, float)) and height >= _TALL_THRESHOLD_CM:
+            add("physical:tall", "tall", "matched", f"height_cm = {int(height)}")
+        elif isinstance(height, (int, float)) and height <= _SHORT_THRESHOLD_CM:
+            add("physical:tall", "tall", "contradicts", f"height_cm = {int(height)}")
+        elif "tall" in appearance_tags or "tall" in bio_l:
+            add("physical:tall", "tall", "matched", "appearance tag or bio mentions 'tall'")
+        else:
+            add("physical:tall", "tall", "silent", "no height_cm or 'tall' tag on profile")
+
+    if "short" in kws:
+        if isinstance(height, (int, float)) and height <= _SHORT_THRESHOLD_CM:
+            add("physical:short", "short", "matched", f"height_cm = {int(height)}")
+        elif isinstance(height, (int, float)):
+            add("physical:short", "short", "contradicts", f"height_cm = {int(height)}")
+        else:
+            add("physical:short", "short", "silent", "no height_cm on profile")
+
+    if "dark" in kws or "dusky" in kws:
+        joined = " ".join(appearance_tags) + " " + bio_l
+        if _contains_any(joined, _DARK_TOKENS):
+            add("physical:complexion", "dark", "matched", f"appearance/bio mentions dark/dusky tone")
+        elif _contains_any(joined, _FAIR_TOKENS):
+            add("physical:complexion", "dark", "contradicts", f"appearance/bio describes fair complexion")
+        else:
+            add("physical:complexion", "dark", "silent", "no complexion tag in profile")
+
+    if "fair" in kws:
+        joined = " ".join(appearance_tags) + " " + bio_l
+        if _contains_any(joined, _FAIR_TOKENS):
+            add("physical:complexion", "fair", "matched", f"appearance/bio mentions fair complexion")
+        elif _contains_any(joined, _DARK_TOKENS):
+            add("physical:complexion", "fair", "contradicts", f"appearance/bio describes dark complexion")
+        else:
+            add("physical:complexion", "fair", "silent", "no complexion tag in profile")
+
+    # Any remaining keyword: search across appearance_tags, build, bio, tags_self
+    body_blob = " ".join(
+        appearance_tags
+        + [build_val]
+        + [t.lower() for t in _norm_list(facts.get("tags_self"))]
+    ) + " " + bio_l
+    physical_handled = {"tall", "short", "dark", "dusky", "fair"}
+    for k in kws:
+        if k in physical_handled or not k:
+            continue
+        if k in body_blob:
+            add(f"keyword:{k}", k, "matched", "appears in profile tags or bio")
+        else:
+            add(f"keyword:{k}", k, "silent", "no direct mention in profile data")
+
+    return alignment
 
 
 def build_justification_evidence(
@@ -97,10 +233,9 @@ def build_justification_evidence(
     candidate_data: dict,
     query_context: dict,
 ) -> dict:
-    """Structured facts + CCS breakdown slice for LLM or template (no other candidates)."""
+    """Structured facts + CCS breakdown + query alignment for LLM or template."""
     qc = _strip_internal_qc(query_context or {})
     breakdown = list(ranked_row.get("ccs_breakdown") or [])
-    # Sort by contribution descending for narrative focus
     breakdown_sorted = sorted(
         breakdown, key=lambda x: x.get("contribution", 0), reverse=True
     )
@@ -108,69 +243,88 @@ def build_justification_evidence(
 
     ctx = candidate_data.get("context") or {}
     credits = list(candidate_data.get("credits") or [])
-    credits_with_peer_signal = sum(
-        1 for c in credits if (c.get("verifiers") or [])
-    )
+    credits_with_peer_signal = sum(1 for c in credits if (c.get("verifiers") or []))
     years_on_graph = sorted(
         {int(c["year"]) for c in credits if c.get("year") is not None},
         reverse=True,
     )
     latest_year = years_on_graph[0] if years_on_graph else None
 
-    # Enrich top credits with graph fields (role, type) by title match
     title_to_credit = {c.get("title"): c for c in credits}
     top_credits_narrative = []
     for row in breakdown_sorted[:5]:
         title = row.get("project_title")
         gc = title_to_credit.get(title) or {}
         contrib = float(row.get("contribution") or 0)
-        strength = (
-            "high"
-            if top_contrib > 0 and contrib > top_contrib * 0.5
-            else "moderate"
-        )
-        top_credits_narrative.append(
-            {
-                "title": title,
-                "year": gc.get("year"),
-                "role_on_credit": gc.get("role"),
-                "project_type": gc.get("project_type"),
-                "peer_verifiers_on_this_credit": len(gc.get("verifiers") or []),
-                "narrative_strength": strength,
-                "recency_support": "recent"
-                if float(row.get("delta") or 0) > 0.85
-                else "older",
-            }
-        )
+        strength = "high" if top_contrib > 0 and contrib > top_contrib * 0.5 else "moderate"
+        top_credits_narrative.append({
+            "title": title,
+            "year": gc.get("year"),
+            "role_on_credit": gc.get("role"),
+            "project_type": gc.get("project_type"),
+            "peer_verifiers_on_this_credit": len(gc.get("verifiers") or []),
+            "narrative_strength": strength,
+            "recency_support": "recent" if float(row.get("delta") or 0) > 0.85 else "older",
+        })
 
     uq = qc.get("raw_query") or ""
     query_numeric_tokens = re.findall(r"\b\d+\b", uq)
 
+    structured_query = {
+        "craft": qc.get("craft"),
+        "location": qc.get("location"),
+        "location_city": qc.get("location_city"),
+        "location_state": qc.get("location_state"),
+        "banner": qc.get("banner"),
+        "language": qc.get("language"),
+        "gender": qc.get("gender"),
+        "relationship_hint": qc.get("relationship_hint"),
+        "tier": qc.get("tier"),
+        "age_range": qc.get("age_range"),
+        "keywords": qc.get("keywords") or [],
+        "height_min_cm": qc.get("height_min_cm"),
+        "height_max_cm": qc.get("height_max_cm"),
+    }
+
+    bio_text = profile_facts.get("bio") or ranked_row.get("Bio") or ""
+
+    query_alignment = _compute_query_alignment(
+        sq=structured_query,
+        facts=profile_facts,
+        bio=bio_text,
+        banners_a=ctx.get("affiliated_banners") or [],
+        banners_c=ctx.get("credited_banners") or [],
+        locations_graph=ctx.get("locations") or [],
+    )
+
     evidence: dict[str, Any] = {
         "user_query": uq,
         "query_numeric_tokens": query_numeric_tokens,
-        "structured_query": {
-            "craft": qc.get("craft"),
-            "location": qc.get("location"),
-            "banner": qc.get("banner"),
-            "tier": qc.get("tier"),
-            "age_range": qc.get("age_range"),
-            "keywords": qc.get("keywords") or [],
-        },
+        "structured_query": structured_query,
+        "query_alignment": query_alignment,
         "candidate": {
             "id": ranked_row.get("id"),
             "name": profile_facts.get("name") or ranked_row.get("Name"),
             "age": profile_facts.get("age") if profile_facts.get("age") is not None else ranked_row.get("Age"),
+            "gender": profile_facts.get("gender"),
             "primary_craft": _as_plain_craft(
                 profile_facts.get("primary_craft") or ranked_row.get("Craft")
             ),
             "region": ranked_row.get("Region"),
-            "experience_years": candidate_data.get("experience_years"),
-            "verification_level": candidate_data.get("verification_level"),
+            "location_city": profile_facts.get("location_city"),
+            "location_state": profile_facts.get("location_state"),
+            "location_country": profile_facts.get("location_country"),
+            "regional_background": profile_facts.get("regional_background"),
+            "experience_years": candidate_data.get("experience_years") or profile_facts.get("experience_years"),
+            "verification_level": candidate_data.get("verification_level") or profile_facts.get("verification_level"),
             "peer_endorsement_count": profile_facts.get("peer_endorsement_count", 0),
-            "looking_for": profile_facts.get("looking_for") or [],
-            "tags_self": profile_facts.get("tags_self") or [],
-            "bio_excerpt": (profile_facts.get("bio") or ranked_row.get("Bio") or "")[:400],
+            "languages_spoken": _norm_list(profile_facts.get("languages_spoken")),
+            "height_cm": profile_facts.get("height_cm"),
+            "build": profile_facts.get("build"),
+            "appearance_tags": _norm_list(profile_facts.get("appearance_tags")),
+            "looking_for": _norm_list(profile_facts.get("looking_for")),
+            "tags_self": _norm_list(profile_facts.get("tags_self")),
+            "bio_excerpt": bio_text[:500],
         },
         "banners": {
             "affiliated": ctx.get("affiliated_banners") or [],
@@ -208,167 +362,128 @@ def _ensure_sentence_punctuation(s: str) -> str:
 
 
 def template_justification(evidence: dict) -> str:
-    """Deterministic paragraph when LLM is unavailable or validation fails."""
+    """Deterministic markdown fallback used when LLM is unavailable or rejected."""
     cand = evidence["candidate"]
     sq = evidence["structured_query"]
-    name = cand.get("name") or "This professional"
+    alignment = evidence.get("query_alignment") or []
     craft = (cand.get("primary_craft") or sq.get("craft") or "their craft").strip()
-    region = cand.get("region") or ""
+    region = cand.get("region") or cand.get("location_city") or ""
     exp_y = cand.get("experience_years")
     ver = cand.get("verification_level") or "unknown"
     n_credits = evidence["credit_summary"]["total_graph_credits"]
     peer_c = evidence["credit_summary"]["credits_with_peer_co_credit_signal"]
     endorse = int(cand.get("peer_endorsement_count") or 0)
     mentors = evidence.get("mentors") or []
-    banners_a = evidence["banners"]["affiliated"]
-    banners_c = evidence["banners"]["credited_via_projects"]
-    kw = sq.get("keywords") or []
-    kr = evidence.get("keyword_relevance_score")
     top = evidence.get("ccs_credit_breakdown_top") or []
 
-    parts = []
+    out: list[str] = []
 
-    # Query alignment
-    if sq.get("banner"):
-        bn = str(sq["banner"]).lower()
-        matched = [b for b in banners_a + banners_c if b and bn in str(b).lower()]
-        if matched:
-            parts.append(
-                _ensure_sentence_punctuation(
-                    f"{name} matches this search strongly through banner-related work tied to {', '.join(matched[:3])}"
-                )
-            )
-        else:
-            parts.append(
-                _ensure_sentence_punctuation(
-                    f"{name} appears in this banner-focused search primarily through other signals; banner overlap is not established in the graph data provided"
-                )
-            )
-    elif kw:
-        kw_list = ", ".join(kw[:5])
-        if isinstance(kr, (int, float)) and kr > 0:
-            parts.append(
-                _ensure_sentence_punctuation(
-                    f"{name} is surfaced here partly because the query keywords {kw_list} show overlap with profile and project-type signals alongside craft fit for {craft}"
-                )
-            )
-        else:
-            parts.append(
-                _ensure_sentence_punctuation(
-                    f"{name} is surfaced here mainly on craft and profile signals for {craft}; direct overlap for query keywords {kw_list} is limited in the on-record profile/project fields shown"
-                )
-            )
-    else:
-        parts.append(
-            _ensure_sentence_punctuation(
-                f"{name} is surfaced here based on craft and experience fit for {craft}"
-                + (f" in {region}" if region else "")
-            )
-        )
+    # Query alignment section — most important
+    if alignment:
+        match_lines = []
+        gap_lines = []
+        conflict_lines = []
+        for a in alignment:
+            dim = a["dimension"]
+            asked = a["asked_for"]
+            ev = a["evidence"]
+            label = dim.split(":", 1)[-1] if ":" in dim else dim
+            if a["verdict"] == "matched":
+                match_lines.append(f"**{label}** ({asked}) — {ev}")
+            elif a["verdict"] == "contradicts":
+                conflict_lines.append(f"**{label}** ({asked}) — {ev}")
+            else:
+                gap_lines.append(f"**{label}** ({asked}) — {ev}")
 
-    # Credits / verification
+        out.append("**Query Match**")
+        if match_lines:
+            for ln in match_lines:
+                out.append(f"- ✅ {ln}")
+        if conflict_lines:
+            for ln in conflict_lines:
+                out.append(f"- ⚠️ {ln}")
+        if gap_lines:
+            for ln in gap_lines:
+                out.append(f"- ❔ Not shown in profile data — {ln}")
+
+    # Credits
+    out.append("")
+    out.append("**Credibility Signals**")
     if n_credits == 0:
-        parts.append(
-            _ensure_sentence_punctuation(
-                "On-record film and series credits are sparse in the graph, so ranking leans more on profile fields and keyword alignment than on a deep credit stack"
-            )
+        out.append(
+            "- On-record film and series credits are sparse, so ranking leans on profile fields and keyword alignment."
         )
     else:
         ylatest = evidence["credit_summary"].get("latest_credit_year")
-        parts.append(
-            _ensure_sentence_punctuation(
-                f"The ranking draws on {n_credits} on-record project credits"
-                f" with peer co-credit corroboration on {peer_c} of them"
-            )
+        out.append(
+            f"- {n_credits} on-record project credits, with peer co-credit corroboration on {peer_c} of them."
         )
         if ylatest:
-            parts.append(
-                _ensure_sentence_punctuation(
-                    f"The most recent on-record credit year is {ylatest}"
-                )
-            )
+            out.append(f"- Most recent on-record credit year: {ylatest}.")
+        if top:
+            titles = [t.get("title") for t in top[:3] if t.get("title")]
+            if titles:
+                out.append("- Key credited work: " + ", ".join(titles) + ".")
 
-    if top:
-        titles = [t.get("title") for t in top[:3] if t.get("title")]
-        if titles:
-            parts.append(
-                _ensure_sentence_punctuation(
-                    "Key credited work called out in the credibility breakdown includes "
-                    + ", ".join(titles)
-                )
-            )
-
-    # Mentors / trust
     if mentors:
-        tail = f" Verification status is {ver}." if ver else ""
-        parts.append(
-            _ensure_sentence_punctuation(
-                f"Mentorship lineage includes training under {mentors[0]}{tail}"
-            )
-        )
-    else:
-        tail = (
-            f" Experience on profile is {exp_y} years."
-            if exp_y is not None
-            else ""
-        )
-        parts.append(
-            _ensure_sentence_punctuation(f"Verification status is {ver}{tail}")
-        )
+        out.append(f"- Trained under {mentors[0]}.")
 
+    # Verification / experience
+    out.append("")
+    out.append("**Profile**")
+    out.append(
+        f"- Craft: {craft}"
+        + (f" • Region: {region}" if region else "")
+        + (f" • Experience: {exp_y} years" if exp_y is not None else "")
+    )
+    out.append(f"- Verification status: {ver}.")
     if endorse:
-        parts.append(
-            _ensure_sentence_punctuation(
-                f"Peers have left {endorse} on-platform endorsements tied to this profile"
-            )
-        )
+        out.append(f"- Peer endorsements on platform: {endorse}.")
 
-    # Format as bullet points
-    md_parts = [f"- {p}" for p in parts if p.strip()]
-    text = "\n".join(md_parts)
+    text = "\n".join(out).strip()
     if len(text) > JUSTIFICATION_MAX_CHARS:
         text = text[: JUSTIFICATION_MAX_CHARS - 3] + "..."
     return text
 
 
 def validate_justification(text: str, evidence: dict) -> bool:
+    """Light validation: block comparatives, block invented decimals/percentages."""
     if not text or not text.strip():
         return False
     if _BANNED_COMPARATIVES.search(text):
         return False
     if len(text) > JUSTIFICATION_MAX_CHARS:
         return False
-    # Sentence limits removed to allow markdown bullet points.
-    allowed = _collect_allowed_number_strings(evidence)
-    for num in re.findall(r"\b\d+\b", text):
-        if num in allowed:
-            continue
-        if len(num) == 4 and num.startswith(("19", "20")):
-            if int(num) in range(1990, 2040):
-                continue
+    # Block obvious invented stats — decimals and percentages
+    if re.search(r"\b\d+\.\d+\b", text):
+        return False
+    if re.search(r"\d+\s*%", text):
         return False
     return True
 
 
-def _llm_generate(
-    client: Any,
-    model: str,
-    evidence: dict,
-    timeout_sec: float,
-) -> str:
-    system = """You are a talent evaluation assistant for a film-industry talent search product.
-Write a highly structured, meaningful summary of why this candidate matches the search query. 
-Rules:
-- Format the output using Markdown. Use bolding, bullet points, and brief sections (e.g., **Key Alignment**, **Credit Highlights**, **Verification**).
-- Keep it concise, punchy, and highly scannable for a busy recruiter, producer, or director.
-- Do not use Greek letters, do not say CCS, do not quote numeric factor scores (no decimals like 0.85).
-- Do not compare to other candidates or mention ranking position.
-- Only state facts that appear in the JSON evidence. If something is missing, say it is not shown in the data instead of inventing it.
-- Reflect the user's query: emphasize what they asked for (craft, location, banner, genre keywords, tier) when relevant."""
+def _llm_generate(client: Any, model: str, evidence: dict, timeout_sec: float) -> str:
+    system = """You are a talent evaluation assistant for a film-industry talent search product. Your job is to explain to a busy producer/director WHY this specific candidate is being shown for THEIR query.
+
+OUTPUT FORMAT (Markdown, scannable):
+- Start with a **Query Match** section that addresses EACH dimension in `query_alignment`:
+  - For verdict "matched": say so plainly with the supporting evidence (e.g., "Speaks Telugu — listed in languages_spoken").
+  - For verdict "contradicts": flag the mismatch honestly (e.g., "Located in Mumbai, not Hyderabad as requested").
+  - For verdict "silent": say the profile does not record this attribute (e.g., "Complexion not recorded in profile data — cannot confirm 'dark' on record").
+- Then a **Credibility Signals** section: credits count, peer corroboration, latest year, key titles.
+- Then a **Profile** section: craft, region/city, experience years, verification, mentors if any.
+
+HARD RULES:
+- Only state facts that appear in the evidence JSON. NEVER invent heights, languages, credits, or attributes that aren't there.
+- If something the user asked for is silent in the data, SAY THAT explicitly — do not paper over it.
+- Do not use Greek letters, do not mention "CCS", "score", "ranking position", or compare to other candidates.
+- Do not include decimal scores or percentages.
+- Keep total output under 200 words. Use short bullets, bold labels, emojis sparingly (✅ ⚠️ ❔ are fine).
+- Be honest. A producer wants to know what fits AND what doesn't — they will make the final call."""
 
     user = (
-        "Write the justification paragraph.\n\nEVIDENCE_JSON:\n"
-        + json.dumps(evidence, ensure_ascii=False, indent=2)
+        "Write the evaluation. Address every item in `query_alignment`.\n\nEVIDENCE_JSON:\n"
+        + json.dumps(evidence, ensure_ascii=False, indent=2, default=str)
     )
 
     resp = client.chat.completions.create(
@@ -394,6 +509,7 @@ def attach_justifications(
 ) -> list[dict]:
     """
     Mutates copies of ranked rows in the top `limit` slice by setting `justification`.
+    Also attaches `_profile_facts` and `_candidate_context` so the UI can render a full profile view.
     """
     if not ranked_candidates:
         return []
@@ -402,7 +518,7 @@ def attach_justifications(
     head = out[:limit]
     tail = out[limit:]
 
-    def build_one(row: dict) -> tuple[str, str, dict]:
+    def build_one(row: dict) -> tuple[str, str, dict, dict]:
         uid = row["id"]
         with driver.session() as session:
             facts = fetch_justification_facts(session, uid)
@@ -412,23 +528,29 @@ def attach_justifications(
         if llm_client and model:
             try:
                 raw = _llm_generate(llm_client, model, evidence, timeout_sec)
-                raw = re.sub(r"\s+", " ", raw).strip()
+                # Preserve markdown line breaks — only collapse intra-line whitespace.
+                raw = "\n".join(re.sub(r"[ \t]+", " ", ln).strip() for ln in raw.splitlines())
+                raw = re.sub(r"\n{3,}", "\n\n", raw).strip()
                 if validate_justification(raw, evidence):
                     text = raw
             except Exception:
                 pass
         if not validate_justification(text, evidence):
             text = template_justification(evidence)
-        return uid, text, evidence
+        return uid, text, facts, cand
 
     id_to_text: dict[str, str] = {}
+    id_to_facts: dict[str, dict] = {}
+    id_to_ctx: dict[str, dict] = {}
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as ex:
         futures = {ex.submit(build_one, row): row for row in head}
         for fut in concurrent.futures.as_completed(futures, timeout=timeout_sec * limit + 5):
             row = futures[fut]
             try:
-                uid, text, _ev = fut.result(timeout=timeout_sec + 5)
+                uid, text, facts, cand = fut.result(timeout=timeout_sec + 5)
                 id_to_text[uid] = text
+                id_to_facts[uid] = facts
+                id_to_ctx[uid] = cand
             except Exception:
                 uid = row["id"]
                 with driver.session() as session:
@@ -436,18 +558,22 @@ def attach_justifications(
                     cand = fetch_candidate_context(session, uid)
                 ev = build_justification_evidence(row, facts, cand, query_context)
                 id_to_text[uid] = template_justification(ev)
+                id_to_facts[uid] = facts
+                id_to_ctx[uid] = cand
 
     merged: list[dict] = []
     for row in head:
         r = dict(row)
-        r["justification"] = id_to_text.get(row["id"], template_justification(
+        uid = row["id"]
+        r["justification"] = id_to_text.get(uid) or template_justification(
             build_justification_evidence(
-                row,
-                {},
-                {"context": {}, "credits": [], "experience_years": None, "verification_level": None},
+                row, id_to_facts.get(uid, {}),
+                id_to_ctx.get(uid, {"context": {}, "credits": [], "experience_years": None, "verification_level": None}),
                 query_context,
             )
-        ))
+        )
+        r["_profile_facts"] = id_to_facts.get(uid, {})
+        r["_candidate_context"] = id_to_ctx.get(uid, {})
         merged.append(r)
     for row in tail:
         r = dict(row)
