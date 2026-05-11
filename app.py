@@ -1,6 +1,5 @@
 import os
 import json
-import html
 from pathlib import Path
 
 import streamlit as st
@@ -228,7 +227,19 @@ with tab_search:
 
                 if just:
                     st.markdown("---")
-                    st.markdown("#### Evaluation Summary")
+                    source = r.get("justification_source", "template")
+                    if source == "llm":
+                        badge = "✨ AI-generated"
+                    elif source.startswith("template_after_llm_rejected"):
+                        badge = "📋 Auto-summary (AI output rejected by validator)"
+                    elif source.startswith("template_after_llm_error"):
+                        err = source.split(":", 1)[-1] if ":" in source else "error"
+                        badge = f"📋 Auto-summary (AI call failed: {err})"
+                    elif source.startswith("template_after_pool_error"):
+                        badge = "📋 Auto-summary (pool error)"
+                    else:
+                        badge = "📋 Auto-summary (no AI configured)"
+                    st.markdown(f"#### Evaluation Summary  \n_{badge}_")
                     st.markdown(just)
 
                 st.markdown("---")
