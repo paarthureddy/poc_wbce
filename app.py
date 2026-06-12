@@ -225,12 +225,12 @@ with tab_search:
             try:
                 results = execute_cypher(cypher_query)
             except Exception as db_err:
-                st.error("⚠️ Could not retrieve results from the database. Please try again later.")
+                st.error(f"⚠️ Could not retrieve results from the database. Error: {db_err}")
                 st.stop()
             try:
                 ranked_results = rank_candidates(results, params, driver)
             except Exception as rank_err:
-                st.error("⚠️ An error occurred while ranking results. Please try again.")
+                st.error(f"⚠️ An error occurred while ranking results. Error: {rank_err}")
                 st.stop()
             # Single pass: top 10 justifications via Gemini Flash in parallel.
             ranked_results = attach_justifications(
