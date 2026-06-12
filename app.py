@@ -29,19 +29,38 @@ def _env_strip(name: str, default: str | None = None) -> str | None:
     return s or None
 
 
-# Setup Neo4j Driver
-URI = _env_strip("NEO4J_URI", "bolt://localhost:7687") or "bolt://localhost:7687"
-USER = _env_strip("NEO4J_USER", "neo4j") or "neo4j"
-PASSWORD = _env_strip("NEO4J_PASSWORD", "password") or "password"
+def _secret(key: str, default: str | None = None) -> str | None:
+    """Read from env vars first; fall back to Streamlit secrets (for Streamlit Cloud)."""
+    val = _env_strip(key)
+    if val:
+        return val
+    try:
+        val = st.secrets.get(key)
+        if val:
+            return str(val).strip() or None
+    except Exception:
+        pass
+    return default
 
-driver = GraphDatabase.driver(URI, auth=(USER, PASSWORD))
+
+# Setup Neo4j Driver — created once, with graceful failure handling.
+URI = _secret("NEO4J_URI") or "bolt://localhost:7687"
+USER = _secret("NEO4J_USER") or _secret("NEO4J_USERNAME") or "neo4j"
+PASSWORD = _secret("NEO4J_PASSWORD") or "password"
+
+_DRIVER_ERROR: str | None = None
+try:
+    driver = GraphDatabase.driver(URI, auth=(USER, PASSWORD))
+except Exception as _e:
+    driver = None
+    _DRIVER_ERROR = str(_e)
 
 # Setup Azure OpenAI client
-_api_key = _env_strip("OAI_KEY_LLM") or _env_strip("AZURE_OPENAI_API_KEY")
-_endpoint = _env_strip("OAI_BASE_LLM") or _env_strip("AZURE_OPENAI_ENDPOINT")
+_api_key = _secret("OAI_KEY_LLM") or _secret("AZURE_OPENAI_API_KEY")
+_endpoint = _secret("OAI_BASE_LLM") or _secret("AZURE_OPENAI_ENDPOINT")
 _api_version = (
-    _env_strip("OAI_VERSION")
-    or _env_strip("OPENAI_API_VERSION")
+    _secret("OAI_VERSION")
+    or _secret("OPENAI_API_VERSION")
     or "2024-12-01-preview"
 )
 
@@ -55,7 +74,7 @@ if _api_key and _endpoint:
 else:
     llm_client = None
 
-LLM_MODEL = _env_strip("LLM_MODEL_NAME", "gpt-5.4-nano") or "gpt-5.4-nano"
+LLM_MODEL = _secret("LLM_MODEL_NAME") or "gpt-5.4-nano"
 
 JUSTIFY_CLIENT = llm_client
 JUSTIFY_MODEL = LLM_MODEL
@@ -141,6 +160,11 @@ def decompose_prompt(user_query):
 
 
 def execute_cypher(query):
+    if driver is None:
+        raise RuntimeError(
+            "Neo4j is not available. Check that NEO4J_URI, NEO4J_USER, and "
+            "NEO4J_PASSWORD are correctly set in Streamlit secrets or the .env file."
+        )
     with driver.session() as session:
         result = session.run(query)
         return [dict(record) for record in result]
@@ -153,10 +177,19 @@ st.set_page_config(page_title="WBCE", page_icon="🔍", layout="centered")
 
 st.title("WBCE")
 
+# Show startup errors as clean banners — no raw tracebacks exposed.
+if _DRIVER_ERROR:
+    st.error(
+        "⚠️ Unable to connect to the database. "
+        "Please check that the Neo4j credentials are correctly configured in Streamlit secrets "
+        "(`NEO4J_URI`, `NEO4J_USER`, `NEO4J_PASSWORD`)."
+    )
+    st.stop()
+
 if llm_client is None:
     st.warning(
-        "Azure OpenAI is not configured (`OAI_KEY_LLM` / `OAI_BASE_LLM` missing). "
-        f"Add them to `{_APP_DIR / '.env'}` (see `.env.example`), then restart Streamlit."
+        "Azure OpenAI is not configured. "
+        "Please set `OAI_KEY_LLM` and `OAI_BASE_LLM` in Streamlit secrets."
     )
 
 tab_search, tab_structured, tab_schema = st.tabs(["Search", "Structured Query", "Schema Reference"])
@@ -189,8 +222,16 @@ with tab_search:
                     params["tier"] = None
 
             cypher_query = build_cypher(params)
-            results = execute_cypher(cypher_query)
-            ranked_results = rank_candidates(results, params, driver)
+            try:
+                results = execute_cypher(cypher_query)
+            except Exception as db_err:
+                st.error("⚠️ Could not retrieve results from the database. Please try again later.")
+                st.stop()
+            try:
+                ranked_results = rank_candidates(results, params, driver)
+            except Exception as rank_err:
+                st.error("⚠️ An error occurred while ranking results. Please try again.")
+                st.stop()
             # Single pass: top 10 justifications via Gemini Flash in parallel.
             ranked_results = attach_justifications(
                 ranked_results,
